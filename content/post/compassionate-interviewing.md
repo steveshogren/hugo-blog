@@ -2,9 +2,8 @@
 title = "Designing A Compassionate Interview For A High Performing Individual"
 date = "2016-01-11"
 Categories = ["Meta Game", "management"]
+banner="/images/2.Why_Algorithm_Important.png"
 +++
-
-<img src="/images/2.Why_Algorithm_Important.png"></img>
 
 After my post [Interview Humiliation](http://deliberate-software.com/on-defeat/), a number of
 people have asked me how I interview compassionately. I strive to make my interviews as

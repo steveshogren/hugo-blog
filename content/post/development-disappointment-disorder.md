@@ -1,7 +1,7 @@
 +++
 title = "development disappointment disorder"
 date = "2016-02-04"
-
+banner="/images/Disappointment.jpg"
 Categories = ["Meta Game", "management"]
 +++
 

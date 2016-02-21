@@ -1,7 +1,7 @@
 baseurl = "http://deliberate-software.com/"
 languageCode = "en-us"
 title = "Deliberate Software"
-pygmentsstyle = "tango"
+pygmentsstyle = "monokai"
 theme = "hugo-icarus"
 [permalinks]
   post = "/:filename/"
@@ -15,12 +15,12 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     # Tell me who you are
-    author = "John Doe"
-    bio = "Blogger - Programmer - Gopher"
-    location = "Earth"
+    author = "Steve Shogren"
+    bio = "Insights gathered while learning to deliberately craft software."
+    location = ""
     site_description = ""
-    copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
-    avatar = "css/images/avatar.png"
+    copyright  = "Deliberate Software 2016"
+    avatar = "/images/me2.jpeg"
 
     # Format dates with Go's time formatting
     date_format = "2006-01-02"
@@ -38,17 +38,12 @@ footnotereturnlinkcontents = "↩"
 
 [[params.menu]]
     before = false
-    label  = "Tags"
-    link   = "tags/"
-
-[[params.menu]]
-    before = false
     label  = "Categories"
     link   = "categories/"
 
 # Enter a link for the follow button on the left
 [params.profile]
-    follow_button = "https://github.com/steveshogren"
+    follow_button = "http://twitter.com/steveshogren"
 
 
 [social]
@@ -81,11 +76,11 @@ footnotereturnlinkcontents = "↩"
     facebook        = ""
     facebook_admin  = ""
     twitter_domain  = ""
-    twitter         = "spf13"
+    twitter         = "steveshogren"
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
     recent_articles = true
-    categories = true
-    tags = true
-    tag_cloud = true
+    categories = false
+    tags = false
+    tag_cloud = false

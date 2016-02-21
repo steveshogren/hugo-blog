@@ -1,14 +1,12 @@
 +++
 title = "haskell is the dark souls of programming"
 date = "2016-02-06"
-
+banner="/images/altar_of_sunlight.gif"
 Categories = ["haskell", "Technical Skills"]
 +++
 
 HUMOROUS POST AHEAD. Please don't hit me, Haskell does a great job of that
 already.
-
-<img src="/images/altar_of_sunlight.gif"></img>
 
 I decided to start the next version of my safety score posts. This time,
 however, I decided to do it in Haskell. I love Haskell for the same reasons I

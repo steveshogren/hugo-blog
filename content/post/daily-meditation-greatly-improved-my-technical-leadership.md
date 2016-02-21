@@ -1,11 +1,10 @@
 +++
-title = "daily meditation greatly improved my technical leadership"
+title = "Daily Meditation Improves Technical Leadership"
 date = "2015-12-14"
-
+banner="/images/meditation.jpg"
 Categories = ["Meta Game", "management"]
 +++
 
-<img src="/images/meditation.jpg"></img>
 
 A couple years ago, a coworker told me a success story about mindful meditation.
 He explained how his wife took a class that required an hour of daily meditation

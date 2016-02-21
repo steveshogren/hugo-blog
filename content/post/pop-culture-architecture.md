@@ -1,7 +1,8 @@
 +++
-title = "pop culture architecture"
+title = "Pop Culture Architecture"
 date = "2016-02-19"
 Categories = ["architecture", "Technical Skills", "Meta game"]
+banner = "images/gargoyle-at-the-british-natural-history-museum.jpg"
 +++
 
 > "ActiveRecord is so hot right now!" - comment in 2006
