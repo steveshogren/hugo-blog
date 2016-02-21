@@ -1,7 +1,7 @@
 +++
 title = "better oo design"
 date = "2015-12-28"
-slug = "2015/12/28/better-oo-design"
+
 Categories = ["technical skills"]
 +++
 

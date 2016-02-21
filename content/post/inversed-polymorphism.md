@@ -1,7 +1,7 @@
 +++
 title = "inversed polymorphism"
 date = "2014-04-28"
-slug = "2014/04/28/inversed-polymorphism"
+
 Categories = ["Technical Skills", "F#"]
 Tags = []
 +++

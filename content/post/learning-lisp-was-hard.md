@@ -1,7 +1,7 @@
 +++
 title = "learning lisp was hard"
 date = "2015-06-17"
-slug = "2015/06/17/learning-lisp-was-hard"
+
 Categories = ["clojure", "Meta Game"]
 +++
 

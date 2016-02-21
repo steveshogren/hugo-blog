@@ -1,7 +1,7 @@
 +++
 title = "function pattern matching"
 date = "2014-04-28"
-slug = "2014/04/28/function-pattern-matching"
+
 Categories = ["Technical Skills", "F#"]
 Tags = []
 +++

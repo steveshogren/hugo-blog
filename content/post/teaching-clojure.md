@@ -1,7 +1,7 @@
 +++
 title = "teaching clojure"
 date = "2015-11-18"
-slug = "2015/11/18/teaching-clojure"
+
 Categories = ["Meta Game", "clojure"]
 +++
 

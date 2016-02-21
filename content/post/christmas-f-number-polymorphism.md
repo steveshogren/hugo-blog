@@ -1,7 +1,7 @@
 +++
 title = "christmas f number polymorphism"
 date = "2014-12-06"
-slug = "2014/12/06/christmas-f-number-polymorphism"
+
 Categories = ["Technical Skills", "f#"]
 +++
 

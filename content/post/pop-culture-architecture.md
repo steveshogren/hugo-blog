@@ -1,7 +1,6 @@
 +++
 title = "pop culture architecture"
 date = "2016-02-19"
-slug = "2016/02/19/pop-culture-architecture"
 Categories = ["architecture", "Technical Skills", "Meta game"]
 +++
 

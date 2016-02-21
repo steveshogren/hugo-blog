@@ -1,7 +1,7 @@
 +++
 title = "superiority fatigue"
 date = "2015-05-14"
-slug = "2015/05/14/superiority-fatigue"
+
 Categories = ["Meta Game"]
 +++
 

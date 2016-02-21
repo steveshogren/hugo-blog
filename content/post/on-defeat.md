@@ -1,7 +1,7 @@
 +++
 title = "on defeat"
 date = "2015-10-29"
-slug = "2015/10/29/on-defeat"
+
 Categories = ["meta game", "interviews", "management"]
 +++
 

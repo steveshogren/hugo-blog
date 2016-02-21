@@ -1,7 +1,7 @@
 +++
 title = "skill continuum"
 date = "2014-12-02"
-slug = "2014/12/02/skill-continuum"
+
 Categories = ["Technical Skills", "Meta Game", "management"]
 +++
 

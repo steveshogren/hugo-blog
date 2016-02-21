@@ -1,7 +1,6 @@
 +++
 title = "unusual reasons why clojure is a delight"
 date = "2015-02-09"
-slug = "2015/02/09/unusual-reasons-why-clojure-is-a-delight"
 Categories = ["clojure", "Technical Skills", "Unit Testing"]
 Tags = []
 +++
@@ -26,7 +25,6 @@ namespace with a new definition.
   ;; bind get-current-id to a lambda that always returns 4 
   (with-redefs [get-current-id (fn [_] 4)]
     (is (= 5 (next-id nil)))))
-           
 ```
 
 We "mock" the ```get-current-id``` function to always return 4 inside

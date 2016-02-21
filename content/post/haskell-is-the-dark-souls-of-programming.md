@@ -1,7 +1,7 @@
 +++
 title = "haskell is the dark souls of programming"
 date = "2016-02-06"
-slug = "2016/02/06/haskell-is-the-dark-souls-of-programming"
+
 Categories = ["haskell", "Technical Skills"]
 +++
 

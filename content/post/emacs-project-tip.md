@@ -1,7 +1,7 @@
 +++
 title = "emacs project tip"
 date = "2014-12-06"
-slug = "2014/12/06/emacs-project-tip"
+
 Categories = ["Technical Skills", "emacs"]
 +++
 

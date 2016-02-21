@@ -1,7 +1,7 @@
 +++
 title = "next book"
 date = "2014-07-26"
-slug = "2014/07/26/next-book"
+
 Categories = ["Technical Skills", "Meta Game", "management"]
 +++
 

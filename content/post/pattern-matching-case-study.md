@@ -1,7 +1,7 @@
 +++
 title = "pattern matching case study"
 date = "2015-03-14"
-slug = "2015/03/14/pattern-matching-case-study"
+
 Categories = ["Technical Skills", "f#", "c#"]
 +++
 

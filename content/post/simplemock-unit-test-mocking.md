@@ -1,7 +1,7 @@
 +++
 title = "simplemock unit test mocking"
 date = "2015-08-13"
-slug = "2015/08/13/simplemock-unit-test-mocking"
+
 Categories = ["unit testing", "c#", "Technical Skills"]
 +++
 

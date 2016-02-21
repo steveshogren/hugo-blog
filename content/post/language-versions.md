@@ -1,7 +1,7 @@
 +++
 title = "language versions"
 date = "2015-07-20"
-slug = "2015/07/20/language-versions"
+
 Categories = []
 +++
 

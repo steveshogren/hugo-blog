@@ -1,7 +1,7 @@
 +++
 title = "f number unit testing"
 date = "2015-10-21"
-slug = "2015/10/21/f-number-unit-testing"
+
 Categories = ["f#", "unit testing", "Technical Skills"]
 +++
 

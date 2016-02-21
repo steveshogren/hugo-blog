@@ -1,7 +1,7 @@
 +++
 title = "development disappointment disorder"
 date = "2016-02-04"
-slug = "2016/02/04/development-disappointment-disorder"
+
 Categories = ["Meta Game", "management"]
 +++
 

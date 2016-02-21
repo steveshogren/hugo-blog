@@ -1,5 +1,7 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://deliberate-software.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Deliberate Software"
 pygmentsstyle = "tango"
 theme = "heather-hugo"
+[permalinks]
+  post = "/:filename/"

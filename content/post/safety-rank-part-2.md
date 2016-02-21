@@ -1,7 +1,7 @@
 +++
 title = "safety rank part 2"
 date = "2015-07-24"
-slug = "2015/07/24/safety-rank-part-2"
+
 Categories = ["haskell", "clojure", "f#", "c#", "Technical Skills"]
 +++
 

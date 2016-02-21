@@ -1,7 +1,7 @@
 +++
 title = "programming language safety algorithm"
 date = "2015-02-17"
-slug = "2015/02/17/programming-language-safety-algorithm"
+
 Categories = ["Technical Skills", "clojure", "f#", "c#"]
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = "daily meditation greatly improved my technical leadership"
 date = "2015-12-14"
-slug = "2015/12/14/daily-meditation-greatly-improved-my-technical-leadership"
+
 Categories = ["Meta Game", "management"]
 +++
 
