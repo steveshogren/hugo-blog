@@ -8,7 +8,7 @@ Categories = ["haskell", "Technical Skills"]
 HUMOROUS POST AHEAD. Please don't hit me, Haskell does a great job of that
 already.
 
-{% img center solaire /images/altar_of_sunlight.gif 500 'solaire' 'solaire' %}
+<img src="/images/altar_of_sunlight.gif"></img>
 
 I decided to start the next version of my safety score posts. This time,
 however, I decided to do it in Haskell. I love Haskell for the same reasons I
@@ -43,7 +43,7 @@ Awww yisss. This is going to be so easy!
 
 ### Step Two - HTTPS GET Request (aka The Fall After The Pride)
 
-{% img center giants /images/tomb_of_the_giants.gif 450 'giants' 'giants' %}
+<img src="/images/tomb_of_the_giants.gif"></img>
 
 Now I need to query the GitHub API. Not my first time to the rodeo, I generate a
 personal access token from GitHub and copy it to a local file. What query should
@@ -129,7 +129,7 @@ Wat. Further inspection of the docs shows a line WAAY DOWN in paragraph 5.
 
 > NOTE: This package only supports HTTP;
 
-{% img center giants /images/nope_better.gif 250 'giants' 'giants' %}
+<img src="/images/nope_better.gif"></img>
 
 When <del>playing Dark Souls</del>programming Haskell, sometimes the best move
 is to run away. I search again. ```haskell https request``` returns
@@ -160,7 +160,7 @@ Huzzah! Results! I'm getting back a monster string of json data.
 
 > "\"{\\\"total_count\\\":66, ....}\"
 
-{% img center solaire /images/praisethesun.gif 150 'solaire' 'solaire' %}
+<img src="/images/praisethesun.gif"></img>
 
 ### Step Three - Parsing JSON
 
@@ -230,7 +230,7 @@ Puts out: ``` Just 66```. Success! Wait. 66 isn't the same count I got when
 running from the browser. Check again. Sure enough, browser comes up with a
 totally different count.
 
-{% img center solaire /images/come_at_me_bro.gif 400 'solaire' 'solaire' %}
+<img src="/images/come_at_me_bro.gif"></img>
 
 Maybe the query request isn't correct? Adding a ```print request``` on line 31
 after building the request shows:
@@ -266,7 +266,7 @@ I finally have something that correctly fetches a count of repositories from
 GitHub and parses it into an Int. After over four hours of <del>Dark
 Souls</del>Haskell punishment, we deserve to enjoy a bonfire!
 
-{% img center solaire /images/solaire_sitting.gif 400 'solaire' 'solaire' %}
+<img src="/images/solaire_sitting.gif"></img>
 
 ## Edit: Bonus Round!
 
@@ -307,7 +307,7 @@ MUCH better. This includes reading my token from file called "token" so I don't
 accidentally commit it. Also includes building up the different query options
 based on inputs, which was the next step. Thanks y'all.
 
-{% img center solaire /images/solaire_idle.gif 200 'solaire' 'solaire' %}
+<img src="/images/solaire_idle.gif"></img>
 
 > Pixel gifs sourced from
 > [zedotagger](http://zedotagger.deviantart.com/gallery/54317550/Dark-Souls) on

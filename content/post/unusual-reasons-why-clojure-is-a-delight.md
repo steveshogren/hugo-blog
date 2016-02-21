@@ -41,7 +41,7 @@ parentheses. While the most powerful use of s-expressions is to easily
 allow macros, for the day to day, s-expressions have a very important
 use: amazing editing!
 
-{% img center http://danmidwood.com/assets/animated-paredit/paredit-slurp-barf.gif 'image' 'images' %}
+<img src="http://danmidwood.com/assets/animated-paredit/paredit-slurp-barf.gif"></img>
 
 With ParEdit (available in most editors), it is trivial to select,
 move, replace, grow, or shrink any s-expression, string, map, or

@@ -22,7 +22,7 @@ very similar. The shape of the curve pretty much stays the same, which I was
 told indicates that the character count weighting was a variable that didn't
 matter. 
 
-{% img center /images/rplot.jpg 'image' 'images' %}
+<img src="/images/rplot.jpg"></img>
 
 The code I used to generate the plot and normalize the scores can be found here:
 [scorePlot.R](https://github.com/steveshogren/datasciencecoursera/blob/817dec79e36b6e9a6c5a8fd5700aff7cc394b9d4/scoreplot.R)
@@ -120,13 +120,13 @@ grouping. Here is that data, sorted by safety score.
 
 Here are the languages sorted by safety score with bug/commit ratios:
 
-{% img center /images/errorChart.jpg 'image' 'images' %}
-{% img center /images/bugsAverage.jpg 'image' 'images' %}
+<img src="/images/errorChart.jpg"></img>
+<img src="/images/bugsAverage.jpg"></img>
 
 I took the magnitude of the safety scores and the bug/commit ratios. After
 inverting the safety scores, I overlaid them both onto a single graph.
 
-{% img center /images/bothMags.jpg 'image' 'images' %}
+<img src="/images/bothMags.jpg"></img>
 
 Immediately it is obvious that Ruby, Python, PHP, and Clojure all seem to strongly
 buck the trend, but otherwise the languages follow a pretty consistent slope

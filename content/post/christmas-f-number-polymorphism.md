@@ -64,13 +64,13 @@ What changes if we want to add a new type of tree? In the class-based
 example, adding a new type is quite simple, you only need to edit one
 place to find all the definitions regarding the new type.
 
-{% img center /images/new-interfaces.png 'image' 'images' %}
+<img src="/images/new-interfaces.png"></img>
 
 In the pattern matching example, adding a new type requires editing
 every single place you created a function that matches on the
 type.
 
-{% img center /images/new-pattern-matching.png 'image' 'images' %}
+<img src="/images/new-pattern-matching.png"></img>
 
 Thankfully, in both cases the compiler gives warnings about missing
 functions or matches, so both are equally "safe".
@@ -79,12 +79,12 @@ What about changing an existing function or adding a new function? We
 now see the opposite behavior. Classes become harder to edit, because
 the functions are spread across multiple classes.
 
-{% img center /images/change-interfaces.png 'image' 'images' %}
+<img src="/images/change-interfaces.png"></img>
 
 A pattern matching system is now the easier to modify, each function
 only lives in one place. 
 
-{% img center /images/change-pattern-matching.png 'image' 'images' %}
+<img src="/images/change-pattern-matching.png"></img>
 
 And that is the expression problem! The best thing about F# is that
 you get to pick which one is better for each type of data! If you know

@@ -5,7 +5,7 @@ slug = "2015/12/14/daily-meditation-greatly-improved-my-technical-leadership"
 Categories = ["Meta Game", "management"]
 +++
 
-{% img right emailImage /images/meditation.jpg 200 'meditation' 'meditation' %}
+<img src="/images/meditation.jpg"></img>
 
 A couple years ago, a coworker told me a success story about mindful meditation.
 He explained how his wife took a class that required an hour of daily meditation

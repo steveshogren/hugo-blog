@@ -18,7 +18,7 @@ I was currently viewing.
 I started with a changing the title of the frame to show the whole
 path of the current buffer, like this:
 
-{% img center /images/title.png 'image' 'images' %}
+<img src="/images/title.png"></img>
 
 The code to change the title is simple, and the default in some of the
 pre-packaged emacs bundles:
@@ -45,7 +45,7 @@ new background overlaid.
 
 While not perfect, this was the result.
 
-{% img center /images/colors.png 'image' 'images' %}
+<img src="/images/colors.png"></img>
 
 The colors I choose are only faintly different, but just enough for me
 to tell instantly which is which.
