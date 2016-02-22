@@ -16,12 +16,15 @@ footnotereturnlinkcontents = "↩"
 [params]
     # Tell me who you are
     author = "Steve Shogren"
-    bio = "Insights gathered while learning to deliberately craft software."
-    location = ""
-    site_description = ""
+    bio = ""
+    location = "Philadelphia, PA"
+    site_description = "Insights gathered while learning to deliberately craft software."
     copyright  = "Deliberate Software 2016"
     avatar = "/images/me2.jpeg"
-
+    bookDesc = "Check out my new book!"
+    bookImg = "/images/convincingcoworkerscover.jpg"
+    bookLink = "https://leanpub.com/convincingcoworkers"
+    
     # Format dates with Go's time formatting
     date_format = "2006-01-02"
 

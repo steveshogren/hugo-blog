@@ -10,6 +10,11 @@
               {{with $.Site.Data.l10n.profile.follow_button}}{{.}}{{end}}
           </a>
       {{ end }}
+      {{ with .Site.Params.bookLink }}
+          <a id="abook" href="{{ . }}">
+              {{with $.Site.Params.bookImg}}<img id="book" src="{{.}}"></img>{{end}}
+          </a>
+      {{ end }}
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">

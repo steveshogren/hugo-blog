@@ -635,6 +635,14 @@ a:visited {
   width: 128px;
   height: 128px;
 }
+#profile .inner .base-info #book {
+  display: block;
+  margin: 10px auto 20px;
+  width: 128px;
+  height: 165px;
+  border: 1px solid gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 #profile .inner .base-info #name,
 #profile .inner .base-info #title,
 #profile .inner .base-info #location {
@@ -662,7 +670,8 @@ a:visited {
   line-height: 40px;
   text-align: center;
   margin: 20px auto 10px;
-  background: #38b7ea;
+  //background: #38b7ea;
+  background: #600000;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   -webkit-transition: 0.2s ease;
@@ -671,7 +680,8 @@ a:visited {
   transition: 0.2s ease;
 }
 #profile .inner .base-info #follow:hover {
-  background: #49c8fb;
+  //background: #49c8fb;
+  background: #800000;
 }
 #profile .inner .article-info {
   padding: 0px;
