@@ -1,7 +1,7 @@
 +++
 title = "Better OO Design"
 date = "2015-12-28"
-
+draft=true
 Categories = ["technical skills"]
 +++
 

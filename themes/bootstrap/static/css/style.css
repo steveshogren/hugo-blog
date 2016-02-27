@@ -28,6 +28,32 @@
     text-align: -webkit-match-parent;
     color: #222;
 }
+.col-centered{
+    margin: 0 auto;
+    margin-left: 0;
+}
+.navbar,
+.nav,
+.navbar-nav,
+.navbar-nav>li>a,
+.navbar-default .navbar-brand
+{
+    /* color: black !important; */
+    /* background-color: white !important; */
+}
+.header-text {
+    /* font-family: georgia,"times new roman",times,serif; */
+    /* font-size: 40px; */
+    /* text-align: center; */
+    /* width: 100%; */
+}
+.content {
+    font-family: georgia,"times new roman",times,serif;
+    /* line-height: 24px; */
+    /* font-weight: 400; */
+    font-size: 20px;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -35,8 +61,8 @@ html {
 body {
     /* Margin bottom by footer height */
     /* font-family: 'Open Sans', 'sans-serif'; */
-    font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif;
-    font-size: 1.5em;
+    /* font-family:, Georgia,  'Times New Roman', serif; */
+
     margin-bottom: 60px;
 }
 .footer {

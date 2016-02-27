@@ -36,6 +36,11 @@ footnotereturnlinkcontents = "↩"
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Home".
     home = "home"
+[params.theme]
+   ### name = "journal"
+   # name = "paper"
+   # name = "sandstone"
+    name = "yeti"
 
 
 # Create custom menu entries by defining a label and a link for
