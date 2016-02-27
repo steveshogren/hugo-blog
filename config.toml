@@ -2,7 +2,7 @@ baseurl = "http://deliberate-software.com/"
 languageCode = "en-us"
 title = "Deliberate Software"
 pygmentsstyle = "monokai"
-theme = "hugo-icarus"
+theme = "bootstrap"
 [permalinks]
   post = "/:filename/"
 
