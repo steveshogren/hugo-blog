@@ -1,5 +1,5 @@
 +++
-title = "emacs project tip"
+title = "Emacs Project Tip"
 date = "2014-12-06"
 
 Categories = ["Technical Skills", "emacs"]

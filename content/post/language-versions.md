@@ -1,5 +1,5 @@
 +++
-title = "language versions"
+title = "Language Versions"
 date = "2015-07-20"
 
 Categories = []

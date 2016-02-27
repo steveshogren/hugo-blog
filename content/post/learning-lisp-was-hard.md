@@ -1,5 +1,5 @@
 +++
-title = "learning lisp was hard"
+title = "Learning Lisp Was Hard"
 date = "2015-06-17"
 
 Categories = ["clojure", "Meta Game"]

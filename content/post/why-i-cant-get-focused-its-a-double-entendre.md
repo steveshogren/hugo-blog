@@ -1,5 +1,5 @@
 +++
-title = "why i cant get focused its a double entendre"
+title = "Why I Can't Pick A Language"
 Categories = ["Meta Game"]
 Tags = []
 +++

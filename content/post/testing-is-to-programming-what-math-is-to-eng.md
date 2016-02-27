@@ -1,5 +1,5 @@
 +++
-title = "testing is to programming what math is to eng"
+title = "Testing Is To Programming What Math Is To Engineering"
 Categories = ["Meta Game", "unit testing"]
 Tags = []
 +++

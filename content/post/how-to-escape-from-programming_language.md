@@ -1,5 +1,5 @@
 +++
-title = "how to escape from programming_language"
+title = "How To Escape From {programming_language}"
 Categories = ["Meta Game"]
 Tags = []
 +++

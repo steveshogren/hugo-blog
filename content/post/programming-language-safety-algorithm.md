@@ -1,5 +1,5 @@
 +++
-title = "programming language safety algorithm"
+title = "Programming Language Safety Ranking"
 date = "2015-02-17"
 
 Categories = ["Technical Skills", "clojure", "f#", "c#"]

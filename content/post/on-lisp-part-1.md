@@ -1,5 +1,5 @@
 +++
-title = "on lisp part 1"
+title = "Why Lisp"
 Categories = ["Technical Skills"]
 Tags = []
 +++

@@ -1,5 +1,5 @@
 +++
-title = "quality is future speed"
+title = "Quality Is Future Speed"
 Categories = ["meta game"]
 Tags = []
 +++

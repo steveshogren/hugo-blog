@@ -1,5 +1,5 @@
 +++
-title = "simplemock unit test mocking"
+title = "SimpleMock: Language Agnostic Unit Test Mocking"
 date = "2015-08-13"
 
 Categories = ["unit testing", "c#", "Technical Skills"]

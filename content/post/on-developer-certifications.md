@@ -1,5 +1,5 @@
 +++
-title = "on developer certifications"
+title = "On Developer Certifications"
 Categories = ["Meta Game", "interviews"]
 Tags = []
 +++

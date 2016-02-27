@@ -1,5 +1,5 @@
 +++
-title = "new job todo list"
+title = "How to Suck Less at Your New Job"
 Categories = ["Meta Game"]
 Tags = []
 +++

@@ -1,8 +1,9 @@
 +++
-title = "unusual reasons why clojure is a delight"
+title = "Six Unusual Reasons why Clojure is a Delight"
 date = "2015-02-09"
 Categories = ["clojure", "Technical Skills", "Unit Testing"]
 Tags = []
+top="yes"
 +++
 
 Clojure is a delightful language, and here are six uncommonly

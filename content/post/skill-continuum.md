@@ -1,5 +1,5 @@
 +++
-title = "skill continuum"
+title = "Recommended Developer Skill Progression"
 date = "2014-12-02"
 
 Categories = ["Technical Skills", "Meta Game", "management"]

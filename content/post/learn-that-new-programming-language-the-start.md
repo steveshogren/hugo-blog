@@ -1,5 +1,5 @@
 +++
-title = "learn that new programming language the start"
+title = "Learn That New Programming Language The Start-Up Way"
 Categories = ["Meta Game"]
 Tags = []
 +++

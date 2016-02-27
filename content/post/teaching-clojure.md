@@ -1,5 +1,5 @@
 +++
-title = "teaching clojure"
+title = "Conj Talk: Teaching Clojure at IBM"
 date = "2015-11-18"
 
 Categories = ["Meta Game", "clojure"]

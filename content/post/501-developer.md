@@ -1,5 +1,5 @@
 +++
-title = "501 developer"
+title = "501 Developer"
 Categories = ["Meta Game", "management"]
 Tags = []
 +++

@@ -1,5 +1,5 @@
 +++
-title = "refactoring not free"
+title = "Sorry, but Refactorings Are Not Free (Technical Debt Interest)"
 Categories = ["Meta Game"]
 Tags = []
 +++

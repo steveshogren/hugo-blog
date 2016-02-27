@@ -1,5 +1,5 @@
 +++
-title = "pattern matching case study"
+title = "Case Study: Superior Domain Modeling in F#"
 date = "2015-03-14"
 
 Categories = ["Technical Skills", "f#", "c#"]

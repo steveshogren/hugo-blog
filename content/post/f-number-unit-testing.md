@@ -1,5 +1,5 @@
 +++
-title = "f number unit testing"
+title = "F# Unit Testing"
 date = "2015-10-21"
 
 Categories = ["f#", "unit testing", "Technical Skills"]

@@ -18,9 +18,9 @@
     {{ end }}
     <h3 class="col-sm-12" id="name">Top Posts</h3>
     <div class="col-sm-12">
-      <ul>
+      <ul class="sidebar_ul">
         {{ range where .Site.Pages "Params.top" "yes" }}
-           <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+           <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>
     </div>

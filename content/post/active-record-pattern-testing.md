@@ -1,5 +1,5 @@
 +++
-title = "active record pattern testing"
+title = "Active Record Pattern Testing"
 Categories = ["Technical Skills"]
 Tags = []
 +++

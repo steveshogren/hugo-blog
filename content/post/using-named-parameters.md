@@ -1,5 +1,5 @@
 +++
-title = "using named parameters"
+title = "Using Named Parameters"
 Categories = ["Technical Skills"]
 Tags = []
 +++

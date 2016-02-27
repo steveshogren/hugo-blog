@@ -1,5 +1,5 @@
 +++
-title = "superiority fatigue"
+title = "Superiority Fatigue"
 date = "2015-05-14"
 
 Categories = ["Meta Game"]

@@ -1,5 +1,5 @@
 +++
-title = "better oo design"
+title = "Better OO Design"
 date = "2015-12-28"
 
 Categories = ["technical skills"]

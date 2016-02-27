@@ -1,5 +1,5 @@
 +++
-title = "christmas f number polymorphism"
+title = "Christmas F# Polymorphism"
 date = "2014-12-06"
 
 Categories = ["Technical Skills", "f#"]

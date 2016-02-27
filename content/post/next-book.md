@@ -1,5 +1,5 @@
 +++
-title = "next book"
+title = "What Book Should I Read Next?"
 date = "2014-07-26"
 
 Categories = ["Technical Skills", "Meta Game", "management"]

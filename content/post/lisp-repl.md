@@ -1,5 +1,5 @@
 +++
-title = "lisp repl"
+title = "Lisp REPL"
 Categories = ["Technical Skills", "Clojure"]
 Tags = []
 +++

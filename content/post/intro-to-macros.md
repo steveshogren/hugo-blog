@@ -1,5 +1,5 @@
 +++
-title = "intro to macros"
+title = "Intro To Macros"
 Categories = ["Clojure", "Technical Skills"]
 Tags = []
 +++

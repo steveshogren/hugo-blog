@@ -1,5 +1,5 @@
 +++
-title = "clojure debugger"
+title = "Clojure Debugger"
 Categories = ["Clojure", "Technical Skills"]
 Tags = []
 +++
