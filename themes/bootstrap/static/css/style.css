@@ -3,10 +3,17 @@
 #name {
     font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif;
 }
-.book {
-  border: 1px solid gray;
+
+.border {
+  border: 2px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width:100%;
+  padding: 0;
+}
+.book {
+  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0;
+  max-width:100%;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -31,6 +38,9 @@
 .col-centered{
     margin: 0 auto;
     margin-left: 0;
+}
+.centereded {
+    text-align: center;
 }
 .navbar,
 .nav,
