@@ -28,6 +28,16 @@ footnotereturnlinkcontents = "↩"
     # Format dates with Go's time formatting
     date_format = "2006-01-02"
 
+    # You can use markdown here.
+    brand = "foobar"
+    topline = "few words about your site"
+    footline = "code with <i class='fa fa-heart'></i>"
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Home".
+    home = "home"
+
+
 # Create custom menu entries by defining a label and a link for
 # them. Since you can also link posts, you've the option the
 # place the links before or after them.

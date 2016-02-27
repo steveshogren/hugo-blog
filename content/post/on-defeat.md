@@ -1,7 +1,7 @@
 +++
-title = "on defeat"
+title = "Interview Humiliation"
 date = "2015-10-29"
-
+top = "yes"
 Categories = ["meta game", "interviews", "management"]
 +++
 

@@ -1,7 +1,6 @@
 +++
-title = "function pattern matching"
-date = "2014-04-28"
-
+title = "Pattern Matching - Making the Compiler Work For You"
+top = "yes"
 Categories = ["Technical Skills", "F#"]
 Tags = []
 +++
