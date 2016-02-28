@@ -21,7 +21,7 @@ footnotereturnlinkcontents = "↩"
     site_description = "Insights gathered while learning to deliberately craft software."
     copyright  = "Deliberate Software 2016"
     avatar = "/images/me_updated3.png"
-    bookDesc = "Check out my new book!"
+    bookDesc = "Too many great ideas? Check out my new book!"
     bookImg = "/images/convincingcoworkerscover.jpg"
     bookLink = "https://leanpub.com/convincingcoworkers"
     
@@ -32,6 +32,8 @@ footnotereturnlinkcontents = "↩"
     brand = "foobar"
     topline = "few words about your site"
     footline = "code with <i class='fa fa-heart'></i>"
+
+    showBlogHeader = true
 
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Home".

@@ -1,13 +1,100 @@
-  <div class="container">
+<div class="container">
     {{ if isset .Site.Params.showBlogHeader true }}
     <header>
-      {{ partial "bloc/content/h1-title" . }}
-      {{ partial "bloc/content/lastupdate" . }}
+        {{ partial "bloc/content/h1-title" . }}
+        {{ partial "bloc/content/lastupdate" . }}
     </header>
     {{ end }}
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-    {{ range $paginator.Pages }}
-      {{ .Render "summary" }}
-    {{ end }}
-    {{ partial "bloc/content/pagination" . }}
-  </div>
+
+    <div class="col-md-9">
+        <h1 class="centereded">Hi, I am Steve Shogren!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h1 class="centereded">My Philosophy</h1>
+        <h2 class="centereded">Strategic</h2>
+        <div class="col-md-12">
+            <div class="col-md-4 centereded">
+                <h3>
+                    Measurable Business Value
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-md-4 centereded">
+                <h3>
+                    Small, Collocated, Self-Organizing Teams
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-md-4 centereded">
+                <h3>
+                    Consistent Improvement
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <h2 class="centereded">Tactical</h2>
+        <div class="col-md-12">
+            <div class="col-md-4 centereded">
+                <h3>
+                    Pair Programming
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-md-4 centereded">
+                <h3>
+                    TDD
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col-md-4 centereded">
+                <h3>
+                    Continuous Integration
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <h1 class="centereded">My Tools</h1>
+
+        <h1 class="centereded">Books That Shape My Thinking</h1>
+        <ul>
+            <li>Domain Driven Design</li>
+            <li>Refactoring</li>
+            <li>Structure and Interpretation of Computer Programs</li>
+            <li>Pragmatic Programmer</li>
+            <li>Code Complete</li>
+            <li>Productive Programmer</li>
+            <li>F# 3.0</li>
+            <li>Clojure Programming</li>
+            <li>Algorithm Design Manual</li>
+            <li>Programming Languages Application And Interpretation</li>
+            <li>Let Over Lambda</li>
+        </ul>
+
+        <ul>
+            <li>Peopleware</li>
+            <li>Managing Humans</li>
+            <li>Death March</li>
+        </ul>
+        <ul>
+            <li>Art of Agile Development</li>
+            <li>Planning Extreme Programming</li>
+            <li>Extreme Programming Explained</li>
+        </ul>
+        <ul>
+            <li>Clean Code</li>
+            <li>Productive Programmer</li>
+        </ul>
+        <ul>
+            <li>Working Effectively with Legacy Code</li>
+            <li>The Passionate Programmer</li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        {{ partial "sidebar" . }}
+    </div>
+    <!--     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+         {{ range $paginator.Pages }}
+         {{ .Render "summary" }}
+         {{ end }}
+         {{ partial "bloc/content/pagination" . }} -->
+</div>
