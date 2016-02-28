@@ -1,14 +1,12 @@
-[about]
-    Name = "About"
-    IconClass = "fa-info-circle"
-    URL = "/about"
-
 [posts]
-    Name = "Posts"
+    Name = "All Posts"
     Title = "Show list of posts"
     URL = "/post"
-
-[tags]
-    Name = "Tags"
-    Title = "Show list of tags"
-    URL = "/tags"
+[categories]
+    Name = "Categories"
+    Title = "Show the list of categories"
+    URL = "/categories"
+[books]
+    Name = "Favorite Books"
+    Title = "Show list of my favorite books"
+    URL = "/page/books"

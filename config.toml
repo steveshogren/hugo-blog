@@ -29,9 +29,9 @@ footnotereturnlinkcontents = "↩"
     date_format = "2006-01-02"
 
     # You can use markdown here.
-    brand = "foobar"
-    topline = "few words about your site"
-    footline = "code with <i class='fa fa-heart'></i>"
+    brand = ""
+    topline = "Deliberate Software"
+    footline = ""
 
     showBlogHeader = true
 
