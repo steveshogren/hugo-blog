@@ -4,11 +4,11 @@ title = "Books That Shape My Thinking"
 
 <div class="col-md-12"> 
 <div class="col-md-6"> 
-<h3 class="centereded">Programming Languages</h3>
+<h3 class="centereded underline">Programming Languages</h3>
 <ul>
-    <li>Structure and Interpretation of Computer Programs</li>
-    <li>Let Over Lambda</li>
-    <li>Programming Languages - Application And Interpretation</li>
+    <li><b>Structure and Interpretation of Computer Programs</b></li>
+    <li><b>Let Over Lambda</b></li>
+    <li><b>Programming Languages - Application And Interpretation</b></li>
     <li>Clojure Programming</li>
     <li>Haskell And Yesod</li>
     <li>Algorithm Design Manual</li>
@@ -19,9 +19,9 @@ title = "Books That Shape My Thinking"
 </ul>
 </div> 
 <div class="col-md-6"> 
-<h3 class="centereded">People Management</h3>
+<h3 class="centereded underline">People Management</h3>
 <ul>
-    <li>Peopleware</li>
+    <li><b>Peopleware</b></li>
     <li>Reinventing Organizations</li>
     <li>Emotional Intelligence 2.0</li>
     <li>Managing Humans</li>
@@ -32,16 +32,16 @@ title = "Books That Shape My Thinking"
 </div> 
 <div class="col-md-12"> 
 <div class="col-md-6"> 
-<h3 class="centereded">Project Management</h3>
+<h3 class="centereded underline">Project Management</h3>
 <ul>
-    <li>Art of Agile Development</li>
+    <li><b>Art of Agile Development</b></li>
     <li>Planning Extreme Programming</li>
     <li>Extreme Programming Explained</li>
     <li>Death March</li>
 </ul>
 </div> 
 <div class="col-md-6"> 
-<h3 class="centereded">Patterns</h3>
+<h3 class="centereded underline">Patterns</h3>
 <ul>
     <li>Design Patterns</li>
     <li>Domain Driven Design</li>
@@ -53,9 +53,9 @@ title = "Books That Shape My Thinking"
 </div> 
 <div class="col-md-12"> 
 <div class="col-md-6"> 
-<h3 class="centereded">Productivity (Growth Mindset)</h3>
+<h3 class="centereded underline">Productivity (Growth Mindset)</h3>
 <ul>
-    <li>Code Complete</li>
+    <li><b>Code Complete</b></li>
     <li>Clean Code</li>
     <li>Pragmatic Programmer</li>
     <li>Productive Programmer</li>
