@@ -27,7 +27,7 @@ footnotereturnlinkcontents = "↩"
     highlight = "default"
     rss=true
 
-    googleAnalytics = "Your Google Analytics tracking code"
+    googleAnalytics = "UA-46040901-1"
 
     github = "steveshogren" # Your Github profile ID
     twitter = "steveshogren"
