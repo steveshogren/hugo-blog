@@ -21,7 +21,7 @@ I download stack and start a project:
 
 ``` bash
 > cd /home/jack/programming && stack new github-stats && cd github-stats
-Downloading template "new-template" to create project "github-stats" in github-stats/ ...
+Downloading template "new-template" to create project "github-stats" in github-stats/ ... 
  ......
 All done.
 ```
@@ -249,14 +249,14 @@ Request {
 }
 ```
 
-The queryString isn't right! ```?q=tetris%2Blanguage%3Aassembly&order=desc&sort=stars``` It encoded my ```+``` 
-and ```:```! After an hour of reading through docs and researching URL encoding
-specs, it dawns on me. ```+``` is an encoded whitespace.
+The queryString isn't right! It encoded my ```+``` and ```:```! After an hour of
+reading through docs and researching URL encoding specs, it dawns on me. ```+```
+is an encoded whitespace.
 
 > No face-palm gif could ever represent the shear magnitude of my current
 > emotions... You'll have to use your imagination
 
-I change my query to ```("q", Just "tetris language:assembly")``` and the right
+I change my query to ```"tetris language:assembly"``` and the right
 count comes back! ```Just 354```
 
 I finally have something that correctly fetches a count of repositories from
