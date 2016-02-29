@@ -15,30 +15,7 @@
         </p>
         <div class="col-md-12">
             <h1 class="centereded">Writings</h1>
-            <div class="col-md-4">
-                <h3>New Developers</h3>
-                <ul class="sidebar_ul">
-                    {{ range where .Site.Pages "Params.newdev" "yes" }}
-                    <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h3>Seasoned Developers</h3>
-                <ul class="sidebar_ul">
-                    {{ range where .Site.Pages "Params.dev" "yes" }}
-                    <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h3>Managers/Tech Leads</h3>
-                <ul class="sidebar_ul">
-                    {{ range where .Site.Pages "Params.manager" "yes" }}
-                    <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
+            {{ partial "writings" . }}
         </div>
         <h1 class="centereded">My Philosophy</h1>
         <h2 class="col-md-12 centereded underline">Strategic</h2>
@@ -109,8 +86,6 @@
                 <p>
                     No other practice improves the whole team like pair
                     programming. Prevents skill gaps and knowledge silos.
-                    <!--                     Constantly grows and improves the entire team. Prevents
-                         knowledge silos and wide skill gaps. -->
                 </p>
             </div>
             <div class="col-md-4 centereded">
@@ -133,6 +108,36 @@
             </div>
         </div>
 
+        <!--         <h1 class="centereded">How I Can Help Your Business</h1>
+             <div class="col-md-12">
+             <div class="col-md-4 centereded">
+             <h3>
+             Training
+             </h3>
+             <p>
+             When carefully mentored, a self-organizing team
+             accomplishes the most business value.
+             </p>
+             </div>
+             <div class="col-md-4 centereded">
+             <h3>
+             Vision
+             </h3>
+             <p>
+             Empowering and trusting your team increases intrinsic
+             motivation, engagement, and productivity.
+             </p>
+             </div>
+             <div class="col-md-4 centereded">
+             <h3>
+             Organizing Teams
+             </h3>
+             <p>
+             Tracking business goals ensures the highest value work
+             is accomplished first.
+             </p>
+             </div>
+             </div> -->
     </div>
     <div class="col-md-3">
         {{ partial "sidebar" . }}

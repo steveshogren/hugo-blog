@@ -1,0 +1,5 @@
+<ul class="sidebar_ul">
+    {{ range (where .Page.Site.Pages "Type" "post")  }}
+    <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+</ul>

@@ -6,8 +6,7 @@ Categories = ["haskell", "Technical Skills"]
 top = "yes"
 +++
 
-HUMOROUS POST AHEAD. Please don't hit me, Haskell does a great job of that
-already.
+Please don't hit me, Haskell does a great job of that already.
 
 I decided to start the next version of my safety score posts. This time,
 however, I decided to do it in Haskell. I love Haskell for the same reasons I
@@ -15,9 +14,9 @@ love Dark Souls. Fantastic and inscrutable lore, a great <del>combat</del> type
 system, a cliff-wall difficulty curve, and unending punishment.
 
 I want to collect some statistics from the GitHub API. Watch as I retrace my
-steps attempting the Tomb of the Dread HTTPS GET Request.
+steps. 
 
-### Step One - Stack (aka Pride Comes Before The Fall)
+### Step One - Stack 
 
 I download stack and start a project:
 
@@ -40,7 +39,7 @@ So far so good. Does it work?
 
 Awww yisss. This is going to be so easy!
 
-### Step Two - HTTPS GET Request (aka The Fall After The Pride)
+### Step Two - HTTPS GET Request 
 
 <img src="/images/tomb_of_the_giants.gif"></img>
 
@@ -74,7 +73,7 @@ someFunc =
    print x
 ```
 
-So simple! This is why laugh at my NodeJS loving friends! What a bunch of cretins.
+So simple! This is why laugh at my NodeJS loving friends!
 
 ``` bash
 > stack build
