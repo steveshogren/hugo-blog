@@ -5,7 +5,7 @@ newdev = "yes"
 Categories = ["Technical Skills", "Meta Game", "management"]
 +++
 
-        Learning Vim is a waste of time; I can prove it! - Anonymous
+    > Learning Vim is a waste of time; I can prove it! - Anonymous
         
 I recently had a gentle discussion with a new teammate about whether
 or not they should learn to use Vim. My team uses a Vim emulator

@@ -1,7 +1,7 @@
 [posts]
     Name = "All Posts"
     Title = "Show list of posts"
-    URL = "/post"
+    URL = "/page/post"
 [categories]
     Name = "Categories"
     Title = "Show the list of categories"
