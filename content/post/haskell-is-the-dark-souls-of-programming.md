@@ -21,22 +21,22 @@ steps attempting the Tomb of the Dread HTTPS GET Request.
 
 I download stack and start a project:
 
-{{< highlight bash >}}
+``` bash
 > cd /home/jack/programming && stack new github-stats && cd github-stats
 Downloading template "new-template" to create project "github-stats" in github-stats/ ...
  ......
 All done.
-{{< /highlight >}}
+```
 
 So far so good. Does it work? 
 
-{{< highlight bash >}}
+``` bash
   > stack build && stack exec -- github-stats-exe 
    github-stats-0.1.0.0: configure
    ..... 
    Registering github-stats-0.1.0.0...
    someFunc
-{{< /highlight >}}
+```
 
 Awww yisss. This is going to be so easy!
 
@@ -62,7 +62,7 @@ Easy life. Now how do you GET a resource in Haskell? Ah,
 [Network.HTTP](https://hackage.haskell.org/package/HTTP-4000.3.2/docs/Network-HTTP.html)!
 I copy the front page sample into ```src/Lib.hs```
 
-{{< highlight haskell >}}
+``` haskell
 module Lib
     ( someFunc
     ) where
@@ -72,17 +72,17 @@ x = simpleHTTP (getRequest "https://www.github.com/") >>= fmap (take 100) . getR
 someFunc :: IO ()
 someFunc = 
    print x
-{{< /highlight >}}
+```
 
 So simple! This is why laugh at my NodeJS loving friends! What a bunch of cretins.
 
-{{< highlight bash >}}
+``` bash
 > stack build
 src/Lib.hs:5:5: Not in scope: ‘simpleHTTP’
 src/Lib.hs:5:17: Not in scope: ‘getRequest’
 src/Lib.hs:5:77: Not in scope: ‘getResponseBody’
 Compilation failed.
-{{< /highlight >}}
+```
 
 Doesn't compile. Durp, hackage is a package library, I need to add this to my
 cabal. What is the name of the package? HTTP-4000? HTTP-4000.3.2? Nothing in
@@ -90,39 +90,39 @@ hackage seems to indicate what goes into the cabal file. I discover it is just
 HTTP through trial and error. I update my cabal file... in all three
 build-depends...?
 
-{{< highlight haskell >}}
+``` haskell
   build-depends:       base >= 4.7 && < 5
                        , HTTP
-{{< /highlight >}}
+```
 
 Hrm, same error.
 
-{{< highlight bash >}}
+``` bash
 > stack build
 src/Lib.hs:5:5: Not in scope: ‘simpleHTTP’
 src/Lib.hs:5:17: Not in scope: ‘getRequest’
 src/Lib.hs:5:77: Not in scope: ‘getResponseBody’
 Compilation failed.
-{{< /highlight >}}
+```
 
 Oh, durp, I'd need an import. (WHY ISN'T THIS IN THE CODE SAMPLE?!) Also, print
 doesn't work, I need ```putStrLn```.
 
-{{< highlight haskell >}}
+``` haskell
 import Network.HTTP
 
 x = simpleHTTP (getRequest "https://www.github.com/") >>= fmap (take 100) . getResponseBody
 
 someFunc :: IO ()
 someFunc = x >>= putStrLn
-{{< /highlight >}}
+```
 
 Here goes!!!
 
-{{< highlight bash >}}
+``` bash
  > stack build && stack exec -- github-stats-exe
 github-stats-exe: user error (https not supported)
-{{< /highlight >}}
+```
 
 Wat. Further inspection of the docs shows a line WAAY DOWN in paragraph 5. 
 
@@ -135,7 +135,7 @@ is to run away. I search again. ```haskell https request``` returns
 "http-conduit" as the best choice. After adding http-conduit to my cabal, I come
 up with this beast without any surprises:
 
-{{< highlight haskell >}}
+``` haskell
 query :: IO String
 query = do
     initReq <- parseUrl "https://api.github.com/search/repositories"
@@ -153,7 +153,7 @@ query = do
 someFunc :: IO ()
 someFunc = do
    query >>= putStrLn
-{{< /highlight >}}
+```
 
 Huzzah! Results! I'm getting back a monster string of json data.
 
@@ -167,7 +167,7 @@ Time to parse this mega JSON string. Aeson seems to be the biggest contender. To
 use Aeson and get the total_count value from the return, I needed the following
 additions:
 
-{{< highlight haskell >}}
+``` haskell
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE DeriveGeneric #-}
 
@@ -180,13 +180,13 @@ data ResultCount = ResultCount {
 
 instance ToJSON ResultCount
 instance FromJSON ResultCount
-{{< /highlight >}}
+```
 
 ResultCount allows me to use ```decode``` from aeson instead of ```show``` to
 parse the "total_count" from the JSON response into an Int. Sure enough, it
 does! 
 
-{{< highlight haskell >}}
+``` haskell
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE DeriveGeneric #-}
 module Lib
@@ -223,7 +223,7 @@ query = do
 
 someFunc :: IO ()
 someFunc = query >>= print
-{{< /highlight >}}
+```
 
 Puts out: ``` Just 66```. Success! Wait. 66 isn't the same count I got when
 running from the browser. Check again. Sure enough, browser comes up with a
@@ -234,7 +234,7 @@ totally different count.
 Maybe the query request isn't correct? Adding a ```print request``` on line 31
 after building the request shows:
 
-{{< highlight haskell>}}
+``` haskell
 Request {
   host                 = "api.github.com"
   port                 = 443
@@ -249,7 +249,7 @@ Request {
   responseTimeout      = Just (-3425)
   requestVersion       = HTTP/1.1
 }
-{{< /highlight >}}
+```
 
 The queryString isn't right! ```?q=tetris%2Blanguage%3Aassembly&order=desc&sort=stars``` It encoded my ```+``` 
 and ```:```! After an hour of reading through docs and researching URL encoding
@@ -282,7 +282,7 @@ top three results, and that doesn't even _do_ https.
 
 Armed with their helpful suggestions, I knocked this out this morning.
 
-{{< highlight haskell >}}
+``` haskell
 import Network.Wreq
 import Control.Lens
 import Data.Aeson
@@ -300,7 +300,7 @@ query lang = do
     token <- readFile "token"
     r <- getWith (opts lang token) "https://api.github.com/search/repositories"
     return $ r ^? responseBody . key "total_count" . _Number
-{{< /highlight >}}
+```
 
 MUCH better. This includes reading my token from file called "token" so I don't
 accidentally commit it. Also includes building up the different query options

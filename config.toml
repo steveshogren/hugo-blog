@@ -24,6 +24,7 @@ footnotereturnlinkcontents = "↩"
     bookDesc = "Too many great ideas? Check out my new book!"
     bookImg = "/images/convincingcoworkerscover.jpg"
     bookLink = "https://leanpub.com/convincingcoworkers"
+    highlight = "default"
     
     # Format dates with Go's time formatting
     date_format = "2006-01-02"
