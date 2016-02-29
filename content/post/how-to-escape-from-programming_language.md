@@ -2,6 +2,7 @@
 title = "How To Escape From {programming_language}"
 Categories = ["Meta Game"]
 Tags = []
+date = "2013-03-13"
 +++
 As time goes on, developers will be all the harder pressed to keep up with the skyrocketing number of languages and frameworks. The number of javascript libraries alone is increasing at a furious pace: Angular, Backbone, Node, Ember, Knockout, Knockback, Meteor, etc, etc, etc. Who has a chance at keeping up? While having so many options is also beneficial, it makes it more and more challenging for a single developer to stay relevant.
 <br />

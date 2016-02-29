@@ -2,6 +2,8 @@
 title = "How to Suck Less at Your New Job"
 Categories = ["Meta Game"]
 Tags = []
+newdev = "yes"
+date = "2013-01-19"
 +++
 <p>One thing I strongly recommend to developers when starting at a new job is to keep a list of everything that bothers you.</p>
 

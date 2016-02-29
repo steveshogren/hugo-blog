@@ -3,6 +3,8 @@ title = "Pattern Matching - Making the Compiler Work For You"
 top = "yes"
 Categories = ["Technical Skills", "F#"]
 Tags = []
+dev = "yes"
+date = "2014-04-28"
 +++
 
 Pattern matching is a simple tool that will make your code safer and

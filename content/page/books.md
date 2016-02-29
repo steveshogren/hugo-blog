@@ -2,6 +2,10 @@
 title = "Books That Shape My Thinking"
 +++
 
+
+For how I pick what books to prioritize, check out my post <a class="homelink"
+href="/next-book">"What Book Should I Read Next?"</a>.
+
 <div class="col-md-12"> 
 <div class="col-md-6"> 
 <h3 class="centereded underline">Programming Languages</h3>
@@ -41,6 +45,21 @@ title = "Books That Shape My Thinking"
 </ul>
 </div> 
 <div class="col-md-6"> 
+<h3 class="centereded underline">Productive Mindset</h3>
+<ul>
+    <li><b>Code Complete</b></li>
+    <li>Clean Code</li>
+    <li>Pragmatic Programmer</li>
+    <li>Productive Programmer</li>
+    <li>Working Effectively with Legacy Code</li>
+    <li>The Passionate Programmer</li>
+    <li>How to Read a Book</li>
+    <li>Growing Object-Oriented Software Guided by Tests</li>
+</ul>
+</div> 
+</div> 
+<div class="col-md-12"> 
+<div class="col-md-6"> 
 <h3 class="centereded underline">Patterns</h3>
 <ul>
     <li>Design Patterns</li>
@@ -51,64 +70,3 @@ title = "Books That Shape My Thinking"
 </ul>
 </div> 
 </div> 
-<div class="col-md-12"> 
-<div class="col-md-6"> 
-<h3 class="centereded underline">Productivity (Growth Mindset)</h3>
-<ul>
-    <li><b>Code Complete</b></li>
-    <li>Clean Code</li>
-    <li>Pragmatic Programmer</li>
-    <li>Productive Programmer</li>
-    <li>Working Effectively with Legacy Code</li>
-    <li>The Passionate Programmer</li>
-    <li>How to Read a Book</li>
-</ul>
-</div> 
-</div> 
-
-
-<!-- ### Programming Languages  -->
-
-<!-- * Structure and Interpretation of Computer Programs -->
-<!-- * Let Over Lambda -->
-<!-- * Programming Languages - Application And Interpretation -->
-<!-- * Clojure Programming -->
-<!-- * Haskell And Yesod -->
-<!-- * Algorithm Design Manual -->
-<!-- * Learn You a Haskell -->
-<!-- * The Art of SQL -->
-<!-- * F# 3.0 -->
-<!-- * Javascript the Good Parts -->
-
-<!-- ### People Management -->
-
-<!-- * Peopleware -->
-<!-- * Reinventing Organizations -->
-<!-- * Emotional Intelligence 2.0 -->
-<!-- * Managing Humans -->
-<!-- * Becoming A Technical Leader -->
-
-<!-- ### Project Management -->
-
-<!-- * Art of Agile Development -->
-<!-- * Planning Extreme Programming -->
-<!-- * Extreme Programming Explained -->
-<!-- * Death March -->
-
-<!-- ### Pattern Books -->
-
-<!-- * Design Patterns -->
-<!-- * Domain Driven Design -->
-<!-- * Implementing Domain Driven Design -->
-<!-- * Refactoring -->
-<!-- * Patterns of Enterprise Architecture -->
-
-<!-- ### Productivity "Growth-Mindset" -->
-
-<!-- * Code Complete -->
-<!-- * Pragmatic Programmer -->
-<!-- * The Passionate Programmer -->
-<!-- * Clean Code -->
-<!-- * Productive Programmer -->
-<!-- * Working Effectively with Legacy Code -->
-<!-- * How to Read a Book -->

@@ -1,0 +1,21 @@
+{{ with .Site.Params.author}}<h3 class="serif col-sm-12 centereded" id="name">{{ . }}</h3>{{ end }}
+<span class="col-sm-2"></span>
+<img class="col-sm-8 border" id="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" />
+<span class="col-sm-2"></span>
+<span class="col-sm-12">
+    {{.Site.Params.site_description}}
+</span>
+<h3 class="col-sm-12 centereded" id="name">{{.Site.Params.bookDesc}}</h3>
+{{ with .Site.Params.bookLink }}
+<a class="col-sm-12" href="{{ . }}">
+    {{with $.Site.Params.bookImg}}<img class="book" src="{{.}}"></img>{{end}}
+</a>
+{{ end }}
+<h3 class="col-sm-12" id="name">Top Posts</h3>
+<div class="col-sm-12">
+    <ul class="sidebar_ul">
+        {{ range where .Site.Pages "Params.top" "yes" }}
+        <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+</div>

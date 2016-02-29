@@ -2,6 +2,7 @@
 title = "Testing Is To Programming What Math Is To Engineering"
 Categories = ["Meta Game", "unit testing"]
 Tags = []
+date = "2011-09-26"
 +++
 <p>
   In ancient times, plenty of builders did their work without math,

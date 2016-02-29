@@ -2,6 +2,7 @@
 title = "Sorry, but Refactorings Are Not Free (Technical Debt Interest)"
 Categories = ["Meta Game"]
 Tags = []
+date = "2013-05-27"
 +++
 <p dir="ltr">Sometimes, it’s far more efficient to leave certain <a href="http://en.wikipedia.org/wiki/Technical_debt">technical debts</a> unpaid.</p>
 <p dir="ltr">I’m not saying we should leave messes, instead I am saying that cleaning and fixing technical debt is so important we must prioritize the most important changes first, by highest value to the team. You don't just do whatever feature is next alphabetically do you? Nope, so neither should you do that with refactorings.</p>

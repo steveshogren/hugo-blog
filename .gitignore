@@ -1,3 +1,4 @@
 public
-themes
-!themes/bootstrap/**/*
+/themes/.gitbak/HEAD
+/themes/.gitmodules
+themes/.gitbak

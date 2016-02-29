@@ -1,6 +1,7 @@
 +++
 title = "End To End Web Service Testing"
 Categories = ["Meta Game", "unit testing"]
+date = "2012-10-12"
 +++
 <p>
   At work last month, I was assigned to fix some bugs in an

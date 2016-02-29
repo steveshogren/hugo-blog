@@ -2,6 +2,7 @@
 title = "Clojure Debugger"
 Categories = ["Clojure", "Technical Skills"]
 Tags = []
+date = "2013-08-07"
 +++
 
 I was at the Clojadelphia meetup on Thursday, and got an excellent run through of the tools.trace library from Tim Visher. He has submitted a pull request to the original authors, with his expanded and very clear documentation found <a title="here" href="https://github.com/timvisher/what-does-tools-trace-do/blob/master/src/what_does_tools_trace_do/core.clj">here</a>.

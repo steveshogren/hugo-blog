@@ -2,6 +2,7 @@
 title = "Ego Driven Development"
 Categories = ["Meta Game", "management"]
 top = "yes"
+date = "2012-10-12"
 +++
 
 Ego Driven Development, (EDD), is a software development anti-pattern where

@@ -2,6 +2,7 @@
 title = "Lisp REPL"
 Categories = ["Technical Skills", "Clojure"]
 Tags = []
+date = "2011-06-04"
 +++
 <p>
   So, working through the Land of Lisp book, getting the hang of it.

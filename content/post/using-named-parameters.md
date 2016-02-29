@@ -2,6 +2,7 @@
 title = "Using Named Parameters"
 Categories = ["Technical Skills"]
 Tags = []
+date = "2011-05-05"
 +++
 <p>
   Up until recently, most of my programming was in php, which does not

@@ -1,7 +1,7 @@
 +++
 title = "SimpleMock: Language Agnostic Unit Test Mocking"
 date = "2015-08-13"
-
+dev = "yes"
 Categories = ["unit testing", "c#", "Technical Skills"]
 +++
 
