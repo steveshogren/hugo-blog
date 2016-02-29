@@ -2,7 +2,7 @@
 title = "Case Study: Superior Domain Modeling in F#"
 date = "2015-03-14"
 
-Categories = ["Technical Skills", "f#", "c#"]
+Categories = ["Technical Skills", "fsharp", "csharp"]
 +++
 
 Domain modeling in F# is significantly easier and safer than with the

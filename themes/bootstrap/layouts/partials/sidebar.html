@@ -19,3 +19,13 @@
         {{ end }}
     </ul>
 </div>
+<h3 class="col-sm-12" id="name">Categories</h3>
+<div class="col-sm-12">
+    <ul class="sidebar_ul">
+        {{ range $name, $taxonomy :=  .Site.Taxonomies.categories }}
+        <li class="sidebar_li">
+            <a href="/categories/{{ $name | urlize }}">{{ $name }}</a> <span class="badge">{{ $taxonomy.Count }}</span>
+        </li>
+        {{ end }}
+    </ul>
+</div>

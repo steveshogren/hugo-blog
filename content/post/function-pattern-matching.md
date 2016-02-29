@@ -1,7 +1,7 @@
 +++
 title = "Pattern Matching - Making the Compiler Work For You"
 top = "yes"
-Categories = ["Technical Skills", "F#"]
+Categories = ["Technical Skills", "fsharp"]
 Tags = []
 dev = "yes"
 date = "2014-04-28"

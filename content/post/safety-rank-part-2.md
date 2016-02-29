@@ -2,7 +2,7 @@
 title = "Programming Language Safety Score Mark 2"
 date = "2015-07-24"
 dev = "yes"
-Categories = ["haskell", "clojure", "f#", "c#", "Technical Skills"]
+Categories = ["haskell", "clojure", "fsharp", "csharp", "Technical Skills"]
 +++
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>

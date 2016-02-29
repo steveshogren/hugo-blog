@@ -58,8 +58,11 @@
     color: black !important;
     background-color: #FFFFFF !important;
 }
+.label a {
+    color: white;
+    text-decoration: none;
+}
 .evens {
-    
     background-color: gray;    
 }
 .enforcedscore {

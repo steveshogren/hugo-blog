@@ -2,7 +2,7 @@
 title = "F# Unit Testing With SimpleMock"
 date = "2015-10-21"
 
-Categories = ["f#", "unit testing", "Technical Skills"]
+Categories = ["fsharp", "unit testing", "Technical Skills"]
 +++
 
 If you are considering using F#, you might be curious how to handle unit test

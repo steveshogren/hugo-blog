@@ -2,7 +2,7 @@
 title = "Programming Language Safety Ranking"
 date = "2015-02-17"
 
-Categories = ["Technical Skills", "clojure", "f#", "c#"]
+Categories = ["Technical Skills", "clojure", "fsharp", "csharp"]
 +++
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>

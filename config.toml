@@ -46,9 +46,10 @@ footnotereturnlinkcontents = "↩"
     home = "home"
 [params.theme]
    ### name = "journal"
-   # name = "paper"
+   #name = "paper"
    # name = "sandstone"
-    name = "yeti"
+   name = "yeti"
+   # name = "defaut"
 
 
 # Create custom menu entries by defining a label and a link for

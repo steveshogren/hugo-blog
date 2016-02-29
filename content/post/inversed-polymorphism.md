@@ -2,7 +2,7 @@
 title = "Inverted Polymorphism"
 date = "2014-04-28"
 
-Categories = ["Technical Skills", "F#"]
+Categories = ["Technical Skills", "fsharp"]
 Tags = []
 +++
 
