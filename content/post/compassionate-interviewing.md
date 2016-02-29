@@ -3,6 +3,7 @@ title = "Designing A Compassionate Interview For A High Performing Individual"
 date = "2016-01-11"
 Categories = ["Meta Game", "management"]
 banner="/images/2.Why_Algorithm_Important.png"
+manager="yes"
 +++
 
 After my post [Interview Humiliation](http://deliberate-software.com/on-defeat/), a number of

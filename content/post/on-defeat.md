@@ -3,6 +3,7 @@ title = "Interview Humiliation"
 date = "2015-10-29"
 top = "yes"
 Categories = ["meta game", "interviews", "management"]
+manager="yes"
 +++
 
 (All these great ideas, but no one is listening? Check out my
