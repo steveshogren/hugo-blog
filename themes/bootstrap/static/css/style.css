@@ -58,6 +58,13 @@
     color: black !important;
     background-color: #FFFFFF !important;
 }
+.evens {
+    
+    background-color: gray;    
+}
+.enforcedscore {
+    color: green;    
+}
 .header-text {
     /* font-family: georgia,"times new roman",times,serif; */
     /* font-size: 40px; */

@@ -5,10 +5,13 @@ dev = "yes"
 Categories = ["haskell", "clojure", "f#", "c#", "Technical Skills"]
 +++
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="/javascripts/sliders2.js"></script>
+
 I want to make a model that predicts bugs.
 
 I previously wrote a table for scoring language safety:
-[Programming Language Safety Score](http://deliberate-software.com/programming-language-safety-algorithm/),
+<a href="/programming-language-safety-algorithm">Programming Language Safety Score</a>,
 but it was extremely time consuming to score new languages or make modifications.
 
 ## Simplify, Simplify
@@ -20,7 +23,7 @@ enforced, possible, or impossible. I score each as either 1 (language enforced),
 magnitudes of the new model are compared with the previous model, they come out
 very similar. The shape of the curve pretty much stays the same, which I was
 told indicates that the character count weighting was a variable that didn't
-matter. 
+matter.
 
 <img src="/images/rplot.jpg"></img>
 
@@ -36,8 +39,8 @@ A definition of the safety checks is as follows:
 <table class="langtable">
 <tr><th>Check</th> <th>Description</th></tr>
 <tr ng-repeat="check in langChecks">
-<td>{% raw %} {{ check.name }} {% endraw %}</td>
-<td> {% raw %} {{ check.desc }} {% endraw %} </td>
+<td>{{ check.name }} </td>
+<td> {{ check.desc }}  </td>
 </tr>
 </table>
 
@@ -66,13 +69,13 @@ The new scores are shown here, with a lot more languages added in:
 <tr class="totals"><td>Totals</td>
 <td></td>
 <td ng-repeat="lang in langTotals track by $index">
-{% raw %} {{ lang }} {% endraw %}
+{{ lang }}
 </td>
 </tr>
 <tr class="totals"><td>Magnitude</td>
 <td></td>
 <td ng-repeat="lang in langTotals track by $index">
-{% raw %} {{ percentageTotals(lang) }}% {% endraw %}
+{{ percentageTotals(lang) }}%
 </td>
 </tr>
 </table>
@@ -80,7 +83,7 @@ The new scores are shown here, with a lot more languages added in:
 
 Current Languages:
 <span ng-repeat="lang in allLanguages">
-{% raw %} {{ getName(lang) }}: {{ allLangTotals[$index] }}, {% endraw %}
+{{ getName(lang) }}: {{ allLangTotals[$index] }},
 </select>
 
 
@@ -110,11 +113,11 @@ grouping. Here is that data, sorted by safety score.
 <th>Repositories</th>
 <th>Bug/Commits</th>
 <tr ng-repeat="lang in languageRatios">
-<td>{% raw %} {{ lang.name }}{% endraw %} </td>
-<td>{% raw %} {{ lang.bugs }}{% endraw %} </td>
-<td>{% raw %} {{ lang.commits }}{% endraw %} </td>
-<td>{% raw %} {{ lang.repos }}{% endraw %} </td>
-<td>{% raw %} {{ getBugsRatio(lang) }}{% endraw %} </td>
+<td>{{ lang.name }} </td>
+<td>{{ lang.bugs }} </td>
+<td>{{ lang.commits }} </td>
+<td>{{ lang.repos }} </td>
+<td>{{ getBugsRatio(lang) }} </td>
 </tr>
 </table>
 
@@ -148,11 +151,11 @@ sorted by tests per commit:
 <th>Repositories</th>
 <th>Tests/Commits</th></tr>
 <tr ng-repeat="lang in sorter(languageRatios)">
-<td>{% raw %} {{ lang.name }}{% endraw %} </td>
-<td>{% raw %} {{ lang.test }}{% endraw %} </td>
-<td>{% raw %} {{ lang.commits }}{% endraw %} </td>
-<td>{% raw %} {{ lang.repos }}{% endraw %} </td>
-<td>{% raw %} {{ getTestsRatio(lang) }}{% endraw %} </td>
+<td>{{ lang.name }} </td>
+<td>{{ lang.test }} </td>
+<td>{{ lang.commits }} </td>
+<td>{{ lang.repos }} </td>
+<td>{{ getTestsRatio(lang) }} </td>
 </tr>
 </table>
 
@@ -172,7 +175,7 @@ than expected bug count in Ruby and Clojure.
 Special thanks to (in alphabetical order):
 [Patrick Boe](https://twitter.com/traffichazard/) (Haskell, Sniff Test),
 [Kyle Burton](http://asymmetrical-view.com/) (General Advice),
-Nils Creque (Listening Board), 
+Nils Creque (Listening Board),
 Max Haley (Python, Ruby, Teaching me how to math),
 [Daniel Miladinov](https://github.com/danielmiladinov) (Java, Scala, Morale Support),
 Keith O'Brien (Ruby and JS),
@@ -196,19 +199,23 @@ build your own language data structure. Send it to me in a PR and I'll include
 it along with a thanks on the page.
 
 <div ng-show="showRealName">
-<h2>Select Language:
+<span>Select Language:
 <select ng-options="lang.name for lang in allLanguages" ng-model="selectedLang"></select>
 <button ng-click="copyToClipboard(selectedLang)">Copy Changes to Clipboard</button>
-</h2>
-<h2><input ng-model="selectedLang.name"></input></h2>
+</span>
+<span><input ng-model="selectedLang.name"></input></span>
 <table class="langtable">
 <tr><th>Check</th><th>Option</th></tr>
 <tr ng-repeat="check in langChecks">
-<td style="background-color:{% raw %} {{scoreClass(score(selectedLang[check.key]))}} {% endraw %}">
-{% raw %} {{ check.name }}{% endraw %}: {% raw %} {{score(selectedLang[check.key]) }} {% endraw %}
+<td style="background-color:{{scoreClass(score(selectedLang[check.key]))}} ">
+{{ check.name }}: {{score(selectedLang[check.key]) }}
 </td>
 <td>
 <select ng-options="enforcedNice(e) for e in enforcedTypes" ng-model="selectedLang[check.key].enforced"></select>
 </td>
 </tr>
 </table>
+</div>
+</div>
+</div>
+</div>

@@ -5,6 +5,9 @@ newdev = "yes"
 Categories = ["Technical Skills", "Meta Game", "management"]
 +++
 
+Edit: As a supplement to this: check out my <a class="homelink"
+href="/page/books">favorite books</a>.
+
 "It's my first job, what book should I read first?"
 
 Recently, a few developers I am mentoring were curious about what book
