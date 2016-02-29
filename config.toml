@@ -25,6 +25,11 @@ footnotereturnlinkcontents = "↩"
     bookImg = "/images/convincingcoworkerscover.jpg"
     bookLink = "https://leanpub.com/convincingcoworkers"
     highlight = "default"
+
+    googleAnalytics = "Your Google Analytics tracking code"
+
+    github = "steveshogren" # Your Github profile ID
+    twitter = "steveshogren"
     
     # Format dates with Go's time formatting
     date_format = "2006-01-02"
@@ -34,7 +39,7 @@ footnotereturnlinkcontents = "↩"
     topline = "Deliberate Software"
     footline = ""
 
-    showBlogHeader = true
+    # showBlogHeader = true
 
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Home".
