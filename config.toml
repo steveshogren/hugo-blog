@@ -18,13 +18,14 @@ footnotereturnlinkcontents = "↩"
     author = "Steve Shogren"
     bio = ""
     location = "Philadelphia, PA"
-    site_description = "Insights gathered while learning to deliberately craft software."
+    site_description = "Insights gathered while learning to deliberately craft software and burn bridges."
     copyright  = "Deliberate Software 2016"
     avatar = "/images/me_updated3.png"
     bookDesc = "Too many great ideas? Check out my new book!"
     bookImg = "/images/convincingcoworkerscover.jpg"
     bookLink = "https://leanpub.com/convincingcoworkers"
     highlight = "default"
+    rss=true
 
     googleAnalytics = "Your Google Analytics tracking code"
 
@@ -111,3 +112,6 @@ footnotereturnlinkcontents = "↩"
     categories = false
     tags = false
     tag_cloud = false
+
+[blackfriday]
+  fractions = false

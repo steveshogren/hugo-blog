@@ -1,0 +1,6 @@
+{{ if isset .Params "categories"}}
+  <i class="fa fa-tags"></i>
+  {{ range .Params.categories }}
+  <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
+  {{ end }}
+{{ end }}

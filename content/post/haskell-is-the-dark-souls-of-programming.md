@@ -4,17 +4,16 @@ date = "2016-02-06"
 banner="/images/altar_of_sunlight.gif"
 Categories = ["haskell", "Technical Skills"]
 top = "yes"
+dev="yes"
 +++
 
 Please don't hit me, Haskell does a great job of that already.
 
-I decided to start the next version of my safety score posts. This time,
-however, I decided to do it in Haskell. I love Haskell for the same reasons I
-love Dark Souls. Fantastic and inscrutable lore, a great <del>combat</del> type
-system, a cliff-wall difficulty curve, and unending punishment.
+I love Haskell for the same reasons I love Dark Souls. Fantastic and inscrutable
+lore, a great <del>combat</del> type system, a cliff-wall difficulty curve, and
+unending punishment.
 
-I want to collect some statistics from the GitHub API. Watch as I retrace my
-steps. 
+I want to collect some statistics from the GitHub API.
 
 ### Step One - Stack 
 

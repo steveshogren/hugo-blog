@@ -1,7 +1,11 @@
 {{ with .Site.Params.author}}<h3 class="serif col-sm-12 centereded" id="name">{{ . }}</h3>{{ end }}
-<span class="col-sm-2"></span>
-<img class="col-sm-8 border" id="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" />
-<span class="col-sm-2"></span>
+<span class="col-md-3"></span>
+<img class="col-md-6 border" id="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" />
+<span class="col-md-3"></span>
+<span class="col-md-12 centereded">
+<a href="https://twitter.com/steveshogren" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @steveshogren</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</span>
 <span class="col-sm-12">
     {{.Site.Params.site_description}}
 </span>

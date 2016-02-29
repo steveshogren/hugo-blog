@@ -2,7 +2,7 @@
 title = "SimpleMock: Language Agnostic Unit Test Mocking"
 date = "2015-08-13"
 dev = "yes"
-Categories = ["unit testing", "csharp", "Technical Skills"]
+Categories = ["unit testing", "csharp", "Technical Skills", "architecture"]
 +++
 
 SimpleMock is a pattern for reducing TDD damage. You can use the pattern to

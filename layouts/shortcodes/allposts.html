@@ -4,7 +4,7 @@
         <a href="{{ .Permalink }}">{{ .Title }}</a>
         <span class="pull-right">
         {{ range .Params.categories }}
-        <span class="label label-primary"><a href="/categories/{{ . | urlize }}">{{ . }}</a></span>
+            <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
         {{ end  }}
         </span>
     </li>

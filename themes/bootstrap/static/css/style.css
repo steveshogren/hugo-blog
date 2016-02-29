@@ -58,10 +58,10 @@
     color: black !important;
     background-color: #FFFFFF !important;
 }
-.label a {
-    color: white;
-    text-decoration: none;
-}
+/* a .label { */
+/*     color: white; */
+/*     text-decoration: none; */
+/* } */
 .evens {
     background-color: gray;    
 }

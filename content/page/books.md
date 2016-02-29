@@ -6,6 +6,8 @@ title = "Books That Shape My Thinking"
 For how I pick what books to prioritize, check out my post <a class="homelink"
 href="/next-book">"What Book Should I Read Next?"</a>.
 
+<b>Bold</b> are my highest recommendations.
+
 <div class="col-md-12"> 
 <div class="col-md-6"> 
 <h3 class="centereded underline">Programming Languages</h3>

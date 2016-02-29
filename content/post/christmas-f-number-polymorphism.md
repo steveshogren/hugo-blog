@@ -2,7 +2,7 @@
 title = "Christmas F# Polymorphism"
 date = "2014-12-06"
 
-Categories = ["Technical Skills", "fsharp"]
+Categories = ["Technical Skills", "fsharp", "architecture"]
 +++
 
 One of my favorite things about F# is how it lets you choose how you want

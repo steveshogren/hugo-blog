@@ -1,3 +1,4 @@
+{{ partial "tweetlink" . }}
 <div class="metas col-md-12">
 {{ partial "modules/page/date" . }}
 {{ if .IsPage }}
@@ -9,7 +10,7 @@
 </small>
 
 {{ end }}
-<div class="margin-12">{{ partial "modules/page/tags" . }}
-</div>
+<!-- <div class="margin-12">{{ partial "modules/page/tags" . }} </div> -->
+<div class="margin-12">{{ partial "modules/page/categories" . }} </div>
 <br>
 </div>
