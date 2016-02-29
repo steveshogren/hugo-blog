@@ -1,7 +1,7 @@
 +++
 title = "Learning Lisp Was Hard"
 date = "2015-06-17"
-
+newdev ="yes"
 Categories = ["clojure", "Meta Game"]
 +++
 
@@ -12,23 +12,23 @@ learning a Lisp.
 When I set out to learn a Lisp, I expected it would be easy.
 
 I figured, "I am pretty awesome at PHP, and have worked professionally in Perl,
-Python, and Java, this should be a cakewalk!". I'd read Paul Graham's essays on
+Python, and Java, this should be a cakewalk!" I'd read Paul Graham's essays on
 how Lisp is his secret weapon, and figured I needed to get into this secret
 weapon stuff. My ego said, "since Paul is amazing, and I am too, I'll be a
 natural!"
 
 I expected to tinker around with "Lisp" (I didn't know there was more
-than one) and shortly master it to be able to ship a website with it.
+than one) and shortly master it (ship a website).
 
 What happened instead took me a little longer...
 
-* 05/11 - 06/11 - ~15 Hrs Attempted _Land Of Lisp_ (gave up)
-* 04/12 - 08/12 - ~60 Hrs Rewrote a PHP side project in Clojure
-* 08/12 - 08/12 - ~5 Hrs Attempted _Let Over Lambda_ (gave up)
-* 08/12 - 09/12 - ~10 Hrs Read _Clojure Programming_ twice
-* 09/12 - 12/12 - ~30 Hrs Took _CS173 Programming Languages_ online at Brown University
-* 05/13 - 07/13 - ~50 Hrs Worked through _Let Over Lambda_
-* 05/13 - 07/14 - ~250 Hrs Worked through _SICP_
+* 05/11 - 06/11 ~15 Hrs Attempted _Land Of Lisp_ (gave up)
+* 04/12 - 08/12 ~60 Hrs Rewrote a PHP side project in Clojure
+* 08/12 - 08/12 ~5 Hrs Attempted _Let Over Lambda_ (gave up)
+* 08/12 - 09/12 ~10 Hrs Read _Clojure Programming_ twice
+* 09/12 - 12/12 ~30 Hrs Took _CS173 Programming Languages_ online at Brown University
+* 05/13 - 07/13 ~50 Hrs Worked through _Let Over Lambda_
+* 05/13 - 07/14 ~250 Hrs Worked through _SICP_
 * 07/14 - Shipped production Clojure code
 
 This shows only the major events: books and large projects, but doesn't show all
@@ -40,11 +40,11 @@ approximately 170 hours in at that point. The book that finally made it all
 click was _Let Over Lambda_, but it took me two attempts and almost a year of
 pre-learning to be able to understand enough to internalize the material.
 
-All said and done, I spent approximately 420 hours between Common Lisp, Racket,
-Typed Racket, and Clojure before I felt confident enough to suggest shipping
-Clojure at work. I don't claim to be a fast learner at all, and I fully expect
-some people will snort with derision at how much time it took me - which is kind
-of the point of this post.
+All said and done, I spent approximately 420 hours between Scheme, Common Lisp,
+Racket, Typed Racket, and Clojure before I felt confident enough to suggest
+shipping Clojure at work. I don't claim to be a fast learner at all, and I fully
+expect some people will snort with derision at how much time it took me - which
+is kind of the point of this post.
 
 This timeline should show those who are struggling that what you are feeling is
 normal. Learning anything new is hard. The more "new" it is, the harder it will

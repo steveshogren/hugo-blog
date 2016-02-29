@@ -1,5 +1,5 @@
 +++
-title = "F# Unit Testing"
+title = "F# Unit Testing With SimpleMock"
 date = "2015-10-21"
 
 Categories = ["f#", "unit testing", "Technical Skills"]
