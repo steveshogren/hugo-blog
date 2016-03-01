@@ -8,6 +8,7 @@ dev="yes"
 <p>
 Macros are the most powerful way to manipulate the syntax of your language. Macros make it possible to completely modify your language to match your domain. To explain them, think for a minute about functions using the simple “substitution model” used to teach functions to beginner programmers. The substitution model has the reader replace a function call with the body of the called function.
 </p>
+
 ``` ruby
 def doCalc ()
    return 1 + 2
@@ -26,6 +27,7 @@ def test ()
    return (1 + 2) + 3
 end
 ```
+
 <p>
 Ignoring scoping, the function/call system allows for immense power in programing languages. The function lets you "expand" a simple call into a much larger block of code. The expanded code can be vastly large. In our example above, the (doCalc) function is small, but it reality it could be doing hundreds of lines of code, which also would have to be substituted in place. The difference is real functions do not work this way. Real functions have their values evaluated before getting passed in as parameters.
 </p>
@@ -62,9 +64,11 @@ def ifworkday(2, 3)
 end
 x = ifworkday(2, 3) # CALLED BOTH FUNCTIONS
 ```
+
 <p>
 But wait, now BOTH functions get called, you are doing exactly twice as many huge calcs as needed. Now, those familiar with javascript probably are already itching with the solution, "JUST WRAP THEM IN ANONYMOUS FUNCTIONS!!!". I hear you, sure that works in this super simple example, but macros let you do this without that extra wordiness.  Macros defer evaluating parameters. Think of a macro as a function, but the biggest difference is parameters DON'T get called till you choose to call them.
 </p>
+
 ```
 #if it is a macro...
 defmacro ifworkday(first, second)
@@ -87,7 +91,9 @@ end
 ```
 
 <p dir="ltr">Now, in this simple ruby example, I had to use strings and eval to approximate what happens with macros in other languages. Since this is unwieldy, let’s switch to clojure, where it is more natural.</p>
+
 I said that macros defer evaluation, they do that, but they also do much more. Lets look at a clojure list.
+
 
 ``` clojure
 ‘(a b c d)
@@ -130,7 +136,12 @@ I said that macros defer evaluation, they do that, but they also do much more. L
 (if (workday (today)) (+ 1 1) (otherBigCalc))
 ```
 
-<p dir="ltr">The ` is called syntax quote, it disables evaluation much like quote does (it just also namespaces everything inside for your convenience). The ~ is called an unquote, and it turns evaluation back on. In any given space, if you have a function called (id), and you called it like (`~id), it would mean the same as just calling (id), because you turned off evaluation, then turned it back on. Above, the bigCalc parameters are filled with the actual values passed in, the lists unevaluated of ‘(+ 1 1) and ‘(otherBigCalc). I like to think of the return from a macro as a “template” to replace the original call with. Take the call (ifWorkday (+ 1 1) (otherBigCalc)). When calling the macro, the last thing returned from the macro is expected to be a list of clojure code to replace the original call at compile time. So, at compile time, (ifWorkday (+ 1 1) (otherBigCalc)) is replaced with (if (workday (today)) (+ 1 1) (otherBigCalc)) which is the return from the macro.</p>
+<p dir="ltr">The ` is called syntax quote, it disables evaluation much like quote does (it just also namespaces everything inside for your convenience). The ~ is called an unquote, and it turns evaluation back on. In any given space, if you have a function called (id), and you called it like (`~id), it would mean the same as just calling (id), because you turned off evaluation, then turned it back on. Above, the bigCalc parameters are filled with the actual values passed in, the lists unevaluated of ‘(+ 1 1) and ‘(otherBigCalc).
+</p>
+
+<p>
+I like to think of the return from a macro as a “template” to replace the original call with. Take the call (ifWorkday (+ 1 1) (otherBigCalc)). When calling the macro, the last thing returned from the macro is expected to be a list of clojure code to replace the original call at compile time. So, at compile time, (ifWorkday (+ 1 1) (otherBigCalc)) is replaced with (if (workday (today)) (+ 1 1) (otherBigCalc)) which is the return from the macro.</p>
+
 <p dir="ltr">But that is a stupid example. Making your own if statements is the most basic uses of macros. But it demonstrates the point: macros generate code. This is profound, but hard to grasp for the first time. Macros expand code before compilation time, and therefore can be used to generate lots of code automatically.</p>
 
 <p>
@@ -176,15 +187,11 @@ This macro only needs to be called once, and what it does is generates this:
 Those generated macros should not be too hard to understand after the previous ifWorkday macro, and they can be called just like we expect. Let's deconstruct (make-percents).
 </p>
 
-
-
-
 ``` clojure
 `(list ~@(map (fn [num]  
 ```
 
 <p dir="ltr">The ~@ is like unquote from above, the only difference is instead of just unquoting a list to be evaluated, it extracts the values from the list and sticks them in place. I like to think of it as just removing the outer parens in the unquoted list.</p>
-
 
 ``` clojure
 (let [x ‘(1 2 (3 4))]
@@ -202,7 +209,6 @@ Those generated macros should not be too hard to understand after the previous i
 <p>
 The (map) function has two arguments: the first, a function; the second, a list of elements to “map” over.
 </p>
-
 
 ``` clojure
 ~@(map (fn [num] (...))
