@@ -15,35 +15,35 @@ inversion of the usual OO way of polymorphism. Here is an example that
 is probably familiar to everyone: getting a database connection.
 
 ``` csharp
-	public interface IPaymentRepository {
-		IEnumerable<IPayment> GetAll ();
-	}
-    // InMemory.cs
-	public class InMemory : IPaymentRepository {
-		public IEnumerable<IPayment> GetAll (){
-			return Config.payments.Values;
-		}
-	}
-    // Postgres.cs
-	public class Postgres : IPaymentRepository {
-		public IEnumerable<IPayment> GetAll (){
-			throw new NotImplementedException();
-		}
-	}
-    // RepositoryFactory.cs
-	public class RepositoryFactory {
-		public static IPaymentRepository GetPaymentRepo () {
-			if (Config.configuration["useInMemory"] == "true") {
-				return new InMemory();
-			} else {
-				return new Postgres();
-			}
-		}
-	}
+public interface IPaymentRepository {
+    IEnumerable<IPayment> GetAll ();
+}
+// InMemory.cs
+public class InMemory : IPaymentRepository {
+    public IEnumerable<IPayment> GetAll (){
+        return Config.payments.Values;
+    }
+}
+// Postgres.cs
+public class Postgres : IPaymentRepository {
+    public IEnumerable<IPayment> GetAll (){
+        throw new NotImplementedException();
+    }
+}
+// RepositoryFactory.cs
+public class RepositoryFactory {
+    public static IPaymentRepository GetPaymentRepo () {
+        if (Config.configuration["useInMemory"] == "true") {
+            return new InMemory();
+        } else {
+            return new Postgres();
+        }
+    }
+}
 
-    // somewhere in the code...
-    var repo = RepositoryFactory.GetPaymentRepo();
-    var payments = repo.GetAll();
+// somewhere in the code...
+var repo = RepositoryFactory.GetPaymentRepo();
+var payments = repo.GetAll();
 ```
 
 In our example here, we have two concrete implementers of the
@@ -117,30 +117,30 @@ memory dictionary to be stored internally. In the interfaces and
 classes example, that requires editing _three separate files_.
 
 ``` csharp
-    // IPaymentRepostory.cs
-	public interface IPaymentRepository {
-		IEnumerable<IPayment> GetAll ();
-		void Add(IPayment payment);
-	}
-    // InMemory.cs
-	public class InMemory : IPaymentRepository {
-		public Dictionary<int, IPayment> payments = new Dictionary<int, IPayment>();
-		public void Add(IPayment payment) {
-			payments.Add(payment.GetId(),payment);
-		}
-		public IEnumerable<IPayment> GetAll (){
-			return payments.Values;
-		}
-	}
-    // Postgres.cs
-	public class Postgres : IPaymentRepository {
-		public void Add(IPayment payment) {
-			throw new NotImplementedException();
-		}
-		public IEnumerable<IPayment> GetAll (){
-			throw new NotImplementedException();
-		}
-	}
+// IPaymentRepostory.cs
+public interface IPaymentRepository {
+    IEnumerable<IPayment> GetAll ();
+    void Add(IPayment payment);
+}
+// InMemory.cs
+public class InMemory : IPaymentRepository {
+    public Dictionary<int, IPayment> payments = new Dictionary<int, IPayment>();
+    public void Add(IPayment payment) {
+        payments.Add(payment.GetId(),payment);
+    }
+    public IEnumerable<IPayment> GetAll (){
+        return payments.Values;
+    }
+}
+// Postgres.cs
+public class Postgres : IPaymentRepository {
+    public void Add(IPayment payment) {
+        throw new NotImplementedException();
+    }
+    public IEnumerable<IPayment> GetAll (){
+        throw new NotImplementedException();
+    }
+}
 ```
 
 Here is the change to add a new function in the pattern matching example:
