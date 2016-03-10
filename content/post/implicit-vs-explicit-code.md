@@ -8,6 +8,17 @@ Categories = ["technical skills", "csharp"]
 When choosing a code style, one of the major topics is whether or not to put in
 implicit keywords.
 
+``` haskell
+prefixer :: String -> String -> String
+prefixer prefix x y =
+    let t = prefix + x + y
+    in t
+```
+
+``` haskell
+prefixer prefix x y = prefix + x + y
+```
+
 ``` csharp
 public namespace Helpers {
   public class StringPrefixer {
