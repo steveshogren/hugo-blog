@@ -99,11 +99,41 @@ new hotness.
 
 Programming languages, libraries, frameworks, and tools attempt to sell in this
 environment.
-* Programming Defeat 
+* Losing The Faith
 
-I recently had an awakening.
+I recently lost the faith.
 
-Six months ago, I was ravenous for 
+Six months ago, I was a functional programming zealot.
+
+If you'd asked me: "compare and contrast F# to C#", I'd have waved my hands and
+spoken of the increased safety, better domain modeling, better support for both
+functional programming and object-oriented programming, and increased brevity.
+If you'd asked me to guess a relative metric of "features/hour" when compared
+with C#, I probably would have guessed "8-10x more features/hour."
+
+Today, if asked that same question, I would say, "depends on the programmer,
+maybe: 0-1.5x".
+
+I still have my preferred tools. If starting a new Windows project, I would
+still pick F#. If starting a new JVM project, I would waffle between Clojure and
+Frege. If starting anything else, I would still pick Haskell. But I've lost the
+burning desire to convince everyone else of the power of these tools.
+
+In programming culture, like attracts like. Programming zealots attract other
+zealots. What really attracts these groups to each other is their fanaticism,
+not really their preferred tools. Whenever someone preaches the power of FP, a
+crowd gathers, some to cheer, others to sneer.
+
+The issue with programming tools is that you need faith. No real research exists
+around language productivity. Without science, only faith remains.
+
+The other day, I went back to add features to a personal Clojure project. I
+wrote this project to be the paragon of beauty. High unit test coverage,
+carefully designed WebDriver tests, bi-directional migration scripts, and a
+makefile to automate every task.
+
+I went to add a new feature that I estimated would take a few hours. Nine hours
+later, I felt the crushing weight of defeat. 
 
 * Safety Score
 ** Exceptions (checked, unchecked)
