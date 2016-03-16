@@ -128,18 +128,17 @@ written it to be the paragon of beauty. High unit test coverage, carefully
 designed WebDriver tests, bi-directional migration scripts, and a makefile to
 automate every task.
 
-I went to add a new feature that I estimated would take an hour. Nine long hours
-later, I finally finished it. I'd aged a hundred years. All the great Clojure
-features were helpful, but no language could make that task easy. In that
-moment, sitting with the feature complete, I saw so clearly why I had been so
-zealous.
+I estimated the feature would take an hour. Nine hours later, I finally finished
+it. I'd aged a hundred years. All the great Clojure features were helpful, but
+no language could make that task easy. In that moment, sitting with the feature
+complete, I saw so clearly why I had been so zealous.
 
 In large projects, actual programming is a relatively small part of the work.
 Requirements gathering, team communication, database migrations, build servers,
-database access, authorization, logging, reporting, and UI dominate most
-projects. Unfortunately, the majority of what I see on a daily basis is
-thousands of files filled with code. The fact is the work that takes the most
-time often leaves the least actual code artifacts.
+database access, authorization, logging, reporting, and UI tweaks take the most
+time. Unfortunately, the only artifacts of all that are thousands of files
+filled with code. The work that takes the most time often leaves the least
+artifacts.
 
 The language and libraries are such a small part of that, but they are really
 the only things I can control. While I cannot change the need for database
@@ -147,9 +146,8 @@ migrations, I _can_ argue to change the language I use!
 
 I still have my preferred tools. If starting a new Windows project, I would
 still pick F#. If starting a new JVM project, I would waffle between Clojure and
-Frege. If starting anything else, I would still pick Haskell. But I've lost the
-burning desire to convince everyone else of the power of these tools.
-
+Frege. For everything else, I would pick Haskell. But I've lost the burning
+desire to convince everyone else of the power of these tools.
 
 * Safety Score
 ** Exceptions (checked, unchecked)
