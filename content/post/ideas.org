@@ -99,6 +99,8 @@ new hotness.
 
 Programming languages, libraries, frameworks, and tools attempt to sell in this
 environment.
+* Is It A Bug?
+Recentlk
 * Losing The Faith
 
 I recently lost the faith.
@@ -428,62 +430,6 @@ throughout the system. Splitting Core and ORM classes into two projects. A 1
 hour entirely automated release process for all products. A small set of
 automated performance tests owned by v5.
 
-* Are Self Organizing Teams Right For Us?
-
-> "Great, now instead of programmers, we are politicians"
-
-A self organizing team can be one of the most effective ways to build a team of
-high quality professionals. It can also be one of the most inefficient
-structures ever devised.
-
-## What Is A Self-Organizing Team?
-
-I have been managing several teams of "self-organizing" developers over the last
-few years. They are expected to follow these tenets:
-
-+ The whole office organizes themselves to best meet the business needs
-+ Each team chooses their practices and working agreements
-+ All technical and organization decisions are driven through consensus
-+ Only product owners may determine "what" happens, the team determines "how"
-+ All staff participates in a culture of high quality development
-+ Systems and practices are designed for greatest productivity across the next decade
-
-## When It Works Well
-
-+ Small teams
-+ Highly skilled (re: expensive) workers
-+ High quality software is critical
-+ Business need for continuous and stable productivity for 5+ years
-+ Buy-in from management that "productivity is worth feeling out of control"
-
-Self organizing teams work exceptionally well with small groups of highly driven
-developers. It fits best when most people on your team are chomping at the bit
-to do more, be more, and learn more. These "self-actualized" developers will
-find a single leader to be a bottleneck, and it will impair their abilities to
-grow.
-
-In any other company, our least experienced developers would be team leads and
-architects; and our most experienced developers would be leading organizations.
-They've gotten this experience by living it. Each member of our teams is
-responsible for "being the lead" in certain ways. Their own interests guide them
-to become experts across a wide variety of subjects. By being an expert, others
-listen to them, so they often have a wide audience when speaking on their
-specialties.
-
-We share in the work of designing security, authentication, query performance,
-ORM's, system design, UI technologies, language paradigms, installers, run time
-characteristics, "pop culture architecture", CI build systems, configuration
-tooling, over two dozen business modules, and roughly 700KLOC per developer. No
-single person is a point of failure or bottleneck for these subjects, instead
-each developer has specialized in a few. If any one person leaves, a few others
-have enough knowledge to fill in any gaps while learning more.
-
-## When It Is Less Effective
-
-+ Large, distributed teams
-+ Business requires short term productivity at any cost to long term
-  productivity
-+ Management that wants to be able to control the situation
 
 * Pop Culture Architecture
 // Knowing cool new things to signal your worth in an interview helps defend against job loss.
