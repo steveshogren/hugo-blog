@@ -62,26 +62,27 @@ consequences and successes.
 
 ## Case Study
 
-I currently lead a self-organizing team. In any other company, our least
-experienced developers would be team leads and architects; and our most
-experienced developers would be CTO's. They've gotten this experience by living
-it. Each member of our team is responsible for "being the lead" in certain ways.
-Their own interests guide each developer to develop expertise in several
-subjects. By being an expert, others listen to them, so they often have an
-attentive audience when speaking on their specialties.
+I currently lead a self-organizing team. We share in the work of adding features
+to a codebase of ~450KLOC per developer. The codebase is over 10 years old, and
+the entire team has turned over at least twice since the project started. This
+is no maintenance project, we recently converted the main calculation engine
+(500KLOC) to allow the calculations to be run split across dozens
+of nodes. I am certain this was only possible because of the effectiveness of
+self-organization.
 
-Together we share in the work of two dozen business modules, and roughly 450KLOC
-per developer. The codebase is over 12 years old, and the entire team has turned
-over at least twice since the project started. I am certain this was only
-possible because of the effectiveness of self-organization.
+> We actively develop in a 10 year old codebase sized at ~450KLOC per developer
 
-> we maintain roughly 450KLOC per developer, in a 12 year old codebase
+When deciding on working agreements, the team voted on strict pair-programming,
+frequent pair switches
+([promiscuous pairing](http://csis.pace.edu/~grossman/dcs/XR4-PromiscuousPairing.pdf)),
+and strict test-driven development. We believe that it is one of the easiest
+ways to keep a team capable in such an enormous codebase. We do what we can to
+prevent siloing of knowledge: our rapid pair switching causes everyone to rotate
+randomly every 2-8 hours.
 
-When deciding on working agreements, the team voted on strict pair-programming
-and frequent pair switches. We believe that it is one of the easiest ways to
-keep a team capable in such an enormous codebase.
-
-No single person is a point of failure or bottleneck for any area. Each
-developer has specialized in a few areas, and is proficient in most. When people
-leave, a few others have enough knowledge to fill in any gaps while learning
-more.
+In any other company, our least experienced developers would be team leads and
+architects; and our most experienced developers would be CTO's. They've gotten
+this experience by living it. Each member of our team is responsible for "being
+the lead" in certain ways. Their own interests guide each developer to develop
+expertise in several subjects. By being an expert, others listen to them, so
+they often have an attentive audience when speaking on their specialties.
