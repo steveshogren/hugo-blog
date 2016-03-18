@@ -23,6 +23,7 @@ expected to follow these tenets:
 + Systems and practices are designed to maintain greatest productivity across
   the next decade
 
+
 ## When It Works Well
 
 + Small teams
@@ -38,13 +39,18 @@ impair their abilities to grow and gain critical thinking skills.
 
 ## Case Study
 
-I currently lead a self-organizing team of ten developers. We share in the work
-of adding features to 4.6 million-line codebase. The codebase is over 10 years
-old, and the entire team has turned over twice since the project started. This
-is no maintenance project, this quarter we converted the main calculation engine
-(~600KLOC) to allow calculations to be split up across dozens of nodes for a
-substantial increase in throughput. I am certain this was only possible because
-of the effectiveness of self-organization.
+I currently lead a self-organizing team of ten developers. We alone actively
+develop in a 4.6 million line codebase. The codebase is over 10 years old, and
+the entire team has turned over twice since the project started. This is no
+maintenance project, this quarter we converted the main calculation engine
+(~600KLOC) to allow calculations to be parallelized across dozens of nodes for a
+substantial increase in throughput.
+
+Our team has recently been recognized as producing the most business value with
+the highest quality across our +700 person software company. Our CEO and SVP of
+Product have highlighted our recent accolades. I am certain this was only
+possible because of the effectiveness of self-organization and the intrinsic
+motivation of our staff.
 
 > We actively develop in a 10 year old codebase sized at ~460KLOC per developer
 
@@ -53,27 +59,31 @@ frequent pair switches
 ([promiscuous pairing](http://csis.pace.edu/~grossman/dcs/XR4-PromiscuousPairing.pdf)),
 and test-driven development. Each subsequent iteration of the team has continued
 to vote for these agreements. We believe that it is one of the easiest ways to
-keep a team capable in such an enormous codebase. Pairing and switching prevents
-siloing of knowledge: our rapid pair switching causes everyone to rotate
-randomly every 2-8 hours.
+keep a team capable in such an enormous codebase. Randomized pairing and 2-8
+hour switching prevents siloing of knowledge.
 
 In any other company, our least experienced developers would be team leads and
 architects; and our most experienced developers would be CTO's. They've gotten
-this experience by living it. Each member of our team is responsible for "being
-the lead" in certain ways. Their own interests guide each developer to develop
-expertise in several subjects. By being an expert, others listen to them, so
-they often have an attentive audience when speaking on their specialties.
+this experience by living it. In case you think we've hired a team of seasoned
+graybeards, our average years of experience is six.
+
+Each member of our team is responsible for "being the lead" in certain ways. The
+individual's own interests guide them to develop expertise in subjects. By being
+an expert, others listen to them, so they often have an attentive audience when
+speaking on their specialties. This positive feedback loop encourages additional
+research.
 
 ## How to Start
 
 > **Tip:** The most important way to build such a team is to allow them to fail
 
-To start, the team must be allowed to face the consequences of their actions. If
-a code refactoring project goes badly, the team should have the individual clean
-up their mess. When someone is wasting time on a project that doesn't align with
-the goals of the business, the team should speak with them. When a developer
-successfully campaigns for a change that increases productivity, they should be
-celebrated.
+The team must be allowed to face the consequences of their actions in a safe
+space. If a refactoring project goes badly, the team should have the individual
+clean up their mess. When someone is spending time on a project that doesn't
+align with the goals of the business, the team should speak with them. When a
+developer successfully campaigns for a change that increases productivity, it
+should be celebrated. In all cases, we strive to have our office be a safe place
+to fail.
 
 Every time someone in authority demands the team do something different, it
 reduces the intrinsic motivation of the team. Each demand teaches the team
@@ -85,10 +95,13 @@ making demands extremely infrequently.
 
 A self-organizing team is very much like a democracy. The team is expected and
 entrusted to organize around the needs of the business. Decisions should be made
-by consensus. The team can only learn what works and what doesn't by facing
-consequences and successes.
+by consensus. Very rarely should an "override" be needed from management.
 
 # Conclusion
 
 Self-organizing teams are one of the most effective ways to manage a
-high-performing group.
+high-performing group. The team benefits from the best aspects of each member.
+Team members "grow up" quickly, as they are exposed to others around them who
+behave like trusted professionals. Each developer becomes intrinsically
+motivated, outperforming their peers in similar command and control teams.
+
