@@ -1,7 +1,6 @@
 +++
 title = "When Self-Organizing Teams Are Effective"
 date = "2016-03-16"
-draft=true
 Categories = ["management", "meta game"]
 +++
 
@@ -49,13 +48,13 @@ substantial increase in throughput.
 Our team has recently been recognized as producing the most business value with
 the highest quality across our +700 person software company. Our CEO and SVP of
 Product have highlighted our recent accolades. I am certain this was only
-possible because of the effectiveness of self-organization and the intrinsic
-motivation of our staff.
+possible because of the intrinsic motivation of our staff caused by
+self-organization.
 
 > We actively develop in a 10 year old codebase sized at ~460KLOC per developer
 
-When deciding on working agreements, the team voted on strict pair-programming,
-frequent pair switches
+When deciding on working agreements, the original team voted on strict
+pair-programming, frequent pair switches
 ([promiscuous pairing](http://csis.pace.edu/~grossman/dcs/XR4-PromiscuousPairing.pdf)),
 and test-driven development. Each subsequent iteration of the team has continued
 to vote for these agreements. We believe that it is one of the easiest ways to
@@ -65,7 +64,7 @@ hour switching prevents siloing of knowledge.
 In any other company, our least experienced developers would be team leads and
 architects; and our most experienced developers would be CTO's. They've gotten
 this experience by living it. In case you think we've hired a team of seasoned
-graybeards, our average years of experience is six.
+graybeards, our average developer only has six years of experience.
 
 Each member of our team is responsible for "being the lead" in certain ways. The
 individual's own interests guide them to develop expertise in subjects. By being
@@ -82,7 +81,7 @@ space. If a refactoring project goes badly, the team should have the individual
 clean up their mess. When someone is spending time on a project that doesn't
 align with the goals of the business, the team should speak with them. When a
 developer successfully campaigns for a change that increases productivity, it
-should be celebrated. In all cases, we strive to have our office be a safe place
+should be celebrated. In all cases, strive to have your office be a safe place
 to fail.
 
 Every time someone in authority demands the team do something different, it
