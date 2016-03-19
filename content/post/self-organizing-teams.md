@@ -19,7 +19,7 @@ expected to follow these tenets:
 + All technical and organizational decisions are driven through consensus
 + Product owners determine "what" happens, the team determines "how"
 + All staff participates in a culture of high-quality development
-+ Systems and practices are designed to maintain greatest productivity across
++ Systems and practices are designed to maintain the greatest productivity across
   the next decade
 
 
