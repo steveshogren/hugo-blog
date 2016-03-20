@@ -2,6 +2,7 @@
 title = "When Self-Organizing Teams Are Effective"
 date = "2016-03-16"
 Categories = ["management", "meta game"]
+manager="yes"
 +++
 
 > "Great, now instead of programmers, we are politicians"
@@ -104,3 +105,18 @@ Team members "grow up" quickly, as they are exposed to others around them who
 behave like trusted professionals. Each developer becomes intrinsically
 motivated, outperforming their peers in similar command and control teams.
 
+# Replies
+
+[PeterGao](https://lobste.rs/u/petergao) on lobste.rs
+[pointed out](https://lobste.rs/s/1fhkxo/when_self-organizing_teams_are_effective/comments/e3niex#c_e3niex)
+that undergrad school projects often see everyone grouping by skill, with all
+the best in a group together. I too have had bad luck with undergrad CS school
+projects, especially since at the time I was a C-performer. School projects mix
+a fairly homogeneous group of immature students with a subtly different goal:
+“pick a few other people, your work will be compared to everyone else’s”.
+Self-selected grouping by skill makes sense, it’s effectively a competition. One
+of the recommended alterations for group projects is “your grade is the average
+grade of all the group projects”. Suddenly, you won’t see those teams separating
+by skill. Instead students will organize with a team mix as even as possible,
+with cross-communication (and likely rotation) happening to ensure high quality
+across all the projects. Bam, now you’ve got my office ;)
