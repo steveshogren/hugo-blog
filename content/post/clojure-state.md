@@ -1,5 +1,5 @@
 +++
-title = "Wrangling State In Clojure And Haskell"
+title = "Wrangling State In Clojure"
 date = "2016-03-28"
 draft=true
 Categories = ["technical skills", "clojure","haskell"]
@@ -9,8 +9,8 @@ Categories = ["technical skills", "clojure","haskell"]
 
 Immutable languages make application state an interesting concept.
 
-In Clojure, I am used to dealing with state in two main ways. The first, I pass
-the state around as parameters to my functions.
+In Clojure, you often deal with application state in two main ways. The first
+way is to pass the state around as parameters to your functions.
 
 ``` clojure
 (defn delete! [dbcon table id]
@@ -51,3 +51,22 @@ this.
   (swap! dbcon (fn [old] (make-connection connection-string)))
   (delete-user user-id))
 ```
+
+The ```atom``` allows us to not have to pass around the state. We mutate
+```dbcon``` with the connection parameters before calling any database accessing
+functions. Unfortunately, this sets up an implicit dependency: ```delete!```
+will only work if the ```dbcon``` atom was setup beforehand.
+
+| | Dependencies | Calling Function | Adding New State | Best When |
+|------------- |-------------- | ------------ | ------------- | ------------- |
+|**Pass As Parameter** | Explicit |  Easier  | Harder | State Values Change Frequently
+|**Mutate Shared Location** | Implicit |  Harder  |  Easier | State Values Change Rarely
+
+I default to passing state as a parameter as my first choice. When passing as a
+parameter grows costly, I fall back to an atom. Passing as a parameter works
+best when the value changes every time.
+
+An exception would be something as ubiquitous as a database connection in a CRUD
+application. A CRUD application will typically need a database connection at
+every leaf node, so I will use an atom from the start.
+
