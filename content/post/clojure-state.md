@@ -33,7 +33,9 @@ test and interact with code that takes all of its dependencies as parameters.
 
 The alternative is to set a thread-safe value somewhere and give the underlying
 code access to it. In Clojure, the ```atom``` primitive is the first choice for
-this. Let's call this: **Mutate Shared Location**.
+this. A common misconception is that Clojure prevents all mutation. The
+```atom``` primitive can be mutated, it just has to be done with a special
+```swap!``` function. Let's call this: **Mutate Shared Location**.
 
 ``` clojure
 (def db-con (atom nil))
