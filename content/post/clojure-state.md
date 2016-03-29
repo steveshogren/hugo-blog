@@ -1,7 +1,6 @@
 +++
 title = "Wrangling State In Clojure"
-date = "2016-03-28"
-draft=true
+date = "2016-03-29"
 Categories = ["technical skills", "clojure","haskell"]
 +++
 
