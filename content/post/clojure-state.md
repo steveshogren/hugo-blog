@@ -75,7 +75,7 @@ changes regularly.
 
 An exception would be something as ubiquitous as a database connection in a CRUD
 application. A CRUD application will typically need a database connection at
-every leaf node, and it changes rarely, so I will use **Mutate Shared Location**
+every leaf node, and it rarely changes, so I will use **Mutate Shared Location**
 from the start.
 
 With these two ways of passing application state, we are offered the flexibility
