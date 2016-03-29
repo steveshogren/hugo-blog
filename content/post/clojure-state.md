@@ -9,22 +9,23 @@ Categories = ["technical skills", "clojure","haskell"]
 
 Immutable languages make application state an interesting concept.
 
-In Clojure, you often deal with application state in two main ways. The first
-way is to pass the state around as parameters to your functions.
+In Clojure, you can deal with application state in two main ways. The first way
+is to pass the state around as parameters to your functions. An example of
+**Pass As Parameter**:
 
 ``` clojure
-(defn delete! [dbcon table id]
-  (jdbc/delete! dbcon table ["id=?" id]))
+(defn delete! [db-con table id]
+  (jdbc/delete! db-con table ["id=?" id]))
 
-;; record-exits omitted
+;; valid-for-delete omitted
 
-(defn delete-user [dbcon user-id]
-  (if (record-exists dbcon "user" user-id)
-    (delete! dbcon "user" user-id)))
+(defn delete-user [db-con user-id]
+  (if (valid-for-delete db-con "user" user-id)
+    (delete! db-con "user" user-id)))
 
 (defn -main [& [connection-string user-id]]
-  (let [dbcon (make-connection connection-string)]
-    (delete-user dbcon user-id)))
+  (let [db-con (make-connection connection-string)]
+    (delete-user db-con user-id)))
 ```
 
 This requires every function that eventually accesses a database to also have
@@ -33,40 +34,48 @@ test and interact with code that takes all of its dependencies as parameters.
 
 The alternative is to set a thread-safe value somewhere and give the underlying
 code access to it. In Clojure, the ```atom``` primitive is the first choice for
-this.
+this. Let's call this: **Mutate Shared Location**.
 
 ``` clojure
-(def dbcon (atom nil))
+(def db-con (atom nil))
 
 (defn delete! [table id]
-  (jdbc/delete! @dbcon table ["id=?" id]))
+  (jdbc/delete! @db-con table ["id=?" id]))
 
-;; record-exits omitted
+;; valid-for-delete omitted
 
 (defn delete-user [user-id]
-  (if (record-exists "user" user-id)
+  (if (valid-for-delete "user" user-id)
     (delete! "user" user-id)))
 
 (defn -main [& [connection-string user-id]]
-  (swap! dbcon (fn [old] (make-connection connection-string)))
+  (swap! db-con (fn [old] (make-connection connection-string)))
   (delete-user user-id))
 ```
 
 The ```atom``` allows us to not have to pass around the state. We mutate
-```dbcon``` with the connection parameters before calling any database accessing
+```db-con``` with the connection parameters before calling any database accessing
 functions. Unfortunately, this sets up an implicit dependency: ```delete!```
-will only work if the ```dbcon``` atom was setup beforehand.
+will only work if the ```db-con``` atom was setup beforehand.
 
-| | Dependencies | Calling Function | Adding New State | Best When |
+| | Dependencies | Correctly Call Function | Adding New State | Best When |
 |------------- |-------------- | ------------ | ------------- | ------------- |
 |**Pass As Parameter** | Explicit |  Easier  | Harder | State Values Change Frequently
 |**Mutate Shared Location** | Implicit |  Harder  |  Easier | State Values Change Rarely
 
-I default to passing state as a parameter as my first choice. When passing as a
-parameter grows costly, I fall back to an atom. Passing as a parameter works
-best when the value changes every time.
+**Mutate Shared Location** might look familiar, in a lot of other languages it
+is implemented with the Singleton Design Pattern. Often a Singleton class will
+act as the mutable shared location for storing state.
+
+When adding new application state, I typically default to **Pass As Parameter**
+as my first choice. When **Pass As Parameter** grows costly, I fall back to
+**Mutate Shared Location**. **Pass As Parameter** works best when the value
+changes regularly.
 
 An exception would be something as ubiquitous as a database connection in a CRUD
 application. A CRUD application will typically need a database connection at
-every leaf node, so I will use an atom from the start.
+every leaf node, and it changes rarely, so I will use **Mutate Shared Location**
+from the start.
 
+With these two ways of passing application state, we are offered the flexibility
+to choose the best tool for the job.
