@@ -20,17 +20,17 @@ Here is a typical function that combines two enums to recalculate a
 third.
 
 ``` csharp
-        public static PositionType GetPositionType (MovementType movementType, ApplyToParty applyToParty)
-        {
-            if ((movementType == MovementType.Deliver && applyToParty == ApplyToParty.Principal)
-                || (movementType == MovementType.Return && applyToParty == ApplyToParty.Counterparty))
-                return PositionType.Held;
-            if ((movementType == MovementType.Return && applyToParty == ApplyToParty.Principal)
-                || (movementType == MovementType.Deliver && applyToParty == ApplyToParty.Counterparty))
-                return PositionType.Posted;
+public static PositionType GetPositionType (MovementType movementType, ApplyToParty applyToParty)
+{
+    if ((movementType == MovementType.Deliver && applyToParty == ApplyToParty.Principal)
+        || (movementType == MovementType.Return && applyToParty == ApplyToParty.Counterparty))
+        return PositionType.Held;
+    if ((movementType == MovementType.Return && applyToParty == ApplyToParty.Principal)
+        || (movementType == MovementType.Deliver && applyToParty == ApplyToParty.Counterparty))
+        return PositionType.Posted;
 
-            return PositionType.Undefined;
-        }
+    return PositionType.Undefined;
+}
 ```
 
 With some regularity, new records are added to these types of enums,
