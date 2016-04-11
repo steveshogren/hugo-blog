@@ -15,11 +15,11 @@ First, passing by parameter.
 
 ```haskell
 loadFile :: String -> IO String
-loadFile fileName = do
+loadFile fileName =
   BS.unpack <$> Str.readFile fileName
 
 saveFile :: String -> String -> IO ()
-saveFile fileName contents = do
+saveFile fileName contents = 
   Str.writeFile fileName (BS.pack contents)
 
 clearFile :: String -> IO ()
@@ -35,4 +35,57 @@ main fileName "-log" = do
   now <- getCurrentTime
   appendToFile fileName ((show now)++ "\n")
 ```
+
+Implicit Parameters
+
+```haskell
+loadFile :: String -> IO String
+loadFile f =
+  BS.unpack <$> Str.readFile f
+
+saveFile :: String -> String -> IO ()
+saveFile contents fileName =
+  Str.writeFile fileName (BS.pack contents)
+
+clearFile :: String -> IO ()
+clearFile = saveFile ""
+
+appendToFile :: String -> String -> IO ()
+appendToFile stuff fileName = do
+    contents <- loadFile fileName
+    saveFile (contents++stuff) fileName
+
+main fileName "-c" = clearFile fileName
+main fileName "-log" = do
+  now <- getCurrentTime
+  appendToFile ((show now)++ "\n") fileName
+```
+
+Reader Type
+
+```haskell
+loadFile :: ReaderT String IO String
+loadFile = do
+  fileName <- ask
+  liftIO $ BS.unpack <$> Str.readFile fileName
+
+saveFile :: String -> ReaderT String IO ()
+saveFile contents = do
+  fileName <- ask
+  liftIO $ Str.writeFile fileName (BS.pack contents)
+
+clearFile :: ReaderT String IO ()
+clearFile = saveFile ""
+
+appendToFile :: String -> ReaderT String IO ()
+appendToFile stuff = do
+    contents <- loadFile
+    saveFile (contents++stuff)
+
+main fileName "-c" = runReaderT clearFile fileName
+main fileName "-log" = do
+  now <- getCurrentTime
+  runReaderT (appendToFile ((show now)++ "\n")) fileName
+```
+
 
