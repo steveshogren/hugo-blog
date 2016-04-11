@@ -152,7 +152,3 @@ figwheel processes.
 Easy as that!
 
 If you get stuck, I checked in a working version [on GitHub](https://github.com/steveshogren/angular2-cljs)
-
-This is not an entire solution, you will need to build the site for production
-by modifying the prod.cljs file to also start the site, but without starting
-figwheel.
