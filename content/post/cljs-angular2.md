@@ -62,12 +62,12 @@ Replace the src-cljs/cljs-angular2/core.cljs file with this:
 
 (defn init! []
   (let [app (get-app)
-        c (.Component ng/core
+        c (.Component (.-core js/ng)
                       #js {:selector "my-app"
                            :template (html [:div
-                                            [:h1 "My xf first Angular 2 app"]
-                                            [:div [:h2 "Second Header"]]
-                                            [:div [:h3 "Third Header"]]])})
+                                            [:h1 "My first Angular 2 app"]
+                                            [:div [:h2 "test"]]
+                                            [:div [:h3 "test2"]]])})
         c (.Class c #js {:constructor (fn [])})]
     (set! (.-AppComponent app) c)))
 
