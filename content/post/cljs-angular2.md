@@ -1,8 +1,7 @@
 +++
 title = "Using Angular2 in ClojureScript"
-date = "2016-04-07"
-Categories = ["technical skills","clojure"]
-draft=true
+date = "2016-04-11"
+Categories = ["technical skills","clojure", "clojurescript"]
 +++
 
 Getting ClojureScript to run Angular2 is not very difficult. Here is a sample
