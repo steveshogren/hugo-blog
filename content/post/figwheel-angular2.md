@@ -1,5 +1,5 @@
 +++
-title = "Hotswapping Angular2"
+title = "Hot Loading Angular2 With State"
 date = "2016-04-13"
 Categories = ["technical skills","clojure", "clojurescript", "angular"]
 +++
