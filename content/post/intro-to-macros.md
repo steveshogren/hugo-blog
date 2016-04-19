@@ -3,7 +3,6 @@ title = "Intro To Macros"
 Categories = ["Clojure", "Technical Skills"]
 Tags = []
 date = "2013-08-19"
-dev="yes"
 +++
 <p>
 Macros are the most powerful way to manipulate the syntax of your language. Macros make it possible to completely modify your language to match your domain. To explain them, think for a minute about functions using the simple “substitution model” used to teach functions to beginner programmers. The substitution model has the reader replace a function call with the body of the called function.

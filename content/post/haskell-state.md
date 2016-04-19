@@ -5,27 +5,32 @@ Categories = ["technical skills","haskell"]
 draft=true
 +++
 
-Part 2 of my series "Wrangling State". Part 1 [Wrangling State In Clojure](http://deliberate-software.com/clojure-state/)
+Part 2 of my series "Wrangling State". Part 1
+[Wrangling State In Clojure](http://deliberate-software.com/clojure-state/)
 
 Haskell is a pure language, so you can only deal with application state by
 passing parameters to functions. It is possible to pass parameters more
 conveniently, but ultimately, every parameter needs to be passed.
 
-First, passing by parameter.
+Here is a simple application for logging a timestamp to a file.
+
+First, passing by parameter:
 
 ```haskell
-loadFile :: String -> IO String
+type Filename = String
+
+loadFile :: Filename -> IO String
 loadFile fileName =
   BS.unpack <$> Str.readFile fileName
 
-saveFile :: String -> String -> IO ()
+saveFile :: Filename -> String -> IO ()
 saveFile fileName contents = 
   Str.writeFile fileName (BS.pack contents)
 
-clearFile :: String -> IO ()
+clearFile :: Filename -> IO ()
 clearFile fileName = saveFile fileName ""
 
-appendToFile :: String -> String -> IO ()
+appendToFile :: Filename -> String -> IO ()
 appendToFile fileName stuff = do
     contents <- loadFile fileName
     saveFile fileName (contents++stuff)
@@ -36,21 +41,28 @@ main fileName "-log" = do
   appendToFile fileName ((show now)++ "\n")
 ```
 
-Implicit Parameters
+We take in the file name and the command to perform, either to clear the file or
+to append a new timestamp.
+
+Haskell can have implicit parameters that are not defined in the argument list.
+Sometimes this can add legibility, other times it can worsen it.
+
+Here is the same code with implicit Parameters:
 
 ```haskell
-loadFile :: String -> IO String
-loadFile f =
-  BS.unpack <$> Str.readFile f
+type Filename = String
 
-saveFile :: String -> String -> IO ()
+loadFile :: Filename -> IO String
+loadFile = (liftM BS.unpack) . Str.readFile
+
+saveFile :: String -> Filename -> IO ()
 saveFile contents fileName =
   Str.writeFile fileName (BS.pack contents)
 
-clearFile :: String -> IO ()
+clearFile :: Filename -> IO ()
 clearFile = saveFile ""
 
-appendToFile :: String -> String -> IO ()
+appendToFile :: String -> Filename -> IO ()
 appendToFile stuff fileName = do
     contents <- loadFile fileName
     saveFile (contents++stuff) fileName
@@ -60,6 +72,10 @@ main fileName "-log" = do
   now <- getCurrentTime
   appendToFile ((show now)++ "\n") fileName
 ```
+
+Not all usages of Filename could be made implicit, but it could in
+```loadFile``` and ```clearFile```. I don't think it adds much value in either
+case.
 
 Reader Type
 

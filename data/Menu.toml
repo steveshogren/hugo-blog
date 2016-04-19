@@ -6,3 +6,7 @@
     Name = "Favorite Books"
     Title = "Show list of my favorite books"
     URL = "/page/books"
+[philosophy]
+    Name = "About Me"
+    Title = "About me"
+    URL = "/page/philosophy"

@@ -3,7 +3,6 @@ title = "Development Disappointment Disorder"
 date = "2016-02-04"
 banner="/images/Disappointment.jpg"
 Categories = ["Meta Game", "management"]
-manager="yes"
 +++
 
 > "We've never had a successful release"

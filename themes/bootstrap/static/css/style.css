@@ -84,6 +84,9 @@
     /* font-weight: 400; */
     /* font-size: 18px; */
 }
+.navbar-default .navbar-brand {
+    color:black important!;
+}
 img {
     max-width: 100%;
 }
