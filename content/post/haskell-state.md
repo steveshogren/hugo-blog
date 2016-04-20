@@ -14,11 +14,9 @@ conveniently, but ultimately, every parameter needs to be passed.
 
 Here is a simple application for logging a timestamp to a file.
 
-First, passing by parameter:
+First, **Pass As Parameter**:
 
 ```haskell
-type Filename = String
-
 loadFile :: Filename -> IO String
 loadFile fileName =
   BS.unpack <$> Str.readFile fileName
@@ -47,11 +45,9 @@ to append a new timestamp.
 Haskell can have implicit parameters that are not defined in the argument list.
 Sometimes this can add legibility, other times it can worsen it.
 
-Here is the same code with implicit Parameters:
+Here is the same code with **Implicit Parameters**:
 
 ```haskell
-type Filename = String
-
 loadFile :: Filename -> IO String
 loadFile = (liftM BS.unpack) . Str.readFile
 
@@ -77,23 +73,27 @@ Not all usages of Filename could be made implicit, but it could in
 ```loadFile``` and ```clearFile```. I don't think it adds much value in either
 case.
 
-Reader Type
+Lastly, it is possible to encode such values into the type. The type of the
+function itself can imply a value that can be retrieved. For example, the Reader
+type can be combined with the IO type using ReaderT.
+
+Here is the code using ReaderT:
 
 ```haskell
-loadFile :: ReaderT String IO String
+loadFile :: ReaderT Filename IO String
 loadFile = do
   fileName <- ask
   liftIO $ BS.unpack <$> Str.readFile fileName
 
-saveFile :: String -> ReaderT String IO ()
+saveFile :: String -> ReaderT Filename IO ()
 saveFile contents = do
   fileName <- ask
   liftIO $ Str.writeFile fileName (BS.pack contents)
 
-clearFile :: ReaderT String IO ()
+clearFile :: ReaderT Filename IO ()
 clearFile = saveFile ""
 
-appendToFile :: String -> ReaderT String IO ()
+appendToFile :: String -> ReaderT Filename IO ()
 appendToFile stuff = do
     contents <- loadFile
     saveFile (contents++stuff)
@@ -104,4 +104,13 @@ main fileName "-log" = do
   runReaderT (appendToFile ((show now)++ "\n")) fileName
 ```
 
+Notice now how ```appendToFile``` and ```clearFile``` have the signature:
+```ReaderT Filename IO ()```, indicating that anything below them can ```ask```
+for the Filename, while still performing an ```IO``` action.
+
+I think for this case, the ```ReaderT``` is substantially more readable. The
+"business value" functions ```appendToFile``` and ```clearFile``` do not have to
+define and pass the parameters needed for the lower level functions
+```saveFile``` and ```loadFile```. The low level functions that need the
+```Filename``` are able to call ```ask``` to retrieve it.
 
