@@ -80,8 +80,7 @@ for the first parameter. We can see the differences clearly without the extra
 parameter adding noise.
 
 We could not add it to ```appendToFile``` because it uses the ```Filename```
-more than once, or ```saveFile``` because it is not the "last" parameter to
-```Str.writeFile```.
+more than once, or ```saveFile``` because it is not the "last" parameter to ```Str.writeFile```.
 
 Lastly, it is possible to encode such values into the type. The type of the
 function itself can imply a value that can be retrieved. For example, the Reader
