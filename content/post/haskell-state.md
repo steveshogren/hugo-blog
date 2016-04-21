@@ -135,10 +135,10 @@ parameter a value that is invalid. The explicit nature of Haskell parameters
 does not prevent passing a database connection string that does not exist, or a
 pointer to an incorrectly setup data structure.
 
-| | Dependencies |  Adding New State | Best When |
-|-------------          |-------------- |  ------------- | ------------- |
-|**Pass As Parameter**  | Explicit     |   More To Pass Around       | State only needed in a few functions
-|**Implicit Parameter** | Explicit     |   Harder To Get Right      | Functions can be made more readable
-|**Reader Type**        | Explicit     |   Easier       | State needed throughout the application
+| | Dependencies | Complexity | Adding New State | Best When |
+|-------------          |-------------- |  ------------- | ------------- | ------------- |
+|**Pass As Parameter**  | Explicit     | Less Complex |  Harder         | State only needed in a few functions
+|**Implicit Parameter** | Explicit     | Less Complex |   Harder       | Functions can be made more readable
+|**Reader Type**        | Explicit     | More Complex |   Easier       | State needed throughout the application
 
 
