@@ -40,10 +40,14 @@ main fileName "-log" = do
 ```
 
 We take in the file name and the command to perform, either to clear the file or
-to append a new timestamp.
+to append a new timestamp. While simple, this gets cumbersome in a large
+application. Imagine passing a database connection through every single function
+that eventually calls the database.
 
 Haskell can have implicit parameters that are not defined in the argument list.
-Sometimes this can add legibility, other times it can worsen it.
+Sometimes this can improve legibility, other times it can worsen it. To use this
+feature, the function signature must contain the value missing. The parameter(s)
+must be the "last" parameter(s) to the function for this to work.
 
 Here is the same code with **Implicit Parameters**:
 
@@ -69,15 +73,21 @@ main fileName "-log" = do
   appendToFile ((show now)++ "\n") fileName
 ```
 
-Not all usages of Filename could be made implicit, but it could in
-```loadFile``` and ```clearFile```. I don't think it adds much value in either
-case.
+Not all usages of ```Filename``` could be made implicit. We did use it in
+```loadFile``` and ```clearFile```. It does allow the "differences" to stand out
+more. For example, ```clearFile``` is just a ```saveFile``` with an empty string
+for the first parameter. We can see the differences clearly without the extra
+parameter adding noise.
+
+We could not add it to ```appendToFile``` because it uses the ```Filename```
+more than once, or ```saveFile``` because it is not the "last" parameter to
+```Str.writeFile```.
 
 Lastly, it is possible to encode such values into the type. The type of the
 function itself can imply a value that can be retrieved. For example, the Reader
 type can be combined with the IO type using ReaderT.
 
-Here is the code using ReaderT:
+Here is the code using the **Reader Type**:
 
 ```haskell
 loadFile :: ReaderT Filename IO String
@@ -108,9 +118,27 @@ Notice now how ```appendToFile``` and ```clearFile``` have the signature:
 ```ReaderT Filename IO ()```, indicating that anything below them can ```ask```
 for the Filename, while still performing an ```IO``` action.
 
-I think for this case, the ```ReaderT``` is substantially more readable. The
-"business value" functions ```appendToFile``` and ```clearFile``` do not have to
-define and pass the parameters needed for the lower level functions
-```saveFile``` and ```loadFile```. The low level functions that need the
-```Filename``` are able to call ```ask``` to retrieve it.
+For this case, the ```ReaderT``` is substantially more readable. The "business
+value" functions ```appendToFile``` and ```clearFile``` do not have to define
+and pass the parameters needed for the lower level functions ```saveFile``` and
+```loadFile```. **Reader Type** gives us the value of the **Implicit
+Parameters** for legibility!
+
+For something like a database connection that might be used pervasively, the
+**Reader Type** is essential for legible code. The low level functions that need
+the ```Filename``` are able to call ```ask``` to retrieve it.
+
+Compared to the [Clojure version](http://deliberate-software.com/clojure-state/)
+of this chart, the Haskell one has no way to call a function "incorrectly". All
+in-memory state is passed explicitly. It is still possible to pass as any
+parameter a value that is invalid. The explicit nature of Haskell parameters
+does not prevent passing a database connection string that does not exist, or a
+pointer to an incorrectly setup data structure.
+
+| | Dependencies |  Adding New State | Best When |
+|-------------          |-------------- |  ------------- | ------------- |
+|**Pass As Parameter**  | Explicit     |   More To Pass Around       | State only needed in a few functions
+|**Implicit Parameter** | Explicit     |   Harder To Get Right      | Functions can be made more readable
+|**Reader Type**        | Explicit     |   Easier       | State needed throughout the application
+
 
