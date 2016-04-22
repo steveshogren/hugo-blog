@@ -46,7 +46,7 @@ Two additions to SOLID will guide your codebase to be easier to reuse and test.
   behavior. This is the soul of "choose composition over inheritance".
 - **R - Rely on Verb Functions Not Verb Interfaces** - Replace Dependency
   Injected _verb interfaces_ with function signatures, explained in the
-  [SimpleMock](http://deliberate-software.com/simplemock-unit-test-mocking/)
+  [SimpleMock](/simplemock-unit-test-mocking/)
   guide. By relying on the function signature as the default unit of
   abstraction, we remove test-only interfaces. This allows the dependent code to
   have only the functions it needs, rather than everything from the interface.
@@ -136,6 +136,6 @@ The SOLID-ER patterns enable significant reuse of functionality. By defaulting
 to _noun interfaces_, you will find most of your _verb classes_ can be re-used
 without any change. When you need actual polymorphic behavior, use a _verb
 interface_. For the more common case of unit test behavior replacement, the
-[SimpleMock](http://deliberate-software.com/simplemock-unit-test-mocking/)
+[SimpleMock](/simplemock-unit-test-mocking/)
 pattern makes for an easy way to keep your codebase clean and best model the
 domain.

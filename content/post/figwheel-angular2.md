@@ -5,7 +5,7 @@ Categories = ["technical skills","clojure", "clojurescript", "angular"]
 +++
 
 
-In ["Using Angular2 in Clojurescript"](http://deliberate-software/cljs-angular2/)
+In ["Using Angular2 in Clojurescript"](/cljs-angular2/)
 I showed how to get ClojureScript to run an Angular2 template. Basic hotswapping
 worked, but state was lost on each load. Tweaking the original demo allows for
 figwheel to swap in the template without losing client state.
@@ -19,7 +19,7 @@ the list. The client state stays in the browser, while the template changes
 around it! Amazing!
 
 To get this working, follow the steps in the
-["Using Angular2 in Clojurescript"](http://deliberate-software/cljs-angular2/) first post. 
+["Using Angular2 in Clojurescript"](/cljs-angular2/) first post. 
 
 Replace the env/dev/cljs/dev.cljs contents with this simpler reloader:
 

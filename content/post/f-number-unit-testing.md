@@ -12,7 +12,7 @@ injection on a class. These "entry points" allow for a unit test to replace a
 real dependency with a test-only replacement.
 
 I previously posted an example that shows a much simpler way to inject
-dependencies called the [SimpleMock pattern](http://deliberate-software.com/simplemock-unit-test-mocking/). The SimpleMock pattern can also be
+dependencies called the [SimpleMock pattern](/simplemock-unit-test-mocking/). The SimpleMock pattern can also be
 used in F#, even if you are only using modules.
 
 ## SimpleMock in F# Modules

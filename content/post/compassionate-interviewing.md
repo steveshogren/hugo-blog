@@ -6,7 +6,7 @@ banner="/images/2.Why_Algorithm_Important.png"
 manager="yes"
 +++
 
-After my post [Interview Humiliation](http://deliberate-software.com/on-defeat/), a number of
+After my post [Interview Humiliation](/on-defeat/), a number of
 people have asked me how I interview compassionately. I strive to make my interviews as
 stress-free and respectful as possible while still rendering a yes/no at the end.
 

@@ -9,9 +9,9 @@ One of my favorite things about F# is how it lets you choose how you want
 to align your data.
 
 In the previous posts highlighting on
-[pattern matching](http://deliberate-software.com/function-pattern-matching/)
+[pattern matching](/function-pattern-matching/)
 and
-[inverted polymorphism](http://deliberate-software.com/inversed-polymorphism/)
+[inverted polymorphism](/inversed-polymorphism/)
 we covered how pattern matching in F# is safer than ```if```
 statements and can replace classes and interfaces for polymorphism. If
 you are unfamiliar with these concepts, you might want to skim those
