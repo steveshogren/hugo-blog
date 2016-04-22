@@ -6,7 +6,7 @@ draft=true
 +++
 
 Part 2 of my series "Wrangling State". Part 1
-[Wrangling State In Clojure](/clojure-state/)
+[Wrangling State In Clojure]({{< relref "clojure-state.md" >}})
 
 Haskell is a pure language, so you can only deal with application state by
 passing parameters to functions. It is possible to pass parameters more
@@ -135,7 +135,7 @@ the ```Filename``` are able to call ```ask``` to retrieve it.
 |**Implicit Parameter** | Explicit     | Less Complex |   Harder       | Functions can be made more readable
 |**Reader Type**        | Explicit     | More Complex |   Easier       | State needed throughout the application
 
-Compared to the [Clojure version](/clojure-state/)
+Compared to the [Clojure version]({{< relref "clojure-state.md" >}})
 of this chart, the Haskell one has no way to call a function "incorrectly". All
 in-memory state is passed explicitly. It is still possible to pass as any
 parameter a value that is invalid. The explicit nature of Haskell parameters
