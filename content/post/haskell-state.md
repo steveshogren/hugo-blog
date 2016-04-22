@@ -1,6 +1,6 @@
 +++
 title = "Wrangling State In Haskell"
-date = "2016-04-07"
+date = "2016-04-22"
 Categories = ["technical skills","haskell"]
 draft=true
 +++
