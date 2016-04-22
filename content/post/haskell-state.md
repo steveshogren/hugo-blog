@@ -115,7 +115,9 @@ main fileName "-log" = do
 
 Notice now how ```appendToFile``` and ```clearFile``` have the signature:
 ```ReaderT Filename IO ()```, indicating that anything below them can ```ask```
-for the Filename, while still performing an ```IO``` action.
+for the Filename, while still performing an ```IO``` action. The "entry-point"
+calls in ```main``` need to be initialized with the ```runReaderT``` and the
+```Filename``` we want to pass.
 
 For this case, the ```ReaderT``` is substantially more readable. The "business
 value" functions ```appendToFile``` and ```clearFile``` do not have to define
@@ -127,17 +129,15 @@ For something like a database connection that might be used pervasively, the
 **Reader Type** is essential for legible code. The low level functions that need
 the ```Filename``` are able to call ```ask``` to retrieve it.
 
-Compared to the [Clojure version](http://deliberate-software.com/clojure-state/)
-of this chart, the Haskell one has no way to call a function "incorrectly". All
-in-memory state is passed explicitly. It is still possible to pass as any
-parameter a value that is invalid. The explicit nature of Haskell parameters
-does not prevent passing a database connection string that does not exist, or a
-pointer to an incorrectly setup data structure.
-
 | | Dependencies | Complexity | Adding New State | Best When |
 |-------------          |-------------- |  ------------- | ------------- | ------------- |
 |**Pass As Parameter**  | Explicit     | Less Complex |  Harder         | State only needed in a few functions
 |**Implicit Parameter** | Explicit     | Less Complex |   Harder       | Functions can be made more readable
 |**Reader Type**        | Explicit     | More Complex |   Easier       | State needed throughout the application
 
-
+Compared to the [Clojure version](http://deliberate-software.com/clojure-state/)
+of this chart, the Haskell one has no way to call a function "incorrectly". All
+in-memory state is passed explicitly. It is still possible to pass as any
+parameter a value that is invalid. The explicit nature of Haskell parameters
+does not prevent passing a database connection string that does not exist, or a
+pointer to an incorrectly setup data structure.
