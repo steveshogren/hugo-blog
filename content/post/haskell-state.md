@@ -137,7 +137,19 @@ the ```Filename``` are able to call ```ask``` to retrieve it.
 |**Reader Type**        | Explicit     | More Complex |   Easier       | State needed throughout the application
 
 Compared to [Clojure]({{< relref "clojure-state.md" >}}), Haskell has no way to
-call a function "incorrectly". All in-memory state is passed explicitly. It is
-still possible to pass as any parameter a value that is invalid. The explicit
-nature of Haskell parameters does not prevent passing a database connection
-string that does not exist, or a pointer to an incorrectly setup data structure.
+call a function "incorrectly". All in-memory state is passed explicitly.
+
+Haskell's type system prevents the programmer from forgetting state.
+Unfortunately, it is still possible to pass as any parameter a value that is
+invalid. The explicit nature of Haskell parameters does not prevent passing a
+database connection string that does not exist, or a pointer to an incorrectly
+setup data structure.
+
+Haskell is opinionated, and forces you to consider all the state up front before
+calling a function. While this makes it harder to forget about state, it also
+makes abstractions more leaky. Instead of relying on a function which may or may
+not use a database, you must know and pass the database connection. 
+
+Even though I believe the Haskell type system makes abstractions more leaky, I
+prefer having to think up front about all my state. I find it makes the code
+more clear, and helps me control what functions have access to state.
