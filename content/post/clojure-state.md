@@ -2,6 +2,7 @@
 title = "Wrangling State In Clojure"
 date = "2016-03-29"
 Categories = ["technical skills", "clojure"]
+banner="/images/cattle.jpg"
 +++
 
 > "Clojure is immutable, so you can't change anything, how useless!"

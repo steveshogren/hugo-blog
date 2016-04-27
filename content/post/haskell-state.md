@@ -1,9 +1,10 @@
 +++
 title = "Wrangling State In Haskell"
-date = "2016-04-22"
+date = "2016-04-27"
 Categories = ["technical skills","haskell"]
-draft=true
+banner="/images/raptors.jpg"
 +++
+
 
 Part 2 of my series "Wrangling State". Part 1
 [Wrangling State In Clojure]({{< relref "clojure-state.md" >}})

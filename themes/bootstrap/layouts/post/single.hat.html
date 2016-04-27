@@ -1,3 +1,10 @@
+{{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
+   {{if or (in (substr .Params.banner 0 7) "http://") (in (substr .Params.banner 0 8) "https://")}}
+      <img src="{{ .Params.banner }}" class="article-banner imgcenter center-block">
+   {{ else }}
+      <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" class="article-banner imgcenter center-block">
+   {{end}}
+{{ end }}
 <div class="text-center">
   {{ partial "bloc/content/h1-title" . }}
   {{ partial "bloc/content/metas" . }}
