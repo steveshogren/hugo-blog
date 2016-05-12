@@ -9,7 +9,7 @@ An IDE is a "T-shaped" editor. The IDE provides an amazing experience for one or
 two languages, and an average or poor experience in everything else. By default
 Visual Studio and Intellij IDEA offer phenomenal support for C# and Java. They
 both have plugins that decently support other languages like SQL, JavaScript,
-HTML, etc. But neither have decent C, Scheme, Rust, or Go support. 
+HTML, etc. But neither have decent C, Scheme, Rust, or Go support.
 
 My Preferences:
 * Great cross-language support
@@ -46,15 +46,37 @@ use Intellij exclusively for Java and Android development and Visual Studio at
 work, where I wrangle a large C# codebase.
 
 Emacs has many good plugins for different languages. Many, like the plugins for
-Haskell and Clojure, offer full suites of refactoring, auto-complete, build
-errors, and navigation. These plugins are fine, but often they come with a
+Haskell and Clojure, offer full suites of refactoring, auto-complete, automatic
+build errors, and navigation. These plugins are fine, but often they come with a
 mental price for new shortcuts and workflows. Each new plugin has slightly
 different features and shortcuts. Over time, I have become less and less
 enamored with these plugins.
 
-A respected coworker said it best:
+Patrick Boe, a respected coworker said it best:
 
-> I am as fast with basic Vim editing as most people are with Resharper
+> A mastery of basic Vim and command-line tools rivals the productivity of
+> integrated refactoring solutions like ReSharper, and they work in every
+> language. - Patrick Boe
+
+I have had the unique experience of pairing with him and with several other
+ReSharper gurus over hundreds of hours in the last four years. I can safely say
+he is right, he is certainly as effective. He is very productive with just Vim
+macros and command line tools. Some tasks he is less efficient than ReSharper,
+some he is more. The benefit to him is he is just as productive in JavaScript,
+Haskell, and Clojure as he is in C#. He can cross terrain that ReSharper cannot.
+
+The tools we use to produce code are as much an abstraction as the tools we rely
+on in code. If you have a good set of abstractions, you can use them to solve
+any problem. A well-designed abstraction composes well, and therefore can be
+easily combined for new utility.
+
+Consider the sequence abstractions. With the abstractions: map, filter, and fold
+(in Linq: select, where, and aggregate), you can transform any sequence of data
+into another shape. A mastery of these three abstractions is the power to
+transform any data. The power of these abstractions comes from how easily they
+can be combined.
+
+
 
 I have found that if you have a good set of abstractions for editing code, you
 can be very productive across lots of languages and frameworks.
