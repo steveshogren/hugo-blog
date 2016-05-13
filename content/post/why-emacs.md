@@ -5,6 +5,11 @@ Categories = ["technical skills","clojure", "clojurescript"]
 draft=true
 +++
 
+- I like emacs
+- Emacs is a fine choice
+- Emacs Rewards Mastery
+- Editing abstractions are a thing
+
 An IDE is a "T-shaped" editor. The IDE provides an amazing experience for one or
 two languages, and an average or poor experience in everything else. By default
 Visual Studio and Intellij IDEA offer phenomenal support for C# and Java. They
@@ -55,28 +60,37 @@ enamored with these plugins.
 Patrick Boe, a respected coworker said it best:
 
 > A mastery of basic Vim and command-line tools rivals the productivity of
-> integrated refactoring solutions like ReSharper, and they work in every
-> language. - Patrick Boe
+> refactoring solutions like ReSharper, and they work in every language. -
+> Patrick Boe
 
 I have had the unique experience of pairing with him and with several other
-ReSharper gurus over hundreds of hours in the last four years. I can safely say
-he is right, he is certainly as effective. He is very productive with just Vim
-macros and command line tools. Some tasks he is less efficient than ReSharper,
-some he is more. The benefit to him is he is just as productive in JavaScript,
-Haskell, and Clojure as he is in C#. He can cross terrain that ReSharper cannot.
+ReSharper gurus over hundreds of hours. I can safely say he is right, he is
+certainly as effective. He is very productive making edits with just Vim macros
+and command-line tools. Some tasks he is less efficient than ReSharper, some he
+is more. The greatest benefit to him is when we work in JavaScript, Haskell, or
+Clojure. He is just as productive in those as he is in C#. He can cross terrain
+that ReSharper cannot.
 
 The tools we use to produce code are as much an abstraction as the tools we rely
 on in code. If you have a good set of abstractions, you can use them to solve
-any problem. A well-designed abstraction composes well, and therefore can be
-easily combined for new utility.
+any problem. A well-designed abstraction composes well, and can be combined for
+new utility.
 
-Consider the sequence abstractions. With the abstractions: map, filter, and fold
-(in Linq: select, where, and aggregate), you can transform any sequence of data
-into another shape. A mastery of these three abstractions is the power to
-transform any data. The power of these abstractions comes from how easily they
-can be combined.
+Consider the sequence abstractions. With only: ```map```, ```filter```, and
+```fold``` (in Linq: ```select```, ```where```, and ```aggregate```), you can
+transform any sequence of data into another shape. Mastery of the three
+abstractions gives the power to transform any data. The power comes from how
+easily they can be combined.
 
+  I think most of us would agree that the three major sequence abstractions are
+  far superior to several dozen specialized functions. The three are easy to
+  learn, simple to combine, and provide for endless combinations. A suite of
 
+Our editing tools are also abstractions. We memorize commands to perform
+actions, disregarding the underlying implementation.
+
+The more I watch Patrick work, the more I realize how much mental and muscle
+memory I have built up around "Visual Studio"-only abstractions.
 
 I have found that if you have a good set of abstractions for editing code, you
 can be very productive across lots of languages and frameworks.
