@@ -90,13 +90,24 @@ where we see the power of good abstractions. Where a refactoring suite may
 provide dozens or hundreds of specialized commands, Vim and grep provide several
 good abstractions that endlessly compose.
 
-## Vim Abstractions
+## Text Abstractions
 
-* **Change** - Change a piece of text with another
-* **Replace** - Replace a character
-* **Insert** - Insert text
-* **Delete** - Delete text
-* **Yank** - Copy text
+* **Edit**
+ * **Change** - Change a piece of text with another
+ * **Replace** - Replace a character
+ * **Insert** - Insert text
+ * **Delete** - Delete text
+ * **Copy** - Copy text
+* **Motion**
+ * **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by
+   specified delimiter
+ * **Range** - Operate on a range of lines or search criteria
+* **Repeat** - Repeat last command
+* **Search** - Find instances of text
+ * **Replace** - Replace with alternate text
+ * **Operate** - Perform action on line containing text
+ * **Delete** - Delete line containing text
+* **Record|Playback** - Record and save actions, replaying them when needed
 
 These abstractions can be composed with several movement commands for endless
 reuse.
