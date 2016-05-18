@@ -16,10 +16,10 @@ greatest benefit comes when we work in JavaScript, Haskell, or Clojure. His
 productivity doesn't change! **His Vim and grep skills work exactly the same on
 any text.**
 
-The tools we use to produce code are as much an abstraction as the tools we rely
-on in code. If you have a good set of abstractions, you can use them to solve
-any problem. A well-designed abstraction composes well, and can be combined for
-new utility.
+The tools in our editors and IDE's are abstractions. If you have a good set of
+abstractions, you can use them to solve any problem. A well-designed abstraction
+composes well, and can be combined for new utility. They do no "leak"
+implementation details to the user.
 
 Consider the sequence abstractions. With only: ```map```, ```filter```, and
 ```fold``` (in Linq: ```select```, ```where```, and ```aggregate```), you can
@@ -66,7 +66,7 @@ sort of flexibility makes it impossible to build a correct AST.
 Even the flagship refactoring languages like Java and C# still have a version of
 this problem. Sharing dlls or jars breaks semantic tools. A **Rename Symbol**
 will only detect and modify usages in the current project, not every consumer.
-Reflection similarly breaks Semantic Tools. Depending on your practices, this
+Reflection similarly breaks semantic tools. Depending on your practices, this
 ranges from a minor nuisance to a major problem.
 
   <!-- In the last decade, several IDE's have added plugins that can build an AST from -->
@@ -74,19 +74,32 @@ ranges from a minor nuisance to a major problem.
   <!-- at least provide some modest functionality. -->
 <!-- While I would never want to take over a huge codebase without the Big Four, I have lately come to rely on them less and less. -->
 
-Most IDE's have a lot of refactorings they provide other than the Big Four.
-However most refactorings they provide are syntactic, not semantic.
+IDE's have a lot of refactorings they provide other than the Big Four. However
+most of these refactorings are syntactic, not semantic.
 
 ## Syntactic Tools
 
 A syntactic tool does not require an AST to work. Consider **Extract
 Interface**. It takes a class and generates an interface next to the class
 containing all the public functions from the class. The refactoring does not
-require an AST to work, it can be easily achieved by combining several Vim
+require an AST to work, it can be easily achieved by combining several text
 commands.
 
-Any syntactic refactoring can be replaced with a Vim macro or regex. Here is
-where we see the power of good abstractions.
+Any syntactic refactoring can be replaced with a text macro or regex. Here is
+where we see the power of good abstractions. Where a refactoring suite may
+provide dozens or hundreds of specialized commands, Vim and grep provide several
+good abstractions that endlessly compose.
+
+## Vim Abstractions
+
+* **Change** - Change a piece of text with another
+* **Replace** - Replace a character
+* **Insert** - Insert text
+* **Delete** - Delete text
+* **Yank** - Copy text
+
+These abstractions can be composed with several movement commands for endless
+reuse.
 
 Short of the Big Four, I don't really need any refactoring tools if I have a
 good mastery of 
