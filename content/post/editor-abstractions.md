@@ -5,121 +5,41 @@ Categories = ["technical skills","emacs"]
 draft=true
 +++
 
-Not all editing tools are created equal. A respected coworker said it best:
+Not all editing tools are created equal.
+
+I was recently inspired by a comment from a respected coworker:
 
 > "I am just as productive with basic Vim and command-line tools as I am with a
-> refactoring suite like ReSharper." - Coworker
+> refactoring suite like ReSharper."
 
-I have pair-programmed with him for hundreds of hours. He is equally productive.
-Some tasks he is less efficient than with ReSharper, some he is more. The
-greatest benefit comes when we work in JavaScript, Haskell, or Clojure. His
-productivity doesn't change! **His Vim and grep skills work exactly the same on
+I have pair-programmed with him for hundreds of hours of C# development. He is
+equally productive, that much I know. On some tasks he is less efficient than
+with ReSharper, on others he is more. To clarify, we use the superb VsVim inside
+Visual Studio, so he still relies on the built-in tools for "Auto-complete"
+and "Go to Definition".
+
+The greatest benefit comes when we work in JavaScript, Haskell, or Clojure. His
+productivity doesn't drop! **His Vim and grep skills work exactly the same on
 any text.**
 
-The tools in our editors and IDE's are abstractions. If you have a good set of
-abstractions, you can use them to solve any problem. A well-designed abstraction
-composes well, and can be combined for new utility. They do no "leak"
-implementation details to the user.
+The tools in our editors and IDE's are concrete abstractions. If you have a good
+set of abstractions, you can use them to solve any problem. A well-designed
+abstraction composes well, and can be combined for new utility. 
 
 Consider the sequence abstractions. With only: ```map```, ```filter```, and
-```fold``` (in Linq: ```select```, ```where```, and ```aggregate```), you can
-transform any sequence of data into another shape. Mastery of the three
-abstractions gives the power to transform any data. The power comes from how
-easily they can be combined.
+```fold```, you can transform any sequence of data into another shape. Mastering
+the three sequence abstractions empowers you to transform any data. The power comes
+from how easily they can be combined.
 
-The three major sequence abstractions are far superior to dozens of specialized
-functions. The three are easy to learn, simple to combine, and allow for endless
-reuse.
+You can replicate most of the functionality of a refactoring suite using basic,
+composable text-editing commands. The dozen Vim commands can be recorded,
+edited, and replayed to transform text in any way you need. While no replacement
+for the semantic tools "Go to Definition" and "Auto-complete", they are an easy
+replacement for most other refactorings.
 
-Our editors also provide abstractions. I classify them into two main categories:
-
-1. Semantic Tools
-2. Syntactic Tools
-
-Every additional editor abstraction is a new mental tax.
-
-## Semantic Tools
-
-Four abstractions make up the "Holy Grail" of editing. If we had nothing else
-but these, we would be at the pinnacle of power. The Big Four make a huge
-program much more manageable. 
-
-* **Find All References** - See a list of all usages of a field, function, or class
-* **Rename Symbol** - Rename the current field, function, or class
-* **Auto-complete** - Show a list of possible symbols to complete section
-* **Go To Definition** - Move editor to the symbol's defined location
-
-The Big Four are just different ways of exploring the AST of the codebase.
-Unfortunately, building a correct AST before run-time is only possible in
-certain languages. Weakly-typed, dynamic languages (or those with unhygienic
-macros) make building an accurate AST impossible.
-
-How impossible? Time for a fun story. My first encounter with the AST problem
-came when my boss asked me to rename all uses of ```Contact.Id``` to
-```Contact.ContactId``` in a big PHP project. I renamed all I could find using
-sed and grep. I went to run the program, and encountered hundreds of run-time
-errors. What did I miss? Someone had stored a string in the database containing
-"Id", which was read out and combined with PHP magic to access the ```Id```
-field on my class! No refactoring tool could have possibly detected that. That
-sort of flexibility makes it impossible to build a correct AST.
-
-Even the flagship refactoring languages like Java and C# still have a version of
-this problem. Sharing dlls or jars breaks semantic tools. A **Rename Symbol**
-will only detect and modify usages in the current project, not every consumer.
-Reflection similarly breaks semantic tools. Depending on your practices, this
-ranges from a minor nuisance to a major problem.
-
-  <!-- In the last decade, several IDE's have added plugins that can build an AST from -->
-  <!-- PHP, Python, Ruby, JavaScript, Clojure, etc. While incomplete by nature, these -->
-  <!-- at least provide some modest functionality. -->
-<!-- While I would never want to take over a huge codebase without the Big Four, I have lately come to rely on them less and less. -->
-
-IDE's have a lot of refactorings they provide other than the Big Four. However
-most of these refactorings are syntactic, not semantic.
-
-## Syntactic Tools
-
-A syntactic tool does not require an AST to work. Consider **Extract
-Interface**. It takes a class and generates an interface next to the class
-containing all the public functions from the class. The refactoring does not
-require an AST to work, it can be easily achieved by combining several text
-commands.
-
-Any syntactic refactoring can be replaced with a text macro or regex. Here is
-where we see the power of good abstractions. Where a refactoring suite may
-provide dozens or hundreds of specialized commands, Vim and grep provide several
-good abstractions that endlessly compose.
-
-## Text Abstractions
-
-* **Edit**
- * **Change** - Change a piece of text with another
- * **Replace** - Replace a character
- * **Insert** - Insert text
- * **Delete** - Delete text
- * **Copy** - Copy text
-* **Motion**
- * **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by
-   specified delimiter
- * **Range** - Operate on a range of lines or search criteria
-* **Repeat** - Repeat last command
-* **Search** - Find instances of text
- * **Replace** - Replace with alternate text
- * **Operate** - Perform action on line containing text
- * **Delete** - Delete line containing text
-* **Record|Playback** - Record and save actions, replaying them when needed
-
-These abstractions can be composed with several movement commands for endless
-reuse.
-
-Short of the Big Four, I don't really need any refactoring tools if I have a
-good mastery of 
-
-<!-- The more I watch Patrick work, the more I realize how much mental and muscle -->
-<!-- memory I have built up around "Visual Studio"-only abstractions. -->
-
-<!-- Our editing tools are also abstractions. We memorize commands to perform -->
-<!-- actions, disregarding the underlying implementation. -->
-
-<!-- I have found that if you have a good set of abstractions for editing code, you -->
-<!-- can be very productive across lots of languages and frameworks. -->
+The composable text-editing commands are a much better abstraction than those
+provided by a refactoring suite. Refactoring suites often have dozens of bespoke
+commands that only work in certain contexts. Even the best of these suites are
+often constrained to a single language. **If you ever work in more than one
+language, you will get the most value learning to rely on abstractions that are
+constant.**
