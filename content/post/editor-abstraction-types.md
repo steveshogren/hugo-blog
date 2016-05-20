@@ -5,6 +5,8 @@ Categories = ["technical skills","emacs"]
 draft=true
 +++
 
+Not all editing tools are created equal.
+
 > Combining several simple ideas into one compound one, and thus all complex
 > ideas are made - John Locke, An Essay Concerning Human Understanding (1690)
 
@@ -36,16 +38,17 @@ Every additional editor abstraction is a new mental tax.
 
 ## Semantic Tools
 
-Four abstractions make up the "Holy Grail" of Semantic Tools. If we had nothing
-else but these, we would be at the pinnacle of power. The Big Four make a huge
+Five abstractions make up the "Holy Grail" of Semantic Tools. If we had nothing
+else but these, we would be at the pinnacle of power. The Big Five make a huge
 program much more manageable.
 
+* **Language Errors** - Highlight code that violates the rules of the language
 * **Find All References** - See a list of all usages of a field, function, or class
 * **Rename Symbol** - Rename the current field, function, or class
 * **Auto-complete** - Show a list of possible symbols to complete section
 * **Go To Definition** - Move editor to the symbol's defined location
 
-The Big Four are just different ways of interacting with the AST of the
+The Big Five are just different ways of interacting with the AST of the
 codebase. Unfortunately, building a correct AST before run-time is only possible
 in certain languages. Building an always-accurate AST is impossible in
 weakly-typed, dynamic languages (or those with unhygienic macros).
