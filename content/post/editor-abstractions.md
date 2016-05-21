@@ -33,7 +33,7 @@ Editor abstractions are most powerful when they can be composed. You can
 replicate most of the functionality of a refactoring suite using basic,
 composable text-editing commands. Well-designed editor abstractions can be
 recorded, edited, and replayed to transform text in any way you need. While no
-replacement for semantic tools like "Compiler Errors", "Go to Definition", and
+replacement for semantic tools like "Language Errors", "Go to Definition", and
 "Auto-complete", they are an easy replacement for most other refactorings.
 
 If you work in multiple languages, composable text-editing commands are a much
@@ -43,8 +43,9 @@ Even the best of these suites are often constrained to a single language. **If
 you ever work in more than one language, you will get the most value learning to
 rely on abstractions that are constant across all environments.**
 
-I find I get the most value with a Vim plugin inside whatever editor best suits
-the language. When building an Android app, I use IDEAVim inside Android Studio.
-For C#: VsVim inside Visual Studio. For all other languages: Evil mode inside
-Emacs. Instead of hundreds of specialized commands and contexts, I rely on a few
-basic abstractions to achieve any text transformation I can imagine.
+I find I get the most value with a Vim plugin inside whatever environment
+provides the best semantic tools for the language. When building an Android app,
+I use IDEAVim inside Android Studio. For C#: VsVim inside Visual Studio. For all
+other languages: Evil mode inside Emacs. Instead of hundreds of specialized
+commands and contexts, I rely on a few basic abstractions to achieve any text
+transformation I can imagine.
