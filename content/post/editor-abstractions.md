@@ -1,8 +1,7 @@
 +++
 title = "Editor Abstractions"
-date = "2016-05-09"
-Categories = ["technical skills","emacs"]
-draft=true
+date = "2016-05-23"
+Categories = ["technical skills","emacs", "vim"]
 +++
 
 I was recently inspired by a comment from a respected coworker:
