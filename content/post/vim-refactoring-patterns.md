@@ -53,5 +53,5 @@ I don't think this macro is very complex. I would only leave it in the register
 for a single session, and remake it in the future if needed. But if I wanted to
 save it, running ```"qp``` spits out: ```dbNybnP^ann```.
 
-# 
+# Extract Interface From Class 
 

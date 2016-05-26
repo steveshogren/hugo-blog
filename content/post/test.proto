@@ -1,38 +1,38 @@
-message SearchRequest {
-  required string query = 1;
-  optional int32 page_number = 2;
-  optional int32 result_per_page = 3;
-  optional Corpus corpus = 4;
-  required string url = 5;
-  optional string title = 6;
-  optional Baz foo_ext = 7;
-  repeated string name = 8;
-  required string otherurl = 9;
-  optional string title_name = 10;
-  optional Baz foo_ext = 11;
-  repeated string snip_name = 12;
-  required string url_id = 13;
-  optional string title_id = 14;
-  optional Baz foo = 15;
-  repeated string barr = 16;
-  required string nameUrl = 17;
-  optional string firstName = 18;
-  optional Baz foo_ext = 19;
-  repeated string snippets = 20;
-  required string url = 1;
-  optional string title = 2;
-  optional Baz foo_ext = 127;
-  repeated string snippets = 3;
-  required string url = 1;
-  optional string title = 2;
-  optional Baz foo_ext = 127;
-  repeated string snippets = 3;
-  required string url = 1;
-  optional string title = 2;
-  optional Baz foo_ext = 127;
-  required string url = 1;
-  optional string title = 2;
-  optional Baz foo_ext = 127;
-  repeated string snippets = 3;
-  repeated string snippets = 3;
+using System;
+using FSharpLogic;
+using NUnit.Core;
+using NUnit.Framework;
+
+namespace testfsharp
+{
+
+    class MainClass
+    {
+        public void RunMain (string[] args)
+        {
+            new LevelTraversal ().runTests ();
+        }
+
+        public void RunTests(String[] args)
+        {
+            //get from command line args
+            String pathToTestLibrary = "/home/jack/programming/fsharppresentation/testfsharp/FSharpLogic/bin/Debug/FSharpLogic.dll";
+            TestRunner runner = new TestRunner();
+            runner.run(pathToTestLibrary);
+        }
+
+        public void RunTestPath(String pathToTestLibrary)
+        {
+            CoreExtensions.Host.InitializeService();
+            TestPackage testPackage = new TestPackage(@pathToTestLibrary);
+            testPackage.BasePath = Path.GetDirectoryName(pathToTestLibrary);
+            TestSuiteBuilder builder = new TestSuiteBuilder();
+            TestSuite suite = builder.Build(testPackage);
+            TestResult result = suite.Run(new NullListener(), TestFilter.Empty);
+
+            Console.WriteLine("has results? " + result.HasResults);
+            Console.WriteLine("results count: " + result.Results.Count);
+            Console.WriteLine("success? " + result.IsSuccess);
+        }
+    }
 }
