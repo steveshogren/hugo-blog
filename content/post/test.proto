@@ -5,7 +5,12 @@ using NUnit.Framework;
 
 namespace testfsharp
 {
-
+    interface IMainClass
+    {
+         void RunMain (string[] args);
+         void RunTests(String[] args);
+         void RunTestPath(String pathToTestLibrary);
+    }
     class MainClass
     {
         public void RunMain (string[] args)
