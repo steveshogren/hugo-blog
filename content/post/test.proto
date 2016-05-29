@@ -11,7 +11,7 @@ namespace testfsharp
          void RunTests(String[] args);
          void RunTestPath(String pathToTestLibrary);
     }
-    class MainClass
+    class MainClass : IMainClass
     {
         public void RunMain (string[] args)
         {

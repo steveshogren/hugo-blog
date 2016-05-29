@@ -58,9 +58,12 @@ save it, running ```"qp``` spits out: ```dbNybnP^ann```.
 Extracting an interface is several commands composed together. First we grab the
 contents of the class including the curly brackets. 
 
+<img class="pull-left" src="/images/interface-small.gif"></img>
+
 * ```11,37t8``` - Copy the class body to line 8
-* ```10,35g!/public/d``` - Delete every line not containing the word public
-* ```10,12s/public//g``` - Delete all the public keywords
+* ```10,35g!/public/d``` - Delete every line not containing the word public from
+  line 10 to 35
+* ```10,12s/public//g``` - Delete all the public keywords in lines 10-12
 * ```10,12s/$/;/g``` - End each line with a semi-colon
 * ```:8``` - Jump to line 8 (and add interface and name)
 * ```:14``` - Jump to line 14 (and add interface name)
