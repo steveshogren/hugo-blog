@@ -5,39 +5,20 @@ using NUnit.Framework;
 
 namespace testfsharp
 {
-    interface IMainClass
-    {
-         void RunMain (string[] args);
-         void RunTests(String[] args);
-         void RunTestPath(String pathToTestLibrary);
-    }
     class MainClass : IMainClass
     {
-        public void RunMain (string[] args)
-        {
-            new LevelTraversal ().runTests ();
-        }
-
-        public void RunTests(String[] args)
-        {
-            //get from command line args
-            String pathToTestLibrary = "/home/jack/programming/fsharppresentation/testfsharp/FSharpLogic/bin/Debug/FSharpLogic.dll";
-            TestRunner runner = new TestRunner();
-            runner.run(pathToTestLibrary);
-        }
-
         public void RunTestPath(String pathToTestLibrary)
         {
-            CoreExtensions.Host.InitializeService();
-            TestPackage testPackage = new TestPackage(@pathToTestLibrary);
-            testPackage.BasePath = Path.GetDirectoryName(pathToTestLibrary);
-            TestSuiteBuilder builder = new TestSuiteBuilder();
-            TestSuite suite = builder.Build(testPackage);
-            TestResult result = suite.Run(new NullListener(), TestFilter.Empty);
-
-            Console.WriteLine("has results? " + result.HasResults);
-            Console.WriteLine("results count: " + result.Results.Count);
-            Console.WriteLine("success? " + result.IsSuccess);
+            m.Name = (NameType)getEnum(typeof(NameType), req.Name);
+            m.BusinessLine = (BusinessLine)getEnum(typeof(BusinessLine), req.BusinessLine);
+            m.MarginType = (MarginType)getEnum(typeof(MarginType), req.MarginType);
+            m.AllocationType = (AllocationType)getEnum(typeof(AllocationType), req.AllocationType);
+            m.AllocationCount = getNumber(req.AllocationCount);
+            m.Total = getNumber(req.Total);
+            m.Held = getNumber(req.Held);
+            m.Posted = getNumber(req.Posted);
+            m.CollateralType = (CollateralType)getEnum(typeof(CollateralType), req.CollateralType);
+            m.Property = (Property)getEnum(typeof(Property), req.Property);
         }
     }
 }

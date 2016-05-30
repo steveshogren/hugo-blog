@@ -8,3 +8,4 @@ convert output/* proto-macro.gif
 convert proto-macro.gif -fuzz 10% -layers Optimize proto-macro-small.gif
 * Copy smaller gif to the blog static dir
 # cp proto-macro-small.gif ~/programming/testhugo/static/images/NEWFILE
+

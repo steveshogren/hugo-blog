@@ -68,3 +68,10 @@ contents of the class including the curly brackets.
 * ```:8``` - Jump to line 8 (and add interface and name)
 * ```:14``` - Jump to line 14 (and add interface name)
 
+# Change a Function Signature
+
+Today I wanted to change a function signature to move a parameter into a
+generic and not have to cast. Normally, this is a big pain with lots of manual
+changes, but with a macro it is quite simple!
+
+<img class="pull-left" src="/images/generic-small.gif"></img>
