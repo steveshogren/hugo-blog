@@ -74,4 +74,4 @@ Today I wanted to change a function signature to move a parameter into a
 generic and not have to cast. Normally, this is a big pain with lots of manual
 changes, but with a macro it is quite simple!
 
-<img class="pull-left" src="/images/generic-small.gif"></img>
+<img class="pull-left" src="/images/generic2.gif"></img>

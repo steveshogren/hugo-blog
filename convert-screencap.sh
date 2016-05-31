@@ -1,8 +1,18 @@
 #!/bin/sh
-mplayer -ao null out.ogv -vo jpeg:outdir=output
+
+cd ~
+# mplayer -ao null out.ogv -vo jpeg:outdir=output
 # wait for input
+echo "Clean up the output directory in 'output'"
+nautilus ~/output
+echo "<Enter> when finished"
 read
+echo "Converting the images to gif"
 convert output/* out.gif
-convert proto-macro.gif -fuzz 5% -layers Optimize out-small.gif
-convert -delay 25x100 out-small.gif out-small.gif
-cp out-small.gif ~/programming/testhugo/static/images/$1.gif
+echo "Optimizing the gif"
+convert out.gif -fuzz 5% -layers Optimize out.gif
+echo "Lengthening the gif"
+convert -delay 25x100 out.gif out.gif
+echo "Copying to static/images"
+cp out.gif ~/programming/testhugo/static/images/$1.gif
+cd ~/programming/testhugo
