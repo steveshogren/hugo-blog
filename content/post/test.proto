@@ -9,7 +9,7 @@ namespace testfsharp
     {
         public void RunTestPath(String pathToTestLibrary)
         {
-            m.Name = (NameType)getEnum(typeof(NameType), req.Name);
+            m.Name = getEnum<NameType>(req.Name);
             m.BusinessLine = (BusinessLine)getEnum(typeof(BusinessLine), req.BusinessLine);
             m.MarginType = (MarginType)getEnum(typeof(MarginType), req.MarginType);
             m.AllocationType = (AllocationType)getEnum(typeof(AllocationType), req.AllocationType);

@@ -27,7 +27,7 @@ Whenever I need a repeated action, I first reach for a macro:
 
 <img class="pull-left" src="/images/proto-macro-small.gif"></img>
 
-The commands to run this were simple:
+The commands:
 
 * ```/;``` - Search for ';'
 * ```n```  - Go to next ';'
@@ -53,6 +53,9 @@ I don't think this macro is very complex. I would only leave it in the register
 for a single session, and remake it in the future if needed. But if I wanted to
 save it, running ```"qp``` spits out: ```dbNybnP^ann```.
 
+<div class="container-fluid">
+</div>
+
 # Extract Interface From Class 
 
 Extracting an interface is several commands composed together. First we grab the
@@ -68,10 +71,32 @@ contents of the class including the curly brackets.
 * ```:8``` - Jump to line 8 (and add interface and name)
 * ```:14``` - Jump to line 14 (and add interface name)
 
+<div class="container-fluid">
+</div>
+
 # Change a Function Signature
 
 Today I wanted to change a function signature to move a parameter into a
 generic and not have to cast. Normally, this is a big pain with lots of manual
-changes, but with a macro it is quite simple!
+changes, but with a macro I can record and playback my edits.
 
-<img class="pull-left" src="/images/generic2.gif"></img>
+<img src="/images/generic2.gif"></img>
+
+* ```/getEnum``` - Search for ```getEnum```
+* ```qq``` - Start macro in ```q```
+* ``F(```` - Backwards find ```(```
+* ``da(```` - Delete whole block in ```()```
+* ```f(``` - Find next ```(```
+* ```P``` - Paste backwards one character
+* ```r>``` - Replace character with ```>```
+* ```F(``` - Backwards find ```(```
+* ```r<``` - Replace character with ```<```
+* ```f(``` - Find next ```(```
+* ```l``` - Left one character
+* ```df ``` - Delete up to and including next space
+* ```n``` - Search next ```getEnum```
+* ```q``` - Stop macro recording
+* ```5@q``` - Replay macro 5 times
+
+
+
