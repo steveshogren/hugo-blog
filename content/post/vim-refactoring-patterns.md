@@ -11,6 +11,11 @@ composed with others to accomplish more.
 Here are some patterns that are helpful for demonstrating how to build major
 structural refactorings of code using the Vim commands.
 
+To start, consider if a macro or a search/replace makes the most sense for the
+task. A macro is usually a little more tedious to get right, but can be more
+forgiving than a search/replace for a complex task. If the search/replace
+requires you to parse several patterns at once, a macro might just be easier.
+
 # Macro Saving
 
 If I had just built a complex macro and I wanted to save it for later, I would
@@ -58,8 +63,12 @@ save it, running ```"qp``` spits out: ```dbNybnP^ann```.
 
 # Extract Interface From Class 
 
-Extracting an interface is several commands composed together. First we grab the
-contents of the class including the curly brackets. 
+Let's extract an interface from a class. A region-based search and replace is a
+great fit for this task. Since we are not matching or reordering several blocks
+of text, several search/replace steps works well. First, duplicate the whole
+class body to the top of the file. Delete all lines that are not the function
+signature lines. Remove all public keywords and add in semicolons on each line
+ending. Finish up with adding the interface name and adding it to the class.
 
 <img class="pull-left" src="/images/interface-small.gif"></img>
 
@@ -76,9 +85,26 @@ contents of the class including the curly brackets.
 
 # Change a Function Signature
 
-Today I wanted to change a function signature to move a parameter into a
-generic and not have to cast. Normally, this is a big pain with lots of manual
-changes, but with a macro I can record and playback my edits.
+Let's change a function signature to move a parameter into a generic and not
+have to cast. I want to change a line like this
+
+``` m.Name = (NameType)getEnum(typeof(NameType), req.Name); ```
+
+into this:
+
+``` m.Name = getEnum<NameType>(req.Name); ```
+
+Normally, this is a very manual task, requiring many edits.
+
+
+In this case, a search/replace is possible,
+but probably a lot more complex. We'd have to identify and remove the
+```(NameType)```, locate the opening ```(``` of the parameter list, put in the
+```NameType``` inside a pair of ```<>```, then remove the first parameter and
+comma. While possible, a macro record/playback fits this task easily.
+
+We perform those steps above, but use the f/F commands to find markers in the
+line. This allows the playback to work on any line with the same markers.
 
 <img src="/images/generic2.gif"></img>
 
