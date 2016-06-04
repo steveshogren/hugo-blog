@@ -10,7 +10,7 @@ read
 echo "Converting the images to gif"
 convert output/* out.gif
 echo "Optimizing the gif"
-convert out.gif -fuzz 5% -layers Optimize out.gif
+convert out.gif -fuzz 10% -layers Optimize out.gif
 echo "Lengthening the gif"
 convert -delay 25x100 out.gif out.gif
 echo "Copying to static/images"

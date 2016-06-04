@@ -117,11 +117,11 @@ into this:
 
 Normally, this is a very manual task, requiring many edits.
 
-In this case, a search/replace is possible,
-but probably a lot more complex. We'd have to identify and remove the
-```(NameType)```, locate the opening ```(``` of the parameter list, put in the
-```NameType``` inside a pair of ```<>```, then remove the first parameter and
-comma. While possible, a macro record/playback fits this task easily.
+In this case, a search/replace is possible, but probably a lot more complex.
+We'd have to identify and remove the ```(NameType)```, locate the opening
+```(``` of the parameter list, put in the ```NameType``` inside a pair of
+```<>```, then remove the first parameter and comma. A macro record/playback
+fits this task easily.
 
 We perform those steps above, but use the f/F commands to find markers in the
 line. This allows the playback to work on any line with the same markers.
@@ -165,9 +165,9 @@ copied it to my sql file. They were tab AND newline separated.
 * ```:1,100s/\W*$//g``` - Delete trailing whitespace
 * ```:101``` - Jump to line 101
 * ```qq``` - Start macro in ```q``` register
-* ```:-15``` - Jump 15 lines up
+* ```:-100``` - Jump 100 lines up
 * ```2yw``` - Yank (copy) two words
-* ```:+15``` - Jump down 15 lines
+* ```:+100``` - Jump down 100 lines
 * ```f)``` - Jump to next ```)```
 * ```f'``` - Jump to next ```'```
 * ```l``` - Move right
@@ -175,4 +175,4 @@ copied it to my sql file. They were tab AND newline separated.
 * ```p``` - Paste clipboard
 * ```:+1``` - Jump down one line
 * ```q``` - End macro
-* ```14@q``` - Replay macro 14 times
+* ```99@q``` - Replay macro 99 times
