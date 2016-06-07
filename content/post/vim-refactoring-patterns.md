@@ -5,47 +5,38 @@ Categories = ["technical skills","vim","refactoring"]
 draft=true
 +++
 
-The Vim commands can be used to edit any type of code. Each command can be
-composed with others to accomplish more.
+Editor macros are a secret weapon for editing text. While they are hard to
+learn, no other tool offers such broad speed and power for automating changes. A
+skilled macro wielder can make huge changes to a codebase with ease.
 
-Here are some patterns that are helpful for demonstrating how to build major
-structural refactorings of code using Vim macros and search/replace commands.
-
-To start, consider if a macro or a search/replace makes the most sense for the
-task. A macro is usually a little more tedious to get right, but can be more
-forgiving than a search/replace for a complex task. If the search/replace
-requires you to parse several patterns at once, a macro might just be easier.
+Here are some inspirational patterns to demonstrate major structural
+refactorings using Vim macros and search/replace commands.
 
 Learning how to record and playback macros is a skill like any other. With
 practice, it becomes second-nature. When skilled, writing a useful macro takes
-very little effort. These three below I wrote correctly on the first try, and
-they only took me several seconds to record.
+very little effort.
 
 Like any other skill, the first few dozen times you write a macro it won't work
 right, or will mangle the text. That is okay! If you are setting out to learn
 macros, allow yourself to be slow while you master the skill. Touch-typing can
 be many times faster than hand-writing or hunt-and-peck, but while learning you
-will be slower. Macros are similar, they will save you huge amounts of time, but
-you have to allow yourself the freedom to be slow while you master the skill.
-The good news is macros are much easier to learn than touch-typing!
+will be slower. Macros will save you huge amounts of time, but you have to allow
+yourself to be slow while you master the skill.
 
-These are three different refactorings I needed to perform this week. I was able
-to do them each in a few seconds on the first try.
+<!-- # Macro Saving -->
 
-# Macro Saving
+<!-- When you build a complex macro and want to save it for later, just save it off -->
+<!-- to a file. Since a macro is just a list of commands to execute, you can copy and -->
+<!-- paste macros into registers just like text: -->
 
-When you build a complex macro and want to save it for later, just save it off
-to a file. Since a macro is just a list of commands to execute, you can copy and
-paste macros into registers just like text:
-
-* ```"qp``` - Paste the 'q' register contents
-* ```"qy``` - Insert selected text into the 'q' register
+<!-- * ```"qp``` - Paste the 'q' register contents -->
+<!-- * ```"qy``` - Insert selected text into the 'q' register -->
 
 # Reorder A List Of Numbers
 
-A refactoring left me with a file with unordered numbers. The numbers needed to
-be increasing, without changing the actual order of the lines. Macros are my
-first choice to accomplish a repeated action.
+A change left me with a file with unordered numbers. The numbers needed to be
+increasing, without changing the actual order of the lines. Macros are my first
+choice to accomplish a repeated action.
 
 <img class="pull-left" src="/images/proto-macro-small.gif"></img>
 <div class="container-fluid">
@@ -67,11 +58,11 @@ The commands:
 * ```q```  - Stop Recording macro
 * ```33@q``` - Replay 33 times the 'q' macro
 
-This took me a few seconds to type, and was a lot more interesting! I was able
-to run this across the whole file by replaying it the number of lines minus one.
-Because I saved it in the 'q' register, I was able to keep it saved for the
-whole session, which involved refactoring several dozen similar files. I got to
-re-use the saved macro at least 20 more times in that three hour session!
+This only took me a few seconds to type! I was able to run this across the whole
+file by replaying it the number of lines minus one. Because I saved it in the
+'q' register, I was able to keep it saved for the whole session, which involved
+refactoring several dozen similar files. I got to re-use the saved macro at
+least 20 more times in that three hour session!
 
 I don't think this macro is very complex. I would only leave it in the register
 for a single session, and remake it in the future if needed. But if I wanted to
@@ -84,7 +75,7 @@ save it, running ```"qp``` spits out: ```dbNybnP^ann```.
 
 Let's extract an interface from a class. A region-based search and replace is a
 great fit for this task. Since we are not matching or reordering several blocks
-of text, several search/replace steps works well. First, duplicate the whole
+of text, several search/replace steps work well. First, duplicate the whole
 class body to the top of the file. Delete all lines that are not the function
 signature lines. Remove all public keywords and add in semicolons on each line
 ending. Finish up with adding the interface name and adding it to the class.
@@ -176,3 +167,17 @@ copied it to my sql file. They were tab AND newline separated.
 * ```:+1``` - Jump down one line
 * ```q``` - End macro
 * ```99@q``` - Replay macro 99 times
+
+# Conclusion
+
+You probably noticed a couple of patterns. I typically use a macro when a
+search/replace would require using several groups. In macros, I use relative
+line jumps and liberal uses of the search (```/``` and ```n/N```) and find
+(```f/F```) commands for navigating. The search and find commands let my macro
+work the same on many different shapes of lines. I also end each macro with a
+step for finding the "next" line to operate on. By ensuring each iteration
+finishes by going to the "next" line, I can repeat the command with the built-in
+command repeat without manually executing each one.
+
+Macros are an incredibly powerful tool for editing text. Like any tool, they
+require practice to develop mastery. With practice macros become second-nature.
