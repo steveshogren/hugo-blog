@@ -62,14 +62,6 @@ learn, simple to combine, and provide for endless combinations. A suite of
 
 --- 
 
-
-| | Dependencies | Complexity |
-|-------------          |-------------- |  ------------- |
-|**Pass As Parameter**  | Explicit     | Less Complex |
-|**Unnamed Parameter** | Explicit     | Less Complex |
-|**Reader Type**        | Explicit     | More Complex |
-
-
 I regularly work on the train, where it is difficult to use a mouse. I also
 cannot always easily move my arms around for reaching the trackpad or arrow
 keys. 
