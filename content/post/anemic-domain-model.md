@@ -35,4 +35,3 @@ If you need testability, choose the SOLID patterns with small stateless
 functions. Don't encapsulate state, put it in a data structure with all public
 fields and pass it to functions. If you don't need to be able to test, choose
 the rich domain model patterns.
-
