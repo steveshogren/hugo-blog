@@ -4,7 +4,7 @@ date = "2016-06-11"
 Categories = ["technical skills", "architecture", "csharp", "unit-testing"]
 +++
 
-Dependency Injection is a pattern for polymorphic dispatch or unit-test mocking.
+Dependency Injection can be greatly simplified while retaining all of its power.
 
 ### The Unnecessary Boilerplate
 
@@ -47,12 +47,12 @@ pattern can be improved.
 
 ### For Unit Test Mocking
 
-Thanks to the power of lambdas in a modern language like Java 8 or C#, the
-previously highlighted lines (1-19) can be removed!
+Thanks to the power of lambdas, the previously highlighted lines (1-19) can be
+removed!
 
 {{< highlight csharp "linenos=inline,style=default,noclasses=false">}}
 public class Formatter {
-    internal Func<DateTime> currentTime = () => return DateTime.Now;
+    internal Func<DateTime> currentTime = () => DateTime.Now;
 
     public string Format(string input) {
         return string.Format("{0}: {1}", currentTime().ToString(), input);
@@ -72,7 +72,7 @@ this much less than you think!
 public class Formatter {
     internal Func<DateTime> currentTime;
 
-    public Formatter() : this(() => return DateTime.Now) {}
+    public Formatter() : this(() => DateTime.Now) {}
 
     public Formatter(Func<DateTime> currentTime) {
         this.currentTime = currentTime;
@@ -85,9 +85,9 @@ public class Formatter {
 {{< / highlight >}}
 
 If you are heavily invested in unit-testing, you might find you need very little
-actual interface polymorphism. To see if you really need interface polymorphism,
-count how many interfaces in your codebase only have a single concrete class in
-production. Each interface with a single concrete class is boilerplate that can
-be replaced with a lambda!
+actual interface polymorphism. To see where you really use interface
+polymorphism, find the interfaces in your codebase only have a single concrete
+class in production. Each interface with a single concrete class is test-only
+boilerplate that can safely replaced with a lambda!
 
 For more examples, [check out SimpleMock!]({{< relref "simplemock-unit-test-mocking.md" >}})
