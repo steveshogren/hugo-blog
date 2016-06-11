@@ -2,7 +2,6 @@
 title = "Modern Dependency Injection"
 date = "2016-06-11"
 Categories = ["technical skills", "architecture", "csharp", "unit-testing"]
-draft=true
 +++
 
 Dependency Injection is a pattern for polymorphic dispatch or unit-test mocking.
