@@ -13,7 +13,8 @@ Injection of an interface through the constructor is a common way to replace a
 dependency for unit-test mocking. Unfortunately, it is an extremely verbose
 pattern.
 
-Look how much boilerplate is needed just to mock out a call to ```DateTime.Now```:
+Look how much boilerplate is needed just to mock out a call to
+```DateTime.Now```:
 
 {{< highlight csharp "linenos=inline,style=default,noclasses=false,hl_lines=1 2 3 4 5 6 8 9 10 12 13 14 15 16 17 18 19" >}}
 public interface ICurrentTime {
@@ -85,9 +86,9 @@ public class Formatter {
 {{< / highlight >}}
 
 If you are heavily invested in unit-testing, you might find you need very little
-actual interface polymorphism. Find out how many interfaces in your codebase
-only have a single concrete class in production. Each interface with a single
-concrete class is only used for testing, and is boilerplate that can be replaced
-with a lambda!
+actual interface polymorphism. To see if you really need interface polymorphism,
+count how many interfaces in your codebase only have a single concrete class in
+production. Each interface with a single concrete class is boilerplate that can
+be replaced with a lambda!
 
 For more examples, [check out SimpleMock!]({{< relref "simplemock-unit-test-mocking.md" >}})
