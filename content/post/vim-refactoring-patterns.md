@@ -12,17 +12,6 @@ skilled macro wielder can make huge changes to a codebase with ease.
 Here are some inspirational patterns to demonstrate major structural
 refactorings using Vim macros and search/replace commands.
 
-Learning how to record and playback macros is a skill like any other. With
-practice, it becomes second-nature. When skilled, writing a useful macro takes
-very little effort.
-
-Like any other skill, the first few dozen times you write a macro it won't work
-right, or will mangle the text. That is okay! If you are setting out to learn
-macros, allow yourself to be slow while you master the skill. Touch-typing can
-be many times faster than hand-writing or hunt-and-peck, but while learning you
-will be slower. Macros will save you huge amounts of time, but you have to allow
-yourself to be slow while you master the skill.
-
 <!-- # Macro Saving -->
 
 <!-- When you build a complex macro and want to save it for later, just save it off -->
@@ -172,12 +161,20 @@ copied it to my sql file. They were tab AND newline separated.
 
 You probably noticed a couple of patterns. I typically use a macro when a
 search/replace would require using several groups. In macros, I use relative
-line jumps and liberal uses of the search (```/``` and ```n/N```) and find
-(```f/F```) commands for navigating. The search and find commands let my macro
+line jumps and liberal uses of the search (```/?``` and ```nN```) and find
+(```fF```) commands for navigating. The search and find commands let my macro
 work the same on many different shapes of lines. I also end each macro with a
 step for finding the "next" line to operate on. By ensuring each iteration
 finishes by going to the "next" line, I can repeat the command with the built-in
 command repeat without manually executing each one.
 
-Macros are an incredibly powerful tool for editing text. Like any tool, they
-require practice to develop mastery. With practice macros become second-nature.
+Learning how to record and playback macros is a complex skill. With practice, it
+becomes second-nature. My muscle memory grows stronger with each new macro.
+Several of these I wrote without a mistake, almost as fast as I can type.
+
+Like any other skill, the first few dozen times you write a macro it won't work
+right, or will mangle the text. That is okay! If you are setting out to learn
+macros, allow yourself to be slow while you master the skill. Touch-typing can
+be many times faster than hand-writing or hunt-and-peck, but learning takes a
+long time. Macros can save you huge amounts of time, but you have to allow
+yourself to be slow while you master the skill.
