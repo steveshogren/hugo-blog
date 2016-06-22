@@ -1,6 +1,6 @@
 +++
-title = "SOLID-ER For Better OOP"
-date = "2016-03-07"
+title = "Better OOP"
+date = "2016-06-17"
 draft=true
 Categories = ["technical skills", "csharp"]
 +++
@@ -15,45 +15,44 @@ For this post, let's distinguish between _verb classes_ and _noun classes_. Unit
 testing often drives us to separate classes into data structures (the nouns) or
 behavior classes, (the verbs).
 
-* _Noun class_ - has fields and properties filled with data, perhaps from an ORM.
+* **Noun class** - has fields and properties filled with data, perhaps from an ORM.
   * Example: A ```Contact``` class with a name, billing and shipping addresses,
     a birthday, and a credit card.
-* _Verb class_ - has functions and methods. _Verb classes_ might have fields or
-  properties, but usually those only contain other _verb classes_ that are
+* **Verb class** - has functions and methods. Verb classes might have fields or
+  properties, but usually those only contain other verb classes that are
   needed to compose work.
   * Example: A ```CustomerBiller``` class that creates an invoice and sends it
     to an address. Only needs a billing and shipping address and an amount.
-* _Noun interface_ - an interface put on a _noun class_. Used to allow multiple
+* **Noun interface** - an interface put on a noun class. Used to allow multiple
   nouns to be passed to a single verb. A very common use-case in business
   applications.
-  * Example: An ```ICustomer``` interface with a billing and shipping address
+  * Example: ```ICustomer``` interface with a billing and shipping address
     only. Can be used by ```Contact```, ```Company```, ```Government```,
     or any other entity that might like to buy something.
   * Allows a verb to operate on many types of data
-* _Verb interface_ - an interface put on a _verb class_. Allows polymorphic
-  behavior. Less common than _noun interfaces_.
-  * Example: An ```IChargeCustomer``` interface that allows different kinds of
+* **Verb interface** - an interface put on a verb class. Allows polymorphic
+  behavior. Less common than noun interfaces.
+  * Example: ```IChargeCustomer``` interface that allows different kinds of
     charging: one that generates invoices, one that charges credit cards, etc.
   * Allows several types of verbs to be grouped together
 
-## SOLID-ER
+## Two Suggestions
 
-Two additions to SOLID will guide your codebase to be easier to reuse and test.
+Two suggestions will guide your codebase to be easier to reuse and test.
 
-* **E - Extract Noun Interfaces** - Don't pass around concrete nouns. Default to
-  creating _noun interfaces_ and passing them to _verb classes_. This inversion
-  allows for easier reuse. Any data structure that "fits" can re-use that
-  behavior. This is the soul of "choose composition over inheritance".
-- **R - Rely on Verb Functions Not Verb Interfaces** - Replace Dependency
-  Injected _verb interfaces_ with function signatures, explained in the
+* **Extract Noun Interfaces** - Work to determine any missing noun interfaces.
+  This inversion allows for easier reuse. Any data structure that "fits" can
+  re-use that behavior. 
+- **Rely on Verb Functions Not Verb Interfaces** - Replace Dependency
+  Injected verb interfaces with function signatures, explained in the
   [SimpleMock](/simplemock-unit-test-mocking/)
   guide. By relying on the function signature as the default unit of
   abstraction, we remove test-only interfaces. This allows the dependent code to
   have only the functions it needs, rather than everything from the interface.
-  When you really need polymorphic behavior, use a _verb interface_. Only use
-  _verb interfaces_ for polymorphic behavior, not for unit test mocking.
+  When you really need polymorphic behavior, use a verb interface. Only use
+  verb interfaces for polymorphic behavior, not for unit test mocking.
 
-Here is an example of the "SOLID-ER" pattern:
+Here is an example of the patterns:
 
 ``` csharp
 // Verb Class
@@ -75,10 +74,10 @@ public class Government : ISalesLead { /* Government code here ... */ }
 
 // Verb Class
 public class SalesRepresentative {
-    // R - Rely on Verb Functions Not Verb Interfaces
+    // Rely on Verb Functions Not Verb Interfaces
     internal Action<string, Type, int> broadcast = new Notifier().Broadcast;
 
-    // E - Extract Noun Interfaces
+    // Extract Noun Interfaces
     public void ConvertToCustomer(ISalesLead lead) {
       if(lead.IsCustomer) {
           return;
@@ -109,9 +108,9 @@ SalesRepresentative to only have access to the data necessary to convert.
 # Case Study
 
 We recently examined a 1.3 million line codebase used to collect and track
-interest rates and payments from a user. We found only four uses of _verb
-interfaces_ for polymorphic behavior. On the other hand, there were hundreds of
-_noun interfaces_ used to allow multiple shapes of data to be acted on by the
+interest rates and payments from a user. We found only four uses of verb
+interfaces for polymorphic behavior. On the other hand, there were hundreds of
+noun interfaces used to allow multiple shapes of data to be acted on by the
 same function.
 
 An obvious example is ```IHaveIdentity```
@@ -123,19 +122,18 @@ public interface IHaveIdentity {
 }
 ```
 
-This tiny, simple _noun interface_ enables incredible re-use. We found the
-```IHaveIdentity``` _noun interface_ on many of our _noun classes_. It is used
-by hundreds of _verb classes_ throughout the codebase. Verbs like
+This tiny, simple noun interface enables incredible re-use. We found the
+```IHaveIdentity``` noun interface on many of our noun classes. It is used
+by hundreds of verb classes throughout the codebase. Verbs like
 ```MakeDropDownList```, ```QueryById```, ```QueryNamesMatching```, and
-```CreateAuditTrail```. The _verb classes_ can be easily reused, because any new
-_noun class_ that fits the _noun interface_ will work automatically!
+```CreateAuditTrail```. The verb classes can be easily reused, because any new
+noun class that fits the noun interface will work automatically!
 
 # Conclusion 
 
-The SOLID-ER patterns enable significant reuse of functionality. By defaulting
-to _noun interfaces_, you will find most of your _verb classes_ can be re-used
-without any change. When you need actual polymorphic behavior, use a _verb
-interface_. For the more common case of unit test behavior replacement, the
-[SimpleMock](/simplemock-unit-test-mocking/)
-pattern makes for an easy way to keep your codebase clean and best model the
-domain.
+These patterns enable significant reuse of functionality. By defaulting to noun
+interfaces, you will find most of your verb classes can be re-used without any
+change. When you need actual polymorphic behavior, use a verb interface. For the
+more common case of unit test behavior replacement, the
+[SimpleMock](/simplemock-unit-test-mocking/) pattern makes for an easy way to
+keep your codebase clean and best model the domain.

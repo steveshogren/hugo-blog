@@ -1,8 +1,7 @@
 +++
 title = "Vim Refactoring Patterns"
-date = "2016-05-25"
+date = "2016-06-22"
 Categories = ["technical skills","vim","refactoring"]
-draft=true
 +++
 
 Editor macros are a secret weapon for editing text. While they are hard to
@@ -159,14 +158,13 @@ copied it to my sql file. They were tab AND newline separated.
 
 # Conclusion
 
-You probably noticed a couple of patterns. I typically use a macro when a
-search/replace would require using several groups. In macros, I use relative
-line jumps and liberal uses of the search (```/?``` and ```nN```) and find
-(```fF```) commands for navigating. The search and find commands let my macro
-work the same on many different shapes of lines. I also end each macro with a
-step for finding the "next" line to operate on. By ensuring each iteration
-finishes by going to the "next" line, I can repeat the command with the built-in
-command repeat without manually executing each one.
+I typically use a macro when a search/replace would require using several
+groups. I use relative line jumps (```:+1```) and liberal uses of the search
+(```/?``` and ```nN```) and find (```fF```) commands for navigating. The search
+and find commands let my macro work the same on many different shapes of lines.
+I also end each macro with a step for finding the "next" line to operate on. By
+ensuring each iteration finishes by going to the "next" line, I can repeat the
+command with the built-in command repeat without manually executing each one.
 
 Learning how to record and playback macros is a complex skill. With practice, it
 becomes second-nature. My muscle memory grows stronger with each new macro.
