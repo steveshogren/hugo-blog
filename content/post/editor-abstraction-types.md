@@ -41,6 +41,17 @@ Five abstractions make up the "Holy Grail" of Semantic Tools. If we had nothing
 else but these, we would be at the pinnacle of power. The Big Five make a huge
 program much more manageable.
 
+* **Extract Interface** -
+* **Extract Class** -
+* **Implement Interface** -
+* **In-line Method** -
+* **Extract Method** -
+* **In-line Variable** -
+* **Extract Variable** -
+* **Operate On Every Calling Line** -
+* **Cut/Copy/Paste Expression** -
+* **Remove Outer Wrapping** -
+
 * **Language Errors** - Highlight code that violates the rules of the language
 * **Find All References** - See a list of all usages of a field, function, or class
 * **Rename Symbol** - Rename the current field, function, or class
