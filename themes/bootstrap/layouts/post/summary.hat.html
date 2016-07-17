@@ -3,5 +3,12 @@
   <div class="margin-10">
     {{ partial "modules/page/date" . }}
     {{ partial "modules/page/tags" . }}
+    <span class="pull-right">
+      {{ range .Params.categories }}
+      <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
+
+      {{ end  }}
+    </span>
   </div>
+
 </div>

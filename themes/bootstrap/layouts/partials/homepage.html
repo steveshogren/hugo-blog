@@ -13,22 +13,23 @@
     publishing industries. I build self-organizing teams and empower
     them to achieve tremendous business value.
         </p> -->
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <h1 class="centereded">Articles</h1>
-            {{ partial "writings" . }}
-        </div>
+      <!-- <div class="col-xs-12 col-sm-12 col-md-12"> -->
+      <!-- <h1 class="centereded">Articles</h1> -->
+      <!-- {{ partial "writings" . }} -->
+      <!-- </div> -->
 <!--         <h1 class="centereded">My Philosophy</h1>
             {{ partial "philosophy" . }} -->
         <!-- <h1 class="col-md-12 centereded">All Posts</h2> -->
         <ul class="sidebar_ul">
-            {{ range (where .Site.Pages "Type" "post")  }}
+            {{ range first 3 (where .Site.Pages "Type" "post")  }}
             <li class="sidebar_li">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-                <span class="pull-right">
-                {{ range .Params.categories }}
-                    <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
-                {{ end  }}
-                </span>
+              <!-- <a href="{{ .Permalink }}">{{ .Title }}</a> -->
+                <p>{{ .Render "summary" }}</p>
+                <!-- <span class="pull-right"> -->
+                <!-- {{ range .Params.categories }} -->
+                <!-- <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a> -->
+                <!-- {{ end  }} -->
+                <!-- </span> -->
             </li>
             {{ end }}
         </ul>

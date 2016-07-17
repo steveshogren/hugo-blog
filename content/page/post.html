@@ -3,9 +3,13 @@ title="Writings"
 +++
 <!-- <h2 class="col-md-12 centereded">New? Start Here!</h2> -->
 <!-- {{% writings %}} -->
-<h2 class="col-md-12 centereded">All Posts</h2>
+<h2 class="col-md-12 centereded">Newest Posts</h2>
 <div class="col-md-12">
-{{% allposts %}}
+
+    {{ range first 5 (where .Data.Pages.ByDate "Section" "post").Reverse }}
+    <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  <!-- {{% allposts %}} -->
 </div>
 
 
