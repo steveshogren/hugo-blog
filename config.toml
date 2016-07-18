@@ -15,10 +15,10 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     # Tell me who you are
-    author = "Steve Shogren"
+    author = "STEVE SHOGREN"
     bio = ""
     location = "Philadelphia, PA"
-    site_description = "softare developer, speaker, author"
+    site_description = "software developer, speaker, author"
     copyright  = "Deliberate Software 2016"
     avatar = "/images/me_updated3.png"
     bookDesc = ""
