@@ -135,3 +135,12 @@ body > .container {
 
 
 .margin-10{margin-bottom:10px; margin-right:10px;}
+
+.postlink {
+    color: #008cba !important;
+    text-decoration:none !important;
+}
+
+.badge {
+    background-color: grey;
+}
