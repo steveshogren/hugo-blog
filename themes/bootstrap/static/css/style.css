@@ -3,6 +3,11 @@
 /* #name { */
 /*     font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif; */
 /* } */
+.jumbotron {
+    background: url(../images/front-logo-empty.png) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
 
 .border {
     border: 2px solid black;

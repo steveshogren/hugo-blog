@@ -1,29 +1,33 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="centereded herotext">DELIBERATE SOFTWARE</h1>
+        <div class="centereded"><button class="btn btn-primary">Check out my new book!</button></div>
+    </div>
+</div>
 <div class="container">
-    {{ if isset .Site.Params.showBlogHeader true }}
     <header>
-        {{ partial "bloc/content/h1-title" . }}
-        {{ partial "bloc/content/lastupdate" . }}
+        <!-- {{ partial "bloc/content/h1-title" . }} -->
+        <!-- {{ partial "bloc/content/lastupdate" . }} -->
     </header>
-    {{ end }}
 
     <div class="col-xs-12 col-sm-12 col-md-9">
-<!--         <h1 class="centereded">Hi, I am Steve Shogren!</h1>
-  <p class="centereded">
-    I am a developer who has met needs in the financial, education, and
-    publishing industries. I build self-organizing teams and empower
-    them to achieve tremendous business value.
-        </p> -->
-      <!-- <div class="col-xs-12 col-sm-12 col-md-12"> -->
-      <!-- <h1 class="centereded">Articles</h1> -->
-      <!-- {{ partial "writings" . }} -->
-      <!-- </div> -->
-<!--         <h1 class="centereded">My Philosophy</h1>
-            {{ partial "philosophy" . }} -->
+        <!--         <h1 class="centereded">Hi, I am Steve Shogren!</h1>
+             <p class="centereded">
+             I am a developer who has met needs in the financial, education, and
+             publishing industries. I build self-organizing teams and empower
+             them to achieve tremendous business value.
+             </p> -->
+        <!-- <div class="col-xs-12 col-sm-12 col-md-12"> -->
+        <!-- <h1 class="centereded">Articles</h1> -->
+        <!-- {{ partial "writings" . }} -->
+        <!-- </div> -->
+        <!--         <h1 class="centereded">My Philosophy</h1>
+             {{ partial "philosophy" . }} -->
         <!-- <h1 class="col-md-12 centereded">All Posts</h2> -->
         <ul class="sidebar_ul">
             {{ range first 3 (where .Site.Pages "Type" "post")  }}
             <li class="sidebar_li">
-              <!-- <a href="{{ .Permalink }}">{{ .Title }}</a> -->
+                <!-- <a href="{{ .Permalink }}">{{ .Title }}</a> -->
                 <p>{{ .Render "summary" }}</p>
                 <!-- <span class="pull-right"> -->
                 <!-- {{ range .Params.categories }} -->
