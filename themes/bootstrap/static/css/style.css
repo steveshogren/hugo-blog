@@ -4,11 +4,15 @@
 /*     font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif; */
 /* } */
 .jumbotron {
-    background: url(../images/front-logo-empty.png) no-repeat center center fixed;
+    background: url(../images/front-logo-empty.png);
     background-size: cover;
     color: white;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
+.jumbobg {
+    background: rgba(1, 1, 1, 0.5);
+}
 .border {
     border: 2px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
