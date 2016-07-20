@@ -1,5 +1,5 @@
 <div class="jumbotron">
-    <div class="container jumbobg">
+    <div class="container">
         <h1 class="centereded herotext">DELIBERATE SOFTWARE</h1>
         <h3 class="centereded herotext">insights gathered while learning to deliberately craft software</h3>
         <div class="centereded">
@@ -7,36 +7,12 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <header>
-        <!-- {{ partial "bloc/content/h1-title" . }} -->
-        <!-- {{ partial "bloc/content/lastupdate" . }} -->
-    </header>
-
+<div class="container homecontainer">
     <div class="col-xs-12 col-sm-12 col-md-9">
-        <!--         <h1 class="centereded">Hi, I am Steve Shogren!</h1>
-             <p class="centereded">
-             I am a developer who has met needs in the financial, education, and
-             publishing industries. I build self-organizing teams and empower
-             them to achieve tremendous business value.
-             </p> -->
-        <!-- <div class="col-xs-12 col-sm-12 col-md-12"> -->
-        <!-- <h1 class="centereded">Articles</h1> -->
-        <!-- {{ partial "writings" . }} -->
-        <!-- </div> -->
-        <!--         <h1 class="centereded">My Philosophy</h1>
-             {{ partial "philosophy" . }} -->
-        <!-- <h1 class="col-md-12 centereded">All Posts</h2> -->
         <ul class="sidebar_ul">
             {{ range first 3 (where .Site.Pages "Type" "post")  }}
             <li class="sidebar_li">
-                <!-- <a href="{{ .Permalink }}">{{ .Title }}</a> -->
                 <p>{{ .Render "summary" }}</p>
-                <!-- <span class="pull-right"> -->
-                <!-- {{ range .Params.categories }} -->
-                <!-- <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a> -->
-                <!-- {{ end  }} -->
-                <!-- </span> -->
             </li>
             {{ end }}
         </ul>
@@ -44,9 +20,4 @@
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
         {{ partial "sidebar" . }}
     </div>
-    <!--     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-         {{ range $paginator.Pages }}
-         {{ .Render "summary" }}
-         {{ end }}
-         {{ partial "bloc/content/pagination" . }} -->
 </div>
