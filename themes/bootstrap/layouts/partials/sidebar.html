@@ -2,10 +2,10 @@
 <!-- <span class="col-xs-3 col-sm-4 col-md-3"></span> -->
 <!-- <img class="col-xs-6 col-sm-4 col-md-6 border" id="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" /> -->
 <!-- <span class="col-xs-3 col-sm-4 col-md-3"></span> -->
-<!-- <span class="col-xs-12 col-sm-12 col-md-12 centereded"> -->
-<!-- <a href="https://twitter.com/steveshogren" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @steveshogren</a> -->
-<!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
-<!-- </span> -->
+<span class="col-xs-12 col-sm-12 col-md-12 centereded">
+<a href="https://twitter.com/steveshogren" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @steveshogren</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</span>
 <span class="col-xs-12 col-sm-12">
     {{.Site.Params.site_description}}
 </span>
@@ -18,12 +18,21 @@
 </a>
 {{ end }}
 <span class="col-xs-3 col-sm-4 col-md-3"></span>
-<h3 class="col-xs-12 col-sm-12" id="name">Top Posts</h3>
+<!-- <h3 class="col-xs-12 col-sm-12" id="name">Top Posts</h3> -->
+<!-- <div class="col-xs-12 col-sm-12"> -->
+<!-- <ul class="sidebar_ul"> -->
+<!-- {{ range where .Site.Pages "Params.top" "yes" }} -->
+<!-- <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li> -->
+<!-- {{ end }} -->
+<!-- </ul> -->
+<!-- </div> -->
+<h3 class="col-xs-12 col-sm-12" id="name">Posts For:</h3>
 <div class="col-xs-12 col-sm-12">
     <ul class="sidebar_ul">
-        {{ range where .Site.Pages "Params.top" "yes" }}
-        <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
+        <li class="sidebar_li"><a href="">New Developers</a></li>
+        <li class="sidebar_li"><a href="">Seasoned Developers</a></li>
+        <li class="sidebar_li"><a href="">Managers</a></li>
+        <li class="sidebar_li"><a href="">See All Posts</a></li>
     </ul>
 </div>
 <h3 class="col-xs-12 col-sm-12" id="name">Categories</h3>
