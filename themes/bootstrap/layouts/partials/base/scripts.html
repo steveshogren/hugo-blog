@@ -1,5 +1,6 @@
 <script src="{{ "/js/jquery.min-2.1.4.js" | absURL }}"></script>
 <script src="{{ "/js/bootstrap.min-3.3.5.js" | absURL }}"></script>
+<script src="{{ "/js/github-calendar.js" | absURL }}"></script>
 
 
 {{ with .Site.DisqusShortname }}
@@ -31,3 +32,7 @@ if (document.location.hostname.search("deliberate-software.com") !== -1) {
 }
 </script>
 {{ end }}
+
+<script>
+    GitHubCalendar(".calendar", "steveshogren");
+</script>
