@@ -1,6 +1,7 @@
 +++
 title = "Modern Dependency Injection"
 date = "2016-06-11"
+banner="/images/weave.jpeg"
 Categories = ["technical skills", "architecture", "csharp", "unit-testing"]
 Description = "Dependency Injection can be greatly simplified while retaining all of its power. Injection of an interface through the constructor is a common way to replace a dependency for unit-test mocking. Unfortunately, it is an extremely verbose pattern."
 +++

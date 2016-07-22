@@ -2,21 +2,21 @@
 <!-- <span class="col-xs-3 col-sm-4 col-md-3"></span> -->
 <!-- <img class="col-xs-6 col-sm-4 col-md-6 border" id="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" /> -->
 <!-- <span class="col-xs-3 col-sm-4 col-md-3"></span> -->
-<span class="col-xs-12 col-sm-12 col-md-12 centereded">
+<span class="col-xs-12 col-sm-12 col-md-12">
 <a href="https://twitter.com/steveshogren" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @steveshogren</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </span>
 <span class="col-xs-12 col-sm-12">
     {{.Site.Params.site_description}}
 </span>
-<h3 class="col-xs-12 col-sm-12 centereded" id="name">{{.Site.Params.bookDesc}}</h3>
+<h3 class="col-xs-12 col-sm-12" id="name">{{.Site.Params.bookDesc}}</h3>
 
-<span class="col-xs-3 col-sm-4 col-md-3"></span>
 {{ with .Site.Params.bookLink }}
 <a class="col-xs-6 col-sm-4 col-md-6" href="{{ . }}">
     {{with $.Site.Params.bookImg}}<img class="book" src="{{.}}"></img>{{end}}
 </a>
 {{ end }}
+<span class="col-xs-3 col-sm-4 col-md-3"></span>
 <span class="col-xs-3 col-sm-4 col-md-3"></span>
 <!-- <h3 class="col-xs-12 col-sm-12" id="name">Top Posts</h3> -->
 <!-- <div class="col-xs-12 col-sm-12"> -->

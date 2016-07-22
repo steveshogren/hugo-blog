@@ -1,6 +1,7 @@
 +++
 title = "Editor Abstractions"
 date = "2016-05-23"
+banner="/images/worktable.jpeg"
 Categories = ["technical skills","emacs", "vim"]
 Description = "I was recently inspired by a comment from a respected coworker: \"I am just as productive with basic Vim commands as I am with a refactoring suite like ReSharper.\" He is equally productive with both, that much I know. What is his secret?"
 +++
