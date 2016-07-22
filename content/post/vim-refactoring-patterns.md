@@ -2,6 +2,7 @@
 title = "Vim Refactoring Patterns"
 date = "2016-06-22"
 Categories = ["technical skills","vim","refactoring"]
+banner="/images/pattern.jpeg"
 +++
 
 Editor macros are a secret weapon for editing text. While they are hard to

@@ -1,3 +1,8 @@
-<p>
+<span class="col-md-2">
+  {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
+  <div style="background-image: url({{ .Site.BaseURL }}{{ .Params.banner }});" class="crop list-banner"></div>
+  {{ end }}
+</span>
+<p class="col-md-10">
   {{ partial "modules/page/summary" . }}
 </p>
