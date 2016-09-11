@@ -1,17 +1,10 @@
 +++
-title = "Promiscuous Pairing"
+title = "When Pair-Programming Works"
 date = "2016-07-22"
-banner="/images/pair.jpeg"
+banner="/images/pairing.jpeg"
 Categories = ["technical skills", "unit-testing"]
 Description = ""
 +++
-
-Let me start with a disclaimer: solutions are only valuable if they solve a
-problem. Please don't use this post to browbeat your colleagues. Programming
-productivity hasn't yet been scientifically measured. Therefore **every**
-process, language, or paradigm is recommended on personal preference or "gut
-feeling". I will lay out my preferences and "gut feelings", but do not mistake
-them for rigorous claims of productivity.
 
 My current team has pair-programmed and followed strict TDD on a single codebase
 for over ten years. The practices started from reading the literature on Extreme
@@ -36,14 +29,18 @@ refactorings.
 ## Pros
 
 * No siloed information or "I don't touch that section" areas
-* The team ends up adopting a consistent set of styles, tools, shortcuts, workflow
+* The team must adopt a consistent set of styles, tools, shortcuts, workflow
 * Developers can take vacation whenever they please
 * Training is built in to the process from day one
 * Developers quitting doesn't throw the team into disarray
-* Productivity is fairly stable across years
-* Protected time every day for research, refactoring, and tech debt
+* Productivity is fairly stable across decades
+* Protected time every day for research, refactoring, and technical debt
 * Frequent rotation gives a natural cadence for fixing broken CI builds
-* Many of us spend a lot less time puttering around on Reddit, HN, etc
+* I personally spend a lot less time puttering around on Reddit, HN, etc (I'm
+  sure that is true for others)
+* Pairs have much more courage and stamina to aggressively pay down technical
+  debt. Even the most mind-numbing technical debt isn't so bad if you know you
+  are rotating off in two hours.
 * Interruptions are much less disruptive, typically only one or two minutes to
   get back into "flow"
 
@@ -52,15 +49,15 @@ refactorings.
 * Huge system "owned by everyone" is a lot for new developers to handle - training takes a long time
 * Juggling tasks can be complex (e.g. what gets put on hold when not at full capacity)
 * Support issues get passed around from pair to pair
-* Some developers feel pairing is demeaning, disrespectful, or beneath them
 * General feeling you are "not important" to the team
 
 ## Partly Good, Partly Bad
 
 * Pairing is polarizing
   * **-** Hiring is slow: many developers hate pairing
+      * Some developers we've interviewed unfortunately feel pairing is demeaning, disrespectful, or beneath them
   * **-** Poor new hire retention
-      * Some love the _idea_ of pairing, not the _practice_ of pairing; they discover that and leave
+      * Some developers love the _idea_ of pairing, not the _practice_ of pairing; they often leave when they discover that distinction
   * **+** Low employee churn: those that love pairing stick around far longer than industry average
 * No task ownership
   * **-** Less emotional reward when completing a task
@@ -70,9 +67,18 @@ refactorings.
   * **-** Tasks can take longer to complete
   * **+** Tough tasks get prototyped several times and seen by whole team
 
-We've found this set of trade-offs works very well with our team. The team is
-ten developers all doing active development on a 3.4 million line enterprise
-application. Our team has a wide set of skills and skill ranges.
+We've found this set of trade-offs works very well with our team. The ten of us
+are all doing active development on a 3.4 million-line enterprise banking
+application. Quality and the ability to quickly conform to new regulations are
+of paramount importance. The team regularly has a discussion as to whether we
+should keep or abandon the policy of enforced pairing, and the consensus thus
+far remains to keep it.
+
+We plan to be around for at least the next decade. Our team requires a workflow
+that allows for the rapid development of high-quality features while keeping the
+team stress-free and happy with their work. Since we plan on a decade scale, our
+development process must take into account the importance of long-term
+happiness, training, and the courage to aggressively pay down technical debt.
 
 ## How To Get Started
 
@@ -81,18 +87,18 @@ This system works best with a given a set of preconditions.
 * The whole team has to love pairing and want to adopt it
 
     If even a minority of developers hates pairing, it will be tortuous to force
-    them to do it. In our experience, >80% of developer hate pairing. It would
-    be better to split the team and codebase. Forcing even a single developer to
-    pair can be disastrous for morale and productivity. No one wants to pair
-    with someone who is sullen and bitter. When pairing, misery cannot be
-    hidden.
+    them to do it. In our experience, >80% of developers hate pairing. If some
+    members are not interested, it would be better to split the team and
+    codebase. Forcing even a single developer to pair can be disastrous for
+    morale and productivity. No one wants to pair with someone who is sullen and
+    bitter. When pairing, misery cannot be hidden.
 
 * Management has to accept not having assigned tasks
 
-    Assigning tasks reduces the beneficial effects of pair switching. Typically
-    the assigned developer ends up "doing all the work with an observer". This
-    is much less effective. The "observer" ends up tuning out, since the
-    assignee "probably has it figured out".
+    Assigning tasks reduces the beneficial effects of pair switching. The
+    assigned developer ends up "doing all the work with an observer". This is
+    much less effective. The "observer" ends up tuning out, since the assignee
+    "probably already has it figured out".
 
 * Proficiency at pairing is a discrete skill
 
