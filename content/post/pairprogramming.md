@@ -1,6 +1,6 @@
 +++
 title = "When Pair-Programming Works"
-date = "2016-07-22"
+date = "2016-09-12"
 banner="/images/pairing.jpeg"
 Categories = ["technical skills", "unit-testing"]
 Description = ""
