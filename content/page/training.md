@@ -51,6 +51,10 @@ faster.
     
     * [Learn Test Driven Development](https://github.com/dwyl/learn-tdd)
     * [Kata - the Only Way to learn TDD](http://www.peterprovost.org/blog/2012/05/02/kata-the-only-way-to-learn-tdd/)
+    
+    Use TDD to finish a 3 different katas from the Kata Catalog
+
+    * [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue)
 
 * Step 2 - Basic Semantics
 
@@ -58,6 +62,17 @@ faster.
     These are a little slower, but incredibly valuable. We recommend reading and
     completing the exercises of the first three chapters of the excellent
     introductory book
-    [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html)
+    [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html).
+    This book will help you build a mastery of basic algorithms and data
+    structures, which are essential for interviewing practice. Complete the
+    exercises in MIT Scheme, which can be run from either the command-line, or
+    the sophisticated tool DrRacket.
+    
+    DrRacket is a general editor and code-runner for Racket and Scheme. There
+    are many different versions of Racket and Scheme, so to run DrRacket in "MIT
+    Scheme mode", you need to put this at the top of your files: ```#lang planet neil/sicp```
 
+    When you first run a file, DrRacket will download a working version of MIT
+    Scheme that can be used to complete the exercises. ```Ctrl-R``` will execute
+    a file.
 
