@@ -52,9 +52,12 @@ faster.
     * [Learn Test Driven Development](https://github.com/dwyl/learn-tdd)
     * [Kata - the Only Way to learn TDD](http://www.peterprovost.org/blog/2012/05/02/kata-the-only-way-to-learn-tdd/)
     
-    Use TDD to finish a 3 different katas from the Kata Catalog
+    Use TDD to finish a 3 different katas from the Kata Catalog:
 
     * [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue)
+    
+    You can Google around for how to get started with unit tests in your chosen
+    language. We've also provided a few basic "starter" languages
 
 * Step 2 - Basic Semantics
 
