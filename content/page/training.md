@@ -57,7 +57,7 @@ faster.
     * [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue)
     
     You can Google around for how to get started with unit tests in your chosen
-    language. We've also provided a few basic "starter" languages
+    language. We've also provided a basic way to run tests for Jav
 
 * Step 2 - Basic Semantics
 

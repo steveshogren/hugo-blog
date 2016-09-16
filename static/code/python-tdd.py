@@ -16,3 +16,4 @@ def add(x, y):
 # Tests
 assertEqual(6, add(2,4))
 assertEqual(4, add(2,2))
+assertEqual(2, add(2,2)) # failing! this test is just to illustrate a failure and should be deleted!

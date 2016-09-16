@@ -1,3 +1,4 @@
+// Test Helper
 var addToResults = function(text) {
     var div = document.getElementById('results');
 
@@ -13,8 +14,15 @@ var assertEqual = function(x, y) {
     }
 };
 
+// Code under test
 
-assertEqual(1,1);
-assertEqual(1,2);
-assertEqual(1,1);
+var add = function(x, y) {
+    return x + y;
+};
+
+
+// Tests
+assertEqual(1, add(1, 0));
+assertEqual(2, add(1, 1));
+assertEqual(0, add(1, 0)); // failing! this test is just to illustrate a failure and should be deleted!
 
