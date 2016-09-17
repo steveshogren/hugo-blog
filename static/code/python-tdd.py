@@ -1,7 +1,7 @@
 # Test Helper
 def assertEqual(a, b):
     if(a != b):
-        assert (a == b), "Expected: " + str(a) + " but found: " + str(b)
+        assert (a == b), "Test Failed. Expected: " + str(a) + " but found: " + str(b)
     else:
         print "."
 

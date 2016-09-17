@@ -47,17 +47,31 @@ faster.
 
     After completing Step 1, you need to invest in some valuable tooling to make
     your learning faster. You should learn how to do something called Test
-    Driven Development. 
+    Driven Development. First, read through the wikipedia page:
     
+    * [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
+    
+    Read and work through the following posts: 
+
     * [Learn Test Driven Development](https://github.com/dwyl/learn-tdd)
-    * [Kata - the Only Way to learn TDD](http://www.peterprovost.org/blog/2012/05/02/kata-the-only-way-to-learn-tdd/)
+
+    We've provided a basic way to run tests for Javascript and Python. All the
+    code, tests, and test helpers are in the same file. This works for small TDD
+    katas, but you will want to research how to split up those sections for
+    larger katas.
     
-    Use TDD to finish a 3 different katas from the Kata Catalog:
+    * To run the python tests, download the file
+      [python-tdd.py](/code/python-tdd.py) and execute the file with ```python
+      python-tdd.py```. You should see the results printed out, with a ```.```
+      for success, and a message for a failure.
+
+    To run the python tests, download the file [python-tdd.py](/code/python-tdd.py)
+    
+    Use TDD to finish a 3 small katas from the Kata Catalog. We recommend
+    KataTennis, KataRomanNumerals, and KataBowling:
 
     * [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue)
     
-    You can Google around for how to get started with unit tests in your chosen
-    language. We've also provided a basic way to run tests for Jav
 
 * Step 2 - Basic Semantics
 
