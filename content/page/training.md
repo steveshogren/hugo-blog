@@ -76,15 +76,16 @@ faster.
 
 ### Step 3 - Basic Semantics
 
-  After completing Step 1, you need to invest in some foundational concepts.
-  These are a little slower, but incredibly valuable. We recommend reading and
-  completing the exercises of the first three chapters of the excellent
-  introductory book
+  Now, armed with the power of TDD and regular kata practice, you need to invest
+  in some foundations. These concepts can be a little slower to learn, but
+  incredibly valuable. We recommend reading and completing the exercises of the
+  first three chapters of the excellent introductory book
   [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html).
+  
   This book will help you build a mastery of basic algorithms and data
   structures, which are essential for interviewing practice. Complete the
-  exercises in MIT Scheme, which can be run from either the command-line, or
-  the sophisticated tool DrRacket.
+  exercises in MIT Scheme, which can be run from either the command-line or the
+  sophisticated tool DrRacket.
 
   DrRacket is a general editor and code-runner for Racket and Scheme. There
   are many different versions of Racket and Scheme, so to run DrRacket in "MIT
@@ -93,4 +94,13 @@ faster.
   When you first run a file, DrRacket will download a working version of MIT
   Scheme that can be used to complete the exercises. ```Ctrl-R``` will execute
   a file.
+  
+  You likely will not be able to complete every single exercise without help.
+  This is okay! Plenty of people have posted excellent answers online for how to
+  solve all the homework. If you get stuck and frustrated, just look up a
+  solution and take some time to understand it.
 
+### Step 4 - Small Project
+
+  When you have finished the homework in SICP, choose a small project to build
+  yourself. Maybe a basic web-site, 
