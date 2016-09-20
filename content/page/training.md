@@ -36,7 +36,7 @@ faster.
 
 ## The Course:
 
-### Step 1 - Basic Syntax
+### Step 1 - Basic Syntax (~25 hours)
 
   Several fantastic resources exist for getting the basics of programming
   language syntax. I recommend at least one of the following, preferably both:
@@ -44,7 +44,7 @@ faster.
   * [CodeAcademy Javascript module](https://www.codecademy.com/learn/javascript)
   * [Learn Python the Hard Way](https://learnpythonthehardway.org/)
 
-### Step 2 - Basic Tools
+### Step 2 - Basic Tools (~10 hours)
 
   After completing Step 1, you need to invest in some skills to make your
   learning faster. You should learn how to do something called Test Driven
@@ -74,7 +74,7 @@ faster.
   [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue). We
   recommend KataTennis, KataRomanNumerals, and KataBowling:
 
-### Step 3 - Basic Semantics
+### Step 3 - Basic Semantics (~100 hours)
 
   Now, armed with the power of TDD and regular kata practice, you need to invest
   in some foundations. These concepts can be a little slower to learn, but
@@ -100,7 +100,26 @@ faster.
   solve all the homework. If you get stuck and frustrated, just look up a
   solution and take some time to understand it.
 
-### Step 4 - Small Project
+### Step 4 - Small Project (~100 hours)
 
-  When you have finished the homework in SICP, choose a small project to build
-  yourself. Maybe a basic web-site, 
+  When you have finished the homework in the first three chapters of SICP,
+  choose a small project to build yourself. Maybe a basic web-site for saving a
+  shopping cart, a simple game, or a graphing calculator. Write out a list of
+  the features you would want to see before you start. 
+  
+  You will want to list out all the things you will need. Perhaps you need a way
+  to run a web site, or run an Android game. Maybe you need to store data in a
+  file or database. Google around for tutorials for the simplest way to get that
+  up and running. For almost any topic, many excellent tutorials exist that can
+  guide you to a starting application.
+  
+  Keep a running list of questions, and spend some time each session searching
+  for answers. Almost any question you have has been answered on forums, Stack
+  Overflow, and blogs. If you have Internet, you can teach yourself to build
+  almost any sort of programming project.
+  
+  Work on this until you have finished enough that you have answered most of
+  your own questions and implemented most of your own features. The purpose of
+  this exercise is two-fold. First, it provides you with a list of questions to
+  teach you how to research, and the motivation to research them! Second, it
+  gives you a chance to see a project bigger than a simple Kata.
