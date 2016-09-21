@@ -103,38 +103,47 @@ solution and take some time to understand it.
 ### Step 4 - Pick A Language (~10 hours)
 
 When you have finished the homework in the first three chapters of SICP, you
-will want to select a programming language to get that first job. If I was
-picking a good "first job" language in late 2016, I'd pick one of: Java, C#,
-NodeJS, PHP, Python, C++, C, or Ruby. Really any language in the
-[Tiobe top ten](http://www.tiobe.com/tiobe-index/) will do. 
+will want to select a programming language to get that first job. Really any
+language in the [Tiobe top ten](http://www.tiobe.com/tiobe-index/) will do.
 
 Many skills of the different software development areas are easily learned, so
-what matters most are the intangibles of what the job environment is like. Do
-you want to be able to go home every day at 5pm? Does the business output matter
-to you?
+what matters most are the intangibles of the job environment. Do you want to be
+able to go home every day at 5pm? You might want steer clear of video games or
+start-ups. Does the business output matter to you? How important is an extra
+10-15% more pay if the work is otherwise boring? You'll want to ask yourself
+these questions when thinking about what domain you want to get into.
 
-* Java or C# for high paying, business-oriented big-company jobs
+* Java or C# for business-oriented big-company jobs
 * Ruby or NodeJS for Silicon Valley start-up jobs
 * C++ or C# Unity for most video game jobs
 * Assembly or C for embedded hardware jobs 
-* R or Python for data science or numerical analysis jobs
+* R or Python for data science or numerical analysis jobs (I wouldn't attempt
+  these without a math degree or equivalent)
 
-Any of those langa
+Take some time to research what people say about these different types of job
+environments, and remember these are just generalizations. Java is used for many
+Android video games, and I've seen people run start-ups on Java, C#, or Python.
+Also look around the job boards for languages used in your current location. If
+you want to get a job in Chicago, see how many jobs for each language exist. The
+more jobs, the better chance you'll get a job!
+
+Whatever you pick, it almost certainly won't be the last language you learn! You
+will want to learn a new language at least once a year for the rest of your
+career. Most developers are able to switch languages several times in their
+careers. This language just has to get you that first job!
+
+If I was picking a good "first job" language in late 2016, I'd pick one of:
+Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on Java for a
+combination of practicality and breadth of jobs. Remember you can always switch
+languages and jobs after a few years!
 
 ### Step 5 - Small Project (~100 hours)
 
-When you have finished the homework in the first three chapters of SICP, you
-will want to select a programming language to get that first job. If I was
-picking a good "first job" language in late 2016, I'd pick one of: Java, C#,
-NodeJS, PHP, Python, C++, C, or Ruby. Really any language in the
-[Tiobe](http://www.tiobe.com/tiobe-index/) top ten will do. I'd probably pick
-Java or C# if I wanted a high-paying big company job, and I'd pick Ruby or
-NodeJS if I wanted to do the whole Silicon Valley start-up scene.
-
- choose
-a small project to build yourself. Maybe a basic web-site for saving a shopping
-cart, a simple game, or a graphing calculator. Write out a list of the features
-you would want to see before you start.
+Choose a small project to build yourself using your newly selected language.
+Ideally, it will align with the sorts of jobs that language is most commonly
+used for. Maybe a basic web-site for saving a shopping cart, a simple game, or a
+graphing calculator. Write out a list of the features you would want to see
+before you start.
 
 You will want to list out all the things you will need. Perhaps you need a way
 to run a web site, or build an Android game. Maybe you need to store data in a
@@ -153,8 +162,16 @@ this exercise is two-fold. First, it provides you with a list of questions to
 teach you how to research, and the motivation to research them! Second, it
 gives you a chance to see a project bigger than a simple Kata.
 
-### Step 5 - Algorithm and Interview Practice (~100 hours)
+### Step 6 - Algorithm and Interview Practice (~100 hours)
 
 Purchase the book
 [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
-and do all the problems in your "first job" language.
+and do all the problems in chapters 1-4 in your "first job" language. If you
+have time, finish all the problems in the whole book. 
+
+Do another Kata using TDD every couple of problems. You should be able to
+complete something like KataTennis in about 30 minutes using TDD. Do each Kata
+at least a couple times, until it feels fluid and natural. These will help you
+learn that new language quickly.
+
+
