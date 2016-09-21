@@ -46,9 +46,9 @@ language syntax. I recommend at least one of the following, preferably both:
 
 ### Step 2 - Basic Tools (~10 hours)
 
-After completing Step 1, you need to invest in some skills to make your
-learning faster. You should learn how to do something called Test Driven
-Development. First, read through the wikipedia page on
+After completing Step 1, you need to invest in some skills to make your learning
+faster. You should learn how to do something called Test Driven Development.
+Read through the wikipedia page on
 [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
 Read and work through the following post where they show you how to write
@@ -74,7 +74,7 @@ Use TDD with either Python or Javascript to finish a 3 small katas from the
 [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue). We
 recommend KataTennis, KataRomanNumerals, and KataBowling:
 
-### Step 3 - Basic Semantics (~100 hours)
+### Step 3 - Basic Semantics (~80 hours)
 
 Armed with the power of TDD and regular kata practice, you need to invest in
 some foundations. These concepts can be a little slower to learn, but incredibly
@@ -156,13 +156,13 @@ for answers. Almost any question you have has been answered on forums, Stack
 Overflow, and blogs. If you have Internet, you can teach yourself to build
 almost any sort of programming project.
 
-Work on this until you have finished enough that you have answered most of
-your own questions and implemented most of your own features. The purpose of
-this exercise is two-fold. First, it provides you with a list of questions to
-teach you how to research, and the motivation to research them! Second, it
-gives you a chance to see a project bigger than a simple Kata.
+Work on this until you have finished enough that you have answered most of your
+own questions and implemented most of your own features. The purpose of this
+exercise is two-fold. It provides you with a list of questions to teach you how
+to research, and the motivation to research them! Second, it gives you a chance
+to see a project bigger than a simple Kata.
 
-### Step 6 - Algorithm and Interview Practice (~100 hours)
+### Step 6 - Algorithm and Interview Practice (~30 hours)
 
 Purchase the book
 [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
