@@ -77,9 +77,10 @@ recommend KataTennis, KataRomanNumerals, and KataBowling:
 ### Step 3 - Basic Semantics (~80 hours)
 
 Armed with the power of TDD and regular kata practice, you need to invest in
-some foundations. These concepts can be a little slower to learn, but incredibly
-valuable. We recommend reading and completing the exercises of the first three
-chapters of the excellent introductory book
+some foundations. These concepts can be a little slow to learn, but they are
+incredibly valuable. To best learn these foundations, we recommend reading and
+completing the exercises of the first three chapters of the excellent
+introductory book
 [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html).
 
 This book will help you build a mastery of basic algorithms and data
@@ -87,18 +88,24 @@ structures, which are essential for interviewing practice. Complete the
 exercises in MIT Scheme, which can be run from either the command-line or the
 sophisticated tool DrRacket.
 
-DrRacket is a general editor and code-runner for Racket and Scheme. There
-are many different versions of Racket and Scheme, so to run DrRacket in "MIT
-Scheme mode", you need to put this at the top of your files: ```#lang planet neil/sicp```
+DrRacket is a general editor and code-runner for Racket and Scheme. There are
+many different versions of Racket and Scheme, so to run DrRacket in "MIT Scheme
+mode", you need to put a header at the top of your files to tell DrRacket which
+language to use: ```#lang planet neil/sicp```
 
 When you first run a file, DrRacket will download a working version of MIT
-Scheme that can be used to complete the exercises. ```Ctrl-R``` will execute
-a file.
+Scheme that can be used to complete the exercises. ```Ctrl-R``` will execute a
+file and output the results.
 
-You likely will not be able to complete every single exercise without help.
-This is okay! Plenty of people have posted excellent answers online for how to
-solve all the homework. If you get stuck and frustrated, just look up a
-solution and take some time to understand it.
+You can see an example of a basic test framework for Scheme in the file
+[scheme-tdd.rkt](/code/scheme-tdd.rkt). Right click and "Save Link As" to save
+the file. Open it in DrRacket, and type ```Ctrl-R``` to run the tests.
+
+Some of the exercises are very challenging! You will probably not be able to
+complete every single exercise without help. This is okay! Plenty of people have
+posted excellent answers online for how to solve all the homework. If you get
+stuck and frustrated, just look up a solution and take some time to understand
+it.
 
 ### Step 4 - Pick A Language (~10 hours)
 
@@ -109,12 +116,17 @@ language in the [Tiobe top ten](http://www.tiobe.com/tiobe-index/) will do.
 Many skills of the different software development areas are easily learned, so
 what matters most are the intangibles of the job environment. Do you want to be
 able to go home every day at 5pm? You might want steer clear of video games or
-start-ups. Does the business output matter to you? How important is an extra
-10-15% more pay if the work is otherwise boring? You'll want to ask yourself
-these questions when thinking about what domain you want to get into.
+start-ups. Does the business matter to you? How important is an extra 10-15%
+more pay if the work is otherwise boring? Many boring big-business Java jobs
+make good pay with short hours. You'll want to ask yourself these questions when
+thinking about what domain you want to get into.
 
-* Java or C# for business-oriented big-company jobs
-* Ruby or NodeJS for Silicon Valley start-up jobs
+Here are some wild generalizations of how different languages are used in the
+industry:
+
+* Java or C# are typical for business-oriented big-company jobs
+* Ruby or NodeJS are common in Silicon Valley start-up jobs
+* Javascript is effectively mandatory for web front-end jobs
 * C++ or C# Unity for most video game jobs
 * Assembly or C for embedded hardware jobs 
 * R or Python for data science or numerical analysis jobs (I wouldn't attempt
@@ -122,20 +134,26 @@ these questions when thinking about what domain you want to get into.
 
 Take some time to research what people say about these different types of job
 environments, and remember these are just generalizations. Java is used for many
-Android video games, and I've seen people run start-ups on Java, C#, or Python.
-Also look around the job boards for languages used in your current location. If
-you want to get a job in Chicago, see how many jobs for each language exist. The
-more jobs, the better chance you'll get a job!
+Android mobile games. I've seen people run start-ups in every possible language.
+I've seen mega-companies with huge Perl desktop applications. As a rule, every
+language can and has been used for every type of application. But if, for
+example, you really want to work in web development, do you want to limit
+yourself to the one company that forces VB6 into the browser, or the tens of
+thousands that just use plain Javascript?
 
-Whatever you pick, it almost certainly won't be the last language you learn! You
-will want to learn a new language at least once a year for the rest of your
-career. Most developers are able to switch languages several times in their
-careers. This language just has to get you that first job!
+I'd also look around the job boards for languages used in your current location.
+If you want to get a job in Chicago, get a quick count of how many jobs for each
+language exist in Chicago. The more jobs, the easier it will be to get a job!
+
+Whatever you pick, it shouldn't be the last language you learn. You will want to
+learn a new language at least once a year for the rest of your career. Most
+developers are able to switch languages several times in their careers. This
+language just has to get you that first job.
 
 If I was picking a good "first job" language in late 2016, I'd pick one of:
-Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on Java for a
-combination of practicality and breadth of jobs. Remember you can always switch
-languages and jobs after a few years!
+Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on Java or
+front-end Javascript for a combination of practicality and breadth of jobs.
+Remember you can always switch languages and jobs after a few years!
 
 ### Step 5 - Small Project (~100 hours)
 
