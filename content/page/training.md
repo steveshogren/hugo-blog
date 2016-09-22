@@ -44,6 +44,20 @@ language syntax. I recommend at least one of the following, preferably both:
 * [CodeAcademy Javascript module](https://www.codecademy.com/learn/javascript)
 * [Learn Python the Hard Way](https://learnpythonthehardway.org/)
 
+You will also need to sign up for [GitHub](www.github.com) and work through
+their tutorial for setting up git on your workstation. Make a repository for the
+code from "Learn Python the Hard Way". Every time you get something working, or
+complete an exercise, commit your work. 
+
+> Commit early, commit often
+
+Make sure you push your changes as often as possible (at least hourly), so if
+your computer ever dies, everything is backed up. This will have the side-effect
+of giving you an online portfolio of all the work you do. Every new language,
+book, or project you start, make a new github repository! By the end of this
+course, you will have at least 4-5 repositories of projects and book homework.
+This will be very effective in showing your progress to potential employers.
+
 ### Step 2 - Basic Tools (~10 hours)
 
 After completing Step 1, you need to invest in some skills to make your learning
@@ -155,7 +169,6 @@ Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on Java and/or
 front-end Javascript for a combination of practicality and breadth of jobs.
 Remember you can always switch languages and jobs after a few years!
 
-
 ## Step 5 - Start Going to Meetups
 
 When you pick a language, use a site like [Meetup.com](www.meetup.com) to find
@@ -175,8 +188,8 @@ will light up at the chance to talk about their programming hobbies, and will
 talk your ear off all night! This is great, you've made a friend! 
 
 Let everyone you meet know that you are trying to break into the field. Ask for
-recommendations and suggestions. If you tell them about doing SICP to learn how
-to program, if they know what it is, they will be majorly impressed.
+recommendations and suggestions. If they know what SICP is, they will be majorly
+impressed with your progress.
 
 ### Step 6 - Small Project (~100 hours)
 
@@ -207,7 +220,7 @@ to see a project bigger than a simple Kata.
 
 Purchase the book
 [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
-and do all the problems in chapters 1-4 in your "first job" language. If you
+and do all the problems in chapters 1-9 in your "first job" language. If you
 have time, finish all the problems in the whole book. You will find these are
 significantly easier if you use TDD. TDD is supremely effective for algorithmic
 work like the problems presented in this book. While it may seem slower to write
@@ -215,7 +228,15 @@ tests, it truly is faster as you only have to write them once!
 
 Every couple of problems, take a break and complete another kata using TDD. You
 should be able to complete something like KataTennis in about 30 minutes from
-scratch using TDD. You should be able to also complete the kata using three
-different languages: Javascript, Python, and whatever you chose to build your
-small project. Do each kata at least a couple times, until it feels fluid and
-natural. These will help you learn that new language quickly.
+scratch using TDD. You should be able to also complete any kata using any of the
+following different languages: Javascript, Scheme, Python, and whatever you
+chose to build your small project. Do each kata at least a couple times, until
+it feels fluid and natural. These will help you learn that new language quickly.
+
+### Step 8 - Start Interviewing
+
+At this point, you'll be able to pass an entry-level interview with a very
+decent success rate. You'll be well versed in the basics of object-oriented
+programming, functional programming, data structures, algorithms, and unit
+testing. You'll have a good grasp of several different programming languages,
+and have a portfolio of code and projects to discuss.
