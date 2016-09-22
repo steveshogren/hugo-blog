@@ -36,7 +36,7 @@ faster.
 
 ## The Course:
 
-### Step 1 - Basic Syntax (~25 hours)
+### Step 1 - Basic Syntax 
 
 Several fantastic resources exist for getting the basics of programming
 language syntax. I recommend at least one of the following, preferably both:
@@ -55,14 +55,14 @@ Make sure you push your changes as often as possible (at least hourly), so if
 your computer ever dies, everything is backed up. This will have the side-effect
 of giving you an online portfolio of all the work you do. Every new language,
 book, or project you start, make a new github repository! By the end of this
-course, you will have at least 4-5 repositories of projects and book homework.
+course, you will have at several repositories of projects and book homework.
 This will be very effective in showing your progress to potential employers.
 
-### Step 2 - Basic Tools (~10 hours)
+### Step 2 - Basic Tools 
 
-After completing Step 1, you need to invest in some skills to make your learning
-faster. You should learn how to do something called Test Driven Development.
-Read through the wikipedia page on
+You need to invest in some skills to make your learning faster. You should learn
+how to do something called Test Driven Development. Read through the wikipedia
+page on
 [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
 Read and work through the following post where they show you how to write
@@ -84,23 +84,27 @@ sections for larger katas.
 We included two correct passing tests, and one failing test to illustrate a
 test failure. You can delete the failing test, because it is nonsensical.
 
-Use TDD with either Python or Javascript to finish a 3 small katas from the
+Use TDD with either Python or Javascript to finish three small katas from the
 [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue). We
-recommend KataTennis, KataRomanNumerals, and KataBowling:
+recommend KataTennis, KataRomanNumerals, and KataBowling. 
 
-### Step 3 - Basic Semantics (~80 hours)
+For the rest of the course, we recommend you do thirty minutes of kata practice
+every time you sit down. Redo the same kata multiple times, until you can do it
+effortlessly in Python or Javascript.
+
+### Step 3 - Basic Semantics
 
 Armed with the power of TDD and regular kata practice, you need to invest in
 some foundations. These concepts can be a little slow to learn, but they are
 incredibly valuable. To best learn these foundations, we recommend reading and
-completing the exercises of the first three chapters of the excellent
-introductory book
-[Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html).
+completing the exercises of the first three chapters of the textbook
+[Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html),
+also known as "SICP".
 
-This book will help you build a mastery of basic algorithms and data
-structures, which are essential for interviewing practice. Complete the
-exercises in MIT Scheme, which can be run from either the command-line or the
-sophisticated tool DrRacket.
+SICP will help you build a mastery of basic algorithms and data structures,
+which are essential for interviewing practice. Complete the exercises in MIT
+Scheme, which can be run from either the command-line or
+[DrRacket](https://racket-lang.org/download/).
 
 DrRacket is a general editor and code-runner for Racket and Scheme. There are
 many different versions of Racket and Scheme, so to run DrRacket in "MIT Scheme
@@ -121,11 +125,11 @@ posted excellent answers online for how to solve all the homework. If you get
 stuck and frustrated, just look up a solution and take some time to understand
 it.
 
-### Step 4 - Pick A Language (~10 hours)
+### Step 4 - Pick A Language
 
 When you have finished the homework in the first three chapters of SICP, you
-will want to select a programming language to get that first job. Really any
-language in the [Tiobe top ten](http://www.tiobe.com/tiobe-index/) will do.
+will want to select a programming language to get that first job. Any language
+in the [Tiobe top ten](http://www.tiobe.com/tiobe-index/) will do.
 
 Many skills of the different software development areas are easily learned, so
 what matters most are the intangibles of the job environment. Do you want to be
@@ -140,7 +144,7 @@ industry:
 
 * Java or C# are typical for business-oriented big-company jobs
 * Ruby or NodeJS are common in Silicon Valley start-up jobs
-* Javascript is effectively mandatory for web front-end jobs
+* Javascript is mandatory for web front-end jobs
 * C++ or C# Unity for most video game jobs
 * Assembly or C for embedded hardware jobs 
 * R or Python for data science or numerical analysis jobs (I wouldn't attempt
@@ -157,7 +161,8 @@ plain Javascript?
 
 Look around the job boards for languages used in your current location. If you
 want to get a job in Chicago, get a quick count of how many jobs for each
-language exist in Chicago. The more jobs, the easier it will be to get a job!
+language exist in Chicago. The more jobs in that language, the easier it will be
+to get a job!
 
 Whatever you pick, it shouldn't be the last language you learn. You will want to
 learn a new language at least once a year for the rest of your career. Most
@@ -169,7 +174,7 @@ Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on Java and/or
 front-end Javascript for a combination of practicality and breadth of jobs.
 Remember you can always switch languages and jobs after a few years!
 
-## Step 5 - Start Going to Meetups
+### Step 5 - Regularly Go to Meetups
 
 When you pick a language, use a site like [Meetup.com](www.meetup.com) to find
 local meetups and user groups about that language. In most major cities there
@@ -191,7 +196,7 @@ Let everyone you meet know that you are trying to break into the field. Ask for
 recommendations and suggestions. If they know what SICP is, they will be majorly
 impressed with your progress.
 
-### Step 6 - Small Project (~100 hours)
+### Step 6 - Small Project
 
 Choose a small project to build yourself using your newly selected language.
 Ideally, it will align with the sorts of jobs that language is most commonly
@@ -216,7 +221,7 @@ exercise is two-fold. It provides you with a list of questions to teach you how
 to research, and the motivation to research them! Second, it gives you a chance
 to see a project bigger than a simple Kata.
 
-### Step 7 - Algorithm and Interview Practice (~30 hours)
+### Step 7 - Algorithm and Interview Practice
 
 Purchase the book
 [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
@@ -235,8 +240,9 @@ it feels fluid and natural. These will help you learn that new language quickly.
 
 ### Step 8 - Start Interviewing
 
-At this point, you'll be able to pass an entry-level interview with a very
-decent success rate. You'll be well versed in the basics of object-oriented
+At this point, you'll be able to pass an entry-level developer interview with a
+very decent success rate. You'll be well versed in the basics of object-oriented
 programming, functional programming, data structures, algorithms, and unit
 testing. You'll have a good grasp of several different programming languages,
 and have a portfolio of code and projects to discuss.
+
