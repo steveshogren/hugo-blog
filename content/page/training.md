@@ -134,15 +134,15 @@ industry:
 
 Take some time to research what people say about these different types of job
 environments, and remember these are just generalizations. Java is used for many
-Android mobile games. I've seen people run start-ups in every possible language.
-I've seen mega-companies with huge Perl desktop applications. As a rule, every
-language can and has been used for every type of application. But if, for
-example, you really want to work in web development, do you want to limit
-yourself to the one company that forces VB6 into the browser, or the tens of
-thousands that just use plain Javascript?
+Android mobile games. People run start-ups in every possible language. Some
+mega-companies have huge Perl desktop applications. As a rule, every language
+can and has been used for every type of application. But if, for example, you
+really want to work in web development, do you want to limit yourself to the one
+company that forces VB6 into the browser, or the tens of thousands that just use
+plain Javascript?
 
-I'd also look around the job boards for languages used in your current location.
-If you want to get a job in Chicago, get a quick count of how many jobs for each
+Look around the job boards for languages used in your current location. If you
+want to get a job in Chicago, get a quick count of how many jobs for each
 language exist in Chicago. The more jobs, the easier it will be to get a job!
 
 Whatever you pick, it shouldn't be the last language you learn. You will want to
@@ -151,11 +151,34 @@ developers are able to switch languages several times in their careers. This
 language just has to get you that first job.
 
 If I was picking a good "first job" language in late 2016, I'd pick one of:
-Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on Java or
+Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on Java and/or
 front-end Javascript for a combination of practicality and breadth of jobs.
 Remember you can always switch languages and jobs after a few years!
 
-### Step 5 - Small Project (~100 hours)
+
+## Step 5 - Start Going to Meetups
+
+When you pick a language, use a site like [Meetup.com](www.meetup.com) to find
+local meetups and user groups about that language. In most major cities there
+are typically several free meetups every single day around programming,
+languages, and technology. Most even have free food and door prizes! Find the
+local meetups for your language, and attend every single session.
+
+If you are in a more remote location, the meetups might be less specific.
+Instead of a meetup just for PHP, you might have to settle for one just about
+web-programming. This is fine!
+
+Try to meet _at least_ two people a night. Ask them what technologies they use,
+how they got started programming. Ask them what sort of job they have and their
+role. Do they have any side projects they are interested in? Most developers
+will light up at the chance to talk about their programming hobbies, and will
+talk your ear off all night! This is great, you've made a friend! 
+
+Let everyone you meet know that you are trying to break into the field. Ask for
+recommendations and suggestions. If you tell them about doing SICP to learn how
+to program, if they know what it is, they will be majorly impressed.
+
+### Step 6 - Small Project (~100 hours)
 
 Choose a small project to build yourself using your newly selected language.
 Ideally, it will align with the sorts of jobs that language is most commonly
@@ -180,16 +203,19 @@ exercise is two-fold. It provides you with a list of questions to teach you how
 to research, and the motivation to research them! Second, it gives you a chance
 to see a project bigger than a simple Kata.
 
-### Step 6 - Algorithm and Interview Practice (~30 hours)
+### Step 7 - Algorithm and Interview Practice (~30 hours)
 
 Purchase the book
 [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 and do all the problems in chapters 1-4 in your "first job" language. If you
-have time, finish all the problems in the whole book. 
+have time, finish all the problems in the whole book. You will find these are
+significantly easier if you use TDD. TDD is supremely effective for algorithmic
+work like the problems presented in this book. While it may seem slower to write
+tests, it truly is faster as you only have to write them once!
 
-Do another Kata using TDD every couple of problems. You should be able to
-complete something like KataTennis in about 30 minutes using TDD. Do each Kata
-at least a couple times, until it feels fluid and natural. These will help you
-learn that new language quickly.
-
-
+Every couple of problems, take a break and complete another kata using TDD. You
+should be able to complete something like KataTennis in about 30 minutes from
+scratch using TDD. You should be able to also complete the kata using three
+different languages: Javascript, Python, and whatever you chose to build your
+small project. Do each kata at least a couple times, until it feels fluid and
+natural. These will help you learn that new language quickly.
