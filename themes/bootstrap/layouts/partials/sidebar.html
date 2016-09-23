@@ -9,15 +9,19 @@
 <span class="col-xs-12 col-sm-12">
     {{.Site.Params.site_description}}
 </span>
-<h3 class="col-xs-12 col-sm-12" id="name">{{.Site.Params.bookDesc}}</h3>
+<h3 class="serif col-xs-12 col-sm-12" id="name">BOOKS:</h3>
 
 {{ with .Site.Params.bookLink }}
 <a class="col-xs-6 col-sm-4 col-md-6" href="{{ . }}">
     {{with $.Site.Params.bookImg}}<img class="book" src="{{.}}"></img>{{end}}
 </a>
 {{ end }}
-<span class="col-xs-3 col-sm-4 col-md-3"></span>
-<span class="col-xs-3 col-sm-4 col-md-3"></span>
+{{ with .Site.Params.vimBookLink }}
+<a class="col-xs-6 col-sm-4 col-md-6" href="{{ . }}">
+    {{with $.Site.Params.vimBookImg}}<img class="book" src="{{.}}"></img>{{end}}
+</a>
+{{ end }}
+<h3 class="col-xs-12 col-sm-12" id="name">{{.Site.Params.bookDesc}}</h3>
 <!-- <h3 class="col-xs-12 col-sm-12" id="name">Top Posts</h3> -->
 <!-- <div class="col-xs-12 col-sm-12"> -->
 <!-- <ul class="sidebar_ul"> -->

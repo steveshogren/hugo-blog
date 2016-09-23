@@ -5,6 +5,8 @@ Categories = ["technical skills","vim","refactoring"]
 banner="/images/pattern.jpeg"
 +++
 
+(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))
+
 Editor macros are a secret weapon for editing text. While they are hard to
 learn, no other tool offers such broad speed and power for automating changes. A
 skilled macro wielder can make huge changes to a codebase with ease.
@@ -177,3 +179,5 @@ macros, allow yourself to be slow while you master the skill. Touch-typing can
 be many times faster than hand-writing or hunt-and-peck, but learning takes a
 long time. Macros can save you huge amounts of time, but you have to allow
 yourself to be slow while you master the skill.
+
+(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))

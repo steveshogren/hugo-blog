@@ -6,6 +6,8 @@ Categories = ["technical skills","emacs", "vim"]
 Description = "I was recently inspired by a comment from a respected coworker: \"I am just as productive with basic Vim commands as I am with a refactoring suite like ReSharper.\" He is equally productive with both, that much I know. What is his secret?"
 +++
 
+(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))
+
 I was recently inspired by a comment from a respected coworker:
 
 > "I am just as productive with basic Vim commands as I am with a refactoring
@@ -50,3 +52,5 @@ I use IDEAVim inside Android Studio. For C#: VsVim inside Visual Studio. For all
 other languages: Evil mode inside Emacs. Instead of hundreds of specialized
 commands and contexts, I rely on a few basic abstractions to achieve any text
 transformation I can imagine.
+
+(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))

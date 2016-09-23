@@ -5,6 +5,8 @@ Categories = ["technical skills","clojure", "clojurescript"]
 draft=true
 +++
 
+(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))
+
 An IDE is a "T-shaped" editor. The IDE provides an amazing experience for one or
 two languages, and an average or poor experience in everything else. By default
 Visual Studio and Intellij IDEA offer phenomenal support for C# and Java. They
@@ -65,3 +67,5 @@ learn, simple to combine, and provide for endless combinations. A suite of
 I regularly work on the train, where it is difficult to use a mouse. I also
 cannot always easily move my arms around for reaching the trackpad or arrow
 keys. 
+
+(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))

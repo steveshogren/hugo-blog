@@ -5,6 +5,8 @@ newdev = "yes"
 Categories = ["Technical Skills", "Meta Game", "management"]
 +++
 
+(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))
+
     > Learning Vim is a waste of time; I can prove it! - Anonymous
         
 I recently had a gentle discussion with a new teammate about whether
@@ -202,4 +204,4 @@ Here are some links and books to get you started on these topics.
 * Learning new languages and frameworks - [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
 * Automating tasks [Rake to Automate Tasks](http://www.stuartellis.eu/articles/rake/)
 
-
+(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))
