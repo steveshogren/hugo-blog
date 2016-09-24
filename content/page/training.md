@@ -2,7 +2,7 @@
 title = "Training"
 +++
 
-<h1 class="centereded">Learning To Program</h1>
+<h1 class="centereded">Myths</h1>
 
 > "I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"
 
@@ -28,17 +28,17 @@ got the job done!
 
 ### Myth: I Need to Pick the Right Language Now!
 
-The first language you learn should not be your last! Ideally, you should learn
-two or three languages before getting your first job. Something about switching
-languages is very effective for training developers. Having a few under your
-belt gives you a breadth of understanding that helps you learn new concepts
-faster.
+The first language you learn should not be your last! Ideally, you will learn
+the basics of two or three languages before getting your first job. Learning
+several different languages is very effective for training developers. Having a
+few under your belt gives you a breadth of understanding that helps you learn
+new concepts faster.
 
-## The Course:
+<h1 class="centereded">The Course</h1>
 
-### Step 1 - Basic Syntax 
+### Step 1 - Basic Syntax And Git
 
-Several fantastic resources exist for getting the basics of programming
+Several fantastic resources exist for learning the basics of programming
 language syntax. I recommend at least one of the following, preferably both:
 
 * [CodeAcademy Javascript module](https://www.codecademy.com/learn/javascript)
@@ -51,12 +51,14 @@ complete an exercise, commit your work.
 
 > Commit early, commit often
 
-Make sure you push your changes as often as possible (at least hourly), so if
-your computer ever dies, everything is backed up. This will have the side-effect
-of giving you an online portfolio of all the work you do. Every new language,
-book, or project you start, make a new github repository! By the end of this
-course, you will have at several repositories of projects and book homework.
-This will be very effective in showing your progress to potential employers.
+Make sure you push your changes as often as possible (at least hourly). If your
+computer ever dies, everything you pushed is backed up. This will have the
+side-effect of giving you an online portfolio of all the work you do. 
+
+Make a new github repository for every new language, book, or project you start.
+By the end of this course, you will have at several repositories of projects and
+book homework. This will be very effective in showing your progress to potential
+employers.
 
 ### Step 2 - Basic Tools 
 
@@ -90,7 +92,7 @@ recommend KataTennis, KataRomanNumerals, and KataBowling.
 
 For the rest of the course, we recommend you do thirty minutes of kata practice
 every time you sit down. Redo the same kata multiple times, until you can do it
-effortlessly in Python or Javascript.
+effortlessly in both Python and Javascript.
 
 ### Step 3 - Basic Semantics
 
@@ -223,26 +225,35 @@ to see a project bigger than a simple Kata.
 
 ### Step 7 - Algorithm and Interview Practice
 
+At this point we introduce the first non-free material.
+
 Purchase the book
 [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 and do all the problems in chapters 1-9 in your "first job" language. If you
-have time, finish all the problems in the whole book. You will find these are
-significantly easier if you use TDD. TDD is supremely effective for algorithmic
-work like the problems presented in this book. While it may seem slower to write
-tests, it truly is faster as you only have to write them once!
+have time, finish all the problems in the whole book. You will find most of the
+problems are significantly easier if you use TDD. TDD can be very effective for
+algorithmic work like the problems presented in this book. While it may seem
+slower to write tests, you only have to write them once!
+
+If you want to use only free materials, you can instead work through the
+material on [ProgrammerInterview.com](http://www.programmerinterview.com/). Do
+"Design Patterns", "Data Structures", and if it is there, the section on your
+language of choice.
 
 Every couple of problems, take a break and complete another kata using TDD. You
 should be able to complete something like KataTennis in about 30 minutes from
-scratch using TDD. You should be able to also complete any kata using any of the
-following different languages: Javascript, Scheme, Python, and whatever you
-chose to build your small project. Do each kata at least a couple times, until
-it feels fluid and natural. These will help you learn that new language quickly.
+scratch using TDD. Do each kata at least a couple times, until it feels fluid
+and natural. These will help you learn that new language quickly.
 
 ### Step 8 - Start Interviewing
 
 At this point, you'll be able to pass an entry-level developer interview with a
 very decent success rate. You'll be well versed in the basics of object-oriented
 programming, functional programming, data structures, algorithms, and unit
-testing. You'll have a good grasp of several different programming languages,
-and have a portfolio of code and projects to discuss.
+testing. You'll have a good grasp of the basics of several different programming
+languages, and have a portfolio of code and projects to discuss.
 
+
+<h1 class="centereded">I Need More!</h1>
+
+Some people 
