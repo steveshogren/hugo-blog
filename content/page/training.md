@@ -2,39 +2,40 @@
 title = "Training"
 +++
 
-<h1 class="centereded">Myths</h1>
+<h1 class="centereded">Learn To Program</h1>
 
 > "I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"
 
-### Myth: I Need a Degree/Six Months of Bootcamp
+It can be
 
-Anyone with desire and drive can learn to program in their spare time. You can
-get a full-time programming job without any schooling or credentials. All you
-you need is hard work, practice, and some basic guidance!
+<h1 class="centereded">Success Stories</h1>
 
-### Myth: I Need Expensive Books/Software
+We have trained several people from zero experience to full-time software
+developer jobs. It is not impossible to learn enough programming to get a full
+time job!
 
-I have trained many people from zero to full-time programmers. We only used free
-resources to teach them everything they needed. They used free tools like
-Notepad++, Vim, Intellij Community, and Visual Studio Express.
-
-### Myth: I Need a Fancy New Computer
-
-You can learn everything you need with just an old computer and the internet! If
-it can reliably run notepad and a web browser, it will do just fine. I have been
-a professional developer for almost a decade, and I learned much of what I know
-on an old Acer Aspire One netbook. It barely ran three tabs on Chrome, but it
-got the job done!
-
-### Myth: I Need to Pick the Right Language Now!
-
-The first language you learn should not be your last! Ideally, you will learn
-the basics of two or three languages before getting your first job. Learning
-several different languages is very effective for training developers. Having a
-few under your belt gives you a breadth of understanding that helps you learn
-new concepts faster.
+<div class="container">
+  <div class="col-md-3">
+      <h2>Ariel S.</h2>
+      <p>Ariel graduated with a degree in music and no technical experience.
+  Within six months she was working as an automated tester, and now manages a
+  team of automated testers.</p>
+  </div>
+  <div class="col-md-3">
+      <h2>Rachel B.</h2>
+      <p>Rachel was working as a baker when we started together. After nine
+  months of hard work she had her first full-time development job.</p>
+  </div>
+  <div class="col-md-3">
+      <h2>Ben S.</h2>
+      <p>Ben had a B.A. degree and one basic programming class in high-school. He worked hard, and had a full-time development job in six months. He now is an expert at both front and back-end development.</p>
+  </div>
+</div>
 
 <h1 class="centereded">The Course</h1>
+
+There is no secret for learning how to program: just hard work! Here is the
+up-to-date course we use for training someone from zero to full-time job.
 
 ### Step 1 - Basic Syntax And Git
 
@@ -252,6 +253,37 @@ very decent success rate. You'll be well versed in the basics of object-oriented
 programming, functional programming, data structures, algorithms, and unit
 testing. You'll have a good grasp of the basics of several different programming
 languages, and have a portfolio of code and projects to discuss.
+
+
+<h1 class="centereded">Myths</h1>
+
+### Myth: I Need a Degree/Six Months of Bootcamp
+
+Anyone with desire and drive can learn to program in their spare time. You can
+get a full-time programming job without any schooling or credentials. All you
+you need is hard work, practice, and some basic guidance!
+
+### Myth: I Need Expensive Books/Software
+
+I have trained many people from zero to full-time programmers. We only used free
+resources to teach them everything they needed. They used free tools like
+Notepad++, Vim, Intellij Community, and Visual Studio Express.
+
+### Myth: I Need a Fancy New Computer
+
+You can learn everything you need with just an old computer and the internet! If
+it can reliably run notepad and a web browser, it will do just fine. I have been
+a professional developer for almost a decade, and I learned much of what I know
+on an old Acer Aspire One netbook. It barely ran three tabs on Chrome, but it
+got the job done!
+
+### Myth: I Need to Pick the Right Language Now!
+
+The first language you learn should not be your last! Ideally, you will learn
+the basics of two or three languages before getting your first job. Learning
+several different languages is very effective for training developers. Having a
+few under your belt gives you a breadth of understanding that helps you learn
+new concepts faster.
 
 
 <h1 class="centereded">I Need More!</h1>
