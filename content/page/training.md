@@ -6,19 +6,22 @@ title = "Training"
 
 > "I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"
 
-It can be
+If you want to become a full-time developer, it can be intimidating to know
+where to start! Many people get stuck after finishing an on-line course. We want
+to provide free guidance for anyone who wants to learn enough to get a full-time
+job.
 
 <h1 class="centereded">Success Stories</h1>
 
-We have trained several people from zero experience to full-time software
-developer jobs. It is not impossible to learn enough programming to get a full
-time job!
+We have used this course with several people to help them break into full-time
+software developer jobs. It is not impossible to learn enough programming to get
+a full time job!
 
 <div class="container">
   <div class="col-md-3">
       <h2>Ariel S.</h2>
       <p>Ariel graduated with a degree in music and no technical experience.
-  Within six months she was working as an automated tester, and now manages a
+  Within eight months she was working as an automated tester, and now manages a
   team of automated testers.</p>
   </div>
   <div class="col-md-3">
@@ -28,14 +31,16 @@ time job!
   </div>
   <div class="col-md-3">
       <h2>Ben S.</h2>
-      <p>Ben had a B.A. degree and one basic programming class in high-school. He worked hard, and had a full-time development job in six months. He now is an expert at both front and back-end development.</p>
+      <p>Ben had a B.A. degree and one basic programming class in high-school.
+  He worked hard and had a full-time development job in six months. He now has
+  worked in both front-end and back-end development.</p>
   </div>
 </div>
 
 <h1 class="centereded">The Course</h1>
 
 There is no secret for learning how to program: just hard work! Here is the
-up-to-date course we use for training someone from zero to full-time job.
+up-to-date course we use.
 
 ### Step 1 - Basic Syntax And Git
 
