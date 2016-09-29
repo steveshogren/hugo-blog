@@ -2,42 +2,70 @@
 title = "Training"
 +++
 
-<h1 class="centereded">Learn To Program</h1>
+<div class="container">
+  <div class="col-md-3">
+<h1 >Train With Us</h1>
+
+<p>
+We offer one-one-one pair-programming and mentorship. Work through katas, get
+feedback through code-review, and practice interview questions together.
+</p>
+<p>
+Our team of three instructors has over twenty-five years of expertise building
+software solutions. Each of us has years of experience in training and
+pair-programming.
+
+</p>
+<p>
+We have built projects and performed katas in almost every major language: Ruby,
+Python, Perl, PHP, Go, Java, Android Java, C#, F#, R, Javascript, Typescript,
+Haskell, Common Lisp, Racket, Scheme, and Clojure. If you know what you want to
+learn, we can help you learn it.
+</p>
+<p>
+
+Our training is $20/hour. Contact me through [Twitter](http://twitter.com/steveshogren)
+</p>
+</div>
+<div class="col-md-9">
+
+<h1>Learn To Program</h1>
 
 > "I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"
-
+<p>
 If you want to become a full-time developer, it can be intimidating to know
-where to start! Many people get stuck after finishing an on-line course. We want
+where to start! Many people get stuck after finishing an online course. We want
 to provide free guidance for anyone who wants to learn enough to get a full-time
 job.
+</p>
 
-<h1 class="centereded">Success Stories</h1>
+<h1>Success Stories</h1>
 
+<p>
 We have used this course with several people to help them break into full-time
 software developer jobs. It is not impossible to learn enough programming to get
 a full time job!
+</p>
 
-<div class="container">
-  <div class="col-md-3">
-      <h2>Ariel S.</h2>
-      <p>Ariel graduated with a degree in music and no technical experience.
-  Within eight months she was working as an automated tester, and now manages a
-  team of automated testers.</p>
-  </div>
-  <div class="col-md-3">
-      <h2>Rachel B.</h2>
-      <p>Rachel was working as a baker when we started together. After nine
-  months of hard work she had her first full-time development job.</p>
-  </div>
-  <div class="col-md-3">
-      <h2>Ben S.</h2>
-      <p>Ben had a B.A. degree and one basic programming class in high-school.
-  He worked hard and had a full-time development job in six months. He now has
-  worked in both front-end and back-end development.</p>
-  </div>
+<div class="col-md-3">
+    <h3>Ariel S.</h3>
+    <p>Ariel graduated with a degree in music and no technical experience.
+Within eight months she was working as an automated tester, and now manages a
+team of automated testers.</p>
+</div>
+<div class="col-md-3">
+    <h3>Rachel B.</h3>
+    <p>Rachel was working as a baker when we started together. After nine
+months of hard work she had her first full-time development job.</p>
+</div>
+<div class="col-md-3">
+    <h3>Ben S.</h3>
+    <p>Ben had a B.A. degree and one basic programming class in high-school.
+He worked hard and had a full-time development job in six months. He now has
+worked in both front-end and back-end development.</p>
 </div>
 
-<h1 class="centereded">The Course</h1>
+<h1>The Course</h1>
 
 There is no secret for learning how to program: just hard work! Here is the
 up-to-date course we use.
@@ -290,7 +318,5 @@ several different languages is very effective for training developers. Having a
 few under your belt gives you a breadth of understanding that helps you learn
 new concepts faster.
 
-
-<h1 class="centereded">I Need More!</h1>
-
-Some people 
+</div>
+</div>
