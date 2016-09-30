@@ -14,20 +14,34 @@ feedback through code-review, and practice interview questions together.
 Our team of three instructors has over twenty-five years of expertise building
 software solutions. Each of us has years of experience in training and
 pair-programming.
-
 </p>
 <p>
-We have built projects and performed katas in almost every major language: Ruby,
-Python, Perl, PHP, Go, Java, Android Java, C#, F#, R, Javascript, Typescript,
-Haskell, Common Lisp, Racket, Scheme, and Clojure. If you know what you want to
-learn, we can help you learn it.
+<ul>
+<li>Ruby</li>
+<li>Python</li>
+<li>Perl</li>
+<LI>PHP</LI>
+<li>Go</li>
+<li>Java</li>
+<li>Android Java</li>
+<li>C#</li>
+<li>F#</li> 
+<li>R</li>
+<li>Javascript</li>
+<li>Typescript</li>
+<li>Haskell</li>
+<li>Common Lisp</li>
+<li>Racket</li>
+<li>Scheme</li>
+<li>Clojure</li>
+</ul>
 </p>
 <p>
 
 Our training is $20/hour. Contact me through [Twitter](http://twitter.com/steveshogren)
 </p>
 </div>
-<div class="col-md-9">
+<div class="col-md-6">
 
 <h1>Learn To Program</h1>
 
@@ -47,6 +61,7 @@ software developer jobs. It is not impossible to learn enough programming to get
 a full time job!
 </p>
 
+<div class="container">
 <div class="col-md-3">
     <h3>Ariel S.</h3>
     <p>Ariel graduated with a degree in music and no technical experience.
@@ -63,6 +78,7 @@ months of hard work she had her first full-time development job.</p>
     <p>Ben had a B.A. degree and one basic programming class in high-school.
 He worked hard and had a full-time development job in six months. He now has
 worked in both front-end and back-end development.</p>
+</div>
 </div>
 
 <h1>The Course</h1>
