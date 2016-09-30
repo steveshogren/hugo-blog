@@ -311,6 +311,7 @@ software solutions. Each of us has years of experience in training and
 pair-programming.
 </p>
 <p>
+We can instruct in the following languages:
 <ul>
 <li>Ruby</li>
 <li>Python</li>
