@@ -1,51 +1,15 @@
 +++
-title = "Training"
+title = "Learn To Program"
+layout = "training"
 +++
 
 <div class="container">
-  <div class="col-md-3">
-<h1 >Train With Us</h1>
+<div class="col-md-9">
 
-<p>
-We offer one-one-one pair-programming and mentorship. Work through katas, get
-feedback through code-review, and practice interview questions together.
-</p>
-<p>
-Our team of three instructors has over twenty-five years of expertise building
-software solutions. Each of us has years of experience in training and
-pair-programming.
-</p>
-<p>
-<ul>
-<li>Ruby</li>
-<li>Python</li>
-<li>Perl</li>
-<LI>PHP</LI>
-<li>Go</li>
-<li>Java</li>
-<li>Android Java</li>
-<li>C#</li>
-<li>F#</li> 
-<li>R</li>
-<li>Javascript</li>
-<li>Typescript</li>
-<li>Haskell</li>
-<li>Common Lisp</li>
-<li>Racket</li>
-<li>Scheme</li>
-<li>Clojure</li>
-</ul>
-</p>
-<p>
+<blockquote>
+<p>"I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"</p>
+</blockquote>
 
-Our training is $20/hour. Contact me through [Twitter](http://twitter.com/steveshogren)
-</p>
-</div>
-<div class="col-md-6">
-
-<h1>Learn To Program</h1>
-
-> "I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"
 <p>
 If you want to become a full-time developer, it can be intimidating to know
 where to start! Many people get stuck after finishing an online course. We want
@@ -57,8 +21,7 @@ job.
 
 <p>
 We have used this course with several people to help them break into full-time
-software developer jobs. It is not impossible to learn enough programming to get
-a full time job!
+software developer jobs. 
 </p>
 
 <div class="container">
@@ -335,4 +298,39 @@ few under your belt gives you a breadth of understanding that helps you learn
 new concepts faster.
 
 </div>
-</div>
+  <div class="col-md-3">
+<h1 >Train With Us</h1>
+
+<p>
+We offer one-one-one pair-programming and mentorship. Work through katas, get
+feedback through code-review, and practice interview questions together.
+</p>
+<p>
+Our team of three instructors has over twenty-five years of expertise building
+software solutions. Each of us has years of experience in training and
+pair-programming.
+</p>
+<p>
+<ul>
+<li>Ruby</li>
+<li>Python</li>
+<li>Perl</li>
+<LI>PHP</LI>
+<li>Go</li>
+<li>Java</li>
+<li>Android Java</li>
+<li>C#</li>
+<li>F#</li> 
+<li>R</li>
+<li>Javascript</li>
+<li>Typescript</li>
+<li>Haskell</li>
+<li>Common Lisp</li>
+<li>Racket</li>
+<li>Scheme</li>
+<li>Clojure</li>
+</ul>
+</p>
+<p>
+
+Our training is $20/hour. Contact us through [Twitter](http://twitter.com/steveshogren) </p> </div> </div>

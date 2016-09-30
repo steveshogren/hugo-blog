@@ -1,1 +1,11 @@
-<h1>TEST THIS</h1>
+{{ partial "head" . }}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            {{ .Render "training.hat" }}
+            {{ .Render "training.content" }}
+            {{ .Render "training.boot" }}
+        </div>
+    </div>
+</div>
+{{ partial "foot" . }}
