@@ -42,23 +42,24 @@ He worked hard and had a full-time development job in six months. He now has
 worked in both front-end and back-end development.</p>
 </div>
 
-<h1>The Course</h1>
+<h1>The Free Course</h1>
 
-There is no secret for learning how to program: just hard work! Here is the
-up-to-date course we use.
+There is no secret for learning how to program: just hard work! Here is a the
+basic program we recommend for anyone who wants to land that first job.
 
 ### Step 1 - Basic Syntax And Git
 
 Several fantastic resources exist for learning the basics of programming
-language syntax. I recommend at least one of the following, preferably both:
+language syntax. If you are already not familiar with programming syntax, then
+complete both of these:
 
 * [CodeAcademy Javascript module](https://www.codecademy.com/learn/javascript)
 * [Learn Python the Hard Way](https://learnpythonthehardway.org/)
 
 You will also need to sign up for [GitHub](www.github.com) and work through
-their tutorial for setting up git on your workstation. Make a repository for the
-code from "Learn Python the Hard Way". Every time you get something working, or
-complete an exercise, commit your work. 
+their tutorial to set up git on your workstation. Make a repository for the code
+from "Learn Python the Hard Way". Every time you get something working, or
+complete an exercise, commit your work.
 
 > Commit early, commit often
 
@@ -71,11 +72,12 @@ By the end of this course, you will have at several repositories of projects and
 book homework. This will be very effective in showing your progress to potential
 employers.
 
-### Step 2 - Basic Tools 
+### Step 2 - Powerful Tools 
 
-You need to invest in some skills to make your learning faster. You should learn
-how to do something called Test Driven Development. Read through the wikipedia
-page on
+Anyone can speed up their learning by knowing the best tools for the job. You
+need to invest in some skills to make your learning faster. You should learn how
+to do something called Test Driven Development. Read through the wikipedia page
+on
 [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
 Read and work through the following post where they show you how to write
@@ -101,18 +103,17 @@ Use TDD with either Python or Javascript to finish three small katas from the
 [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue). We
 recommend KataTennis, KataRomanNumerals, and KataBowling. 
 
-For the rest of the course, we recommend you do thirty minutes of kata practice
-every time you sit down. Redo the same kata multiple times, until you can do it
-effortlessly in both Python and Javascript.
+For the rest of the course, we recommend you do **thirty minutes of kata practice
+every day**. Redo the same kata multiple times, until you can do it effortlessly
+in both Python and Javascript.
 
-### Step 3 - Basic Semantics
+### Step 3 - Concrete Foundations
 
 Armed with the power of TDD and regular kata practice, you need to invest in
 some foundations. These concepts can be a little slow to learn, but they are
 incredibly valuable. To best learn these foundations, we recommend reading and
 completing the exercises of the first three chapters of the textbook
-[Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html),
-also known as "SICP".
+[Structure and Interpretation of Computer Programs (SICP)](https://mitpress.mit.edu/sicp/full-text/book/book.html).
 
 SICP will help you build a mastery of basic algorithms and data structures,
 which are essential for interviewing practice. Complete the exercises in MIT
@@ -140,17 +141,20 @@ it.
 
 ### Step 4 - Pick A Language
 
-When you have finished the homework in the first three chapters of SICP, you
-will want to select a programming language to get that first job. Any language
-in the [Tiobe top ten](http://www.tiobe.com/tiobe-index/) will do.
+Almost every new programmer feels significant pressure to pick the "right
+language". When you have finished the homework in the first three chapters of
+SICP, you will want to select a programming language to get that first job. Any
+language in the [Tiobe top ten](http://www.tiobe.com/tiobe-index/) will do just
+fine.
 
 Many skills of the different software development areas are easily learned, so
 what matters most are the intangibles of the job environment. Do you want to be
 able to go home every day at 5pm? You might want steer clear of video games or
 start-ups. Does the business matter to you? How important is an extra 10-15%
 more pay if the work is otherwise boring? Many boring big-business Java jobs
-make good pay with short hours. You'll want to ask yourself these questions when
-thinking about what domain you want to get into.
+make good pay with short hours. Many game jobs are rewarding in other ways, as
+you take pride in seeing a product unfold. You'll want to ask yourself these
+questions when thinking about what domain you want to get into.
 
 Here are some wild generalizations of how different languages are used in the
 industry:
