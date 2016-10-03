@@ -159,22 +159,25 @@ questions when thinking about what domain you want to get into.
 Here are some wild generalizations of how different languages are used in the
 industry:
 
-* Java or C# are typical for business-oriented big-company jobs
-* Ruby or NodeJS are common in Silicon Valley start-up jobs
+* Java (and some C#) are typical for business-oriented big-company jobs
+* Ruby (and some NodeJS) are common in Silicon Valley start-up jobs
 * Javascript is mandatory for web front-end jobs
-* C++ or C# Unity for most video game jobs
-* Assembly or C for embedded hardware jobs 
+* C++ (and some C# Unity) are used for most video game jobs
+* Assembly and C for embedded hardware jobs (more difficult without an
+  electrical engineering degree)
 * R or Python for data science or numerical analysis jobs (I wouldn't attempt
-  these without a math degree or equivalent)
+  these without an advanced math degree or equivalent)
 
 Take some time to research what people say about these different types of job
 environments, and remember these are just generalizations. Java is used for many
 Android mobile games. People run start-ups in every possible language. Some
 mega-companies have huge Perl desktop applications. As a rule, every language
-can and has been used for every type of application. But if, for example, you
-really want to work in web development, do you want to limit yourself to the one
-company that forces VB6 into the browser, or the tens of thousands that just use
-plain Javascript?
+can and has been used for every type of application. 
+
+You will have an easier time finding a job if you pick a language is commonly
+used for that domain. For example, you really want to work in web development,
+do you want to limit yourself to the one company that forces VB6 into the
+browser, or the tens of thousands that just use plain Javascript?
 
 Look around the job boards for languages used in your current location. If you
 want to get a job in Chicago, get a quick count of how many jobs for each
@@ -187,17 +190,26 @@ developers are able to switch languages several times in their careers. This
 language just has to get you that first job.
 
 If I was picking a good "first job" language in late 2016, I'd pick one of:
-Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on Java and/or
-front-end Javascript for a combination of practicality and breadth of jobs.
-Remember you can always switch languages and jobs after a few years!
+Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on either Java
+or Ruby for a combination of practicality and breadth of jobs. If I lived in a
+place with more Ruby jobs than Java, I'd pick Ruby. I would also learn the
+basics of front-end Javascript so I could get into most web jobs. Remember you
+can always switch languages and jobs after a few years!
 
 ### Step 5 - Regularly Go to Meetups
 
-When you pick a language, use a site like [Meetup.com](www.meetup.com) to find
-local meetups and user groups about that language. In most major cities there
-are typically several free meetups every single day around programming,
-languages, and technology. Most even have free food and door prizes! Find the
-local meetups for your language, and attend every single session.
+The more people you know in the industry, the more potential contacts you will
+have for finding a great job. A person with less skills and good contacts
+sometimes gets the better job.
+
+Use a site like [Meetup.com](www.meetup.com) to find local meetups and user
+groups in your chosen language. In most major cities there are typically several
+free meetups every single day around programming, languages, and technology.
+Most even have free food and door prizes! Find the local meetups for your
+language, and attend every single session. Go to a minimum of one meetup per
+week.
+
+> **Who** you know can be more important than **what** you know
 
 If you are in a more remote location, the meetups might be less specific.
 Instead of a meetup just for PHP, you might have to settle for one just about
