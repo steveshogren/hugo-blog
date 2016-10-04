@@ -235,37 +235,36 @@ before you start.
 
 You will want to list out all the things you will need. Perhaps you need a way
 to run a web site, or build an Android game. Maybe you need to store data in a
-file or database. Use the internet to around for tutorials for the simplest
-way to get those tools up and running. For almost any topic, many excellent
-tutorials exist that can guide you to a starting application.
+file or database. Search the internet for tutorials to get those tools up and
+running. For almost any topic, many excellent tutorials exist that can guide you
+to a starting application.
 
-Keep a running list of questions, and spend some time each session searching
-for answers. Almost any question you have has been answered on forums, Stack
+Keep a list of questions, and spend some time each session searching for
+answers. Almost any question you have has been answered on forums, Stack
 Overflow, and blogs. If you have Internet, you can teach yourself to build
 almost any sort of programming project.
 
 Work on this until you have finished enough that you have answered most of your
-own questions and implemented most of your own features. The purpose of this
-exercise is two-fold. It provides you with a list of questions to teach you how
-to research, and the motivation to research them! Second, it gives you a chance
-to see a project bigger than a simple Kata.
+own questions and implemented most of your own features. A small project
+provides you with a list of questions, and the motivation to learn how to
+research them. Second, a small project teaches you important details and
+technologies you would otherwise miss in katas.
 
 ### Step 7 - Algorithm and Interview Practice
 
-At this point we introduce the first non-free material.
+At this point we introduce the first non-free material. If you want to use only
+free materials, you can instead work through the questions on
+[ProgrammerInterview.com](http://www.programmerinterview.com/). Do "Design
+Patterns", "Data Structures", and if it is there, the section on your language
+of choice. Search the internet for interview questions and study them.
 
-Purchase the book
+If you can afford it, purchase the book
 [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 and do all the problems in chapters 1-9 in your "first job" language. If you
 have time, finish all the problems in the whole book. You will find most of the
 problems are significantly easier if you use TDD. TDD can be very effective for
 algorithmic work like the problems presented in this book. While it may seem
 slower to write tests, you only have to write them once!
-
-If you want to use only free materials, you can instead work through the
-material on [ProgrammerInterview.com](http://www.programmerinterview.com/). Do
-"Design Patterns", "Data Structures", and if it is there, the section on your
-language of choice.
 
 Every couple of problems, take a break and complete another kata using TDD. You
 should be able to complete something like KataTennis in about 30 minutes from
@@ -279,7 +278,6 @@ very decent success rate. You'll be well versed in the basics of object-oriented
 programming, functional programming, data structures, algorithms, and unit
 testing. You'll have a good grasp of the basics of several different programming
 languages, and have a portfolio of code and projects to discuss.
-
 
 <h1 class="centereded">Myths</h1>
 
