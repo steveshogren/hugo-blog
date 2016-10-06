@@ -16,7 +16,7 @@ layout = "training"
 where to start! Many people get stuck after finishing an online course. We want
 to provide free guidance for anyone who wants to get that dream job. </p>
 
-<h1>Success Stories</h1>
+<h2>Success Stories</h2>
 
 <p>
 We have used this course with several people to help them break into full-time
@@ -41,7 +41,7 @@ He followed this program and had a full-time development job in six months. He n
 worked in both front-end and back-end development.</p>
 </div>
 
-<h1>The Free Course</h1>
+<h2>The Free Course</h2>
 
 There is no secret for learning how to program: just hard work! Here is a the
 basic program we recommend for anyone who wants to break into the industry.
@@ -277,7 +277,7 @@ programming, functional programming, data structures, algorithms, and unit
 testing. You'll have a good grasp of the basics of several different programming
 languages, and have a portfolio of code and projects to discuss.
 
-<h1 class="centereded">Myths</h1>
+<h2 class="centereded">Myths</h2>
 
 ### Myth: I Need a Degree/Six Months of Bootcamp
 
@@ -309,37 +309,35 @@ new concepts faster.
 
 </div>
   <div class="col-md-3 sidebarcolor">
-<h1 >Train With Us</h1>
+<h2 >Train With Us</h2>
 
 <p>
 We offer one-one-one pair-programming and mentorship. Work through katas, get
 feedback through code-review, and practice interview questions together.
 </p>
 <p>
-Our team of three instructors has over twenty-five years of expertise building
-software solutions. Each of us has years of experience in training and
+Our team of three instructors has over thirty years of expertise building
+software solutions. We each have over seven years of experience in training and
 pair-programming.
 </p>
 <p>
-We can instruct in the following languages:
+We can pair and offer instruction in the following languages:
 <ul>
 <li>Ruby</li>
-<li>Python</li>
-<li>Perl</li>
-<LI>PHP</LI>
-<li>Go</li>
-<li>Java</li>
-<li>Android Java</li>
 <li>C#</li>
-<li>F#</li> 
-<li>R</li>
 <li>Javascript</li>
 <li>Typescript</li>
+<li>Java</li>
+<li>Android Java</li>
+<li>F#</li> 
 <li>Haskell</li>
 <li>Common Lisp</li>
 <li>Racket</li>
 <li>Scheme</li>
 <li>Clojure</li>
+<li>Python</li>
+<li>Perl</li>
+<li>PHP</li>
 </ul>
 </p>
 <p>
