@@ -1,21 +1,20 @@
 +++
-title = "Learn To Program"
+title = "Deliberate Training"
 layout = "training"
 +++
 
+
 <div class="container">
 <div class="col-md-9">
+<h1>Learn To Program For Free</h1>
 
 <blockquote>
 <p>"I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"</p>
 </blockquote>
 
-<p>
-If you want to become a full-time developer, it can be intimidating to know
+<p> If you want to become a full-time developer, it can be intimidating to know
 where to start! Many people get stuck after finishing an online course. We want
-to provide free guidance for anyone who wants to learn enough to get a full-time
-job.
-</p>
+to provide free guidance for anyone who wants to get that dream job. </p>
 
 <h1>Success Stories</h1>
 
@@ -25,27 +24,27 @@ software developer jobs.
 </p>
 
 <div class="col-md-4">
+    <h3>Rachel B.</h3>
+    <p>Rachel was working as a baker when we started together. After nine
+months working this course she had her first full-time development job.</p>
+</div>
+<div class="col-md-4">
     <h3>Ariel S.</h3>
     <p>Ariel graduated with a degree in music and no technical experience.
 Within eight months she was working as an automated tester, and now manages a
 team of automated testers.</p>
 </div>
 <div class="col-md-4">
-    <h3>Rachel B.</h3>
-    <p>Rachel was working as a baker when we started together. After nine
-months of hard work she had her first full-time development job.</p>
-</div>
-<div class="col-md-4">
     <h3>Ben S.</h3>
     <p>Ben had a B.A. degree and one basic programming class in high-school.
-He worked hard and had a full-time development job in six months. He now has
+He followed this program and had a full-time development job in six months. He now has
 worked in both front-end and back-end development.</p>
 </div>
 
 <h1>The Free Course</h1>
 
 There is no secret for learning how to program: just hard work! Here is a the
-basic program we recommend for anyone who wants to land that first job.
+basic program we recommend for anyone who wants to break into the industry.
 
 ### Step 1 - Basic Syntax And Git
 
@@ -56,10 +55,10 @@ complete both of these:
 * [CodeAcademy Javascript module](https://www.codecademy.com/learn/javascript)
 * [Learn Python the Hard Way](https://learnpythonthehardway.org/)
 
-You will also need to sign up for [GitHub](www.github.com) and work through
-their tutorial to set up git on your workstation. Make a repository for the code
-from "Learn Python the Hard Way". Every time you get something working, or
-complete an exercise, commit your work.
+You will also need to sign up for [GitHub](http://www.github.com) and work
+through their tutorial to set up git on your workstation. Make a repository for
+the code from "Learn Python the Hard Way". Commit your work every time you get
+something working or complete an exercise.
 
 > Commit early, commit often
 
@@ -74,10 +73,9 @@ employers.
 
 ### Step 2 - Powerful Tools 
 
-Anyone can speed up their learning by knowing the best tools for the job. You
-need to invest in some skills to make your learning faster. You should learn how
-to do something called Test Driven Development. Read through the wikipedia page
-on
+Knowing the best tools for the job will accelerate your learning. Before we get
+too far, you need to invest in some skills to make your learning faster. One of
+the fastest tools we know is called
 [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
 Read and work through the following post where they show you how to write
@@ -111,8 +109,8 @@ in both Python and Javascript.
 
 Armed with the power of TDD and regular kata practice, you need to invest in
 some foundations. These concepts can be a little slow to learn, but they are
-incredibly valuable. To best learn these foundations, we recommend reading and
-completing the exercises of the first three chapters of the textbook
+incredibly valuable. We recommend reading and completing the exercises of the
+first three chapters of the textbook
 [Structure and Interpretation of Computer Programs (SICP)](https://mitpress.mit.edu/sicp/full-text/book/book.html).
 
 SICP will help you build a mastery of basic algorithms and data structures,
@@ -274,7 +272,7 @@ and natural. These will help you learn that new language quickly.
 ### Step 8 - Start Interviewing
 
 At this point, you'll be able to pass an entry-level developer interview with a
-very decent success rate. You'll be well versed in the basics of object-oriented
+very decent success rate! You'll be well versed in the basics of object-oriented
 programming, functional programming, data structures, algorithms, and unit
 testing. You'll have a good grasp of the basics of several different programming
 languages, and have a portfolio of code and projects to discuss.
@@ -310,7 +308,7 @@ few under your belt gives you a breadth of understanding that helps you learn
 new concepts faster.
 
 </div>
-  <div class="col-md-3">
+  <div class="col-md-3 sidebarcolor">
 <h1 >Train With Us</h1>
 
 <p>
@@ -346,4 +344,4 @@ We can instruct in the following languages:
 </p>
 <p>
 
-Our training is $20/hour. Contact us through [Twitter](http://twitter.com/steveshogren) </p> </div> </div>
+Our training is $20/hour. Contact us through Steve's [Twitter](http://twitter.com/steveshogren) </p> </div> </div>
