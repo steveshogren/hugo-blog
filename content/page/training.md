@@ -1,20 +1,19 @@
 +++
-title = "Deliberate Training"
+title = "Learn To Program For Free"
 layout = "training"
 +++
 
 
 <div class="container">
 <div class="col-md-9">
-<h1>Learn To Program For Free</h1>
 
 <blockquote>
 <p>"I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"</p>
 </blockquote>
 
-<p> If you want to become a full-time developer, it can be intimidating to know
-where to start! Many people get stuck after finishing an online course. We want
-to provide free guidance for anyone who wants to get that dream job. </p>
+<p> Breaking into a new career can be intimidating! Many people get stuck after
+finishing an online course like CodeAcademy. We want to provide free guidance
+necessary to get that dream job. </p>
 
 <h2>Success Stories</h2>
 
@@ -43,8 +42,7 @@ worked in both front-end and back-end development.</p>
 
 <h2>The Free Course</h2>
 
-There is no secret for learning how to program: just hard work! Here is a the
-basic program we recommend for anyone who wants to break into the industry.
+> There are no shortcuts to learn how to program: just hard work!
 
 ### Step 1 - Basic Syntax And Git
 
@@ -309,7 +307,7 @@ new concepts faster.
 
 </div>
   <div class="col-md-3 sidebarcolor">
-<h2 >Train With Us</h2>
+<h2 class="centered serif">Train With Us</h2>
 
 <p>
 We offer one-one-one pair-programming and mentorship. Work through katas, get
