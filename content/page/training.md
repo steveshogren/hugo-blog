@@ -44,25 +44,31 @@ worked in both front-end and back-end development.</p>
 
 > There are no shortcuts to learn how to program: just hard work!
 
+The course is broken into sections. Each section builds on the skills in the
+previous sections, so _don't skip around_. This is designed to teach the basic
+skills needed to get an entry-level development job.
+
 ### Step 1 - Basic Syntax And Git
 
-Several fantastic resources exist for learning the basics of programming
-language syntax. If you are already not familiar with programming syntax, then
-complete both of these:
+If you are already not familiar with any programming languages, then complete
+both of these:
 
 * [CodeAcademy Javascript module](https://www.codecademy.com/learn/javascript)
 * [Learn Python the Hard Way](https://learnpythonthehardway.org/)
 
 You will also need to sign up for [GitHub](http://www.github.com) and work
-through their tutorial to set up git on your workstation. Make a repository for
-the code from "Learn Python the Hard Way". Commit your work every time you get
-something working or complete an exercise.
+through their tutorial to set up git on your computer. Make a repository for the
+code from "Learn Python the Hard Way". Commit and push your work every time you
+get something working or complete an exercise.
 
 > Commit early, commit often
 
 Make sure you push your changes as often as possible (at least hourly). If your
-computer ever dies, everything you pushed is backed up. This will have the
-side-effect of giving you an online portfolio of all the work you do. 
+computer ever dies, you will have lost no more than an hour or two of work,
+because everything is backed up. This will have the side-effect of giving you an
+online portfolio of all the work you do.
+
+> Immediately commit and push any code you want to keep safe
 
 Make a new github repository for every new language, book, or project you start.
 By the end of this course, you will have at several repositories of projects and
