@@ -1,7 +1,6 @@
 +++
 title = "Better OOP"
-date = "2016-06-17"
-draft=true
+date = "2016-10-31"
 Categories = ["technical skills", "csharp"]
 +++
 
@@ -52,7 +51,7 @@ Two suggestions will guide your codebase to be easier to reuse and test.
   When you really need polymorphic behavior, use a verb interface. Only use
   verb interfaces for polymorphic behavior, not for unit test mocking.
 
-Here is an example of the patterns:
+Here is an example of the patterns in C#, but it also works in Java:
 
 ``` csharp
 // Verb Class
@@ -61,16 +60,16 @@ public class Notifier {
 }
 
 // Noun Interface
-public interface ISalesLead {
+public interface SalesLead {
     boolean IsCustomer {get; set;}
     DateTime ConversionDate {set;}
     int Id {get;}
     Type From {get;}
 }
 
-public class User : ISalesLead { /* User code here ... */ }
-public class Company : ISalesLead { /* Contact code here ... */ }
-public class Government : ISalesLead { /* Government code here ... */ }
+public class User : SalesLead { /* User code here ... */ }
+public class Company : SalesLead { /* Contact code here ... */ }
+public class Government : SalesLead { /* Government code here ... */ }
 
 // Verb Class
 public class SalesRepresentative {
@@ -78,7 +77,7 @@ public class SalesRepresentative {
     internal Action<string, Type, int> broadcast = new Notifier().Broadcast;
 
     // Extract Noun Interfaces
-    public void ConvertToCustomer(ISalesLead lead) {
+    public void ConvertToCustomer(SalesLead lead) {
       if(lead.IsCustomer) {
           return;
       }
@@ -90,8 +89,8 @@ public class SalesRepresentative {
 ```
 
 While this inversion of nouns and verbs seems counter to traditional OOP advice,
-it is actually a very object-oriented design. We use interfaces to allow
-polymorphic classes which are better suited to model a domain.
+it is actually a very object-oriented design. Noun Interfaces allow for
+polymorphic nouns. Polymorphic nouns allow are better suited to model a domain.
 
 In our example, a ```User``` should not know how to convert itself to a
 ```Customer```. A ```User``` would not know they had to broadcast their updated
@@ -123,11 +122,13 @@ public interface IHaveIdentity {
 ```
 
 This tiny, simple noun interface enables incredible re-use. We found the
-```IHaveIdentity``` noun interface on many of our noun classes. It is used
-by hundreds of verb classes throughout the codebase. Verbs like
+```IHaveIdentity``` noun interface on many of our noun classes. It is used by
+hundreds of verb classes throughout the codebase. Verbs like
 ```MakeDropDownList```, ```QueryById```, ```QueryNamesMatching```, and
-```CreateAuditTrail```. The verb classes can be easily reused, because any new
-noun class that fits the noun interface will work automatically!
+```CreateAuditTrail```. Those verb classes were easily reused, because any new
+noun class that fits the noun interface works automatically! If we had tried to
+put interfaces on those verbs, we'd have a lot of classes with no behavior other
+than just delegating to another class.
 
 # Conclusion 
 
