@@ -1,5 +1,5 @@
 +++
-title = "Better OOP"
+title = "Increased Reuse in Object-Oriented Programs"
 date = "2016-10-31"
 Categories = ["technical skills", "csharp"]
 +++
@@ -7,6 +7,14 @@ Categories = ["technical skills", "csharp"]
 The SOLID patterns are not enough to design a reusable and testable code base.
 Two concrete additions can significantly improve your codebase, while
 maintaining the SOLID principals.
+
+The suggestions here do not run counter to traditional SOLID designs, they
+enhance them. SOLID is a fine place to start, but it lacks a critical half of
+good design: polymorphic data. We've found polymorphic data is far more common
+than polymorphic behavior, so programs designed without that concept often are
+far larger than they need to be.
+
+> Appropriate application of these concepts will reduce code and allow for easier unit testing
 
 ## Terms
 
