@@ -15,25 +15,31 @@ of the best ways to unit-test your code!
 Which is easier to test? A **pure function** with the signature:
 
 ```java
-1: GameState movePlayerNorth(GameState g)
+GameState movePlayerNorth(GameState g)
 ```
 
 or an **impure function** with the signature:
 
 ```java
-2: void movePlayerNorth()
+void movePlayerNorth()
 ```
 
-One has explicit inputs and outputs. The other has implicit, hidden state. While
-the ```void``` function is easier to _call_, it is much harder to test. It
-relies on implicit global state to be correctly setup to even run the test.
+The first function has explicit inputs and outputs. The section function has
+implicit, hidden state. While the ```void``` function is easier to _call_, it is
+much harder to test. It relies on implicit global state to be correctly setup to
+even run the test.
 
-Functions that produce the same output based on their input are considered
-**pure**. Addition is a **pure function**. Evaluating ```1+1``` will always
+Functions are considered **pure** if they produce the same output when given the
+same input. Addition is a pure function. We expect ```add(1,1)``` will always
 produce ```2```. Pure functions are the easiest to test. The more logic you have
-in a **pure function**, the easier your code is to test.
+in pure functions, the easier your code is to test.
 
-Encapsulation is **impure**. 
+> Encapsulation is **impure**. 
+
+Encapsulation and rich domain models do not always produce the same results from
+their inputs. Functions have very little output and the caller does not have to
+"know" what happens under the hood. The "inputs" to ```game.movePlayerNorth()```
+are the state of the ```game``` class.
 
 Object-oriented design is a continuum. 
 
@@ -48,4 +54,4 @@ structures and no encapsulated state.
 
 If you need or desire testability, choose data structures and small stateless
 functions. Avoid encapsulated state, put all state in data structures with all
-public fields. Attempt to 
+public fields.
