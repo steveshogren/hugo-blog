@@ -36,16 +36,16 @@ in pure functions, the easier your code is to test.
 
 > Encapsulation is **impure**. 
 
-Encapsulation and rich domain models do not always produce the same results from
-their inputs. Functions have very little output and the caller does not have to
-"know" what happens under the hood. The "inputs" to ```game.movePlayerNorth()```
-are the state of the ```game``` class.
+Because the point of encapsulation is to hide state from the caller, it is
+impure by definition. Impure functions require global or class-level state to
+operate.
 
-Object-oriented design is a continuum. 
+Purity in object-oriented design is a continuum. Most codebases have a variety
+of functions: some pure, some impure.
 
 
-```java
-Encapsulation (Impure) |----------------------------| Pure Functions
+``` java
+Encapsulation (Impure) |------------------------| Pure functions
 ```
 
 On the one side you have the rich domain models with encapsulated state and void
@@ -53,5 +53,5 @@ methods. On the other side you have easily-tested code with functions and data
 structures and no encapsulated state.
 
 If you need or desire testability, choose data structures and small stateless
-functions. Avoid encapsulated state, put all state in data structures with all
-public fields.
+functions. Avoid encapsulated state: put all state in data structures with all
+public fields. Strive to make your codebase as pure as possible.
