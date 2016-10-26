@@ -24,34 +24,38 @@ or an **impure function** with the signature:
 void movePlayerNorth()
 ```
 
-The first function has explicit inputs and outputs. The section function has
+The first function has explicit inputs and outputs. The second function has
 implicit, hidden state. While the ```void``` function is easier to _call_, it is
-much harder to test. It relies on implicit global state to be correctly setup to
-even run the test.
+much harder to _test_. The tester must setup some internal or global state to
+even run the test. If the GameState is encapsulated too, you would need to end
+up calling dozens of methods just to get the GameState in the correct state for
+your test! (This isn't an exaggeration, I've seen people do this many times.)
 
 Functions are considered **pure** if they produce the same output when given the
 same input. Addition is a pure function. We expect ```add(1,1)``` will always
 produce ```2```. Pure functions are the easiest to test. The more logic you have
 in pure functions, the easier your code is to test.
 
-> Encapsulation is **impure**. 
+> Encapsulation is ~~a rich domain model~~ **impure**. 
 
-Because the point of encapsulation is to hide state from the caller, it is
-impure by definition. Impure functions require global or class-level state to
-operate.
+The point of encapsulation is to hide state from the caller; it is impure by
+definition. Impure functions require global or class-level state to operate. 
+
+For whatever reason, pure functions have been maligned as a "bad design". Purity
+has been given nasty sounding names like "anemic domain model" or "exposed
+state".
+
+> Purity is a good design!
 
 Purity in object-oriented design is a continuum. Most codebases have a variety
-of functions: some pure, some impure.
-
+of functions: some pure, some impure. On the one side you have rich domain
+models with completely encapsulated state and void methods. On the other side
+you have easily-tested code with pure functions and separate data structures.
 
 ``` java
 Encapsulation (Impure) |------------------------| Pure functions
 ```
 
-On the one side you have the rich domain models with encapsulated state and void
-methods. On the other side you have easily-tested code with functions and data
-structures and no encapsulated state.
-
-If you need or desire testability, choose data structures and small stateless
+If you need or desire testability, choose data structures and pure, stateless
 functions. Avoid encapsulated state: put all state in data structures with all
 public fields. Strive to make your codebase as pure as possible.
