@@ -41,13 +41,32 @@ in pure functions, the easier your code is to test.
 The point of encapsulation is to hide state from the caller; it is impure by
 definition. Impure functions require global or class-level state to operate. 
 
-For whatever reason, pure functions have been maligned as a "bad design". Purity
-has been given nasty sounding names like "anemic domain model" or "exposed
-state".
+Pure functions have been maligned as a bad design. Purity has been given nasty
+sounding names like "anemic domain model" or "exposed state". In reality, there
+is nothing wrong with pure programming, it produces good designs that are easy
+to understand and test.
 
 > Purity is a good design!
 
-Purity in object-oriented design is a continuum. Most codebases have a variety
+Purity is considered a bad design because it is incorrectly mixed with the
+concept of better domain modeling. This is often incorrect. Which of the
+following functions is easier to test and better models the domain?
+
+``` java
+Approval approveChange(Approval c)  // sets an approved field to true
+```
+or
+
+``` java
+Approved approveChange(ToBeApproved c) // makes a new object
+```
+
+While both functions are pure, the first function introduces a run-time error!
+What if the ```Approval``` was already approved? That is a failure state allowed
+because of poor modeling. The second function cannot even accept an unapproved
+object, preventing this sort of error from even happening.
+
+Purity in object-oriented design is a continuum. Most code-bases have a variety
 of functions: some pure, some impure. On the one side you have rich domain
 models with completely encapsulated state and void methods. On the other side
 you have easily-tested code with pure functions and separate data structures.
