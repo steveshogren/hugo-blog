@@ -1,8 +1,10 @@
 +++
-title = "Increased Reuse in Object-Oriented Programs"
+title = "OO-Design Part 1: Increased Reuse in Object-Oriented Programs"
 date = "2016-10-31"
-Categories = ["technical skills", "csharp"]
+Categories = ["technical skills", "csharp", "java",  "oop"]
 +++
+
+Next in the series: [OO-Design Part 2: Anemic Domain Models Are Healthy](/anemic-domain-model/)
 
 The SOLID patterns are not enough to design a reusable and testable code base.
 Two concrete additions can significantly improve your codebase, while
@@ -146,3 +148,5 @@ change. When you need actual polymorphic behavior, use a verb interface. For the
 more common case of unit test behavior replacement, the
 [SimpleMock](/simplemock-unit-test-mocking/) pattern makes for an easy way to
 keep your codebase clean and best model the domain.
+
+Next in the series: [OO-Design Part 2: Anemic Domain Models Are Healthy](/anemic-domain-model/)
