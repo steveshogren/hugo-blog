@@ -1,12 +1,11 @@
 +++
 title = "OO-Design Part 2: Anemic Domain Models Are Healthy"
 date = "2016-04-22"
-Categories = ["technical skills", "csharp", "java", "oop"]
+Categories = ["technical skills", "csharp", "java", "oo-design"]
 draft=true
 +++
 
-Previously: [OO-Design Part 1: Anemic Domain Models Are Healthy](/anemic-domain-model/)
-Next: [OO-Design Part 3: Purity Is Good Design](/purity-is-good-design/)
+Part 2 of the series [OO-Design](/categories/oo-design/)
 
 The **Anemic Domain Model** is often quoted as being an anti-pattern in
 Domain-Driven Design. Martin Fowler goes so far as to term the alternative a
@@ -64,5 +63,4 @@ If you need or desire testability, choose data structures and pure, stateless
 functions. Avoid encapsulated state: put all state in data structures with all
 public fields. Strive to make your codebase as pure as possible.
 
-Previously: [OO-Design Part 1: Anemic Domain Models Are Healthy](/anemic-domain-model/)
 Next: [OO-Design Part 3: Purity Is Good Design](/purity-is-good-design/)

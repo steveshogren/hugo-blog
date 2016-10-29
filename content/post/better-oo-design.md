@@ -1,10 +1,10 @@
 +++
 title = "OO-Design Part 1: Increased Reuse in Object-Oriented Programs"
 date = "2016-10-31"
-Categories = ["technical skills", "csharp", "java",  "oop"]
+Categories = ["technical skills", "csharp", "java",  "oo-design"]
 +++
 
-Next in the series: [OO-Design Part 2: Anemic Domain Models Are Healthy](/anemic-domain-model/)
+Part 1 of the series [OO-Design](/categories/oo-design/)
 
 The SOLID patterns are not enough to design a reusable and testable code base.
 Two concrete additions can significantly improve your codebase, while
@@ -45,7 +45,7 @@ behavior classes, (the verbs).
     charging: one that generates invoices, one that charges credit cards, etc.
   * Allows several types of verbs to be grouped together
 
-## Two Suggestions
+## Two Changes
 
 Two suggestions will guide your codebase to be easier to reuse and test.
 
