@@ -2,6 +2,7 @@
 title = "Learn Vim Fast"
 date = "2016-10-12"
 Categories = ["technical skills","vim"]
+draft=true
 banner="/images/pattern.jpeg"
 +++
 
