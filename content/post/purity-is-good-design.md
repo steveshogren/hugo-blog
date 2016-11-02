@@ -19,15 +19,30 @@ your library cannot put your libraries' objects in an invalid state is a good
 design. This is where encapsulation shines. You should not trust the users of a
 library or API to correctly use your models.
 
-Unfortunately, this sometimes useful pattern is often applied to _internal
-code_. You _should_ trust your coworkers to know not to screw around with
-models.
+While appropriate for libraries and APIs, encapsulation is often misapplied to
+_internal code_. We pretend that we cannot trust ourselves and our coworkers to
+know how to correctly use our models. This is silly. You and your coworkers all
+have access to the code, they can do _anything they want_. That getter that
+"protects" the field from write access could easily be changed to set it to
+```null``` every time. Trying to protect ourselves from doing stupid things with
+models by "hiding" the state is completely silly.
 
 
-Encapsulation is often considered a necessary part of every domain object
+``` java
+// This serves no purpose
+private bool IsLate;
+public bool GetIsLate() { return IsLate; }
+public void SetIsLate(bool isLate) { IsLate = islate; }
+```
 
-in our code-bases, even though it makes our code harder to reuse, extend, and
-test.
+I still see developers putting get and set functions around private fields,
+because "encapsulation". This is beyond silly. These functions serve completely
+no purpose. A get/set around a field is mathematically equivalent to just
+accessing it publicly. If encapsulation is the goal, this pattern completely
+fails to even provide that.
+
+Encapsulation is often considered a necessary part of every domain object in our
+code-bases, even though it makes our code harder to reuse, extend, and test.
 
 
 
