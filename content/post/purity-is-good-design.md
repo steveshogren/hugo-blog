@@ -27,24 +27,24 @@ have access to the code, they can do _anything they want_. That getter that
 ```null``` every time. Trying to protect ourselves from doing stupid things with
 models by "hiding" the state is completely silly.
 
+## An brief rant about getters and setters
+
+If anything should serve as an example of misapplied encapsulation, let me
+present this code an anonymous coworker wrote the other day.
 
 ``` java
-// This serves no purpose
 private bool IsLate;
 public bool GetIsLate() { return IsLate; }
 public void SetIsLate(bool isLate) { IsLate = islate; }
 ```
 
-I still see developers putting get and set functions around private fields,
-because "encapsulation". This is beyond silly. These functions serve completely
-no purpose. A get/set around a field is mathematically equivalent to just
-accessing it publicly. If encapsulation is the goal, this pattern completely
-fails to even provide that.
+The goal with this pattern is achieve the dual purposes of "encapsulation" and
+"I need access to the data". This is beyond silly. A get/set around a field is
+mathematically equivalent to just accessing the field directly. If encapsulation
+is the goal, this pattern completely fails to even provide that.
 
 Encapsulation is often considered a necessary part of every domain object in our
 code-bases, even though it makes our code harder to reuse, extend, and test.
-
-
 
 Encapsulation is orthogonal to a good design. A good design 
 
