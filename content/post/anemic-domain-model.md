@@ -14,7 +14,8 @@ Domain-Driven Design. Martin Fowler goes so far as to term the alternative a
 Unfortunately, in a language like Java or C#, an **Anemic Domain Model** is one
 of the best ways to unit-test your code!
 
-Which is easier to test? A **pure function** with the signature:
+Consider which of the following is easier to test. A **pure function** with the
+signature:
 
 ```java
 GameState movePlayerNorth(GameState g)

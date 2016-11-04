@@ -10,8 +10,9 @@ Part 3 of the series [OO-Design](/categories/oo-design/)
 As we covered in the [previous post](/anemic-domain-model/), encapsulation makes
 code harder to test. Code that is harder to test, often gets tested less.
 
-Many books and blogs teach encapsulation as an important part of a "good" OOP
-design. Unfortunately, encapsulation does not produce better domain models.
+Many books and blogs teach encapsulation as an important part of a good
+object-oriented design. Encapsulation and domain modeling have been incorrectly
+meshed together. A good domain model is possible with or without encapsulation.
 
 Encapsulation is ultimately about boundaries and trust. Encapsulation _sometimes
 can be_ a good idea across API or module boundaries. Ensuring that the users of
