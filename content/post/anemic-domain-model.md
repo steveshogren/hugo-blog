@@ -2,17 +2,25 @@
 title = "OO-Design Part 2: Anemic Domain Models Are Healthy"
 date = "2016-04-22"
 Categories = ["technical skills", "csharp", "java", "oo-design"]
-draft=true
 +++
 
 Part 2 of the series [OO-Design](/categories/oo-design/)
 
-The **Anemic Domain Model** is often quoted as being an anti-pattern in
-Domain-Driven Design. Martin Fowler goes so far as to term the alternative a
+The Anemic Domain Model is often quoted as an anti-pattern in Domain-Driven
+Design. Martin Fowler goes so far as to term the alternative a
 ["rich domain model"](http://www.martinfowler.com/bliki/AnemicDomainModel.html).
 
-Unfortunately, in a language like Java or C#, an **Anemic Domain Model** is one
-of the best ways to unit-test your code!
+A rich domain model makes perfect sense until you attempt to write your first
+unit test. You discover that rich domain models are very hard to test. Not only
+that, but most examples of unit-testing use Anemic Domain Models! Do you really
+have to pick between good testing and good design?
+
+## Let's Talk About Purity
+
+Functions are considered **pure** if they produce the same output when given the
+same input. Addition is a pure function. We expect ```add(1,1)``` will always
+produce ```2```. Pure functions are the easiest to test. The more logic you have
+in pure functions, the easier your code is to test.
 
 Consider which of the following is easier to test. A **pure function** with the
 signature:
@@ -34,10 +42,6 @@ even run the test. If the GameState is encapsulated too, you would need to end
 up calling dozens of methods just to get the GameState in the correct state for
 your test! (This isn't an exaggeration, I've seen people do this many times.)
 
-Functions are considered **pure** if they produce the same output when given the
-same input. Addition is a pure function. We expect ```add(1,1)``` will always
-produce ```2```. Pure functions are the easiest to test. The more logic you have
-in pure functions, the easier your code is to test.
 
 > Encapsulation is ~~a rich domain model~~ **impure**. 
 
