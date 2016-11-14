@@ -1,5 +1,5 @@
 +++
-title = "OO-Design Part 1: Increased Reuse in Object-Oriented Programs"
+title = "OO-Design Part 1: Increasing Reuse With Noun Interfaces"
 date = "2016-10-31"
 Categories = ["technical skills", "csharp", "java",  "oo-design"]
 +++
