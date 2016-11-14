@@ -63,5 +63,3 @@ Encapsulation (Impure) |------------------------| Pure functions
 If you need or desire testability, choose data structures and pure, stateless
 functions. Avoid encapsulated state: put all state in data structures with all
 public fields. Strive to make your codebase as pure as possible.
-
-Next: [OO-Design Part 3: Purity Is Good Design](/purity-is-good-design/)
