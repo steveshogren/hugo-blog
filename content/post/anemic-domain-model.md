@@ -1,6 +1,6 @@
 +++
 title = "OO-Design Part 2: Anemic Domain Models Are Healthy"
-date = "2016-04-22"
+date = "2016-11-16"
 Categories = ["technical skills", "csharp", "java", "oo-design"]
 +++
 
