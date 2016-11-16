@@ -36,12 +36,11 @@ void movePlayerNorth()
 ```
 
 The first function has explicit inputs and outputs. The second function has
-implicit, hidden state. While the ```void``` function is easier to _call_, it is
-much harder to _test_. The tester must setup some internal or global state to
-even run the test. If the GameState is encapsulated too, you would need to end
-up calling dozens of methods just to get the GameState in the correct state for
-your test! (This isn't an exaggeration, I've seen people do this many times.)
-
+implicit, hidden state. While the ```void``` function is easier to _call_, it
+impurity makes it much harder to _test_. Testing a impure function requires
+implicit state to be setup before each test. Since GameState is encapsulated,
+you would need to either expose it (breaking encapsulation) or call dozens of
+methods to get it into the correct state for your test! 
 
 > Encapsulation is ~~a rich domain model~~ **impure**. 
 
@@ -55,15 +54,21 @@ to understand and test.
 
 > Purity is a good design!
 
-Purity in object-oriented design is a continuum. Most code-bases have a variety
-of functions: some pure, some impure. On the one side you have rich domain
-models with completely encapsulated state and void methods. On the other side
-you have easily-tested code with pure functions and separate data structures.
+We should strive for purity as much as possible. In most languages, purity is an
+ideal to strive for, not a goal that can ever be fully achieved. Language
+features like exceptions and null will always prevent complete purity.
+
+Purity in object-oriented languages is always on a continuum. Most codebases
+have a variety of functions: some pure, some impure. On the one side you have
+rich domain models with completely encapsulated state and void methods. On the
+other side you have easily-tested code with pure functions and separate data
+structures.
 
 ``` java
 Encapsulation (Impure) |------------------------| Pure functions
 ```
 
-If you need or desire testability, choose data structures and pure, stateless
-functions. Avoid encapsulated state: put all state in data structures with all
-public fields. Strive to make your codebase as pure as possible.
+If you need or desire testability, strive to put as much logic as possible
+inside pure functions. Avoid encapsulated state: put all state in data
+structures with all public fields. Strive to make your codebase as pure as
+possible.
