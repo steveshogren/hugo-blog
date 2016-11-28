@@ -1,8 +1,10 @@
 {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
    {{if or (in (substr .Params.banner 0 7) "http://") (in (substr .Params.banner 0 8) "https://")}}
-      <img src="{{ .Params.banner }}" class="article-banner imgcenter center-block">
+<!-- <span style="width:50px;height:50px;background-image:{{ .Params.banner }}"> </span> -->
+<!-- <img src="{{ .Params.banner }}" class="article-banner imgcenter center-block"> -->
    {{ else }}
-      <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" class="article-banner imgcenter center-block">
+     <!-- <div style="width:50px;height:50px;background-image:url('{{ .Site.BaseURL }}{{ .Params.banner }}');"></div> -->
+     <!-- <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" class="article-banner imgcenter center-block"> -->
    {{end}}
 {{ end }}
 <div class="text-center">
