@@ -1,8 +1,8 @@
 <span class="col-md-2">
   {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
-  <div style="background-image: url({{ .Site.BaseURL }}{{ .Params.banner }});" class="crop list-banner"></div>
+  <!-- <div style="background-image: url({{ .Site.BaseURL }}{{ .Params.banner }});" class="crop list-banner"></div> -->
   {{ end }}
 </span>
-<p class="col-md-10">
+<p class="col-md-12">
   {{ partial "modules/page/summary" . }}
 </p>

@@ -8,14 +8,29 @@
     </div>
 </div>
 <div class="container homecontainer">
+
     <div class="col-xs-12 col-sm-12 col-md-9">
+      <h2>Recent Posts</h2>
         <ul class="sidebar_ul">
-            {{ range first 3 (where .Site.Pages "Type" "post")  }}
+            {{ range first 5 (where .Site.Pages "Type" "post")  }}
             <li class="sidebar_li">
-                <p>{{ .Render "summary" }}</p>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <span class="pull-right">
+                {{ range .Params.categories }}
+                    <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
+                {{ end  }}
+                </span>
             </li>
             {{ end }}
         </ul>
+
+        <!-- <ul class="sidebar_ul"> -->
+        <!-- {{ range first 3 (where .Site.Pages "Type" "post")  }} -->
+        <!-- <li class="sidebar_li"> -->
+        <!-- <p>{{ .Render "summary" }}</p> -->
+        <!-- </li> -->
+        <!-- {{ end }} -->
+        <!-- </ul> -->
         <div class="centereded">
           <a href= "/page/post" class="btn btn-primary btn-lg" role="button">All Posts</a>
         </div>
