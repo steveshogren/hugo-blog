@@ -1,10 +1,10 @@
 +++
-title = ""
+title = "Learn To Program For Free"
 layout = "training"
 +++
 
 
-<div class="containernoheader">
+<div class="container">
 <div class="col-md-9">
 
 <blockquote>
