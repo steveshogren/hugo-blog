@@ -50,3 +50,37 @@
         {{ end }}
     </ul>
 </div>
+
+<script type="text/javascript">
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+ var linkTexts = [
+     "Want to practice your skills? Check out",
+     "Practice advanced skills with",
+     "Master macros with",
+     "50+ exercises included in",
+     "Master RegEx with",
+     "Start a daily practice with"
+ ];
+x=document.getElementsByClassName('thevimlink');
+for(var i = 0; i < x.length; i++){
+  x[i].innerText = shuffle(linkTexts)[0];
+}
+</script>
