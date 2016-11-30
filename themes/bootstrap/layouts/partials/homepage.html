@@ -1,41 +1,48 @@
 <div class="jumbotron">
-    <div class="container">
-        <h1 class="centereded herotext">DELIBERATE SOFTWARE</h1>
-        <h3 class="centereded herotext">insights gathered while learning to deliberately craft software</h3>
-        <div class="centereded">
-            <p><a href="https://leanpub.com/deliberatevim" class="btn btn-primary btn-lg" role="button">Want to become a Vim Master? Check out my new book!</a></p>
-        </div>
-    </div>
+  <div class="container">
+    <h1 class="centereded herotext">DELIBERATE SOFTWARE</h1>
+    <h3 class="centereded herotext">insights gathered while learning to deliberately craft software</h3>
+  </div>
 </div>
+
+<div class="centereded btn-primary btn-lg"
+     style="padding:1px 1px;" >
+  <a href="https://leanpub.com/deliberatevim"
+     style="color:white"
+     role="button">Want to practice your Vim skills? Check out <span style="text-decoration:underline">10 Minute Vim</span>!</a>
+</div>
+<!-- <div class="centereded"> -->
+<!-- <a href="https://leanpub.com/deliberatevim" class="btn btn-primary btn-lg" role="button">Want to become a Vim Master? Check out my new book!</a> -->
+<!-- </div> -->
 <div class="container homecontainer">
 
-    <div class="col-xs-12 col-sm-12 col-md-9">
-      <h2>Recent Posts</h2>
-        <ul class="sidebar_ul">
-            {{ range first 5 (where .Site.Pages "Type" "post")  }}
-            <li class="sidebar_li">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-                <span class="pull-right">
-                {{ range .Params.categories }}
-                    <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
-                {{ end  }}
-                </span>
-            </li>
-            {{ end }}
-        </ul>
+  <div class="col-xs-12 col-sm-12 col-md-9">
+    <h2>Recent Posts</h2>
+    <ul class="sidebar_ul">
+      {{ range first 7 (where .Site.Pages "Type" "post")  }}
+      <li class="sidebar_li">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <span class="pull-right">
+          {{ range .Params.categories }}
+          <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
+          {{ end  }}
+        </span>
+      </li>
+      {{ end }}
+    </ul>
 
-        <!-- <ul class="sidebar_ul"> -->
-        <!-- {{ range first 3 (where .Site.Pages "Type" "post")  }} -->
-        <!-- <li class="sidebar_li"> -->
-        <!-- <p>{{ .Render "summary" }}</p> -->
-        <!-- </li> -->
-        <!-- {{ end }} -->
-        <!-- </ul> -->
-        <div class="centereded">
-          <a href= "/page/post" class="btn btn-primary btn-lg" role="button">All Posts</a>
-        </div>
+    <!-- <ul class="sidebar_ul"> -->
+    <!-- {{ range first 3 (where .Site.Pages "Type" "post")  }} -->
+    <!-- <li class="sidebar_li"> -->
+    <!-- <p>{{ .Render "summary" }}</p> -->
+    <!-- </li> -->
+    <!-- {{ end }} -->
+    <!-- </ul> -->
+    <div class="centereded">
+      <a href= "/page/post" class="btn btn-primary btn-lg" role="button">All Posts</a>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-        {{ partial "sidebar" . }}
-    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+    {{ partial "sidebar" . }}
+  </div>
 </div>
