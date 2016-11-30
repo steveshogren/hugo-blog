@@ -23,6 +23,14 @@
     padding-top: 0px !important;
 }
 
+.pagetopbookbar {
+    padding:46px 0px 1px 0px;
+}
+
+.homebookbar {
+    padding: 1px 0px 1px 0px;
+}
+
 .border {
     border: 2px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
