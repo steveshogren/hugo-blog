@@ -4,6 +4,10 @@
     background-color: #ADD8E6;
 }
 
+.icon-bar {
+    background-color: black !important ;
+}
+
 /* #name { */
 /*     font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif; */
 /* } */
