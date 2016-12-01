@@ -1,6 +1,6 @@
 +++
 title = "OO-Design Part 3: Purity Is Good Design"
-date = "2016-04-22"
+date = "2016-11-30"
 Categories = ["technical skills", "csharp", "java", "oo-design"]
 draft=true
 +++
@@ -11,8 +11,9 @@ As we covered in the [previous post](/anemic-domain-model/), encapsulation makes
 code harder to test. Code that is harder to test, often gets tested less.
 
 Many books and blogs teach encapsulation as an important part of a good
-object-oriented design. Encapsulation and domain modeling have been incorrectly
-meshed together. A good domain model is possible with or without encapsulation.
+object-oriented design. I believe that encapsulation and domain modeling have
+been incorrectly tangled together. A good domain model is possible with or
+without encapsulation.
 
 Encapsulation is ultimately about boundaries and trust. Encapsulation _sometimes
 can be_ a good idea across API or module boundaries. Ensuring that the users of
@@ -44,13 +45,18 @@ The goal with this pattern is achieve the dual purposes of "encapsulation" and
 mathematically equivalent to just accessing the field directly. If encapsulation
 is the goal, this pattern completely fails to even provide that.
 
-Encapsulation is often considered a necessary part of every domain object in our
-code-bases, even though it makes our code harder to reuse, extend, and test.
+## Encapsulation Makes 
 
-Encapsulation is orthogonal to a good design. A good design 
+Encapsulation is orthogonal to a good design. It is true that a good design
+prevents building an object in an incorrect state, but this is no easier or
+harder with encapsulation. Often it is said that "protecting" the business logic
+inside a class method will prevent an invalid state. But in reality, because all
+developers have access to the same code, if you cannot trust them to build an
+object correctly, how can you trust them to not modify your classes methods
+incorrectly?
 
 A good design is possible with or without encapsulation. Consider the following
-pure functions. Which is easier to test and better models the domain?
+pure functions. Which better models the domain?
 
 ``` java
 Approval approveChange(Approval c)  // sets an approved field to true
