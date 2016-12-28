@@ -7,7 +7,7 @@ draft=true
 
 Part 3 of the series [OO-Design](/categories/oo-design/)
 
-As we covered in the [previous post](/anemic-domain-model/), encapsulation makes
+As we covered in the previous post [Anemic Domain Models Are Healthy](/anemic-domain-model/), encapsulation makes
 code harder to test. Code that is harder to test, often gets tested less.
 
 Many books and blogs teach encapsulation as an important part of a good
@@ -27,12 +27,13 @@ know how to correctly use our models. This is silly. You and your coworkers all
 have access to the code, they can do _anything they want_. That getter that
 "protects" the field from write access could easily be changed to set it to
 ```null``` every time. Trying to protect ourselves from doing stupid things with
-models by "hiding" the state is completely silly.
+models by "hiding" the state, but allowing us to change the internals of a class
+is completely silly.
 
 ## An brief rant about getters and setters
 
 If anything should serve as an example of misapplied encapsulation, let me
-present this code an anonymous coworker wrote the other day.
+present this code an anonymous coworker wrote a few jobs back:
 
 ``` java
 private bool IsLate;
@@ -44,6 +45,11 @@ The goal with this pattern is achieve the dual purposes of "encapsulation" and
 "I need access to the data". This is beyond silly. A get/set around a field is
 mathematically equivalent to just accessing the field directly. If encapsulation
 is the goal, this pattern completely fails to even provide that.
+
+Note: the caveat to this is _interfaces_. If you desire to make an interface on
+several data structures in a language like Java or C#, you are required to make
+a getter and setter around each field you desire to expose through the
+interface. Consider this a language tax.
 
 ## Encapsulation Makes 
 

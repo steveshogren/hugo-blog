@@ -64,10 +64,6 @@ rich domain models with completely encapsulated state and void methods. On the
 other side you have easily-tested code with pure functions and separate data
 structures.
 
-``` java
-Encapsulation (Impure) |------------------------| Pure functions
-```
-
 If you need or desire testability, strive to put as much logic as possible
 inside pure functions. Avoid encapsulated state: put all state in data
 structures with all public fields. Strive to make your codebase as pure as
