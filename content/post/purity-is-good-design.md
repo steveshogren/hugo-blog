@@ -11,15 +11,14 @@ As we covered in the previous post [Anemic Domain Models Are Healthy](/anemic-do
 code harder to test. Code that is harder to test, often gets tested less.
 
 Many books and blogs teach encapsulation as an important part of a good
-object-oriented design. I believe that encapsulation and domain modeling have
-been incorrectly tangled together. A good domain model is possible with or
-without encapsulation.
+object-oriented design. Encapsulation and domain modeling have been incorrectly
+tangled together. A good domain model is possible with or without encapsulation.
 
-Encapsulation is ultimately about boundaries and trust. Encapsulation _sometimes
-can be_ a good idea across API or module boundaries. Ensuring that the users of
-your library cannot put your libraries' objects in an invalid state is a good
-design. This is where encapsulation shines. You should not trust the users of a
-library or API to correctly use your models.
+Encapsulation is ultimately about boundaries and trust. Encapsulation _can be_ a
+good idea across API or module boundaries. Ensuring that the users of your
+library cannot put your libraries' objects in an invalid state is a good design.
+This is where encapsulation shines. You should not trust the users of a library
+or API to correctly use your models.
 
 While appropriate for libraries and APIs, encapsulation is often misapplied to
 _internal code_. We pretend that we cannot trust ourselves and our coworkers to
@@ -33,7 +32,7 @@ is completely silly.
 ## An brief rant about getters and setters
 
 If anything should serve as an example of misapplied encapsulation, let me
-present this code an anonymous coworker wrote a few jobs back:
+present this code I recently found:
 
 ``` java
 private bool IsLate;
@@ -47,37 +46,30 @@ mathematically equivalent to just accessing the field directly. If encapsulation
 is the goal, this pattern completely fails to even provide that.
 
 Note: the caveat to this is _interfaces_. If you desire to make an interface on
-several data structures in a language like Java or C#, you are required to make
-a getter and setter around each field you desire to expose through the
-interface. Consider this a language tax.
+several data structures in a language like Java or C# (e.g.
+[noun interfaces](/better-oo-design/)), you are required to make a getter and
+setter around each field you desire to expose through the interface. Consider
+this a language tax.
 
 ## Encapsulation Makes 
 
-Encapsulation is orthogonal to a good design. It is true that a good design
-prevents building an object in an incorrect state, but this is no easier or
-harder with encapsulation. Often it is said that "protecting" the business logic
-inside a class method will prevent an invalid state. But in reality, because all
-developers have access to the same code, if you cannot trust them to build an
-object correctly, how can you trust them to not modify your classes methods
-incorrectly?
-
+Encapsulation is orthogonal to a good design. While good design does prevent
+building an object in an incorrect state, it can be done without encapsulation.
 A good design is possible with or without encapsulation. Consider the following
-pure functions. Which better models the domain?
+functions. Which better models the domain?
+
 
 ``` java
-Approval approveChange(Approval c)  // sets an approved field to true
-```
-
-or
-
-``` java
+void approveChange()  // sets an approved field to true
+Approval approveChange(Approval a)  // sets an approved field to true
 Approved approveChange(ToBeApproved c) // makes a new object
 ```
 
-While both functions are pure, the first function introduces a run-time error if
-the ```Approval``` was already approved! The run-time error is a failure state
-allowed because of poor modeling. 
+The first two functions introduce a run-time error if the ```Approval``` was
+already approved! The run-time error is a failure state allowed because of poor
+modeling. Neither purity nor encapsulation solved a problem caused by bad
+modeling.
 
-The second function is a better domain model, because it cannot even accept an
-unapproved object. The type system prevents this sort of error from even
-happening.
+The third function is a better domain model: it cannot even accept an unapproved
+object. The type system prevents this sort of error from even happening. We have
+turned a run-time error into a compile-time error!
