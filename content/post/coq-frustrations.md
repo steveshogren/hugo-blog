@@ -6,7 +6,7 @@ Categories = ["technical skills", "coq"]
 
 Day one working through
 [Software Foundations](https://www.cis.upenn.edu/~bcpierce/sf/current/index.html).
-Since I like to rant, and rant's help me learn, COMMENCE RANT.
+Since I like to rant, and rants help me learn, COMMENCE RANT.
 
 ## Precise Syntax
 
@@ -16,7 +16,7 @@ into an **infinite loop**. I copied it again. Same deal.
 This isn't my first rodeo, I've seen all sorts of syntax rules and such. But
 alas, it still fails.
 
-```coq
+``` coq
 Theorem andb_commutative' : forall b c, andb b c = andb c b.
 Proof.
   intros b c. destruct b.
@@ -61,7 +61,7 @@ suggests stepping line-by-line with `C-cC-n`.
 
 YEP! I add that space in, and it works fine!
 
-```coq
+``` coq
 Theorem andb_commutative' : forall b c, andb b c = andb c b.
 Proof.
   intros b c. destruct b.
