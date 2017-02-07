@@ -13,26 +13,27 @@ Since I like to rant, and rants help me learn, COMMENCE RANT.
 While trying to understand how `rewrite` works, I come across an obvious use-case:
 
 ```coq
-Theorem plus_n_Sm : forall n m : nat, 
-  S (n + m) = n + (S m).
+Theorem adding_n_Sm : forall n m : nat, 
+  n + (S m) = S (n + m).
 Proof.
-  intros n. induction n as [| n' IHn'].
+  intros n. 
+  induction n as [| n' IHn'].
   simpl. reflexivity.
-  simpl. 
+  simpl. rewrite <- IHn'. 
 ```
 
 At this point, in current scope I have:
 
-``` coq
+```
 1 subgoals, subgoal 1 (ID 90)
-n' : nat
-IHn' : forall m : nat, S (n' + m) = n' + S m
-------------------------------------------
-forall m : nat, S (S (n' + m)) = S (n' + S m)
+  n' : nat
+  IHn' : forall m : nat, n' + S m = S (n' + m)
+---------------
+  forall m : nat, S (n' + S m) = S (S (n' + m))
 ```
 
-Looks obvious enough. I _should_ be able to substitute the `n' + S m` in my
-subgoal, with `S (n' + m)` using `rewrite` and `IHn'`. 
+Looks obvious enough. I _should_ be able to substitute the `n' + S m` with `S
+(n' + m)` in my goal using `rewrite <- IHn'`.
 
 # NOPE
 
@@ -42,20 +43,26 @@ Error: Found no subterm matching "n' + S ?252" in the current goal.
 
 <img src="/images/upset.jpg"></img>
 
-What do you mean, `n' + S ?252` the hypothesis clearly has `n' + S m`! Am I
-losing my marbles?
+What do you mean, `n' + S ?252` the hypothesis clearly has `n' + S m`! Where did
+`m` go? Am I losing my marbles?
 
-After searching around, I come across a 6 year old thread with someone getting
-the same error. The reply post says 
+After searching around, I come across an old thread with someone getting the
+same error. The reply post says
 
-> The strange-looking "?738" means any term to be instantiated. It corresponds
-> to the universally quantified "m" in IHn: rewrite tries to instantiate m with
-> something so that the left hand side of its conclusion matches something in
-> the conclusion of the goal. The matching is done syntactically (e.g. unfold
-> definitions). Note that n is fixed. Besides, rewrite cannot rewrite under a
-> "forall".
+> The strange-looking "?738" means any term to be instantiated... Besides,
+> rewrite cannot rewrite under a "forall".
 
+Perhaps the `m` isn't defined? But it was up there in scope, right?
 
+```
+Theorem adding_n_Sm : forall n m : nat, 
+  n + (S m) = S (n + m).
+Proof.
+  intros n m. (* added m *)
+  induction n as [| n' IHn'].
+  simpl. reflexivity.
+  simpl. rewrite <- IHn'. 
+```
+# WORKS FINE
 
-
-<img src="/images/facepalm.jpg"></img>
+<img src="/images/glasses.jpg"></img>
