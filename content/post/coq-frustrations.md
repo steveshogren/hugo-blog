@@ -19,7 +19,7 @@ into an **infinite loop**. I copied it again. Same deal.
 This isn't my first rodeo, I've seen all sorts of syntax rules and such. But
 alas, it still fails.
 
-``` coq
+{{< highlight coq "style=default,noclasses=false" >}}
 Theorem andb_commutative' : forall b c, andb b c = andb c b.
 Proof.
   intros b c. destruct b.
@@ -30,7 +30,7 @@ Proof.
     { reflexivity.}
     { reflexivity.} }
 Qed.
-```
+{{< / highlight >}}
 
 <img src="/images/upset.jpg"></img>
 
@@ -64,7 +64,7 @@ suggests stepping line-by-line with `C-cC-n`.
 
 YEP! I add that space in, and it works fine!
 
-``` coq
+{{< highlight coq "style=default,noclasses=false,hl_lines=5 6 8 9" >}}
 Theorem andb_commutative' : forall b c, andb b c = andb c b.
 Proof.
   intros b c. destruct b.
@@ -75,6 +75,6 @@ Proof.
     { reflexivity. }
     { reflexivity. } }
 Qed.
-```
+{{< / highlight >}}
 
 <img src="/images/facepalm.jpg"></img>
