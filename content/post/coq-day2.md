@@ -8,6 +8,7 @@ Day two working through
 [Software Foundations](https://www.cis.upenn.edu/~bcpierce/sf/current/index.html)
 with Coq. Since I like to rant, and I love
 [Darkest Dungeon](http://www.darkestdungeon.com/), ENTER THE DARKEST PROOF.
+<span class="subscript">(Please don't sue me!)</span>
 
 <img src="/images/ruinhascome.png"></img>
 
@@ -39,11 +40,11 @@ Looks obvious enough. I _should_ be able to substitute the `n + S m` with `S (n 
 
 # NOPE
 
-<img src="/images/hopeless.jpg"></img>
-
 ``` coq
 Error: Found no subterm matching "n + S ?252" in the current goal.
 ``` 
+
+<img src="/images/hopeless.jpg"></img>
 
 Why is it: `n + S ?252` the hypothesis clearly has `n + S m`! Where did
 `m` go? Am I losing my marbles?
@@ -77,6 +78,3 @@ Proof.
 I.... I .... don't know what is happening.
 
 <img src="/images/facepalm.jpg"></img>
-
-(Artwork lovingly pulled from: [Darkest Dungeon](http://www.darkestdungeon.com/)
-Please don't sue me!)

@@ -8,6 +8,7 @@ Day one working through
 [Software Foundations](https://www.cis.upenn.edu/~bcpierce/sf/current/index.html)
 with Coq. Since I like to rant, and I love
 [Darkest Dungeon](http://www.darkestdungeon.com/), ENTER THE DARKEST PROOF.
+<span class="subscript">(Please don't sue me!)</span>
 
 <img src="/images/ruinhascome.png"></img>
 
