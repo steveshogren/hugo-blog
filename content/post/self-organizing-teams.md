@@ -5,8 +5,6 @@ Categories = ["management", "meta game"]
 manager="yes"
 +++
 
-> "Great, now instead of programmers, we are politicians"
-
 A self-organizing team can be one of the most effective ways to build a team of
 high-quality professionals.
 

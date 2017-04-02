@@ -1,16 +1,31 @@
 +++
 title = "Self-Organizing Balance"
 date = "2017-02-20"
-Categories = []
+Categories = ["management", "meta game"]
 draft = true
 +++
 
-Our chat got me to dig a bit more into the origin of why we started research
-time. I found these http://www.jamesshore.com/Agile-Book/slack.html and
-http://www.jamesshore.com/Articles/Business/Software%20Profitability%20Newsletter/Research%20Time.html
+I previously discussed how my team has a decade of experience with
+[self-organizing teams](/self-organizing-teams/) and
+[pair programming](/pairprogramming/) to reduce wasted productivity in an
+Enterprise banking application.
 
-I think his idea of having a "what did you learn" session might be valuable if
-we are concerned people are not really using it for research.
+We have several practices to help remove obstacles that stand in the way of
+producing business value:
+
++ Full-time pair programming on all production code
++ Any pair can make any technical decision
++ Pairs switch twice a day
++ Strong unit-testing culture
++ Bugs and broken CI builds are the top priority
+
+These foundational practices eliminate the need for a technical lead who assigns
+and follows up on work. No work is assigned to any individual. If a pair has
+nothing to do, there is a priority queue of features and technical debt close at
+hand.
+
+
+
 
 I've seen that concept a lot lately as I've read more about healthy
 self-organizing teams. Trust should always be given, but a good way to produce
