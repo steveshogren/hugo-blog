@@ -66,46 +66,57 @@ The author suggests that three things are needed for self-correcting teams:
 Our process has several examples of self-correction, and several places we are
 still sorting out how to best self-correct.
 
-### Good Example: Any pair can make any technical decision
+### Example: Any pair can make any technical decision
 
-Consider the practice, "any pair can make any technical decision." The
-**information** comes when the pairs switch every half-day. Jim and Sally might
+Consider the practice that "any pair can make any technical decision." The
+**information** comes when the pairs switch every half-day. Zack and Sally might
 think architecting the module one way is a good idea in the morning, but Sally
-and Jane might not see it the same way in the afternoon. The information is
-spread organically every four hours as a fresh set of eyes gets to see the work.
-The **forum for self-corrective action** happens when the new person sits to see
-the work and they discuss the previous session's decisions. 
+and Jane might not see it the same way in the afternoon. The information spreads
+organically every four hours as a fresh set of eyes gets to see the work. The
+**forum for self-corrective action** happens when the new person sits to see the
+work and they discuss the previous session's decisions.
 
 In practice, rework happens only occasionally as everyone strives to produce the
-best designs they can. Since no one wants to see their morning's work undone
-because of a missed requirement, it prompts a healthy care and respect for the
-work.
+best designs they can. No one wants to see their work undone because of a missed
+requirement or poor design, which prompts a healthy desire to do one's best.
 
-Any pair can make any technical decision, but if they make one that doesn't
-align well with the needs of the business, the next pair might not choose to
-continue with that path. The practices of pairing and pair switching allow the
-trust that "any pair can make any technical decision".
+### Example: Work Isn't Assigned
 
-### Good Example: Work Isn't Assigned
-
-Another example is work isn't assigned to pairs or individuals. The **shared
-understanding** is that the most valuable thing for the business is for the pair
-to work on the priority queue of enhancements or technical debt. We promote
-**information** with a twice daily status update of what each pair accomplished.
-We have a retrospective **forum** once a week to discuss what is healthy and
-prompt self-corrective action. Pairs are often quite productive. 
+Work isn't assigned to pairs or individuals. The **shared understanding** is
+that the most valuable thing for the business is for pairs to work on the
+priority queue of enhancements or technical debt. We promote **information**
+with a twice daily status update of what each pair accomplished. We have a
+retrospective **forum** once a week to discuss what is healthy and prompt
+self-corrective action.
 
 ### Case Study: Research Time
 
-Our team offers a weekly afternoon designed for research. The shared
-understanding is that it is intended for team members to learn more about their
-craft. Projects, prototypes, reading technical books, watching conference
-lectures, and code katas are fair game. When a few new people joined the team
-several people felt like there was more foosball, leaving early, and general
-messing around. 
+Our team offers a weekly afternoon designed for research. The agreed on **shared
+understanding** is research time is for team members to learn more about their
+craft. Building projects and prototypes, researching features, reading technical
+books, watching conference lectures, and practicing technical skills are all
+fair game. However, several people have complained that others are using the
+time more for foosball, leaving early, and general messing around.
 
 We had the first and third components: a shared understanding of what's healthy
 and a "retrospective" for discussion, but not the information to prompt a
-discussion. One way to achieve this might be to have a meeting where everyone
-gives a two minute summary of what they learned or post a write up to a shared
-chatroom. 
+discussion. One way to achieve this might be to have a quick discussion after
+the research time where everyone gives a two minute summary of how they spent
+the time. Another option would be for each person to write up a brief summary to
+a shared chatroom. The healthy pressure of knowing others want to hear what you
+learned might alone be enough to curb the instincts to treat the time as
+"free-time".
+
+### Summary
+
+> Trust, but verify - Russian Proverb
+
+Self-organizing teams are about unlocking the potential each individual brings
+to the team. Being on a self-organizing team is not about freedom from
+responsibility. Each team member is still expected to perform their job to the
+best of their abilities. 
+
+Building a self-correcting system allows for fewer rule books, fewer meetings,
+fewer bottlenecks, and less oversight. All of these contribute to waste,
+boredom, and 
+
