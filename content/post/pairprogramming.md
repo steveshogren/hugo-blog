@@ -2,7 +2,7 @@
 title = "Ten Years of Pair Programming"
 date = "2016-09-12"
 banner="/images/pairing.jpeg"
-Categories = ["management", "unit-testing"]
+Categories = ["management", "unit-testing", "self-organization"]
 Description = ""
 +++
 

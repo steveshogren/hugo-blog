@@ -1,7 +1,7 @@
 +++
 title = "When Self-Organizing Teams Are Effective"
 date = "2016-03-16"
-Categories = ["management", "meta game"]
+Categories = ["management", "meta game", "self-organization"]
 manager="yes"
 +++
 
