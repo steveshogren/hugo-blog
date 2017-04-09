@@ -1,5 +1,5 @@
 +++
-title = "Building a Self-Correcting Team"
+title = "What Keeps a Self-Organizing Team From Falling Apart"
 date = "2017-02-20"
 Categories = ["management", "meta game", "self-organization"]
 draft = true
@@ -10,16 +10,42 @@ My team has a decade of experience applying
 [pair-programming](/pairprogramming/) to reduce wasted productivity in an
 enterprise banking application.
 
+## The Benefits
+
+### No Technical Lead
+
+Our self-organizing practices eliminate the need for a technical lead who
+assigns and follows up on work. No work is assigned to any individual.
+
+### Individual Empowerment
+
+Developers are free to remove pain points as needed, so most have a strong sense
+of ownership. Team members feel empowered to champion for broad changes to the
+codebase.
+
+### Few Meetings
+
+Without the need for significant process or oversight, the team has very few
+meetings a week. In a survey of the last several months, the average team member
+had less than **three hours of meetings a week.**
+
+## How does this work?
+
+As amazing as it all sounds, what prevents this process from falling into
+anarchy? How has this been working for us for over ten years with very little
+oversight? The team has completely changed three times (roughly a 3.6 year
+average turnaround) so it can't only be about "the right people".
+
 ### Self-Correction While Maintaining Trust
 
 The author of
 [Reinventing Organizations](http://www.reinventingorganizations.com/) talks
 about the concept of "self-correction" that allows self-organizing teams to
-adapt without putting a thick rule-book of policies into place and revoking
-trust. Healthy, self-organizing teams build a **simple system that
-self-corrects** instead of adding new policies when trust is abused. Rather than
-trying to design the perfect rule-book, they let individuals grow into trusted,
-intelligent agents who are expected to learn and improve.
+adapt without writing a thick rule-book of policies. Healthy, self-organizing
+teams build a **simple system that self-corrects** instead of adding new
+policies when trust is abused. Rather than trying to design the perfect
+rule-book, they let individuals grow into trusted, intelligent agents who are
+expected to learn and improve.
 
 The author suggests that three things are needed for self-correcting teams:
 
@@ -37,39 +63,8 @@ democratically-elected practices:
 + No work is assigned to any individual or pair
 + Any pair can make any technical decision
 + Pairs are shuffled randomly twice a day
-+ Five-minute status update twice a day
-+ Weekly "retrospective" to reflect and make changes
-
-
-## The Benefits
-
-### No Technical Lead
-
-We've found these practices eliminate the need for a technical lead who assigns
-and follows up on work. No work is assigned to any individual. If a pair has
-nothing to do, there is a priority queue of features and technical debt close at
-hand.
-
-### No Pull Requests
-
-Pairing and pair rotation eliminates the need for an asynchronous code review
-and a pull request process. Any pair can make any decision, so code review
-happens 100% of the time. A single feature is usually seen by three to five
-developers as they rotate through the pairs.
-
-### Few Meetings
-
-Without the need for significant oversight, the team has very few meetings a
-week. In a survey of the last several months, the average team member had less
-than **three hours of meetings a week.**
-
-## How does this work?
-
-As amazing as it all sounds, what prevents this process from falling into
-anarchy? How has this been working for us for over ten years with very little
-oversight? The team has completely changed three times (roughly a 3.6 year
-average turnaround) so it can't only be about "the right people".
-
++ Everyone participates in a five-minute status update twice a day
++ Weekly "retrospective" is held to reflect and make changes
 
 ### Example: Any pair can make any technical decision
 
@@ -116,6 +111,10 @@ usual.
 Rather than adding a new policy to the rule-book, the whole team got a reminder
 on two great lessons. First, nothing is as simple as it seems. Second, a pinch
 of communication prevents a pound of hassle.
+
+### Application
+
+Not
 
 ### Summary
 
