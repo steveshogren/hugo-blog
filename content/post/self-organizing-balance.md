@@ -112,9 +112,16 @@ Rather than adding a new policy to the rule-book, the whole team got a reminder
 on two great lessons. First, nothing is as simple as it seems. Second, a pinch
 of communication prevents a pound of hassle.
 
-### Application
+### Application (No, you don't need to do pair-programming full time!)
 
-Not
+Self-correction and self-organization is on a continuum. The more your team
+grows to self-correct, the more benefits you gain. 
+
+Not every team should have the same practices for self-correction. Our specific
+practices of pair-programming, rotating, and pair-empowerment are not magic:
+they are just good examples of applied self-correction. We have found
+pair-programming and pair switching to work well for us, but there are infinite
+ways to grow a system that self-corrects.
 
 ### Summary
 
