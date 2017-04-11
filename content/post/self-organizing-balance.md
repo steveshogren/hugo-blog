@@ -1,6 +1,6 @@
 +++
 title = "What Keeps a Self-Organizing Team From Falling Apart"
-date = "2017-02-20"
+date = "2017-04-11"
 Categories = ["management", "meta game", "self-organization"]
 +++
 
