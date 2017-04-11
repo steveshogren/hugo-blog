@@ -112,7 +112,7 @@ Rather than adding a new policy to the rule-book, the whole team got a reminder
 on two great lessons. First, nothing is as simple as it seems. Second, a pinch
 of communication prevents a pound of hassle.
 
-### Application (No, you don't need to do pair-programming full time!)
+### Application (No, you don't need to do pair-programming fulltime!)
 
 Self-correction and self-organization is on a continuum. The more your team
 grows to self-correct, the more benefits you gain. 
