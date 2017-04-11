@@ -123,8 +123,6 @@ they are just good examples of applied self-correction. We have found
 pair-programming and pair switching to work well for us, but there are infinite
 ways to grow a system that self-corrects.
 
-### Summary
-
 > "Trust, but verify." - Russian proverb
 
 Self-correcting practices allow individuals to perform at their best with fewer
