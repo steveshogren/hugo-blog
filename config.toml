@@ -32,7 +32,7 @@ footnotereturnlinkcontents = "↩"
     googleAnalytics = "UA-46040901-1"
 
     github = "steveshogren" # Your Github profile ID
-    twitter = "steveshogren"
+    twitter = ""
     
     # Format dates with Go's time formatting
     date_format = "2006-01-02"

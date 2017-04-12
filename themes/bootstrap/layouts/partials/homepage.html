@@ -1,11 +1,10 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="centereded herotext">DELIBERATE SOFTWARE</h1>
-    <h3 class="centereded herotext">insights gathered while learning to deliberately craft software</h3>
-  </div>
-</div>
-
-<div class="centereded btn-primary btn-lg homebookbar" >
+<!-- <div class="jumbotron"> -->
+<!-- <div class="container"> -->
+<!-- <h2 class="centereded herotext">Deliberate Software</h2> -->
+<!-- <h3 class="centereded herotext">insights gathered while learning to deliberately craft software</h3> -->
+<!-- </div> -->
+<!-- </div> -->
+<div class="centereded btn-primary btn-lg pagetopbookbar" >
   <a href="https://leanpub.com/deliberatevim"
      style="color:white"
      role="button"><span class="thevimlink"></span> <span style="text-decoration:underline">10 Minute Vim</span>!</a>
@@ -16,19 +15,37 @@
 <div class="container homecontainer">
 
   <div class="col-xs-12 col-sm-12 col-md-9">
-    <h2>Recent Posts</h2>
-    <ul class="sidebar_ul">
-      {{ range first 7 (where .Site.Pages "Type" "post")  }}
-      <li class="sidebar_li">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <span class="pull-right">
-          {{ range .Params.categories }}
-          <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
-          {{ end  }}
-        </span>
-      </li>
-      {{ end }}
-    </ul>
+
+    <!-- <h1 class="centereded">Welcome to Deliberate Software!</h1> -->
+    <!-- <h3 class="centereded">Some Interesting Things</h3> -->
+
+    <h3 class="centereded">
+      A bunch of random writings about programming, management, and 
+    </h3>
+    <!-- <h3 class="centereded">Some Writings</h3> -->
+    <div class="col-sm-6 col-md-6">
+      <h3 class="">Top</h3>
+      <ul class="sidebar_ul">
+        {{ range where .Site.Pages "Params.top" "yes" }}
+        <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <h3 class="">Recent</h3>
+      <ul class="sidebar_ul">
+        {{ range first 5 (where .Site.Pages "Type" "post")  }}
+        <li class="sidebar_li">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <!-- <span class="pull-right"> -->
+          <!-- {{ range .Params.categories }} -->
+          <!-- <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a> -->
+          <!-- {{ end  }} -->
+          <!-- </span> -->
+        </li>
+        {{ end }}
+      </ul>
+    </div>
 
     <!-- <ul class="sidebar_ul"> -->
     <!-- {{ range first 3 (where .Site.Pages "Type" "post")  }} -->
@@ -38,7 +55,7 @@
     <!-- {{ end }} -->
     <!-- </ul> -->
     <div class="centereded">
-      <a href= "/page/post" class="btn btn-primary btn-lg" role="button">All Posts</a>
+      <a href= "/page/post" class="btn btn-primary btn-lg" role="button">All</a>
     </div>
   </div>
   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
