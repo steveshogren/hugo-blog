@@ -1,13 +1,26 @@
 {{ partial "head" . }}
+
+<div class="centereded btn-primary btn-lg pagetopbookbar" >
+  <a href="https://leanpub.com/deliberatevim"
+     style="color:white"
+     role="button"><span class="thevimlink"></span> <span style="text-decoration:underline">10 Minute Vim</span>!</a>
+</div>
 <div id="main-content" class="container">
-  <header>
-    {{ partial "bloc/content/h1-title" . }}
-  </header>
-  <ul class="container content">
-    {{ range $index, .Paginator.Pages }}
+
+  <div class="col-xs-12 col-sm-12 col-md-9">
+    <header>
+      {{ partial "bloc/content/h1-title" . }}
+    </header>
+    <ul class="">
+      {{ range $index, .Paginator.Pages }}
       {{ .Render "list.li" }}
-    {{ end }}
-  </ul>
-  {{ partial "bloc/content/pagination.html" . }}
+      {{ end }}
+    </ul>
+    {{ partial "bloc/content/pagination.html" . }}
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+    {{ partial "sidebar" . }}
+  </div>
 </div>
 {{ partial "foot" . }}

@@ -1,12 +1,15 @@
 <ul class="sidebar_ul">
-    {{ range (where .Page.Site.Pages "Type" "post")  }}
-    <li class="sidebar_li">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <span class="pull-right">
-        {{ range .Params.categories }}
-            <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
-        {{ end  }}
-        </span>
-    </li>
-    {{ end }}
+  {{ range (where .Page.Site.Pages "Type" "post")  }}
+  <li class="sidebar_li">
+    <a style="{{ if .IsPage }}{{ if .Draft }}color:red{{ end }}{{ end }}"
+       href="{{ .Permalink }}">
+      {{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}
+    </a>
+    <span class="pull-right" >
+      {{ range .Params.categories }}
+      <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
+      {{ end  }}
+    </span>
+  </li>
+  {{ end }}
 </ul>
