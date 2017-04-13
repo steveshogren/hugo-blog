@@ -1,17 +1,13 @@
 <!-- <li class="sidebar_li">{{ partial "bloc/content/link-title" . }}</li> -->
 
-<li class="sidebar_li">
-  <span class= "col-xs-12 col-sm-12 col-md-9">
+  <li class="sidebar_li">
     <a style="{{ if .IsPage }}{{ if .Draft }}color:red{{ end }}{{ end }}"
        href="{{ .Permalink }}">
       {{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}
     </a>
-  </span>
-  <span class="pull-right col-xs-12 col-sm-12 col-md-3">
-    <span class="pull-right">
-    {{ range .Params.categories }}
-    <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
-    {{ end  }}
+    <span class="pull-right" >
+      {{ range .Params.categories }}
+      <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a>
+      {{ end  }}
     </span>
-  </span>
-</li>
+  </li>
