@@ -1,27 +1,28 @@
 <a href= "/page/philosophy" class="plainlink">
-{{ with .Site.Params.author}}<h3 class="serif col-sm-12" id="name">{{ . }}</h3>{{ end }}
-<!-- <span class="col-xs-3 col-sm-4 col-md-3"></span> -->
-<!-- <img class="col-xs-6 col-sm-4 col-md-6 border" id="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" /> -->
-<!-- <span class="col-xs-3 col-sm-4 col-md-3"></span> -->
-<span class="col-xs-12 col-sm-12 col-md-12">
-  <!-- <a href="https://twitter.com/steveshogren" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @steveshogren</a> -->
-  <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
-</span>
-<span class="col-xs-12 col-sm-12">
+  <img src="/images/solaire_idle.gif"></img>
+  {{ with .Site.Params.author}}<h3 class="serif col-sm-12" id="name">{{ . }}</h3>{{ end }}
+  <!-- <span class="col-xs-3 col-sm-4 col-md-3"></span> -->
+  <!-- <img class="col-xs-6 col-sm-4 col-md-6 border" id="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" /> -->
+  <!-- <span class="col-xs-3 col-sm-4 col-md-3"></span> -->
+  <span class="col-xs-12 col-sm-12 col-md-12">
+    <!-- <a href="https://twitter.com/steveshogren" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @steveshogren</a> -->
+    <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+  </span>
+  <span class="col-xs-12 col-sm-12">
     {{.Site.Params.site_description}}
-</span>
+  </span>
 </a>
 <h3 class="serif col-xs-12 col-sm-12" id="name">BOOKS:</h3>
 
 {{ with .Site.Params.vimBookLink }}
 <a class="col-xs-6 col-sm-4 col-md-6" href="{{ . }}">
-    {{with $.Site.Params.vimBookImg}}<img class="book" src="{{.}}"></img>{{end}}
+  {{with $.Site.Params.vimBookImg}}<img class="book" src="{{.}}"></img>{{end}}
 </a>
 {{ end }}
 
 {{ with .Site.Params.bookLink }}
 <a class="col-xs-6 col-sm-4 col-md-6" href="{{ . }}">
-    {{with $.Site.Params.bookImg}}<img class="book" src="{{.}}"></img>{{end}}
+  {{with $.Site.Params.bookImg}}<img class="book" src="{{.}}"></img>{{end}}
 </a>
 {{ end }}
 <h3 class="col-xs-12 col-sm-12" id="name">{{.Site.Params.bookDesc}}</h3>
@@ -35,43 +36,43 @@
 <!-- </div> -->
 <h3 class="serif col-xs-12 col-sm-12" id="name">POSTS FOR:</h3>
 <div class="col-xs-12 col-sm-12">
-    <ul class="sidebar_ul">
-        <li class="sidebar_li"><a href="/page/focused">New Developers</a></li>
-        <li class="sidebar_li"><a href="/page/focused">Seasoned Developers</a></li>
-        <li class="sidebar_li"><a href="/page/focused">Managers</a></li>
-        <li class="sidebar_li"><a href="/page/post">See All Posts</a></li>
-    </ul>
+  <ul class="sidebar_ul">
+    <li class="sidebar_li"><a href="/page/focused">New Developers</a></li>
+    <li class="sidebar_li"><a href="/page/focused">Seasoned Developers</a></li>
+    <li class="sidebar_li"><a href="/page/focused">Managers</a></li>
+    <li class="sidebar_li"><a href="/page/post">See All Posts</a></li>
+  </ul>
 </div>
 <h3 class="serif col-xs-12 col-sm-12" id="name">CATEGORIES</h3>
 <div class="col-xs-12 col-sm-12">
-    <ul class="sidebar_ul">
-        {{ range $name, $taxonomy :=  .Site.Taxonomies.categories }}
-        <li class="sidebar_li">
-            <a href="/categories/{{ $name | urlize }}">{{ $name }}</a> <span class="badge">{{ $taxonomy.Count }}</span>
-        </li>
-        {{ end }}
-    </ul>
+  <ul class="sidebar_ul">
+    {{ range $name, $taxonomy :=  .Site.Taxonomies.categories }}
+    <li class="sidebar_li">
+      <a href="/categories/{{ $name | urlize }}">{{ $name }}</a> <span class="badge">{{ $taxonomy.Count }}</span>
+    </li>
+    {{ end }}
+  </ul>
 </div>
 
 <script type="text/javascript">
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex ;
+ function shuffle(array) {
+     var currentIndex = array.length, temporaryValue, randomIndex ;
 
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
+     // While there remain elements to shuffle...
+     while (0 !== currentIndex) {
 
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+         // Pick a remaining element...
+         randomIndex = Math.floor(Math.random() * currentIndex);
+         currentIndex -= 1;
 
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
+         // And swap it with the current element.
+         temporaryValue = array[currentIndex];
+         array[currentIndex] = array[randomIndex];
+         array[randomIndex] = temporaryValue;
+     }
 
-  return array;
-}
+     return array;
+ }
 
  var linkTexts = [
      "Want to practice your skills? Check out",
@@ -82,8 +83,8 @@ function shuffle(array) {
      "Start a daily practice with",
      "Over 50 daily exercises in"
  ];
-x=document.getElementsByClassName('thevimlink');
-for(var i = 0; i < x.length; i++){
-  x[i].innerText = shuffle(linkTexts)[0];
-}
+ x=document.getElementsByClassName('thevimlink');
+ for(var i = 0; i < x.length; i++){
+     x[i].innerText = shuffle(linkTexts)[0];
+ }
 </script>
