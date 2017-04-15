@@ -304,8 +304,6 @@ MUCH better. This includes reading my token from file called "token" so I don't
 accidentally commit it. Also includes building up the different query options
 based on inputs, which was the next step. Thanks y'all.
 
-<img src="/images/solaire_idle.gif"></img>
-
 > Pixel gifs sourced from
 > [zedotagger](http://zedotagger.deviantart.com/gallery/54317550/Dark-Souls) on
 > deviantart, thanks zedotagger!
