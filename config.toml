@@ -1,6 +1,6 @@
 baseurl = "http://deliberate-software.com/"
 languageCode = "en-us"
-title = "Deliberate Software"
+title = "deliberate software"
 pygmentsstyle = "monokai"
 theme = "bootstrap"
 [permalinks]
