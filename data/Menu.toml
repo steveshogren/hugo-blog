@@ -1,12 +1,12 @@
 [posts]
-    Name = "All Posts"
+    Name = "all posts"
     Title = "Show list of posts"
     URL = "/page/post"
 [books]
-    Name = "Favorite Books"
+    Name = "favorite books"
     Title = "Show list of my favorite books"
     URL = "/page/books"
 [philosophy]
-    Name = "About Me"
+    Name = "about me"
     Title = "About me"
     URL = "/page/philosophy"

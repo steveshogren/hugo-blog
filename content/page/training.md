@@ -3,9 +3,11 @@ title = "Learn To Program For Free"
 layout = "training"
 +++
 
+<h2 class="centereded">A path to full-time software development</h2>
 
 <div class="container">
 <div class="col-md-9">
+
 
 <blockquote>
 <p>"I Just Finished CodeAcademy/Khan Academy/etc, Now What?!"</p>
@@ -313,7 +315,7 @@ new concepts faster.
 
 </div>
   <div class="col-md-3 sidebarcolor">
-<h2 class="centered serif">Train With Us</h2>
+<h2 class="centered">Train With Us</h2>
 
 <p>
 We offer one-one-one pair-programming and mentorship. Work through katas, get

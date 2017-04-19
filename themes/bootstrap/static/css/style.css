@@ -104,6 +104,8 @@
     color: #222;
     text-decoration: underline;
 }
+/* a:visited {  color:red; } */
+
 .sidebar_li {
     padding: .5em 0;
     border-bottom: 1px solid #ededed;
