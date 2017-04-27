@@ -68,9 +68,9 @@ Instead it is inducting `n`?!
 
 <img src="/images/mult_comm_lemma3.png"></img>
 
-# IT OVERWRITES THE NAMES IF PUT IN THE WRONG ORDER?!
+## INTROS OVERWRITES THE NAMES IF PUT IN THE WRONG ORDER?!
 
 <img src="/images/poor_caretaker.jpg"></img>
 
-## The poor caretaker, I fear his long-standing duties here have... _affected him_
+### The poor caretaker, I fear his long-standing duties here have... _affected him_
 
