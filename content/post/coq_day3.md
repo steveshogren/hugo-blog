@@ -56,6 +56,8 @@ subgoal 2 (ID 294) is:
 
 Instead it is inducting `n`?! 
 
+<img src="/images/upset.jpg"></img>
+
 # Wait.
 
 <img src="/images/mult_comm_lemma.png"></img>
