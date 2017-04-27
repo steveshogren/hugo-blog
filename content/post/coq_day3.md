@@ -2,7 +2,6 @@
 title = "Darkest Proof: Day 3"
 date = "2017-04-27"
 Categories = ["technical skills", "coq"]
-draft = true
 +++
 
 Day three working through
