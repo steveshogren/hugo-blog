@@ -19,37 +19,29 @@ documentation.
 
 ### Any Examples?
 
-For example: the DSL for filtering posts in the Hugo blog engine (don't take my
-critism the wrong way, I otherwise love Hugo. Whooo, go Hugo!). But time for
-some tough love. The built in templating DSL is the worst. Straight Go would be
-fine. The docs for Go are great and Go is easy. But no, a special DSL is here to
-poop in your soup.
+For example: the DSL for filtering posts in the Hugo blog engine. (I otherwise
+love Hugo. Whooo, go Hugo!) But time to lay out some tough love. The built-in
+templating DSL is the worst. Straight Go would be fine. The docs for Go are
+great and Go is easy. But unfortunately a special DSL is here to poop in your
+soup.
 
-So how do I filter for the top pages that are posts and not drafts? Let's see:
+How do I filter for the top pages that are posts and not drafts? Let's see what
+_doesn't_ work:
 
 ```
 {{ range first 5 (where .Site.Pages (and ("Type" "post") (not .Draft)))  }}
-```
-
-Nope.
-
-```
 {{ range first 5 (where and (.Site.Pages "Type" "post") (not .Draft))  }}
-```
-Arg.
-
-```
 {{ range first 5 (where (and (.Site.Pages "Type" "post") (not .Draft)))  }}
 ```
 
-Double checks the docs doesn't have it...
+Maybe the parens mess it up?
 
 ```
 {{ range first 5 (where .Site.Pages "Type" "post" and .Draft)  }}
     <and>: wrong number of args for and: want at least 1 got 0 in theme/partials/homepage.html
 ```
 
-Wat. The `and` function only takes 1 argument?!
+Perhaps parens again?
 
 ```
 {{ range first 5 (where (and (.Site.Pages "Type" "post") .Draft))  }}
@@ -60,6 +52,12 @@ Ah, so `where` is a special DSL function TOO! No simple `bool` argument for
 `where`, nah, it: `Filters an array to only elements containing a matching value for a given field.` which I can only assume means the arguments are `where(list field value)`. Obviously.
 
 Maybe I could `intersect` the results of two `where` expressions? Nope, only supports ints and floats.
+
+Perhaps a quick google for this will help? Hey, someone on the forum has a
+question about this! Click the link, "You must be signed in to see this thread". 
+
+Well google cache still has it! Hey, it's a reported bug with `where`! Fixed Dec
+2015! What build of hugo am I using? Nov 2015! 
 
 Whatever, I'll just see all the drafts locally. You win this round DSL. *This* round.
 
