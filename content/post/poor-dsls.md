@@ -53,11 +53,14 @@ Ah, so `where` is a special DSL function TOO! No simple `bool` argument for
 
 Maybe I could `intersect` the results of two `where` expressions? Nope, only supports ints and floats.
 
-Perhaps a quick google for this will help? Hey, someone on the forum has a
-question about this! Click the link, "You must be signed in to see this thread". 
+Perhaps a quick search for this exact issue will help? Look, someone on the
+forum has a question about this! Click the link, "You must be signed in to see
+this thread". Rage face.
 
-Well google cache still has it! Hey, it's a reported bug with `where`! Fixed Dec
-2015! What build of hugo am I using? Nov 2015! 
+Google cache still has the text! Someone reported this as a bug with `where`!
+Fixed Dec 2015! What build of Hugo am I using? Nov 2015!
 
-Whatever, I'll just see all the drafts locally. You win this round DSL. *This* round.
+Annnnd after upgrading Hugo, now I just an unexplained "panic: index out of range" when
+building the site.
 
+FML.
