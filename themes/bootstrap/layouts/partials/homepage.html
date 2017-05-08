@@ -37,7 +37,7 @@
         {{ range first 5  (where .Site.Pages "Type" "post") }}
         <!--  (where .Site.Pages "Params.draft" "==" "true")  -->
         <li class="sidebar_li">
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <a href="{{ .Permalink }}">{{ if .Draft }}DRAFT:: {{ end }}{{ .Title }}</a>
           <!-- <span class="pull-right"> -->
           <!-- {{ range .Params.categories }} -->
           <!-- <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="label label-default">{{ . }}</a> -->
