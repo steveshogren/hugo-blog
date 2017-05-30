@@ -1,5 +1,5 @@
 +++
-title = "Learn To Program For Free"
+title = "How To: A Career in Programming Without Going To School"
 layout = "training"
 +++
 
