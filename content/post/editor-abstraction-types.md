@@ -1,6 +1,6 @@
 +++
 title = "Editor Abstractions: Why Examine Them"
-date = "2016-05-09"
+date = "2017-06-13"
 Categories = ["technical skills","emacs"]
 draft=true
 +++
@@ -33,24 +33,25 @@ Our editors also provide abstractions. I classify them into two main categories:
 2. Syntactic Tools
 
 -----------
-<!-- Every additional editor abstraction is a new mental tax. -->
+
+<!-- > Every additional editor abstraction is a new mental tax. -->
 
 ## Semantic Tools
 
-Five abstractions make up the "Holy Grail" of Semantic Tools. If we had nothing
-else but these, we would be at the pinnacle of power. The Big Five make a huge
-program much more manageable.
+Five abstractions are the core of Semantic Tools. If we had nothing else but
+these, we would be at the pinnacle of power. The Big Five make a huge program
+much more manageable.
 
-* **Extract Interface** -
-* **Extract Class** -
-* **Implement Interface** -
-* **In-line Method** -
-* **Extract Method** -
-* **In-line Variable** -
-* **Extract Variable** -
-* **Operate On Every Calling Line** -
-* **Cut/Copy/Paste Expression** -
-* **Remove Outer Wrapping** -
+<!-- * **Extract Interface** - -->
+<!-- * **Extract Class** - -->
+<!-- * **Implement Interface** - -->
+<!-- * **In-line Method** - -->
+<!-- * **Extract Method** - -->
+<!-- * **In-line Variable** - -->
+<!-- * **Extract Variable** - -->
+<!-- * **Operate On Every Calling Line** - -->
+<!-- * **Cut/Copy/Paste Expression** - -->
+<!-- * **Remove Outer Wrapping** - -->
 
 * **Language Errors** - Highlight code that violates the rules of the language
 * **Find All References** - See a list of all usages of a field, function, or class
@@ -58,33 +59,38 @@ program much more manageable.
 * **Auto-complete** - Show a list of possible symbols to complete section
 * **Go To Definition** - Move editor to the symbol's defined location
 
-The Big Five are just different ways of interacting with the AST of the
-codebase. Unfortunately, building a correct AST before run-time is only possible
-in certain languages. Building an always-accurate AST is impossible in
-weakly-typed, dynamic languages (or those with unhygienic macros).
+The Big Five are just different ways of interacting with the
+[Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) (AST)
+of the codebase. Unfortunately, building a correct AST before run-time is only
+possible in certain languages. Building an always-accurate AST is impossible in
+weakly-typed, dynamic languages (or those with syntactic macros).
 
 How impossible? Time for a fun story. My first encounter with the AST problem
-came when my boss asked me to rename all uses of ```Contact.Id``` to
+came when a manager asked me to rename all uses of ```Contact.Id``` to
 ```Contact.ContactId``` in a big PHP project. I renamed all I could find using
-sed and grep. I went to run the program, and encountered hundreds of run-time
-errors. What did I miss? Someone had stored a string in the database containing
-"Id", which was read out and combined with PHP magic to access the ```Id```
-field on my class! No refactoring tool could have possibly detected that. That
-sort of flexibility makes it impossible to build a correct AST.
+sed and grep. I ran the program and encountered hundreds of run-time errors.
+What did I miss? Someone had stored a string in the database containing "Id",
+which was read out and combined with PHP magic to access the ```Id``` field on
+my class! No refactoring tool could have possibly detected that. That sort of
+flexibility makes it impossible to build a correct AST.
 
-Even the flagship refactoring languages like Java and C# still have a version of
-this problem. Sharing dlls or jars breaks semantic tools. A **Rename Symbol**
-will only detect and modify usages in the current open project, not every
-consumer. Reflection similarly breaks semantic tools. Depending on your
-practices, this ranges from a minor nuisance to a major problem.
+Even flagship IDE languages like Java and C# still have a version of this
+problem. Sharing dlls or jars breaks semantic tools. A **Rename Symbol** will
+only detect and modify usages in the current open project, not every consumer of
+the produced jar. Reflection and explicit casting also breaks semantic tools.
+Depending on your environment, this ranges from a minor nuisance to a major
+problem.
 
-  <!-- In the last decade, several IDE's have added plugins that can build an AST from -->
-  <!-- PHP, Python, Ruby, JavaScript, Clojure, etc. While incomplete by nature, these -->
-  <!-- at least provide some modest functionality. -->
-<!-- While I would never want to take over a huge codebase without the Big Four, I have lately come to rely on them less and less. -->
+In the last decade, several IDE's have added plugins that can build an AST from
+PHP, Python, Ruby, JavaScript, Clojure, etc by using raw text parsing. While
+incomplete by nature, these at least provide some modest functionality. 
 
-IDE's have a lot of refactorings they provide other than the Big Four. However
-most of these refactorings are syntactic, not semantic.
+IDE's also provide a lot of refactorings they provide other than the Big Five.
+However most of these refactorings are just variations on themes of the Big
+Five, or rely on parsing the syntax of of the language.
+
+While I would never want to take over a huge codebase without the Big Five,
+these weaknesses have caused me to rely on them less and less.
 
 ## Syntactic Tools
 
@@ -102,25 +108,28 @@ only work in a single language, a few good text abstractions compose endlessly.
 ## Text Abstractions
 
 * **Edit**
- * **Change** - Change a piece of text with another
- * **Replace** - Replace a character
- * **Insert** - Insert text
- * **Delete** - Delete text
- * **Copy** - Copy text
+* **Change** - Change a piece of text with another
+* **Replace** - Replace a character
+* **Insert** - Insert text
+* **Delete** - Delete text
+* **Copy** - Copy text
 * **Motion**
- * **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by
-   specified delimiter
- * **Range** - Operate on a range of lines or search criteria
+* **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by
+specified delimiter
+* **Range** - Operate on a range of lines or search criteria
 * **Repeat** - Repeat last command
 * **Search** - Find instances of text
- * **Replace** - Replace with alternate text
- * **Operate** - Perform action on line containing text
- * **Delete** - Delete line containing text
+* **Replace** - Replace with alternate text
+* **Operate** - Perform action on line containing text
+* **Delete** - Delete line containing text
 * **Record|Playback** - Record and save actions, replaying them when needed
 
 A skilled user of these basic abstractions can solve any syntactic refactoring
 in only a few steps. They can invent new refactorings, solving any text
 manipulation they need.
+
+I have found that if you are skilled with good set of abstractions for editing
+code, you can be very productive across lots of languages and frameworks.
 
 <!-- | |  | Correctly Call Function | Adding New State | Best When | -->
 <!-- |------------- |-------------- | ------------ | ------------- | ------------- | -->
