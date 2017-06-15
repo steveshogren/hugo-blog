@@ -92,20 +92,18 @@ Five, or rely on parsing the syntax of of the language.
 While I would never want to take over a huge codebase without the Big Five,
 these weaknesses have caused me to rely on them less and less.
 
-## Syntactic Tools
+## Text-Based Tools
 
-A syntactic tool does not require an AST to work. Consider **Extract
+A text-based tool does not require an AST to work. Consider **Extract
 Interface**. It takes a class and generates an interface next to the class
 containing all the public functions from the class. The refactoring does not
 require an AST to work, it can be easily achieved by combining several text
 commands.
 
-Any syntactic refactoring can be replaced with a text macro or regular
-expression. Here is where we see the power of good abstractions. Where a
-refactoring suite may provide dozens or hundreds of specialized commands that
-only work in a single language, a few good text abstractions compose endlessly.
-
-## Text Abstractions
+Any refactoring can be replaced with a text macro or regular expression. Here is
+where we see the power of good abstractions. Where an IDE refactoring suite may
+provide dozens or hundreds of specialized commands that only work in a single
+language, a few good text abstractions compose endlessly.
 
 * **Edit**
 * **Change** - Change a piece of text with another
@@ -124,12 +122,22 @@ specified delimiter
 * **Delete** - Delete line containing text
 * **Record|Playback** - Record and save actions, replaying them when needed
 
-A skilled user of these basic abstractions can solve any syntactic refactoring
+A skilled user of these basic abstractions can solve any text-based refactoring
 in only a few steps. They can invent new refactorings, solving any text
 manipulation they need.
 
-I have found that if you are skilled with good set of abstractions for editing
-code, you can be very productive across lots of languages and frameworks.
+If you are skilled with good set of abstractions for editing code, you can be
+very productive across lots of languages and frameworks. The real power comes
+when you can combine Semantic and text-based tools. If you have an accurate **Go
+To Definition** AND the ability to **playback** a macro, your options are
+limitless!
+
+For this reason, if you have the ability, you should learn one from each
+category of tools available to you. If you have access to a set of Semantic
+tools for your languages, learn them well, but know their limits! If you have
+access to a set of text-based tools like those found in a Vim plugin, install
+the Vim plugin and learn it well. You will have all the power of both at your
+disposal!
 
 <!-- | |  | Correctly Call Function | Adding New State | Best When | -->
 <!-- |------------- |-------------- | ------------ | ------------- | ------------- | -->
