@@ -1,5 +1,5 @@
 +++
-title = "Editor Abstractions: Why Examine Them"
+title = "Analysis of Editor Abstractions"
 date = "2017-06-13"
 Categories = ["technical skills","emacs"]
 draft=true
@@ -15,26 +15,13 @@ little that attempts to categorize _what they actually do_. Likewise, everyone
 pays homage to the concept of using the "best tool for the job", but most have
 no idea what tools are provided or when each tool would be best.
 
-<!-- If every concrete sequence had its own bespoke functions, we would find them -->
-<!-- much more difficult to use. Imagine if only Lists could be used in a -->
-<!-- ```foreach```, and Dictionaries needed to be ```for-every``` while Array needed -->
-<!-- a ```for``` loop. We would find them much harder to use. Moving code from one -->
-<!-- data structure to another would be a massive undertaking. _This is what IDE's do -->
 
-<!-- The three major sequence abstractions are far superior to dozens of specialized -->
-<!-- functions. They are also superior to the overly generic function ```foreach```. -->
-<!-- The ```foreach``` function is weak because it is too generic. The a they -->
-<!-- abstract away the details needed to make ```foreach``` work. The three are easy -->
-<!-- to learn, simple to combine, and allow for endless reuse. -->
-
-Our editors also provide abstractions. I classify them into two main categories:
+Our editors provide abstractions classified into two main categories:
 
 1. Semantic Tools
-2. Syntactic Tools
+2. Text-based Tools
 
 -----------
-
-<!-- > Every additional editor abstraction is a new mental tax. -->
 
 ## Semantic Tools
 
@@ -65,14 +52,14 @@ of the codebase. Unfortunately, building a correct AST before run-time is only
 possible in certain languages. Building an always-accurate AST is impossible in
 weakly-typed, dynamic languages (or those with syntactic macros).
 
-How impossible? Time for a fun story. My first encounter with the AST problem
-came when a manager asked me to rename all uses of ```Contact.Id``` to
-```Contact.ContactId``` in a big PHP project. I renamed all I could find using
-sed and grep. I ran the program and encountered hundreds of run-time errors.
-What did I miss? Someone had stored a string in the database containing "Id",
-which was read out and combined with PHP magic to access the ```Id``` field on
-my class! No refactoring tool could have possibly detected that. That sort of
-flexibility makes it impossible to build a correct AST.
+> How impossible? Time for a fun story. My first encounter with the AST problem
+> came when a manager asked me to rename all uses of ```Contact.Id``` to
+> ```Contact.ContactId``` in a big PHP project. I renamed all I could find using
+> sed and grep. I ran the program and encountered hundreds of run-time errors.
+> What did I miss? Someone had stored the string "Id" in the database which was
+> read out and combined with PHP magic to access the ```Id``` field on my class!
+> No refactoring tool could have possibly detected that. That sort of
+> flexibility makes it impossible to build a correct AST.
 
 Even flagship IDE languages like Java and C# still have a version of this
 problem. Sharing dlls or jars breaks semantic tools. A **Rename Symbol** will
@@ -153,3 +140,16 @@ disposal!
 
 <!-- I have found that if you have a good set of abstractions for editing code, you -->
 <!-- can be very productive across lots of languages and frameworks. -->
+
+
+<!-- If every concrete sequence had its own bespoke functions, we would find them -->
+<!-- much more difficult to use. Imagine if only Lists could be used in a -->
+<!-- ```foreach```, and Dictionaries needed to be ```for-every``` while Array needed -->
+<!-- a ```for``` loop. We would find them much harder to use. Moving code from one -->
+<!-- data structure to another would be a massive undertaking. _This is what IDE's do -->
+
+<!-- The three major sequence abstractions are far superior to dozens of specialized -->
+<!-- functions. They are also superior to the overly generic function ```foreach```. -->
+<!-- The ```foreach``` function is weak because it is too generic. The a they -->
+<!-- abstract away the details needed to make ```foreach``` work. The three are easy -->
+<!-- to learn, simple to combine, and allow for endless reuse. -->
