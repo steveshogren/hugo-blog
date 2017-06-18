@@ -69,8 +69,9 @@ Depending on your environment, this ranges from a minor nuisance to a major
 problem.
 
 In the last decade, several IDE's have added plugins that can build an AST from
-PHP, Python, Ruby, JavaScript, Clojure, etc by using raw text parsing. While
-incomplete by nature, these at least provide some modest functionality. 
+PHP, Python, Ruby, JavaScript, Clojure, etc by using raw text parsing or through
+a modification to the interpreter. While incomplete by nature, these at least
+provide some modest functionality.
 
 IDE's also provide a lot of refactorings they provide other than the Big Five.
 However most of these refactorings are just variations on themes of the Big

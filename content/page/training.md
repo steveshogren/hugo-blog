@@ -20,8 +20,8 @@ necessary to get that dream job. </p>
 <h2>Success Stories</h2>
 
 <p>
-We have used this course with several people to help them break into full-time
-software developer jobs. 
+We have used this program with several people to help them break into full-time
+software developer jobs: 
 </p>
 
 <div class="col-md-4">
@@ -38,8 +38,8 @@ team of automated testers.</p>
 <div class="col-md-4">
     <h3>Ben S.</h3>
     <p>Ben had a B.A. degree and one basic programming class in high-school.
-He followed this program and had a full-time development job in six months. He now has
-worked in both front-end and back-end development.</p>
+He followed this program and had a full-time development job in six months. He
+    now has four years of experience in both front-end and back-end development.</p>
 </div>
 
 <h2>The Free Course</h2>
@@ -65,8 +65,8 @@ get something working or complete an exercise.
 
 > Commit early, commit often
 
-Make sure you push your changes as often as possible (at least hourly). If your
-computer ever dies, you will have lost no more than an hour or two of work,
+Make sure you push your changes as often as possible (at least semi-hourly). If
+your computer ever dies, you will have lost no more than an hour or two of work,
 because everything is backed up. This will have the side-effect of giving you an
 online portfolio of all the work you do.
 
