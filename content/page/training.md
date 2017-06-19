@@ -109,7 +109,8 @@ recommend KataTennis, KataRomanNumerals, and KataBowling.
 
 For the rest of the course, we recommend you do **thirty minutes of kata practice
 every day**. Redo the same kata multiple times, until you can do it effortlessly
-in both Python and Javascript.
+in both Python and Javascript. Each time commit the work to GitHub, as it will
+continue to add to your online portfolio.
 
 ### Step 3 - Concrete Foundations
 
@@ -126,7 +127,7 @@ Scheme, which can be run from either the command-line or
 
 DrRacket is a general editor and code-runner for Racket and Scheme. There are
 many different versions of Racket and Scheme, so to run DrRacket in "MIT Scheme
-mode", you need to put a header at the top of your files to tell DrRacket which
+and SICP mode", you need to put a header at the top of your files to tell DrRacket which
 language to use: ```#lang planet neil/sicp```
 
 When you first run a file, DrRacket will download a working version of MIT
@@ -164,11 +165,11 @@ Here are some wild generalizations of how different languages are used in the
 industry:
 
 * Java (and some C#) are typical for business-oriented big-company jobs
-* Ruby (and some NodeJS) are common in Silicon Valley start-up jobs
-* Javascript is mandatory for web front-end jobs
+* Ruby (and NodeJS) are common in Silicon Valley start-up jobs
+* JavaScript is mandatory for web front-end jobs
 * C++ (and some C# Unity) are used for most video game jobs
 * Assembly and C for embedded hardware jobs (more difficult without an
-  electrical engineering degree)
+  electrical engineering degree or equivalent)
 * R or Python for data science or numerical analysis jobs (I wouldn't attempt
   these without an advanced math degree or equivalent)
 
@@ -176,12 +177,13 @@ Take some time to research what people say about these different types of job
 environments, and remember these are just generalizations. Java is used for many
 Android mobile games. People run start-ups in every possible language. Some
 mega-companies have huge Perl desktop applications. As a rule, every language
-can and has been used for every type of application. 
+can and has been used for every type of application.
 
-You will have an easier time finding a job if you pick a language is commonly
-used for that domain. For example, you really want to work in web development,
-do you want to limit yourself to the one company that forces VB6 into the
-browser, or the tens of thousands that just use plain Javascript?
+It goes without saying that you will have an easier time finding a job if you
+pick a language is commonly used for that domain. For example, you really want
+to work in web development, do you want to limit yourself to the one company
+that forces VB6 into the browser, or the tens of thousands that just use plain
+Javascript?
 
 Look around the job boards for languages used in your current location. If you
 want to get a job in Chicago, get a quick count of how many jobs for each
