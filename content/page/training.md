@@ -195,12 +195,12 @@ learn a new language at least once a year for the rest of your career. Most
 developers are able to switch languages several times in their careers. This
 language just has to get you that first job.
 
-If I was picking a good "first job" language in late 2016, I'd pick one of:
-Java, C#, NodeJS, PHP, Python, C++, C, or Ruby. I'd likely settle on either Java
-or Ruby for a combination of practicality and breadth of jobs. If I lived in a
-place with more Ruby jobs than Java, I'd pick Ruby. I would also learn the
-basics of front-end Javascript so I could get into most web jobs. Remember you
-can always switch languages and jobs after a few years!
+If I was picking a good "first job" language in mid 2017, I'd pick one of: Java,
+C#, NodeJS, PHP, Python, or Ruby. With my weak math background, I'd likely
+settle on either Java or Ruby for a combination of practicality and breadth of
+jobs. If I lived in a place with more Ruby jobs than Java, I'd pick Ruby. I
+would also learn the basics of front-end JavaScript so I could get into most web
+jobs. Remember you can always switch languages and jobs after a few years!
 
 ### Step 5 - Regularly Go to Meetups
 
@@ -208,7 +208,7 @@ The more people you know in the industry, the more potential contacts you will
 have for finding a great job. A person with less skills and good contacts
 sometimes gets the better job.
 
-Use a site like [Meetup.com](www.meetup.com) to find local meetups and user
+Use a site like [Meetup.com](http://www.meetup.com) to find local meetups and user
 groups in your chosen language. In most major cities there are typically several
 free meetups every single day around programming, languages, and technology.
 Most even have free food and door prizes! Find the local meetups for your
@@ -231,13 +231,19 @@ Let everyone you meet know that you are trying to break into the field. Ask for
 recommendations and suggestions. If they know what SICP is, they will be majorly
 impressed with your progress.
 
-### Step 6 - Small Project
+### Step 6 - Small Project (aka the "Vision Quest", aka "building your lightsaber")
 
-Choose a small project to build yourself using your newly selected language.
-Ideally, it will align with the sorts of jobs that language is most commonly
-used for. Maybe a basic web-site for saving a shopping cart, a simple game, or a
-graphing calculator. Write out a list of the features you would want to see
-before you start.
+Choose a small project to build yourself using your newly selected language. The
+project should align with your targeted industry. Maybe a basic web-site for
+saving a shopping cart, a simple game, or a graphing calculator. Write out a
+list of the features you would want to see before you start.
+
+This project should be important to you. Perhaps it solves a problem you've
+always had. Some examples we've seen are: a baking inventory management website
+with up-to-date prices pulled of an on-line store API, a movie review and
+recommendation website, a basic recreation of a top-down Zelda NES game with
+Avatar characters, and a website for tracking student loan repayment progress
+and expected payoff time-line.
 
 You will want to list out all the things you will need. Perhaps you need a way
 to run a web site, or build an Android game. Maybe you need to store data in a
