@@ -251,16 +251,25 @@ file or database. Search the internet for tutorials to get those tools up and
 running. For almost any topic, many excellent tutorials exist that can guide you
 to a starting application.
 
+This is the point where you spread your wings and start to _apply_. Bad pun.
+You've learned a lot about _how to learn_ programming concepts, and these bigger
+concepts are not really that different. You need to start applying the skill of
+learning to solve bigger problems.
+
 Keep a list of questions, and spend some time each session searching for
 answers. Almost any question you have has been answered on forums, Stack
-Overflow, and blogs. If you have Internet, you can teach yourself to build
-almost any sort of programming project.
+Overflow, and blogs. If you have access to the Internet and motivation, you can
+teach yourself to build almost any sort of programming project.
 
 Work on this until you have finished enough that you have answered most of your
 own questions and implemented most of your own features. A small project
 provides you with a list of questions, and the motivation to learn how to
-research them. Second, a small project teaches you important details and
+research them. A small project also teaches you important details and
 technologies you would otherwise miss in katas.
+
+A small project like this probably won't feel like _work_ it will feel like
+_fun_. This is the point of no return, you're now a programmer for life, paid or
+not.
 
 ### Step 7 - Algorithm and Interview Practice
 
