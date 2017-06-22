@@ -50,6 +50,14 @@ The course is broken into sections. Each section builds on the skills in the
 previous sections, so _don't skip around_. This is designed to teach the basic
 skills needed to get an entry-level development job.
 
+### Step 0 - Read this Whole Document
+
+While daunting, you should get an idea for the whole course up front and decide
+if you have the time to pursue it. I can't honestly say how long it will take,
+but the average for the first three students was roughly 500 hours of "hands on
+keyboard" work. In the grand scheme of things, 500 hours for a new career isn't
+that much, not everyone is willing or able to put in the time.
+
 ### Step 1 - Basic Syntax And Git
 
 If you are already not familiar with any programming languages, then complete
@@ -269,7 +277,7 @@ technologies you would otherwise miss in katas.
 
 A small project like this probably won't feel like _work_ it will feel like
 _fun_. This is the point of no return, you're now a programmer for life, paid or
-not.
+not. Now we just need to get you paid!
 
 ### Step 7 - Algorithm and Interview Practice
 
