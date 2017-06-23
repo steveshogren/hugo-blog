@@ -29,7 +29,8 @@ href="/next-book">"What Book Should I Read Next?"</a>.
 <h3 class="centereded underline">People Management</h3>
 <ul>
     <li><b>Peopleware</b></li>
-    <li>Reinventing Organizations</li>
+    <li><b>Reinventing Organizations</b></li>
+    <li>Mythical Man Month</li>
     <li>Emotional Intelligence 2.0</li>
     <li>Managing Humans</li>
     <li>Becoming A Technical Leader</li>
@@ -51,9 +52,9 @@ href="/next-book">"What Book Should I Read Next?"</a>.
 <h3 class="centereded underline">Productive Mindset</h3>
 <ul>
     <li><b>Code Complete</b></li>
+    <li><b>Productive Programmer</b></li>
     <li>Clean Code</li>
     <li>Pragmatic Programmer</li>
-    <li>Productive Programmer</li>
     <li>Working Effectively with Legacy Code</li>
     <li>The Passionate Programmer</li>
     <li>How to Read a Book</li>
@@ -68,7 +69,7 @@ href="/next-book">"What Book Should I Read Next?"</a>.
     <li>Design Patterns</li>
     <li>Domain Driven Design</li>
     <li>Implementing Domain Driven Design</li>
-    <li>Patterns of Enterprise Architecture</li>
+    <li>Patterns of Enterprise Application Architecture</li>
     <li>Refactoring</li>
 </ul>
 </div> 

@@ -50,13 +50,24 @@ The course is broken into sections. Each section builds on the skills in the
 previous sections, so _don't skip around_. This is designed to teach the basic
 skills needed to get an entry-level development job.
 
-### Step 0 - Read this Whole Document
+### Step 0 - The Right Mindset
+
+A lot of this program is designed to teach you **how to learn**. If all you did
+was learn some basic syntax and library calls, you'd be poorly situated to
+succeed in your new career. Many excellent programmers recommend you learn a new
+programming language and read at least one [high value book](/page/books) each
+year. Technology moves at a fast pace, and programming is no exception. To be
+able to keep up, you need to know _how to teach yourself, and how to do it
+quickly_.
 
 While daunting, you should get an idea for the whole course up front and decide
-if you have the time to pursue it. I can't honestly say how long it will take,
-but the average for the first three students was roughly 500 hours of "hands on
+if you have the time to pursue it. I can't promise how long it will take, but
+the average for the first three students was roughly 500 hours of "hands on
 keyboard" work. In the grand scheme of things, 500 hours for a new career isn't
-that much, not everyone is willing or able to put in the time.
+that much, but not everyone is willing or able to put in the time. 
+
+Read through this whole page and get a sense of the structure of the course.
+Each step will make more sense if you understand where it fits.
 
 ### Step 1 - Basic Syntax And Git
 
