@@ -94,21 +94,19 @@ provide dozens or hundreds of specialized commands that only work in a single
 language, a few good text abstractions compose endlessly.
 
 * **Edit**
-* **Change** - Change a piece of text with another
-* **Replace** - Replace a character
-* **Insert** - Insert text
-* **Delete** - Delete text
-* **Copy** - Copy text
+ * **Change**
+ * **Insert**
+ * **Delete**
+ * **Copy**
 * **Motion**
-* **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by
+ * **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by
 specified delimiter
-* **Range** - Operate on a range of lines or search criteria
-* **Repeat** - Repeat last command
-* **Search** - Find instances of text
-* **Replace** - Replace with alternate text
-* **Operate** - Perform action on line containing text
-* **Delete** - Delete line containing text
-* **Record|Playback** - Record and save actions, replaying them when needed
+* **Operation**
+ * **Repeat** - Repeat an edit
+ * **Search** - Find instances of text
+ * **Replace** - Replace with alternate text
+ * **Delete** - Delete area containing text
+* **Record|Playback** - Record and save edits, replaying them when needed
 
 A skilled user of these basic abstractions can solve any text-based refactoring
 in only a few steps. They can invent new refactorings, solving any text
