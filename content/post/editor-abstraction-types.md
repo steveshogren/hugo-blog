@@ -93,20 +93,33 @@ where we see the power of good abstractions. Where an IDE refactoring suite may
 provide dozens or hundreds of specialized commands that only work in a single
 language, a few good text abstractions compose endlessly.
 
-* **Edit**
- * **Change**
- * **Insert**
- * **Delete**
- * **Copy**
-* **Motion**
- * **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by
-specified delimiter
-* **Operation**
- * **Repeat** - Repeat an edit
- * **Search** - Find instances of text
- * **Replace** - Replace with alternate text
- * **Delete** - Delete area containing text
-* **Record|Playback** - Record and save edits, replaying them when needed
+For example, as demonstrated in Vim, extracting an interface in C# can be just:
+
+<img class="pull-left" src="/images/interface-small.gif"></img>
+<div class="container-fluid">
+</div>
+
+* ```:11,37t8``` - Copy the class body to line 8
+* ```:10,35g!/public/d``` - Delete every line not containing the word public from
+  line 10 to 35
+* ```:10,12s/public//g``` - Delete all the public keywords in lines 10-12
+* ```:10,12s/$/;/g``` - End each line with a semi-colon
+
+
+<!-- * **Edit** -->
+<!--  * **Change** -->
+<!--  * **Insert** -->
+<!--  * **Delete** -->
+<!--  * **Copy** -->
+<!-- * **Motion** -->
+<!--  * **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by -->
+<!-- specified delimiter -->
+<!-- * **Operation** -->
+<!--  * **Repeat** - Repeat an edit -->
+<!--  * **Search** - Find instances of text -->
+<!--  * **Replace** - Replace with alternate text -->
+<!--  * **Delete** - Delete area containing text -->
+<!-- * **Record|Playback** - Record and save edits, replaying them when needed -->
 
 A skilled user of these basic abstractions can solve any text-based refactoring
 in only a few steps. They can invent new refactorings, solving any text
