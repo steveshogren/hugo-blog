@@ -5,23 +5,12 @@ Categories = ["technical skills","vim","refactoring"]
 banner="/images/pattern.jpeg"
 +++
 
-(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))
-
 Editor macros are a secret weapon for editing text. While they are hard to
 learn, no other tool offers such broad speed and power for automating changes. A
 skilled macro wielder can make huge changes to a codebase with ease.
 
 Here are some inspirational patterns to demonstrate major structural
 refactorings using Vim macros and search/replace commands.
-
-<!-- # Macro Saving -->
-
-<!-- When you build a complex macro and want to save it for later, just save it off -->
-<!-- to a file. Since a macro is just a list of commands to execute, you can copy and -->
-<!-- paste macros into registers just like text: -->
-
-<!-- * ```"qp``` - Paste the 'q' register contents -->
-<!-- * ```"qy``` - Insert selected text into the 'q' register -->
 
 # Reorder A List Of Numbers
 
@@ -179,5 +168,3 @@ macros, allow yourself to be slow while you master the skill. Touch-typing can
 be many times faster than hand-writing or hunt-and-peck, but learning takes a
 long time. Macros can save you huge amounts of time, but you have to allow
 yourself to be slow while you master the skill.
-
-(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))

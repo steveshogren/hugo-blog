@@ -15,7 +15,6 @@ little that attempts to categorize _what they actually do_. Likewise, everyone
 pays homage to the concept of using the "best tool for the job", but most have
 no idea what tools are provided or when each tool would be best.
 
-
 Our editors provide abstractions classified into two main categories:
 
 1. Semantic Tools
@@ -28,17 +27,6 @@ Our editors provide abstractions classified into two main categories:
 Five abstractions are the core of Semantic Tools. If we had nothing else but
 these, we would be at the pinnacle of power. The Big Five make a huge program
 much more manageable.
-
-<!-- * **Extract Interface** - -->
-<!-- * **Extract Class** - -->
-<!-- * **Implement Interface** - -->
-<!-- * **In-line Method** - -->
-<!-- * **Extract Method** - -->
-<!-- * **In-line Variable** - -->
-<!-- * **Extract Variable** - -->
-<!-- * **Operate On Every Calling Line** - -->
-<!-- * **Cut/Copy/Paste Expression** - -->
-<!-- * **Remove Outer Wrapping** - -->
 
 * **Language Errors** - Highlight code that violates the rules of the language
 * **Find All References** - See a list of all usages of a field, function, or class
@@ -105,22 +93,6 @@ For example, as demonstrated in Vim, extracting an interface in C# can be just:
 * ```:10,12s/public//g``` - Delete all the public keywords in lines 10-12
 * ```:10,12s/$/;/g``` - End each line with a semi-colon
 
-
-<!-- * **Edit** -->
-<!--  * **Change** -->
-<!--  * **Insert** -->
-<!--  * **Delete** -->
-<!--  * **Copy** -->
-<!-- * **Motion** -->
-<!--  * **(Forward|Back) By (Letter|Word|Line|Sentence|Paragraph)** - Move cursor by -->
-<!-- specified delimiter -->
-<!-- * **Operation** -->
-<!--  * **Repeat** - Repeat an edit -->
-<!--  * **Search** - Find instances of text -->
-<!--  * **Replace** - Replace with alternate text -->
-<!--  * **Delete** - Delete area containing text -->
-<!-- * **Record|Playback** - Record and save edits, replaying them when needed -->
-
 A skilled user of these basic abstractions can solve any text-based refactoring
 in only a few steps. They can invent new refactorings, solving any text
 manipulation they need.
@@ -137,31 +109,3 @@ tools for your languages, learn them well, but know their limits! If you have
 access to a set of text-based tools like those found in a Vim plugin, install
 the Vim plugin and learn it well. You will have all the power of both at your
 disposal!
-
-<!-- | |  | Correctly Call Function | Adding New State | Best When | -->
-<!-- |------------- |-------------- | ------------ | ------------- | ------------- | -->
-<!-- |**Semantic Tools** | Explicit |  Easier  | Harder | State Values Change Frequently -->
-<!-- |**Syntactic Tools** | Implicit |  Harder  |  Easier | State Values Change Rarely -->
-<!-- |**Text Abstractions** | Implicit |  Harder  |  Easier | State Values Change Rarely -->
-
-<!-- The more I watch Patrick work, the more I realize how much mental and muscle -->
-<!-- memory I have built up around "Visual Studio"-only abstractions. -->
-
-<!-- Our editing tools are also abstractions. We memorize commands to perform -->
-<!-- actions, disregarding the underlying implementation. -->
-
-<!-- I have found that if you have a good set of abstractions for editing code, you -->
-<!-- can be very productive across lots of languages and frameworks. -->
-
-
-<!-- If every concrete sequence had its own bespoke functions, we would find them -->
-<!-- much more difficult to use. Imagine if only Lists could be used in a -->
-<!-- ```foreach```, and Dictionaries needed to be ```for-every``` while Array needed -->
-<!-- a ```for``` loop. We would find them much harder to use. Moving code from one -->
-<!-- data structure to another would be a massive undertaking. _This is what IDE's do -->
-
-<!-- The three major sequence abstractions are far superior to dozens of specialized -->
-<!-- functions. They are also superior to the overly generic function ```foreach```. -->
-<!-- The ```foreach``` function is weak because it is too generic. The a they -->
-<!-- abstract away the details needed to make ```foreach``` work. The three are easy -->
-<!-- to learn, simple to combine, and allow for endless reuse. -->
