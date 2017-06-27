@@ -5,7 +5,7 @@ Categories = ["technical skills"]
 draft=true
 +++
 
-Design patterns and Domain Driven Design are one of the most dangerous books a
+Design Patterns and Domain Driven Design are one of the most dangerous books a
 new developer can read.
 
 While not bad, the design patterns books can be a bad way of letting others to

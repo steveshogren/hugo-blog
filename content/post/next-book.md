@@ -10,17 +10,14 @@ href="/page/books">favorite books</a>.
 
 "It's my first job, what book should I read first?"
 
-Recently, a few developers I am mentoring were curious about what book
-to read first. Even mid and senior level developers I've known
-sometimes struggle with this question.
+I've been asked this question many times. Even mid and senior level developers
+I've known sometimes struggle with this question.
 
-If you want to be truly great, you have to read technical books and
-white papers, and you have to learn new programming languages. You
-could figure the content out yourself from first principles, but you
-will be about 50 years behind those who just read the
-books. Additionally, if you stick to a certain language, you are
-limiting yourself to only thinking about a problem in a way common to
-the language. 
+If you want to be truly great, you have to read technical books and white
+papers, and you have to learn new programming languages. You could figure the
+content out yourself from first principles, but you will be about 50 years
+behind those who just read the books. Additionally, if you stick to a certain
+language, you are limiting yourself to thinking about problems in only one way.
 
 Just like with adding new features to a project, you should prioritize
 your learning.
@@ -49,8 +46,8 @@ learn PHP, Python, JavaScript, or Perl.
 
 Same for the family of Java, C++, C#, or VB.NET. One of those is plenty.
 
-Instead shoot for languages that will really beef up your thought
-process. I like the advice given by <a href="http://norvig.com/21-days.html">Peter Norvig</a>:
+Instead aim for languages that will really expand your thought process. I like
+the advice given by <a href="http://norvig.com/21-days.html">Peter Norvig</a>:
 
          "Learn at least a half dozen programming languages. Include one
          language that supports class abstractions (like Java or C++), one that
@@ -60,15 +57,14 @@ process. I like the advice given by <a href="http://norvig.com/21-days.html">Pet
          coroutines (like Icon or Scheme), and one that supports parallelism
          (like Sisal)."
 
-I would add to that my own personal list: a language that forces you
-to use monands for controlling side-effects (Haskell), and a language
-that allows for dependent types (Idris).
+I would add to that my own personal list: a pure language that forces you to use
+monads for controlling side-effects (like Haskell), and a language that allows
+for dependent types (like Idris or Coq).
 
-If you are saying, "wow, in Python, you have to put a colon at the end
-of the function signature line, unlike in Ruby, that blows my mind",
-or "wow, in Java, the String keyword is uppercase instead of
-lowercase!" chances are you are getting a very low return for your
-investment of time.
+If you find yourself saying, "wow, in Python, you have to put a colon at the end
+of the function signature line, unlike in Ruby, that blows my mind", or "wow, in
+Java, the String keyword is uppercase instead of lowercase!" chances are you are
+getting a very low return for your investment of time.
 
 What is important about a new language is _not_ a new syntax. A new
 syntax is just cruft that gets in the way of the new concepts. A new
@@ -88,7 +84,7 @@ it. That is the high value content.
 I would say very few frameworks are going to expand your mind in a way
 that is worth the effort to learn them. Some very select frameworks
 can cause you to think of a problem in a novel way and thus expand
-your mind (off the top of my head: React.js, Core.Async, Akka,
+your mind (off the top of my head: React.js, Cycle.js, Core.Async, Akka,
 Datomic) but those are very few and far between.
 
 Obviously, in production use, frameworks have their place, and they
@@ -138,13 +134,14 @@ given project. At the time for me, it was revolutionary.
 
 ## Pattern Books ##
 
-I lately have come to think "pattern books" like Domain Driven Design,
-Design Patterns, Patterns of Enterprise Architecture, Refactoring, etc
-are just a way to try to replicate missing features in a language of a
-lower power. These seem to be written for entirely Java and C#, and are mostly
-complex solutions to complex problems created by the lack of power of the language. Apparently, I
-am not alone: <a
-href="http://www.c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures">Are Design Patterns Missing Language Features?</a>
+I lately have come to think "pattern books" like Domain Driven Design, Design
+Patterns, Patterns of Enterprise Application Architecture, Refactoring, etc are
+just a way to try to replicate missing features in a language of a lower power.
+These seem to be written for entirely Java and C#, and are mostly complex
+solutions to complex problems created by the lack of power of the language.
+Apparently, I am not alone: <a
+href="http://www.c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures">Are
+Design Patterns Missing Language Features?</a>
 
 That being said, I think some parts of these books are helpful,
 specifically, the ubiquitous language ideas from Domain Driven
@@ -154,16 +151,9 @@ recommend at least skimming it just to ensure smooth communication.
 
 ## Suggestions ##
 
-I won't suggest too many books or languages, but those I do are very
-highly recommended.
-
-- <a href="http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_start">Structure and Interpretation of Computer Programs</a>
-  - The best book I've ever read. No other book I've read even comes close to beating this for sheer value per minute as this book. Do all the exercies, and you'll be way ahead of the curve.
-- Code Complete
-- Clean Code
-- Pragmatic Programmer
-- Productive Programming
-- Peopleware
+*Edit*: I've consolidated my list into a separate page of my
+[favorite books](/page/books/). If you are looking to expand your mind, I'd
+check out the bold ones first.
 
 ## Wrap up ##
 
