@@ -160,8 +160,8 @@ check out the bold ones first.
 It takes courage to step outside your comfort zone and learn something
 new. You might be the only person learning something new on your
 team. That is ok! Don't worry about "converting" everyone else to the
-path of learning, and do not make fun of them or the only language
-they know. (Developers who only know one language take any comment
+path of learning, and **do not make fun of them or the only language
+they know**. (Developers who only know one language take any comment
 good or bad about "their" language as a comment about themselves.) If
 you do make fun of them, you will start to resent them. It'll make you
 look like an outsider, and they will ignore you and finally push you
@@ -173,9 +173,8 @@ production until I've "moved on" to learning another tool, so I could
 critically consider the best tool for the job without the "honeymoon"
 effect clouding my judgment.
 
-My experience has been: keep getting better, and you will find
-yourself in better and better places to work. A person who puts in the
-effort to really master the craft is easy to spot and hard to
-fake. Most people want to work with those who think like them, and you
-cannot think like a master engineer only knowing one tool, so get
-started now, and have fun!
+My experience has been: keep getting better, and you will find yourself in
+better and better places to work. A person who puts in the effort to really
+master the craft is easy to spot and impossible to fake. Most people want to
+work with those who think like them, and you cannot think like a master engineer
+only knowing one tool, so get started now, and have fun!
