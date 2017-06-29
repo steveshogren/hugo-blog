@@ -61,13 +61,16 @@ able to keep up, you need to know _how to teach yourself, and how to do it
 quickly_.
 
 While daunting, you should get an idea for the whole course up front and decide
-if you have the time to pursue it. I can't promise how long it will take, but
+if you have the time to pursue it. No one can promise how long it will take, but
 the average for the first three students was roughly 500 hours of "hands on
 keyboard" work. In the grand scheme of things, 500 hours for a new career isn't
-that much, but not everyone is willing or able to put in the time. 
+that much, but not everyone is willing or able to put that much time.
 
 Read through this whole page and get a sense of the structure of the course.
-Each step will make more sense if you understand where it fits.
+Each step will make more sense if you understand where it fits in the larger
+whole. We wanted to provide a guess on how long each section would take, but it
+really depends on the individual. Not everyone is going to have the same natural
+skills, so some people might fly through one section but struggle with another.
 
 ### Step 1 - Basic Syntax And Git
 

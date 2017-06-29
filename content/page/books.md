@@ -16,7 +16,7 @@ href="/next-book">"What Book Should I Read Next?"</a>.
     <li><b>Structure and Interpretation of Computer Programs (Scheme)</b></li>
     <li><b>Programming Languages - Application And Interpretation (Typed Racket)</b></li>
     <li><b>Haskell Programming From First Principles</b></li>
-    <li><b>Let Over Lambda (Common Lisp)&#8224;</b></li>
+    <li><b>Let Over Lambda (Common Lisp)</b></li>
     <li>Clojure Programming</li>
     <li>Haskell And Yesod</li>
     <li>Software Foundations</li>
@@ -29,8 +29,8 @@ href="/next-book">"What Book Should I Read Next?"</a>.
 <div class="col-md-6"> 
 <h3 class="centereded underline">People Management</h3>
 <ul>
+    <li><b>Reinventing Organizations</b></li>
     <li><b>Peopleware</b></li>
-    <li>Mythical Man Month</li>
     <li>Managing Humans</li>
     <li>Becoming A Technical Leader</li>
     <li>Emotional Intelligence 2.0&#8224;</li>
@@ -43,7 +43,7 @@ href="/next-book">"What Book Should I Read Next?"</a>.
 <h3 class="centereded underline">Project Management</h3>
 <ul>
     <li><b>Art of Agile Development</b></li>
-    <li><b>Reinventing Organizations&#8224;</b></li>
+    <li>Mythical Man Month</li>
     <li>Planning Extreme Programming</li>
     <li>Extreme Programming Explained</li>
     <li>Death March</li>
