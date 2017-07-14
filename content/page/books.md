@@ -28,7 +28,7 @@ For how I pick what books to prioritize, check out my post <a class="homelink"
   </div>
   <div class="col-md-6">
     <h3 class="centereded underline">People Management</h3>
-    <ul>
+    <ul id="peep">
       <li><b>Reinventing Organizations</b></li>
       <li><b>Peopleware</b></li>
       <li><b>Good To Great</b></li>
@@ -42,7 +42,7 @@ For how I pick what books to prioritize, check out my post <a class="homelink"
 <div class="col-md-12">
   <div class="col-md-6">
     <h3 class="centereded underline">Project Management</h3>
-    <ul>
+    <ul id="proj">
       <li><b>Art of Agile Development</b></li>
       <li>Death March</li>
       <li>Extreme Programming Explained</li>
@@ -53,7 +53,7 @@ For how I pick what books to prioritize, check out my post <a class="homelink"
   </div>
   <div class="col-md-6">
     <h3 class="centereded underline">Productivity & Critical Thinking</h3>
-    <ul>
+    <ul id="product">
       <li><b>Code Complete</b></li>
       <li><b>Productive Programmer</b></li>
       <li>Growing Object-Oriented Software Guided by Tests</li>
@@ -68,7 +68,7 @@ For how I pick what books to prioritize, check out my post <a class="homelink"
 <div class="col-md-12">
   <div class="col-md-6">
     <h3 class="centereded underline">Patterns</h3>
-    <ul>
+    <ul id="patterns">
       <li><b>Clean Code</b></li>
       <li><b>Algorithm Design Manual</b></li>
       <li><b>Propagation Networks: A Flexible and Expressive Substrate for Computation</b></li>

@@ -1,6 +1,184 @@
 window.addEventListener("load", function(){
 
     var books = {
+        '#peep': [
+            {'name': 'Reinventing Organizations',
+             'id': 'reinvorg',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Peopleware',
+             'id': 'peopleware',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Good To Great',
+             'id': 'goodtogreat',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Becoming A Technical Leader',
+             'id': 'becomtechlead',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Emotional Intelligence 2.0',
+             'id': 'emointl',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'How to Win Friends and Influence People',
+             'id': 'winfriends',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Managing Humans',
+             'id': 'manhum',
+             'bold': false,
+             'desc': ''
+            },
+        ],
+        '#proj':[
+            {'name': 'Art of Agile Development',
+             'id': 'artagile',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Death March',
+             'id': 'deathm',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Extreme Programming Explained',
+             'id': 'xpexp',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Managerial Accounting',
+             'id': 'manacc',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Mythical Man Month',
+             'id': 'mythman',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Planning Extreme Programming',
+             'id': 'planxp',
+             'bold': false,
+             'desc': ''
+            },
+        ],
+        '#product':[
+            {'name': 'Code Complete',
+             'id': 'codecomp',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Productive Programmer',
+             'id': 'prodprog',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Growing Object-Oriented Software Guided by Tests',
+             'id': 'goos',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Harry Potter and the Methods of Rationality &#8224;',
+             'id': 'hpmor',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'How to Read a Book &#8224;',
+             'id': 'howread',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Pragmatic Programmer',
+             'id': 'pragprog',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'The Passionate Programmer',
+             'id': 'passion',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Working Effectively with Legacy Code',
+             'id': 'wfwlc',
+             'bold': false,
+             'desc': ''
+            },
+        ],
+        '#patterns':[
+            {'name': 'Clean Code',
+             'id': 'clean',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Algorithm Design Manual',
+             'id': 'adm',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Propagation Networks: A Flexible and Expressive Substrate for Computation',
+             'id': 'propnet',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Design Patterns',
+             'id': 'despat',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Domain Driven Design',
+             'id': 'ddd',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Implementing Domain Driven Design',
+             'id': 'iddd',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Patterns of Enterprise Application Architecture',
+             'id': 'poeaa',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Refactoring',
+             'id': 'refa',
+             'bold': false,
+             'desc': ''
+            }
+        ],
         '#pl': [
             {'name': 'Structure and Interpretation of Computer Programs (Scheme)',
              'id': 'sicp',
@@ -53,26 +231,27 @@ window.addEventListener("load", function(){
         ]
     };
 
-    var pl = $("#pl");
-    pl.empty();
-    $.map(books['#pl'], function(book) {
-        var name = book['name'];
-        if (book['bold']) {
-            name = $('<b>').append(name);
-        }
-        var bookId = "c-" + book['id'];
-        var bookDescId = "d-" + book['id'];
+    $.map(Object.keys(books), function(plId) {
+        var pl = $(plId);
+        pl.empty();
+        $.map(books[plId], function(book) {
+            var name = book['name'];
+            if (book['bold']) {
+                name = $('<b>').append(name);
+            }
+            var bookId = "c-" + book['id'];
+            var bookDescId = "d-" + book['id'];
 
-        var desc = $('<p hidden="true" id="' + bookDescId + '">').append(book['desc']);
-        pl.append($("<li id='" + bookId + "'>")
-                  .append(name)
-                  .append(desc));
+            var desc = $('<p hidden="true" id="' + bookDescId + '">').append(book['desc']);
+            pl.append($("<li id='" + bookId + "'>")
+                      .append(name)
+                      .append(desc));
 
-        $("#" + bookId).click(function() {
-            $("#" + bookDescId).toggle();
+            $("#" + bookId).click(function() {
+                $("#" + bookDescId).toggle();
+            });
         });
     });
 
 
-
-});;
+});
