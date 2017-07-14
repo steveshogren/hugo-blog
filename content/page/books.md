@@ -13,16 +13,8 @@ For how I pick what books to prioritize, check out my post <a class="homelink"
   <div class="col-md-6">
     <h3 class="centereded underline">Programming Languages</h3>
     <ul id="pl">
-      <li id="c-sicp">
-        <b></b>
-        <p hidden="true" id="d-sicp">
-          A fantastic dive into interpreters, functional programming,
-          abstraction design, OOP, immutability, collections, and lazy streams.
-          Includes over 300 exercises you can use to further solidify the
-          lessons. Everyone should work through this gem!
-        </p>
-      </li>
-      <li> <b>Programming Languages - Application And Interpretation (Typed Racket)</b> </li>
+      <li><b>Structure and Interpretation of Computer Programs (Scheme)</b></li>
+      <li><b>Programming Languages - Application And Interpretation (Typed Racket)</b></li>
       <li><b>Haskell Programming From First Principles</b></li>
       <li><b>Let Over Lambda (Common Lisp, Forth)</b></li>
       <li>Clojure Programming</li>
