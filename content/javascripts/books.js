@@ -5,43 +5,43 @@ window.addEventListener("load", function(){
             {'name': 'Reinventing Organizations',
              'id': 'reinvorg',
              'bold': true,
-             'desc': ''
+             'desc': 'Twelve case studies of companies who "self-regulate" and how they do it. These companies have fewer meetings, fewer managers, and report higher job satisfaction than their peer companies. The book finds trends in all tweleve and offers some suggestions for how to implement those trends. Ultimately a simple conclusion, but hard to put into practice. I found it indispensible for maintaining and improving a self-organizing team.'
             },
 
             {'name': 'Peopleware',
              'id': 'peopleware',
              'bold': true,
-             'desc': ''
+             'desc': 'A collection of many different bodies of research all composed into a straighforward and easy read. While the book doesn\'t dive too deep, it offers a lot of wisdom. Manditory reading for managers, and highly recommended for all developers.'
             },
 
             {'name': 'Good To Great',
              'id': 'goodtogreat',
              'bold': true,
-             'desc': ''
+             'desc': 'A set of case studies around companies that out-performed their competition and what trends made them different. In all cases it was servant leadership that was the defining factor. Has influenced my leadership styles immesurably.'
             },
 
             {'name': 'Becoming A Technical Leader',
              'id': 'becomtechlead',
              'bold': false,
-             'desc': ''
+             'desc': 'A fine read on the various aspects of gaining the trust of the organization and your peers.'
             },
 
             {'name': 'Emotional Intelligence 2.0',
              'id': 'emointl',
              'bold': false,
-             'desc': ''
+             'desc': 'Useful for gaining the terminology useful for being a good servant leader. Helped me think more about how I deal with emotions and confrontations in the workplace.'
             },
 
             {'name': 'How to Win Friends and Influence People',
              'id': 'winfriends',
              'bold': false,
-             'desc': ''
+             'desc': 'A manditory read for it\'s length and value.'
             },
 
             {'name': 'Managing Humans',
              'id': 'manhum',
              'bold': false,
-             'desc': ''
+             'desc': 'A humorous and easy read of a lot of stories experienced by the author.'
             },
         ],
         '#proj':[
@@ -140,19 +140,19 @@ window.addEventListener("load", function(){
             {'name': 'Algorithm Design Manual',
              'id': 'adm',
              'bold': true,
-             'desc': ''
+             'desc': 'Required reading for anyone not familiar with the underlying algorithms that make up most searching and sorting library functions. Also a great reference manual for advanced, infrequent algorithms.'
             },
 
             {'name': 'Propagation Networks: A Flexible and Expressive Substrate for Computation',
              'id': 'propnet',
              'bold': true,
-             'desc': ''
+             'desc': 'Fascinating whitepaper on a novel way to design constraint solvers using electric circuits as an underlying model.'
             },
 
             {'name': 'Design Patterns',
              'id': 'despat',
              'bold': false,
-             'desc': ''
+             'desc': 'Probably my least favorite book on this whole list, but still a necessary read to be able to clearly communicate with others who have read and adopted it. I think it is a dangerous book for developers, as they attempt to use the patterns to explain their whole codebase, often with many misapplications.'
             },
 
             {'name': 'Domain Driven Design',
