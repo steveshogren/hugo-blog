@@ -233,21 +233,14 @@ window.addEventListener("load", function(){
 
     $.map(Object.keys(books), function(plId) {
         var pl = $(plId);
-        pl.empty();
         $.map(books[plId], function(book) {
-            var name = book['name'];
-            if (book['bold']) {
-                name = $('<b>').append(name);
-            }
-            var bookId = "c-" + book['id'];
+            var bookId = "#c-" + book['id'];
             var bookDescId = "d-" + book['id'];
-
             var desc = $('<p hidden="true" id="' + bookDescId + '">').append(book['desc']);
-            pl.append($("<li id='" + bookId + "'>")
-                      .append(name)
-                      .append(desc));
+            var $book = $(bookId);
+            $book.append(desc);
 
-            $("#" + bookId).click(function() {
+            $book.click(function() {
                 $("#" + bookDescId).toggle();
             });
         });
