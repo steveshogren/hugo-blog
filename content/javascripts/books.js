@@ -1,184 +1,6 @@
 window.addEventListener("load", function(){
 
     var books = {
-        '#peep': [
-            {'name': 'Reinventing Organizations',
-             'id': 'reinvorg',
-             'bold': true,
-             'desc': 'Twelve case studies of companies who "self-regulate" and how they do it. These companies have fewer meetings, fewer managers, and report higher job satisfaction than their peer companies. The book finds trends in all tweleve and offers some suggestions for how to implement those trends. Ultimately a simple conclusion, but hard to put into practice. I found it indispensible for maintaining and improving a self-organizing team.'
-            },
-
-            {'name': 'Peopleware',
-             'id': 'peopleware',
-             'bold': true,
-             'desc': 'A collection of many different bodies of research all composed into a straighforward and easy read. While the book doesn\'t dive too deep, it offers a lot of wisdom. Manditory reading for managers, and highly recommended for all developers.'
-            },
-
-            {'name': 'Good To Great',
-             'id': 'goodtogreat',
-             'bold': true,
-             'desc': 'A set of case studies around companies that out-performed their competition and what trends made them different. In all cases it was servant leadership that was the defining factor. Has influenced my leadership styles immesurably.'
-            },
-
-            {'name': 'Becoming A Technical Leader',
-             'id': 'becomtechlead',
-             'bold': false,
-             'desc': 'A fine read on the various aspects of gaining the trust of the organization and your peers.'
-            },
-
-            {'name': 'Emotional Intelligence 2.0',
-             'id': 'emointl',
-             'bold': false,
-             'desc': 'Useful for gaining the terminology useful for being a good servant leader. Helped me think more about how I deal with emotions and confrontations in the workplace.'
-            },
-
-            {'name': 'How to Win Friends and Influence People',
-             'id': 'winfriends',
-             'bold': false,
-             'desc': 'A manditory read for it\'s length and value.'
-            },
-
-            {'name': 'Managing Humans',
-             'id': 'manhum',
-             'bold': false,
-             'desc': 'A humorous and easy read of a lot of stories experienced by the author.'
-            },
-        ],
-        '#proj':[
-            {'name': 'Art of Agile Development',
-             'id': 'artagile',
-             'bold': true,
-             'desc': ''
-            },
-
-            {'name': 'Death March',
-             'id': 'deathm',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Extreme Programming Explained',
-             'id': 'xpexp',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Managerial Accounting',
-             'id': 'manacc',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Mythical Man Month',
-             'id': 'mythman',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Planning Extreme Programming',
-             'id': 'planxp',
-             'bold': false,
-             'desc': ''
-            },
-        ],
-        '#product':[
-            {'name': 'Code Complete',
-             'id': 'codecomp',
-             'bold': true,
-             'desc': ''
-            },
-
-            {'name': 'Productive Programmer',
-             'id': 'prodprog',
-             'bold': true,
-             'desc': ''
-            },
-
-            {'name': 'Growing Object-Oriented Software Guided by Tests',
-             'id': 'goos',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Harry Potter and the Methods of Rationality &#8224;',
-             'id': 'hpmor',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'How to Read a Book &#8224;',
-             'id': 'howread',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Pragmatic Programmer',
-             'id': 'pragprog',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'The Passionate Programmer',
-             'id': 'passion',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Working Effectively with Legacy Code',
-             'id': 'wfwlc',
-             'bold': false,
-             'desc': ''
-            },
-        ],
-        '#patterns':[
-            {'name': 'Clean Code',
-             'id': 'clean',
-             'bold': true,
-             'desc': ''
-            },
-
-            {'name': 'Algorithm Design Manual',
-             'id': 'adm',
-             'bold': true,
-             'desc': 'Required reading for anyone not familiar with the underlying algorithms that make up most searching and sorting library functions. Also a great reference manual for advanced, infrequent algorithms.'
-            },
-
-            {'name': 'Propagation Networks: A Flexible and Expressive Substrate for Computation',
-             'id': 'propnet',
-             'bold': true,
-             'desc': 'Fascinating whitepaper on a novel way to design constraint solvers using electric circuits as an underlying model.'
-            },
-
-            {'name': 'Design Patterns',
-             'id': 'despat',
-             'bold': false,
-             'desc': 'Probably my least favorite book on this whole list, but still a necessary read to be able to clearly communicate with others who have read and adopted it. I think it is a dangerous book for developers, as they attempt to use the patterns to explain their whole codebase, often with many misapplications.'
-            },
-
-            {'name': 'Domain Driven Design',
-             'id': 'ddd',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Implementing Domain Driven Design',
-             'id': 'iddd',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Patterns of Enterprise Application Architecture',
-             'id': 'poeaa',
-             'bold': false,
-             'desc': ''
-            },
-
-            {'name': 'Refactoring',
-             'id': 'refa',
-             'bold': false,
-             'desc': ''
-            }
-        ],
         '#pl': [
             {'name': 'Structure and Interpretation of Computer Programs (Scheme)',
              'id': 'sicp',
@@ -228,7 +50,189 @@ window.addEventListener("load", function(){
              'id': 'taos',
              'bold': false,
              'desc': 'A great resource for learning the deeper parts of SQL.'}
-        ]
+        ],
+
+        '#peep': [
+            {'name': 'Reinventing Organizations',
+             'id': 'reinvorg',
+             'bold': true,
+             'desc': 'Twelve case studies of companies who "self-regulate" and how they do it. These companies have fewer meetings, fewer managers, and report higher job satisfaction than their peer companies. The book finds trends in all tweleve and offers some suggestions for how to implement those trends. Ultimately a simple conclusion, but hard to put into practice. I found it indispensible for maintaining and improving a self-organizing team.'
+            },
+
+            {'name': 'Peopleware',
+             'id': 'peopleware',
+             'bold': true,
+             'desc': 'A collection of many different bodies of research all composed into a straighforward and easy read. While the book doesn\'t dive too deep, it offers a lot of wisdom. Manditory reading for managers, and highly recommended for all developers.'
+            },
+
+            {'name': 'Good To Great',
+             'id': 'goodtogreat',
+             'bold': true,
+             'desc': 'A set of case studies around companies that out-performed their competition and what trends made them different. In all cases it was servant leadership that was the defining factor. Has influenced my leadership styles immesurably.'
+            },
+
+            {'name': 'Becoming A Technical Leader',
+             'id': 'becomtechlead',
+             'bold': false,
+             'desc': 'A fine read on the various aspects of gaining the trust of the organization and your peers.'
+            },
+
+            {'name': 'Emotional Intelligence 2.0',
+             'id': 'emointl',
+             'bold': false,
+             'desc': 'Useful for gaining the terminology useful for being a good servant leader. Helped me think more about how I deal with emotions and confrontations in the workplace.'
+            },
+
+            {'name': 'How to Win Friends and Influence People',
+             'id': 'winfriends',
+             'bold': false,
+             'desc': 'A manditory read for it\'s length and value.'
+            },
+
+            {'name': 'Managing Humans',
+             'id': 'manhum',
+             'bold': false,
+             'desc': 'A humorous and easy read of a lot of stories experienced by the author.'
+            },
+        ],
+
+        '#proj':[
+            {'name': 'Art of Agile Development',
+             'id': 'artagile',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Death March',
+             'id': 'deathm',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Extreme Programming Explained',
+             'id': 'xpexp',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Managerial Accounting',
+             'id': 'manacc',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Mythical Man Month',
+             'id': 'mythman',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Planning Extreme Programming',
+             'id': 'planxp',
+             'bold': false,
+             'desc': ''
+            },
+        ],
+
+        '#product':[
+            {'name': 'Code Complete',
+             'id': 'codecomp',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Productive Programmer',
+             'id': 'prodprog',
+             'bold': true,
+             'desc': ''
+            },
+
+            {'name': 'Growing Object-Oriented Software Guided by Tests',
+             'id': 'goos',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Harry Potter and the Methods of Rationality &#8224;',
+             'id': 'hpmor',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'How to Read a Book &#8224;',
+             'id': 'howread',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Pragmatic Programmer',
+             'id': 'pragprog',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'The Passionate Programmer',
+             'id': 'passion',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Working Effectively with Legacy Code',
+             'id': 'wfwlc',
+             'bold': false,
+             'desc': ''
+            },
+        ],
+
+        '#patterns':[
+            {'name': 'Clean Code',
+             'id': 'clean',
+             'bold': true,
+             'desc': 'A short, useful book of common patterns to make code easier to read. Much of the content of this book has seeped into the public consciousness of the developer community, but still worth reading.'
+            },
+
+            {'name': 'Algorithm Design Manual',
+             'id': 'adm',
+             'bold': true,
+             'desc': 'Required reading for anyone not familiar with the underlying algorithms that make up most searching and sorting library functions. Also a great reference manual for advanced, infrequent algorithms.'
+            },
+
+            {'name': 'Propagation Networks: A Flexible and Expressive Substrate for Computation',
+             'id': 'propnet',
+             'bold': true,
+             'desc': 'Fascinating thesis on a novel way to design constraint solvers using electric circuits as an underlying model.'
+            },
+
+            {'name': 'Design Patterns',
+             'id': 'despat',
+             'bold': false,
+             'desc': 'A dangerous book for developers, since most attempt to use the patterns to explain their whole codebase, often with many misapplications. I recommend you never try to apply a pattern found within, only identify places where it already exists and name them such. Most codebases might only have one or two, and attempting to force any others causes poor code. Yet the book is a necessary read to be able to clearly communicate with others who have read and adopted it.'
+            },
+
+            {'name': 'Domain Driven Design',
+             'id': 'ddd',
+             'bold': false,
+             'desc': 'One of the most dangerous books on this list, I recommend most developers read this only when they are confident they will not be persuaded to implement the patterns within without serious reflection. Some of the worst code I have ever seen was written directly after reading this book, in attempt to apply its patterns.'
+            },
+
+            {'name': 'Implementing Domain Driven Design',
+             'id': 'iddd',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Patterns of Enterprise Application Architecture',
+             'id': 'poeaa',
+             'bold': false,
+             'desc': ''
+            },
+
+            {'name': 'Refactoring',
+             'id': 'refa',
+             'bold': false,
+             'desc': ''
+            }
+        ],
     };
 
     $.map(Object.keys(books), function(plId) {
