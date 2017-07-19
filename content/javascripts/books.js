@@ -195,6 +195,23 @@ window.addEventListener("load", function(){
         ],
     };
 
+    var bookIconAndDescList = [];
+
+    var showBookDesc = function(bookIconId, bookDescId) {
+        $.map(bookIconAndDescList, function(bookIds) {
+            hideBookDesc(bookIds.bookIconId, bookIds.bookDescId);
+        });
+        $("#" + bookIconId).removeClass();
+        $("#" + bookIconId).addClass("icon fa fa-minus-square-o");
+        $("#" + bookDescId).show();
+    };
+
+    var hideBookDesc = function(bookIconId, bookDescId) {
+        $("#" + bookIconId).removeClass();
+        $("#" + bookIconId).addClass("icon fa fa-plus-square-o");
+        $("#" + bookDescId).hide();
+    };
+
     $.map(Object.keys(books), function(plId) {
         var pl = $(plId);
         $.map(books[plId], function(book) {
@@ -209,16 +226,15 @@ window.addEventListener("load", function(){
                 $book.prepend($('<span id="' + bookIconId + '" class="icon fa fa-plus-square-o">'));
                 $book.append(desc);
 
+                bookIconAndDescList.push({'bookIconId':bookIconId, 'bookDescId':bookDescId});
+
                 $book.click(function() {
                     var $bookDesc = $("#" + bookDescId);
+                    bookIconAndDescList.push($bookDesc);
                     if($bookDesc.is(":visible")) {
-                        $("#" + bookIconId).removeClass();
-                        $("#" + bookIconId).addClass("icon fa fa-plus-square-o");
-                        $("#" + bookDescId).hide();
+                        hideBookDesc(bookIconId, bookDescId);
                     } else {
-                        $("#" + bookIconId).removeClass();
-                        $("#" + bookIconId).addClass("icon fa fa-minus-square-o");
-                        $("#" + bookDescId).show();
+                        showBookDesc(bookIconId, bookDescId);
                     }
                 });
             }
