@@ -16,7 +16,7 @@ window.addEventListener("load", function(){
             },
             {'name': 'Let Over Lambda (Common Lisp, Forth)',
              'id': 'lol',
-             'desc': 'No book has made me sit back and hold my pounding head more than Let Over Lambda. A deep dive into lisp macros, both reader and anaphoric. The final project is remaking Forth inside Common Lisp using macros. Yeah, you read that right.'
+             'desc': 'No book has made me sit back and hold my pounding head more than Let Over Lambda. A deep dive into lisp macros, both reader and anaphoric. The final project is remaking Forth inside Common Lisp using macros. Yep, you read that right.'
             },
             {'name': 'Clojure Programming',
              'id': 'cp',
@@ -29,7 +29,7 @@ window.addEventListener("load", function(){
              'desc': 'I tried to read this book without any Haskell experience. Four years later I finished it, after stopping and starting it several times to learn more Haskell fundamentals. By the end, I had a much better grasp of the different ways the Haskell type system could be used to represent complex domains. The domains of CSS, JS, and HTML are all modeled in the type system in type-safe models.'},
             {'name': 'Javascript the Good Parts',
              'id': 'jstgp',
-             'desc': 'A short book. Nuff\' said ;). I joke, this is an ESSENTIAL read for anyone who ever writes Javascript.'},
+             'desc': 'A short book. I joke, this is an essential read for anyone who desires to write better Javascript or understand the language more fully.'},
             {'name': 'Learn You a Haskell',
              'id': 'lyah',
              'desc': 'A short, humorous survey of a lot of Haskell. Afterwards, I really needed more substance and exercises to solidify my knowledge, but it helped me to get over my fear of spooky Haskell.'},
@@ -165,7 +165,7 @@ window.addEventListener("load", function(){
 
             {'name': 'Propagation Networks: A Flexible and Expressive Substrate for Computation',
              'id': 'propnet',
-             'desc': 'Fascinating thesis on a novel way to design constraint solvers using electric circuits as an underlying model.'
+             'desc': 'Fascinating thesis about a novel way to design constraint solvers using electric circuits as an underlying model.'
             },
 
             {'name': 'Design Patterns',
@@ -216,27 +216,29 @@ window.addEventListener("load", function(){
         var pl = $(plId);
         $.map(books[plId], function(book) {
             var description = book['desc'];
+            var bookId = "#c-" + book['id'];
+            var $book = $(bookId);
+            $book.addClass("bookList");
             if( description) {
-                var bookId = "#c-" + book['id'];
                 var bookDescId = "d-" + book['id'];
                 var bookIconId = "i-" + book['id'];
-                var desc = $('<p class="bookDesc" hidden="true" id="' + bookDescId + '">').append(description);
-                var $book = $(bookId);
-                $book.addClass("onHover bookList");
                 $book.prepend($('<span id="' + bookIconId + '" class="icon fa fa-plus-square-o">'));
+                var desc = $('<p class="bookDesc" hidden="true" id="' + bookDescId + '">').append(description);
                 $book.append(desc);
+                $book.addClass("onHover");
 
                 bookIconAndDescList.push({'bookIconId':bookIconId, 'bookDescId':bookDescId});
 
                 $book.click(function() {
                     var $bookDesc = $("#" + bookDescId);
-                    bookIconAndDescList.push($bookDesc);
                     if($bookDesc.is(":visible")) {
                         hideBookDesc(bookIconId, bookDescId);
                     } else {
                         showBookDesc(bookIconId, bookDescId);
                     }
                 });
+            } else {
+                $book.prepend($('<span class="icon fa fa-circle">'));
             }
         });
     });
