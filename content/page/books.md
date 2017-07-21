@@ -7,22 +7,23 @@ title = "Books That Shape My Thinking"
 For how I pick what books to prioritize, check out my post <a class="homelink"
                                                               href="/next-book">"What Book Should I Read Next?"</a>.
 
-<b>Bold</b> are my highest recommendations.
+<b>Bold</b> are my highest recommendations. The <span class="icon fa
+fa-plus-circle" /> indicates a link with a summary.
 
 <div class="col-md-12">
   <div class="col-md-6">
     <h3 class="centereded underline">Programming Languages</h3>
     <ul id="pl">
-      <li id="c-sicp"><b>Structure and Interpretation of Computer Programs (Scheme)</b></li>
-      <li id="c-pl"><b>Programming Languages - Application And Interpretation (Typed Racket)</b></li>
+      <li id="c-sicp"><b>Structure and Interpretation of Computer Programs (Scheme) *</b></li>
+      <li id="c-pl"><b>Programming Languages - Application And Interpretation (Typed Racket) *</b></li>
       <li id="c-hpffp"><b>Haskell Programming From First Principles</b></li>
-      <li id="c-lol"><b>Let Over Lambda (Common Lisp, Forth)</b></li>
+      <li id="c-lol"><b>Let Over Lambda (Common Lisp, Forth) *</b></li>
       <li id="c-cp">Clojure Programming</li>
       <li id="c-fsharp">F# 3.0</li>
       <li id="c-hay">Haskell And Yesod</li>
       <li id="c-jstgp">Javascript the Good Parts</li>
-      <li id="c-lyah">Learn You a Haskell</li>
-      <li id="c-sfs">Software Foundations (Coq)</li>
+      <li id="c-lyah">Learn You a Haskell For Great Good! *</li>
+      <li id="c-sfs">Software Foundations (Coq) *</li>
       <li id="c-taos">The Art of SQL</li>
     </ul>
   </div>
@@ -57,7 +58,7 @@ For how I pick what books to prioritize, check out my post <a class="homelink"
       <li id="c-codecomp"><b>Code Complete</b></li>
       <li id="c-prodprog"><b>Productive Programmer</b></li>
       <li id="c-goos">Growing Object-Oriented Software Guided by Tests</li>
-      <li id="c-hpmor">Harry Potter and the Methods of Rationality &#8224;</li>
+      <li id="c-hpmor">Harry Potter and the Methods of Rationality * &#8224;</li>
       <li id="c-howread">How to Read a Book &#8224;</li>
       <li id="c-pragprog">Pragmatic Programmer</li>
       <li id="c-passion">The Passionate Programmer</li>
@@ -71,7 +72,7 @@ For how I pick what books to prioritize, check out my post <a class="homelink"
     <ul id="patterns">
       <li id="c-clean"><b>Clean Code</b></li>
       <li id="c-adm"><b>Algorithm Design Manual</b></li>
-      <li id="c-propnet"><b>Propagation Networks: A Flexible and Expressive Substrate for Computation</b></li>
+      <li id="c-propnet"><b>Propagation Networks: A Flexible and Expressive Substrate for Computation *</b></li>
       <li id="c-ddd">Domain Driven Design</li>
       <li id="c-iddd">Implementing Domain Driven Design</li>
       <li id="c-poeaa">Patterns of Enterprise Application Architecture</li>
@@ -80,6 +81,7 @@ For how I pick what books to prioritize, check out my post <a class="homelink"
     </ul>
   </div>
 </div>
-&#8224; Not directly related, but highly applicable
+<div>* Free resource</div>
+<div>&#8224; Not directly related, but highly applicable</div>
 
 <script type="text/javascript" src="/javascripts/books.js"></script>

@@ -29,7 +29,7 @@ window.addEventListener("load", function(){
              'desc': 'I tried to read this book without any Haskell experience. Four years later I finished it, after stopping and starting it several times to learn more Haskell fundamentals. By the end, I had a much better grasp of the different ways the Haskell type system could be used to represent complex domains. The domains of CSS, JS, and HTML are all modeled in the type system in type-safe models.'},
             {'name': 'Javascript the Good Parts',
              'id': 'jstgp',
-             'desc': 'A short book. I joke, this is an essential read for anyone who desires to write better Javascript or understand the language more fully.'},
+             'desc': 'A short book. But seriously, this is an essential read for anyone who desires to write better Javascript or understand the language more fully.'},
             {'name': 'Learn You a Haskell',
              'id': 'lyah',
              'desc': 'A short, humorous survey of a lot of Haskell. Afterwards, I really needed more substance and exercises to solidify my knowledge, but it helped me to get over my fear of spooky Haskell.'},
@@ -64,7 +64,7 @@ window.addEventListener("load", function(){
 
             {'name': 'Emotional Intelligence 2.0',
              'id': 'emointl',
-             'desc': 'Useful for gaining the terminology useful for being a good servant leader. Helped me think more about how I deal with emotions and confrontations in the workplace.'
+             'desc': 'Helped me think more about how I deal with emotions and confrontations in the workplace.'
             },
 
             {'name': 'How to Win Friends and Influence People',
@@ -175,7 +175,7 @@ window.addEventListener("load", function(){
 
             {'name': 'Domain Driven Design',
              'id': 'ddd',
-             'desc': 'One of the most dangerous books on this list, I recommend most developers read this only when they are confident they will not be persuaded to implement the patterns within without serious reflection. Some of the worst code I have ever seen was written directly after reading this book, in attempt to apply its patterns.'
+             'desc': 'One of the most dangerous books on this list, I recommend most developers read this only when they are confident they will not be persuaded to implement the patterns without serious reflection. Some of the worst code I have ever seen was written directly after reading this book, in attempt to apply its patterns.'
             },
 
             {'name': 'Implementing Domain Driven Design',
@@ -202,13 +202,13 @@ window.addEventListener("load", function(){
             hideBookDesc(bookIds.bookIconId, bookIds.bookDescId);
         });
         $("#" + bookIconId).removeClass();
-        $("#" + bookIconId).addClass("icon fa fa-minus-square-o");
+        $("#" + bookIconId).addClass("icon fa fa-minus-circle");
         $("#" + bookDescId).show();
     };
 
     var hideBookDesc = function(bookIconId, bookDescId) {
         $("#" + bookIconId).removeClass();
-        $("#" + bookIconId).addClass("icon fa fa-plus-square-o");
+        $("#" + bookIconId).addClass("icon fa fa-plus-circle");
         $("#" + bookDescId).hide();
     };
 
@@ -222,7 +222,7 @@ window.addEventListener("load", function(){
             if( description) {
                 var bookDescId = "d-" + book['id'];
                 var bookIconId = "i-" + book['id'];
-                $book.prepend($('<span id="' + bookIconId + '" class="icon fa fa-plus-square-o">'));
+                $book.prepend($('<span id="' + bookIconId + '" class="icon fa fa-plus-circle">'));
                 var desc = $('<p class="bookDesc" hidden="true" id="' + bookDescId + '">').append(description);
                 $book.append(desc);
                 $book.addClass("onHover");
