@@ -57,7 +57,7 @@ fa-plus-circle" /> indicates a link with a summary.
     <ul id="product">
       <li id="c-codecomp"><b>Code Complete</b></li>
       <li id="c-prodprog"><b>Productive Programmer</b></li>
-      <li id="c-hpmor"><b>Harry Potter and the Methods of Rationality * &#8224;</b></li>
+      <li id="c-hpmor"><b>Harry Potter and the Methods of Rationality*&#8224;</b></li>
       <li id="c-goos">Growing Object-Oriented Software Guided by Tests</li>
       <li id="c-howread">How to Read a Book &#8224;</li>
       <li id="c-pragprog">Pragmatic Programmer</li>

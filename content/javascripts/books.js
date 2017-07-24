@@ -126,9 +126,9 @@ window.addEventListener("load", function(){
              'desc': ''
             },
 
-            {'name': 'Harry Potter and the Methods of Rationality &#8224;',
+            {'name': 'Harry Potter and the Methods of Rationality&#8224;',
              'id': 'hpmor',
-             'desc': 'An entertaining book that illustrates how to apply the scientific method to day-to-day life. My abilities as a developer improved greatly after reading and internalizing this book.'
+             'desc': 'An entertaining book that illustrates how to apply the scientific method to day-to-day life. After reading and internalizing this book, my abilities as a developer improved greatly.'
             },
 
             {'name': 'How to Read a Book &#8224;',
@@ -175,7 +175,7 @@ window.addEventListener("load", function(){
 
             {'name': 'Domain Driven Design',
              'id': 'ddd',
-             'desc': 'One of the most dangerous books on this list, I recommend most developers read this only when they are confident they will not be persuaded to implement the patterns without serious reflection. Some of the worst code I have ever seen was written directly after reading this book, in attempt to apply its patterns.'
+             'desc': 'One of the most dangerous books on this list. I recommend most developers read this only when they are confident they will not be persuaded to implement the patterns without serious reflection. Some of the worst code I have ever seen was written directly after reading this book, in an attempt to over-fit the patterns where they did not belong.'
             },
 
             {'name': 'Implementing Domain Driven Design',
