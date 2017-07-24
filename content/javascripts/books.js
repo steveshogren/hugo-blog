@@ -20,16 +20,16 @@ window.addEventListener("load", function(){
             },
             {'name': 'Clojure Programming',
              'id': 'cp',
-             'desc': 'My favorite Clojure book of the three I have read. A great introduction to the language.'},
+             'desc': ''},
             {'name': 'F# 3.0',
              'id': 'fsharp',
-             'desc': 'My favorite F# book of the several I have read. Recommended for anyone wanting to dive more into the language.'},
+             'desc': ''},
             {'name': 'Haskell And Yesod',
              'id': 'hay',
-             'desc': 'I tried to read this book without any Haskell experience. Four years later I finished it, after stopping and starting it several times to learn more Haskell fundamentals. By the end, I had a much better grasp of the different ways the Haskell type system could be used to represent complex domains. The domains of CSS, JS, and HTML are all modeled in the type system in type-safe models.'},
+             'desc': 'Taught me a lot about the different ways the Haskell type system could be used to represent complex domains. The book explains how CSS, JS, and HTML can all designed in the type system in ways to prevent bugs.'},
             {'name': 'Javascript the Good Parts',
              'id': 'jstgp',
-             'desc': 'A short book. But seriously, this is an essential read for anyone who desires to write better Javascript or understand the language more fully.'},
+             'desc': ''},
             {'name': 'Learn You a Haskell',
              'id': 'lyah',
              'desc': 'A short, humorous survey of a lot of Haskell. Afterwards, I really needed more substance and exercises to solidify my knowledge, but it helped me to get over my fear of spooky Haskell.'},
@@ -38,43 +38,43 @@ window.addEventListener("load", function(){
              'desc': 'I am in the middle this book\'s exercises, but so far it is amazing. I cannot in good faith give it a bold recommendation until I have finished it, but right now it is tied with Let Over Lambda for mind-bending concepts. Until you have represented numbers as cons cells, which you then use to prove the commutivity of multiplication IN the type system, you haven\'t really felt brain pain ;)'},
             {'name': 'The Art of SQL',
              'id': 'taos',
-             'desc': 'A great resource for learning the deeper parts of SQL.'}
+             'desc': ''}
         ],
 
         '#peep': [
             {'name': 'Reinventing Organizations',
              'id': 'reinvorg',
-             'desc': 'Twelve case studies of companies who "self-regulate" and how they do it. These companies have fewer meetings, fewer managers, and report higher job satisfaction than their peer companies. The book finds trends in all tweleve and offers some suggestions for how to implement those trends. Ultimately a simple conclusion, but hard to put into practice. I found it indispensible for maintaining and improving a self-organizing team.'
+             'desc': 'Twelve case studies of companies who "self-correct" and how they do it. These companies have fewer meetings, fewer managers, and report higher job satisfaction than their peer companies. The book finds trends in all tweleve and offers some suggestions for how to implement those trends. Ultimately a simple conclusion, but hard to put into practice. I found it indispensible for maintaining and improving a self-organizing team.'
             },
 
             {'name': 'Peopleware',
              'id': 'peopleware',
-             'desc': 'A collection of many different bodies of research all composed into a straighforward and easy read. While the book doesn\'t dive too deep, it offers a lot of wisdom. Manditory reading for managers, and highly recommended for all developers.'
+             'desc': 'A collection of many different bodies of research all composed into a straighforward and easy read. While the book doesn\'t dive too deep in any one topic, it offers a lot of practical wisdom. Manditory reading for managers, and highly recommended for all developers.'
             },
 
             {'name': 'Good To Great',
              'id': 'goodtogreat',
-             'desc': 'A set of case studies around companies that out-performed their competition and what trends made them different. In all cases it was servant leadership that was the defining factor. Has influenced my leadership styles immesurably.'
+             'desc': 'A set of case studies around companies that out-performed their competition and what trends made them different. In all cases, servant leadership was the defining factor. Has influenced my leadership styles immesurably.'
             },
 
             {'name': 'Becoming A Technical Leader',
              'id': 'becomtechlead',
-             'desc': 'A fine read on the various aspects of gaining the trust of the organization and your peers.'
+             'desc': ''
             },
 
             {'name': 'Emotional Intelligence 2.0',
              'id': 'emointl',
-             'desc': 'Helped me think more about how I deal with emotions and confrontations in the workplace.'
+             'desc': ''
             },
 
             {'name': 'How to Win Friends and Influence People',
              'id': 'winfriends',
-             'desc': 'A manditory read for it\'s length and value.'
+             'desc': ''
             },
 
             {'name': 'Managing Humans',
              'id': 'manhum',
-             'desc': 'A humorous and easy read of a lot of stories experienced by the author.'
+             'desc': ''
             },
         ],
 
@@ -128,7 +128,7 @@ window.addEventListener("load", function(){
 
             {'name': 'Harry Potter and the Methods of Rationality &#8224;',
              'id': 'hpmor',
-             'desc': ''
+             'desc': 'An entertaining book that illustrates how to apply the scientific method to day-to-day life. My abilities as a developer improved greatly after reading and internalizing this book.'
             },
 
             {'name': 'How to Read a Book &#8224;',
@@ -165,12 +165,12 @@ window.addEventListener("load", function(){
 
             {'name': 'Propagation Networks: A Flexible and Expressive Substrate for Computation',
              'id': 'propnet',
-             'desc': 'Fascinating thesis about a novel way to design constraint solvers using electric circuits as an underlying model.'
+             'desc': 'Fascinating thesis about designing high-performance constraint solvers using electric circuits as an underlying model.'
             },
 
             {'name': 'Design Patterns',
              'id': 'despat',
-             'desc': 'A dangerous book for developers, since most attempt to use the patterns to explain their whole codebase, often with many misapplications. I recommend you never try to apply a pattern found within, only identify places where it already exists and name them such. Most codebases might only have one or two, and attempting to force any others causes poor code. Yet the book is a necessary read to be able to clearly communicate with others who have read and adopted it.'
+             'desc': 'A dangerous book. Readers often attempt to over-fit the patterns to their whole codebase. I recommend the reader start by never applying the patterns found within, only identify places where they already exist. My favorite wisdom on the subject: \'even if you do not know the design patterns, good coding practices will drive you to implement them anyway.\' <br /> Most codebases I have seen might only have one or two places where a given pattern should exist. Forcing any pattern without need causes poor code. Despite the danger, the book is a valuable read to be able to clearly communicate with others who have read and adopted it.'
             },
 
             {'name': 'Domain Driven Design',

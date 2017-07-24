@@ -30,7 +30,7 @@ fa-plus-circle" /> indicates a link with a summary.
   <div class="col-md-6">
     <h3 class="centereded underline">People Management</h3>
     <ul id="peep">
-      <li id="c-reinvorg"><b>Reinventing Organizations</b></li>
+      <li id="c-reinvorg"><b>Reinventing Organizations *</b></li>
       <li id="c-peopleware"><b>Peopleware</b></li>
       <li id="c-goodtogreat"><b>Good To Great</b></li>
       <li id="c-becomtechlead">Becoming A Technical Leader</li>
@@ -57,8 +57,8 @@ fa-plus-circle" /> indicates a link with a summary.
     <ul id="product">
       <li id="c-codecomp"><b>Code Complete</b></li>
       <li id="c-prodprog"><b>Productive Programmer</b></li>
+      <li id="c-hpmor"><b>Harry Potter and the Methods of Rationality * &#8224;</b></li>
       <li id="c-goos">Growing Object-Oriented Software Guided by Tests</li>
-      <li id="c-hpmor">Harry Potter and the Methods of Rationality * &#8224;</li>
       <li id="c-howread">How to Read a Book &#8224;</li>
       <li id="c-pragprog">Pragmatic Programmer</li>
       <li id="c-passion">The Passionate Programmer</li>
@@ -73,10 +73,10 @@ fa-plus-circle" /> indicates a link with a summary.
       <li id="c-clean"><b>Clean Code</b></li>
       <li id="c-adm"><b>Algorithm Design Manual</b></li>
       <li id="c-propnet"><b>Propagation Networks: A Flexible and Expressive Substrate for Computation *</b></li>
-      <li id="c-ddd">Domain Driven Design</li>
-      <li id="c-iddd">Implementing Domain Driven Design</li>
       <li id="c-poeaa">Patterns of Enterprise Application Architecture</li>
       <li id="c-refa">Refactoring</li>
+      <li id="c-ddd">Domain Driven Design</li>
+      <li id="c-iddd">Implementing Domain Driven Design</li>
       <li id="c-despat">Design Patterns</li>
     </ul>
   </div>
