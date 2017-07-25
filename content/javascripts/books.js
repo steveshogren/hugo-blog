@@ -4,11 +4,11 @@ window.addEventListener("load", function(){
         '#pl': [
             {'name': 'Structure and Interpretation of Computer Programs (Scheme)',
              'id': 'sicp',
-             'desc': 'Covers data structures, interpreters, functional programming, abstraction design, OOP, type heirachies, immutability, collections, and lazy streams. Instead of just providing text on those, it makes you build them using 350+ exercises. One of my highest recommendations. My opinion is that all serious professional programers who want to improve their skills in any language should work through this book.'
+             'desc': 'Covers data structures, interpreters, functional programming, abstraction design, OOP, type heirachies, immutability, collections, and lazy streams. Instead of just providing text on those, it makes you build them using 350+ exercises. One of my highest recommendations. My opinion is that all serious professional programers who want to improve their skills in any language should work through this book. <a target="_blank" href="https://mitpress.mit.edu/sicp/full-text/book/book.html">Free download</a>'
             },
             {'name': 'Programming Languages - Application And Interpretation (Typed Racket)',
              'id': 'pl',
-             'desc': 'A deep dive on interpreters and language building. While reading the book, the exercises were converted from Racket to Typed Racket, which gave me a fascinating view on the value of a good type system for keeping a complex domain easy to understand.'
+             'desc': 'A deep dive on interpreters and language building. While reading the book, the exercises were converted from Racket to Typed Racket, which gave me a fascinating view on the value of a good type system for keeping a complex domain easy to understand. <a target="_blank" href="http://cs.brown.edu/~sk/Publications/Books/ProgLangs/">Free download</a>'
             },
             {'name': 'Haskell Programming From First Principles',
              'id': 'hpffp',
@@ -16,7 +16,7 @@ window.addEventListener("load", function(){
             },
             {'name': 'Let Over Lambda (Common Lisp, Forth)',
              'id': 'lol',
-             'desc': 'No book has made me sit back and hold my pounding head more than Let Over Lambda. A deep dive into lisp macros, both reader and anaphoric. The final project is remaking Forth inside Common Lisp using macros. Yep, you read that right.'
+             'desc': 'No book has made me sit back and hold my pounding head more than Let Over Lambda. A deep dive into lisp macros, both reader and anaphoric. The final project is remaking Forth inside Common Lisp using macros. Yep, you read that right. <a target="_blank" href="https://letoverlambda.com/index.cl/toc">Free download</a>'
             },
             {'name': 'Clojure Programming',
              'id': 'cp',
@@ -32,10 +32,10 @@ window.addEventListener("load", function(){
              'desc': ''},
             {'name': 'Learn You a Haskell',
              'id': 'lyah',
-             'desc': 'A short, humorous survey of a lot of Haskell. Afterwards, I really needed more substance and exercises to solidify my knowledge, but it helped me to get over my fear of spooky Haskell.'},
+             'desc': 'A short, humorous survey of a lot of Haskell. Afterwards, I really needed more substance and exercises to solidify my knowledge, but it helped me to get over my fear of spooky Haskell. <a target="_blank" href="http://learnyouahaskell.com/">Free download</a>'},
             {'name': 'Software Foundations (Coq)',
              'id': 'sfs',
-             'desc': 'I am in the middle this book\'s exercises, but so far it is amazing. I cannot in good faith give it a bold recommendation until I have finished it, but right now it is tied with Let Over Lambda for mind-bending concepts. Until you have represented numbers as cons cells, which you then use to prove the commutivity of multiplication IN the type system, you haven\'t really felt brain pain ;)'},
+             'desc': 'I am in the middle this book\'s exercises, but so far it is amazing. I cannot in good faith give it a bold recommendation until I have finished it, but right now it is tied with Let Over Lambda for mind-bending concepts. Until you have represented numbers as cons cells, which you then use to prove the commutivity of multiplication IN the type system, you haven\'t really felt brain pain ;) <a target="_blank" href="https://softwarefoundations.cis.upenn.edu/current/index.html">Free download</a>'},
             {'name': 'The Art of SQL',
              'id': 'taos',
              'desc': ''}
@@ -44,7 +44,7 @@ window.addEventListener("load", function(){
         '#peep': [
             {'name': 'Reinventing Organizations',
              'id': 'reinvorg',
-             'desc': 'Twelve case studies of companies who "self-correct" and how they do it. These companies have fewer meetings, fewer managers, and report higher job satisfaction than their peer companies. The book finds trends in all tweleve and offers some suggestions for how to implement those trends. Ultimately a simple conclusion, but hard to put into practice. I found it indispensible for maintaining and improving a self-organizing team.'
+             'desc': 'Twelve case studies of companies who "self-correct" and how they do it. These companies have fewer meetings, fewer managers, and report higher job satisfaction than their peer companies. The book finds trends in all tweleve and offers some suggestions for how to implement those trends. Ultimately a simple conclusion, but hard to put into practice. I found it indispensible for maintaining and improving a self-organizing team. <a target="_blank" href="http://www.reinventingorganizations.com/pay-what-feels-right.html">Free download</a>'
             },
 
             {'name': 'Peopleware',
@@ -128,7 +128,7 @@ window.addEventListener("load", function(){
 
             {'name': 'Harry Potter and the Methods of Rationality&#8224;',
              'id': 'hpmor',
-             'desc': 'An entertaining book that illustrates how to apply the scientific method to day-to-day life. After reading and internalizing this book, my abilities as a developer improved greatly.'
+             'desc': 'An entertaining book that illustrates how to apply the scientific method to day-to-day life. After reading and internalizing this book, my abilities as a developer improved greatly. <a target="_blank" href="http://www.hpmor.com/">Free download</a>'
             },
 
             {'name': 'How to Read a Book &#8224;',
@@ -165,7 +165,7 @@ window.addEventListener("load", function(){
 
             {'name': 'Propagation Networks: A Flexible and Expressive Substrate for Computation',
              'id': 'propnet',
-             'desc': 'Fascinating thesis about designing high-performance constraint solvers using electric circuits as an underlying model.'
+             'desc': 'Fascinating thesis about designing high-performance constraint solvers using electric circuits as an underlying model. <a target="_blank" href="https://dspace.mit.edu/handle/1721.1/54635">Free download</a>'
             },
 
             {'name': 'Design Patterns',
