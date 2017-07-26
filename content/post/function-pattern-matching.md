@@ -1,6 +1,5 @@
 +++
 title = "Pattern Matching - Making the Compiler Work For You"
-top = "yes"
 Categories = ["Technical Skills", "fsharp"]
 Tags = []
 dev = "yes"

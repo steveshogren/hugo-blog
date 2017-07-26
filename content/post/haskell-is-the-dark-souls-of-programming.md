@@ -3,7 +3,6 @@ title = "Haskell is the Dark Souls of Programming"
 date = "2016-02-06"
 banner="/images/altar_of_sunlight.gif"
 Categories = ["haskell", "Technical Skills"]
-top = "yes"
 dev="yes"
 +++
 
