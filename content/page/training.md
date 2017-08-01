@@ -64,7 +64,7 @@ While daunting, you should get an idea for the whole course up front and decide
 if you have the time to pursue it. No one can promise how long it will take, but
 the average for the first three students was roughly 500 hours of "hands on
 keyboard" work. In the grand scheme of things, 500 hours for a new career isn't
-that much, but not everyone is willing or able to put that much time.
+that much, but not everyone is willing or able to put in that much time.
 
 Read through this whole page and get a sense of the structure of the course.
 Each step will make more sense if you understand where it fits in the larger
@@ -89,7 +89,7 @@ get something working or complete an exercise.
 
 Make sure you push your changes as often as possible (at least semi-hourly). If
 your computer ever dies, you will have lost no more than an hour or two of work,
-because everything is backed up. This will have the side-effect of giving you an
+because everything is backed up. This will have the side effect of giving you an
 online portfolio of all the work you do.
 
 > Immediately commit and push any code you want to keep safe
@@ -129,10 +129,10 @@ Use TDD with either Python or Javascript to finish three small katas from the
 [Kata Catalog](http://codingdojo.org/cgi-bin/index.pl?KataCatalogue). We
 recommend KataTennis, KataRomanNumerals, and KataBowling. 
 
-For the rest of the course, we recommend you do **thirty minutes of kata practice
-every day**. Redo the same kata multiple times, until you can do it effortlessly
-in both Python and Javascript. Each time commit the work to GitHub, as it will
-continue to add to your online portfolio.
+For the rest of the course, we recommend you do **thirty minutes of kata
+practice every day**. Redo the same kata multiple times, until you can do it
+effortlessly in both Python and Javascript. Commit each kata to GitHub, as it
+will continue to add to your online portfolio.
 
 ### Step 3 - Concrete Foundations
 
@@ -148,8 +148,8 @@ Scheme, which can be run from either the command-line or
 [DrRacket](https://racket-lang.org/download/).
 
 DrRacket is a general editor and code-runner for Racket and Scheme. There are
-many different versions of Racket and Scheme, so to run DrRacket in "MIT Scheme
-and SICP mode", you need to put a header at the top of your files to tell DrRacket which
+many versions of Racket and Scheme, so to run DrRacket in "MIT Scheme and SICP
+mode", you need to put a header at the top of your files to tell DrRacket which
 language to use: ```#lang planet neil/sicp```
 
 When you first run a file, DrRacket will download a working version of MIT
@@ -160,11 +160,10 @@ You can see an example of a basic test framework for Scheme in the file
 [scheme-tdd.rkt](/code/scheme-tdd.rkt). Right click and "Save Link As" to save
 the file. Open it in DrRacket, and type ```Ctrl-R``` to run the tests.
 
-Some of the exercises are very challenging! You will probably not be able to
-complete every single exercise without help. This is okay! Plenty of people have
-posted excellent answers online for how to solve all the homework. If you get
-stuck and frustrated, just look up a solution and take some time to understand
-it.
+Some exercises are very challenging! You will probably not be able to complete
+every single exercise without help. This is okay! Plenty of people have posted
+excellent answers online for how to solve all the homework. If you get stuck and
+frustrated, just look up a solution and take some time to understand it.
 
 ### Step 4 - Pick A Language
 
@@ -227,7 +226,7 @@ jobs. Remember you can always switch languages and jobs after a few years!
 ### Step 5 - Regularly Go to Meetups
 
 The more people you know in the industry, the more potential contacts you will
-have for finding a great job. A person with less skills and good contacts
+have for finding a great job. A person with fewer skills and good contacts
 sometimes gets the better job.
 
 Use a site like [Meetup.com](http://www.meetup.com) to find local meetups and user
@@ -268,7 +267,7 @@ Avatar characters, and a website for tracking student loan repayment progress
 and expected payoff time-line.
 
 You will want to list out all the things you will need. Perhaps you need a way
-to run a web site, or build an Android game. Maybe you need to store data in a
+to run a website, or build an Android game. Maybe you need to store data in a
 file or database. Search the internet for tutorials to get those tools up and
 running. For almost any topic, many excellent tutorials exist that can guide you
 to a starting application.
@@ -286,12 +285,12 @@ teach yourself to build almost any sort of programming project.
 Work on this until you have finished enough that you have answered most of your
 own questions and implemented most of your own features. A small project
 provides you with a list of questions, and the motivation to learn how to
-research them. A small project also teaches you important details and
-technologies you would otherwise miss in katas.
+research them. You will learn important details and technologies you would
+otherwise miss in katas.
 
-A small project like this probably won't feel like _work_ it will feel like
-_fun_. This is the point of no return, you're now a programmer for life, paid or
-not. Now we just need to get you paid!
+Your personal project probably won't feel like _work_, it will feel like _fun_.
+This is the point of no return, you're now a programmer for life, paid or not.
+Now we just need to get you paid!
 
 ### Step 7 - Algorithm and Interview Practice
 
@@ -316,11 +315,11 @@ and natural. These will help you learn that new language quickly.
 
 ### Step 8 - Start Interviewing
 
-At this point, you'll be able to pass an entry-level developer interview with a
-very decent success rate! You'll be well versed in the basics of object-oriented
-programming, functional programming, data structures, algorithms, and unit
-testing. You'll have a good grasp of the basics of several different programming
-languages, and have a portfolio of code and projects to discuss.
+By now, you'll be able to pass an entry-level developer interview with a very
+decent success rate! You will be well versed in the basics of object-oriented
+programming, functional programming, data structures, algorithms, unit testing,
+and several programming languages. Your portfolio of code and projects will
+provide talking points in interviews to demonstrate your work ethic.
 
 <h2 class="centereded">Myths</h2>
 
