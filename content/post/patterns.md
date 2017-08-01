@@ -2,7 +2,6 @@
 title = "Design Pattern Dangers"
 date = "2017-08-01"
 Categories = ["technical skills"]
-draft=true
 +++
 
 > **Design Patterns and Domain Driven Design are two of the most dangerous books
