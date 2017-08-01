@@ -327,7 +327,7 @@ provide talking points in interviews to demonstrate your work ethic.
 
 Anyone with desire and drive can learn to program in their spare time. You can
 get a full-time programming job without any schooling or credentials. All you
-you need is hard work, practice, and some basic guidance!
+need is hard work, practice, and some basic guidance!
 
 ### Myth: I Need Expensive Books/Software
 
@@ -347,9 +347,9 @@ got the job done!
 
 The first language you learn should not be your last! Ideally, you will learn
 the basics of two or three languages before getting your first job. Learning
-several different languages is very effective for training developers. Having a
-few under your belt gives you a breadth of understanding that helps you learn
-new concepts faster.
+several languages is very effective for training developers. Having a few under
+your belt gives you a breadth of understanding that helps you learn new concepts
+faster.
 
 </div>
   <div class="col-md-3 sidebarcolor">
