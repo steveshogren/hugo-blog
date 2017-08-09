@@ -20,23 +20,23 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
 
 * **Identify the BIG QUESTION.**
 
-    The BIG QUESTION is: how to create a network of nodes that decides on a
-    common plan of action when some nodes are sending false information.
+    The BIG QUESTION is: **how to create a network of nodes that decides on a
+    common plan of action when some nodes are sending false information.**
     
-    The BIG QUESTION is posed abstractly as many generals deciding on a plan
-    when some generals are traitors sending false information and all generals
-    can only communicate via messages to each other.
+    The big question is posed abstractly as: how can many generals decide on a
+    plan when some generals are traitors sending false information and all
+    generals can only communicate via messages to each other.
     
 * **Identify the SPECIFIC QUESTION(S)**
 
-    The SPECIFIC QUESTION is more simple: ensure a single "general node" is able
+    The SPECIFIC QUESTION is more simple: **ensure a single "general node" is able
     to send an order for all loyal "lieutenant nodes" to follow, and all lieutenant
-    nodes follow the order if the general is loyal.
+    nodes follow the order if the general is loyal.**
     
     These two conditions are called the _interactive consistency_ conditions.
     
-    Solving this SPECIFIC QUESTION will unlock the solution to the more
-    complicated scenario with multiple nodes all communicating.
+    Solving this specific question will unlock the solution to the more
+    complicated scenario with multiple nodes all communicating with each other.
 
 * **Determine Outline**
     1. Abstract
@@ -53,9 +53,12 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
        Therefore a 3m+1 network must be completely connected.
     1. Incomplete graph proof with unforgeable (signed) messages requiring at
        least m+d-1 loyal generals where *m* is the count of traitors and *d* is
-       the graph
-       [diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
+       the
+       [graph diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
        (longest shortest distance between two nodes)
+    1. The application of the previous proofs to build reliable systems that
+       calculate solutions across multiple processors
+    1. Conclusion
 
 * **Explain any diagrams/charts**
 
