@@ -42,32 +42,59 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
     1. Abstract
     1. Introduction
     1. Problem definition with forgeable (unsigned) messages
-    1. Inductive proof with forgeable (unsigned) messages requiring 3m+1 loyal
-       nodes where *m* is the traitor node count
-    1. Inductive proof with unforgeable (signed) messages requiring only m+2
-       loyal nodes where *m* is the traitor node count
-    1. Incomplete graph proof proof with forgeable (unsigned) messages requiring
-       at least 3m+1 loyal generals where *m* is the count of traitors and each
-       node on the graph has 3m connections.
-       (aka [3m-regular](https://en.wikipedia.org/wiki/Regular_graph)).
-       Therefore a 3m+1 network must be completely connected.
-    1. Incomplete graph proof with unforgeable (signed) messages requiring at
-       least m+d-1 loyal generals where *m* is the count of traitors and *d* is
-       the
-       [graph diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
-       (longest shortest distance between two nodes)
+    1. Proof with forgeable (unsigned) messages
+    1. Proof with unforgeable (signed) messages
+    1. Proof for an incomplete graph with forgeable (unsigned) messages
+    1. Proof for an incomplete graph with unforgeable (signed) messages
     1. The application of the previous proofs to build reliable systems that
        calculate solutions across multiple processors
     1. Conclusion
 
+* **Identify the approach**
+
+    The approach is a set of logical, inductive proofs.
+
 * **Explain any diagrams/charts**
 
-    Fig 1 and Fig 2 illustrate how it is impossible for three nodes to come
-    to consensus with unsigned messages when one node is a traitor.
+    <img src="/images/generalsfig1fig2.png"></img>
 
+    Fig 1 and Fig 2 illustrate how it is impossible for one commander and two
+    lieutenants to come to consensus with unsigned messages when one of the
+    three is a traitor. 
+    
+
+    <img src="/images/generalsfig3fig4.png"></img>
+
+    Fig 3 and Fig 4 show the oral (unsigned) communication paths of one
+    commander and three lieutenants, represented by OM(1).
+
+    <img src="/images/generalsfig5.png"></img>
+
+    Fig 5 illustrates passing signed messages with one commander and two
+    lieutenants, represented by SM(1).
+
+    <img src="/images/generalsfig5.png"></img>
 
 * **Explain the recommended solution/algorithm/theory/proofs**
     
+    1. Inductive proof with forgeable (unsigned) messages - requires 3m+1 generals
+       where *m* is the traitor general count
+       
+       They use a proof by contradiction to prove that therefore no solution
+       exists for fewer than 3m+1 generals.
+
+    1. Inductive proof with unforgeable (signed) messages - requires only m+2
+       generals where *m* is the traitor general count
+    1. Proof for an incomplete graph with forgeable (unsigned) messages -
+       requires at least 3m+1 generals where *m* is the count of traitors and
+       each general on the graph has 3m connections. (aka
+       [3m-regular](https://en.wikipedia.org/wiki/Regular_graph)). Therefore a
+       3m+1 network must be completely connected.
+    1. Proof for an incomplete graph with unforgeable (signed) messages -
+       requires at least m+d-1 generals where *m* is the count of traitors and
+       *d* is the
+       [graph diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
+       (longest shortest distance between two generals)
 
 * **Read the conclusion/discussion/interpretation section.**
 
