@@ -66,14 +66,20 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
     <img src="/images/generalsfig3fig4.png"></img>
 
     Fig 3 and Fig 4 show the oral (unsigned) communication paths of one
-    commander and three lieutenants, represented by OM(1).
+    commander and three lieutenants, represented by OM(1). Fig 3 shows the paths
+    of a traitorous lieutenant, and how the other lieutenants can simply do
+    whatever the majority of inputs recommend. Fig 4 shows the traitorous
+    commander, and how all three lieutenants need to fall back to their default
+    behavior, as there is no clear winning majority.
 
     <img src="/images/generalsfig5.png"></img>
 
     Fig 5 illustrates passing signed messages with one commander and two
-    lieutenants, represented by SM(1).
+    lieutenants, represented by SM(1). Each message gets appended to the end, so
+    a traitorous commander is revealed by sending different messages to each
+    lieutenant.
 
-    <img src="/images/generalsfig5.png"></img>
+    <img src="/images/generalsfig6fig7.png"></img>
 
 * **Explain the recommended solution/algorithm/theory/proofs**
     
