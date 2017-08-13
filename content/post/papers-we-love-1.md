@@ -80,20 +80,22 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
     lieutenant.
 
     <img src="/images/generalsfig6fig7.png"></img>
+    
+    Fig 7 is not 3-regular because the central node has more than 3 connecting
+    paths.
 
 * **Explain the recommended solution/algorithm/theory/proofs**
     
-    1. Inductive proof with forgeable (unsigned) messages - requires 3m+1 generals
-       where *m* is the traitor general count
-       
-       They use a proof by contradiction to prove that therefore no solution
-       exists for fewer than 3m+1 generals.
+    1. Inductive proof with forgeable (unsigned) messages - requires 3m+1
+       generals where *m* is the traitor general count. They use a proof by
+       contradiction to prove that therefore no solution exists for fewer than
+       3m+1 generals.
 
     1. Inductive proof with unforgeable (signed) messages - requires only m+2
        generals where *m* is the traitor general count
     1. Proof for an incomplete graph with forgeable (unsigned) messages -
        requires at least 3m+1 generals where *m* is the count of traitors and
-       each general on the graph has 3m connections. (aka
+       each node on the graph has 3m connections. (aka
        [3m-regular](https://en.wikipedia.org/wiki/Regular_graph)). Therefore a
        3m+1 network must be completely connected.
     1. Proof for an incomplete graph with unforgeable (signed) messages -
