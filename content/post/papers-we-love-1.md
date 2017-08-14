@@ -29,9 +29,10 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
     
 * **Identify the SPECIFIC QUESTION(S)**
 
-    The SPECIFIC QUESTION is more simple: **ensure a single "general node" is able
-    to send an order for all loyal "lieutenant nodes" to follow, and all lieutenant
-    nodes follow the order if the general is loyal.**
+    The SPECIFIC QUESTION is more simple: 
+    - **IC1: Ensure a single "general node" is able to send an order for all
+    loyal "lieutenant nodes" to follow**
+    - **IC2: All lieutenant nodes follow the order if the general is loyal**
     
     These two conditions are called the _interactive consistency_ conditions.
     
@@ -85,20 +86,36 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
     paths.
 
 * **Explain the recommended solution/algorithm/theory/proofs**
-    
-    1. Inductive proof with forgeable (unsigned) messages - requires 3m+1
-       generals where *m* is the traitor general count. They use a proof by
-       contradiction to prove that therefore no solution exists for fewer than
-       3m+1 generals.
+    * The original problem, stated as two interactivity conditions:
+      - **IC1: All loyal lieutenants obey the same order**
+      - **IC2: All lieutenant nodes follow the order if the general is loyal**
 
-    1. Inductive proof with unforgeable (signed) messages - requires only m+2
+    * They refer the reader to a previous proof that 3 nodes cannot be solved.
+      They claim a proof by contradiction that therefore no solution exists for
+      fewer than 3m+1 nodes.
+    
+    * Inductive proof with forgeable (unsigned) messages - requires 3m+1 nodes
+      where *m* is the traitor node count. 
+          * Assumptions:
+            - A1. Every message is sent correctly
+            - A2. The receiver of a message knows who sent it
+            - A3. The absence of a message can be detected
+            - A4. All nodes can send a message to all other nodes
+            - A4. The default order is Retreat
+      
+          * [Lemmas](https://en.wikipedia.org/wiki/Lemma_(mathematics)):
+            - 
+        
+       
+
+    *  Inductive proof with unforgeable (signed) messages - requires only m+2
        generals where *m* is the traitor general count
-    1. Proof for an incomplete graph with forgeable (unsigned) messages -
+    *  Proof for an incomplete graph with forgeable (unsigned) messages -
        requires at least 3m+1 generals where *m* is the count of traitors and
        each node on the graph has 3m connections. (aka
        [3m-regular](https://en.wikipedia.org/wiki/Regular_graph)). Therefore a
        3m+1 network must be completely connected.
-    1. Proof for an incomplete graph with unforgeable (signed) messages -
+    *  Proof for an incomplete graph with unforgeable (signed) messages -
        requires at least m+d-1 generals where *m* is the count of traitors and
        *d* is the
        [graph diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
