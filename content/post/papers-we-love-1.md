@@ -7,16 +7,19 @@ Description = ""
 draft=true
 +++
 
-*In this series I practice reading whitepapers by following a modified set of
+*In this series I practice reading computer science papers by following a modified set of
 steps outlined in the guide: [How to read and understand a scientific paper: a guide for non-scientists](https://violentmetaphors.com/2013/08/25/how-to-read-and-understand-a-scientific-paper-2/)*
 
+### The Paper:
 [The Byzantine Generals Problem pdf](http://www.andrew.cmu.edu/course/15-749/READINGS/required/resilience/lamport82.pdf)
 
+### My Breakdown:
 * **Begin by reading the introduction, not the abstract.**
 
-    The introduction explains the broad problem of how to create a network of
-    components where any number of nodes in the network may be sending
-    conflicting and false information to the other nodes.
+    The broad problem of how to create a network of components where some nodes
+    in the network may be sending conflicting and false information to the other
+    nodes. We desire a solution where the "loyal" nodes perform the correct
+    action.
 
 * **Identify the BIG QUESTION.**
 
@@ -29,10 +32,10 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
     
 * **Identify the SPECIFIC QUESTION(S)**
 
-    The SPECIFIC QUESTION is more simple: 
+    The SPECIFIC QUESTIONS are more simple: 
     - **IC1: Ensure a single "general node" is able to send an order for all
     loyal "lieutenant nodes" to follow**
-    - **IC2: All lieutenant nodes follow the order if the general is loyal**
+    - **IC2: All loyal lieutenant nodes follow the order if the general is loyal**
     
     These two conditions are called the _interactive consistency_ conditions.
     
@@ -103,9 +106,13 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
             - A4. All nodes can send a message to all other nodes
             - A4. The default order is Retreat
       
-          * [Lemmas](https://en.wikipedia.org/wiki/Lemma_(mathematics)):
-            - 
-        
+          * [Lemma](https://en.wikipedia.org/wiki/Lemma_(mathematics)) 1:
+            - OM(m) satisfies IC2 for 2k+m nodes with k traitors
+            - Proof - Induction on m: 
+                * OM(0) true if commander is loyal
+                * OM(m) 
+                  * 
+                
        
 
     *  Inductive proof with unforgeable (signed) messages - requires only m+2
