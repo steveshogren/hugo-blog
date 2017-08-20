@@ -8,7 +8,10 @@ draft=true
 +++
 
 *In this series I practice reading computer science papers by following a modified set of
-steps outlined in the guide: [How to read and understand a scientific paper: a guide for non-scientists](https://violentmetaphors.com/2013/08/25/how-to-read-and-understand-a-scientific-paper-2/)*
+steps outlined in the guide:
+[How to read and understand a scientific paper: a guide for non-scientists](https://violentmetaphors.com/2013/08/25/how-to-read-and-understand-a-scientific-paper-2/).
+If your reaction to this post is 'eh, just read the paper', then this post isn't
+for you ;)*
 
 ### The Paper:
 [The Byzantine Generals Problem pdf](http://www.andrew.cmu.edu/course/15-749/READINGS/required/resilience/lamport82.pdf)
@@ -107,11 +110,12 @@ steps outlined in the guide: [How to read and understand a scientific paper: a g
             - A4. The default order is Retreat
       
           * [Lemma](https://en.wikipedia.org/wiki/Lemma_(mathematics)) 1:
-            - OM(m) satisfies IC2 for 2k+m nodes with k traitors
-            - Proof - Induction on m: 
-                * OM(0) true if commander is loyal
-                * OM(m) 
-                  * 
+            - OM(m) satisfies IC2 for greater than 2k+m nodes with k traitors
+            - Proof: ```2k + m > n```
+                * Induction on m
+                * ```m = 0``` is true if commander is loyal
+                * ```m - 1, m > 0```
+                  * ```n - 1 > 2k + (m - 1)```
                 
        
 
