@@ -106,21 +106,21 @@ for you ;)*
             - A1. Every message is sent correctly
             - A2. The receiver of a message knows who sent it
             - A3. The absence of a message can be detected
-            - A4. All nodes can send a message to all other nodes
-            - A4. The default order is Retreat
       
           * [Lemma](https://en.wikipedia.org/wiki/Lemma_(mathematics)) 1:
             - OM(m) satisfies IC2 for greater than 2k+m nodes with k traitors
             - Proof: ```2k + m > n```
-                * Induction on m
-                * ```m = 0``` is true if commander is loyal
-                * ```m - 1, m > 0```
-                  * ```n - 1 > 2k + (m - 1)```
-                
-       
+
+          * [Proof](https://en.wikipedia.org/wiki/Mathematical_proof) 1:
+            - OM(m) satisfies IC1 and IC2 for greater than 3m nodes with m traitors
+            - Proof: ```3m + 1```
 
     *  Inductive proof with unforgeable (signed) messages - requires only m+2
        generals where *m* is the traitor general count
+          * Assumptions:
+            - A4(a). No message can be forged by another node
+            - A4(b). Any node can verify the signature chain
+
     *  Proof for an incomplete graph with forgeable (unsigned) messages -
        requires at least 3m+1 generals where *m* is the count of traitors and
        each node on the graph has 3m connections. (aka
@@ -138,4 +138,10 @@ for you ;)*
 
 * **FINAL STEP: (Don’t neglect doing this) What do other researchers say about this paper?**
 
+* **My Notes**
+
+Blockchain technologies appear to be based off the research in this paper. They
+operate with signed messages being semi-unforgeable because of the difficulty to
+recreate the history, so it is a combination of the signed and unsigned.
+Messages _are_ forgeable, but it is computationally expensive to do so.
 
