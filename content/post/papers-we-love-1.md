@@ -106,22 +106,12 @@ for you ;)*
             - A1. Every message is sent correctly
             - A2. The receiver of a message knows who sent it
             - A3. The absence of a message can be detected
-      
-          * [Lemma](https://en.wikipedia.org/wiki/Lemma_(mathematics)) 1:
-            - OM(m) satisfies IC2 for greater than ```2k+m``` nodes with ```k``` traitors
-            - Proof: ```2k + m > n```
-
-          * [Theorem](https://en.wikipedia.org/wiki/Mathematical_proof) 1:
-            - OM(m) satisfies IC1 and IC2 for greater than ```3m``` nodes with ```m``` traitors
-            - Proof: ```3m + 1```
 
     *  Inductive proof with unforgeable (signed) messages - requires only m+2
        generals where *m* is the traitor general count
           * Assumptions:
             - A4(a). No message can be forged by another node
             - A4(b). Any node can verify the signature chain
-          * Theorem 2:
-            - SM(m) satisfies IC1 and IC2 for at most m traitors
 
     *  Proof for an incomplete graph with forgeable (unsigned) messages -
        requires at least 3m+1 generals where *m* is the count of traitors and
@@ -129,22 +119,11 @@ for you ;)*
        [3m-regular](https://en.wikipedia.org/wiki/Regular_graph)). Therefore a
        3m+1 network must be completely connected.
 
-          * Lemma 2:
-            - OM(m,p) satisfies IC2 for ```p >= 2k+m``` nodes with ```k```
-              traitors and ```p``` graph regularity
-
-          * Theorem 3:
-            - OM(m,p) satisfies IC1 and IC2 when ```p >= 3m``` nodes with ```m``` traitors
-
     *  Proof for an incomplete graph with unforgeable (signed) messages -
        requires at least m+d-1 generals where *m* is the count of traitors and
        *d* is the
        [graph diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
        (longest shortest distance between two generals)
-
-          * Theorem 4:
-            - SM(m) satisfies IC1 and IC2 for ```m+d-1``` with ```m``` traitors and ```d``` for
-              graph diameter
 
 * **Read the conclusion/discussion/interpretation section.**
 
