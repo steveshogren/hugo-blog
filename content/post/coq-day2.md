@@ -1,7 +1,7 @@
 +++
 title = "Darkest Proof: Day 2"
 date = "2017-02-07"
-Categories = ["technical skills", "coq"]
+Categories = ["technical skills", "coq", "proofs"]
 +++
 
 Day two working through

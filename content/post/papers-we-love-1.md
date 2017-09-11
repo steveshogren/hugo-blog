@@ -2,7 +2,7 @@
 title = "Papers We Love: The Byzantine Generals Problem"
 date = "2017-08-11"
 banner=""
-Categories = ["technical skills", "whitepapers"]
+Categories = ["technical skills", "academic papers", "proofs"]
 Description = ""
 draft=true
 +++
@@ -13,128 +13,138 @@ steps outlined in the guide:
 If your reaction to this post is 'eh, just read the paper', then this post isn't
 for you ;)*
 
-### The Paper:
+### Why Should I Read This?
+
+The research in this paper is actively applied to design blockchains, ensure
+military radar installation reliability, and build distributed, fault-tolerant
+CPU processors. Not only is the research widely used in many interesting ways,
+but the paper uses the amusing military analogy of a group of separated generals
+trying to agree on a battle plan. I think this paper is a fun intro into
+academic papers.
+
 [The Byzantine Generals Problem pdf](http://www.andrew.cmu.edu/course/15-749/READINGS/required/resilience/lamport82.pdf)
 
 ### My Breakdown:
-* **Begin by reading the introduction, not the abstract.**
 
-    The broad problem of how to create a network of components where some nodes
-    in the network may be sending conflicting and false information to the other
-    nodes. We desire a solution where the "loyal" nodes perform the correct
-    action.
+#### Begin by reading the introduction, not the abstract
 
-* **Identify the BIG QUESTION.**
+The broad problem is: how to create a network of components that can come to
+consensus when some nodes in the network may be sending conflicting and
+false information to the other nodes. We desire a solution where the "loyal"
+nodes perform the correct action.
 
-    The BIG QUESTION is: **how to create a network of nodes that decides on a
-    common plan of action when some nodes are sending false information.**
+#### Identify the BIG QUESTION
+
+The BIG QUESTION is: **how to create a network of nodes that decides on a
+common plan of action when some nodes are sending false information.**
+
+The big question is posed abstractly as: how can many generals decide on a
+plan when some generals are traitors sending false information and all
+generals can only communicate via messages to each other.
     
-    The big question is posed abstractly as: how can many generals decide on a
-    plan when some generals are traitors sending false information and all
-    generals can only communicate via messages to each other.
-    
-* **Identify the SPECIFIC QUESTION(S)**
+#### Identify the SPECIFIC QUESTION(S)
 
-    The SPECIFIC QUESTIONS are more simple: 
-    - **IC1: Ensure a single "general node" is able to send an order for all
-    loyal "lieutenant nodes" to follow**
-    - **IC2: All loyal lieutenant nodes follow the order if the general is loyal**
-    
-    These two conditions are called the _interactive consistency_ conditions.
-    
-    Solving this specific question will unlock the solution to the more
-    complicated scenario with multiple nodes all communicating with each other.
+The SPECIFIC QUESTIONS are more simple: 
+- **IC1: Ensure a single "general node" is able to send an order for all
+loyal "lieutenant nodes" to follow**
+- **IC2: All loyal lieutenant nodes follow the order if the general is loyal**
 
-* **Determine Outline**
-    1. Abstract
-    1. Introduction
-    1. Problem definition with forgeable (unsigned) messages
-    1. Proof with forgeable (unsigned) messages
-    1. Proof with unforgeable (signed) messages
-    1. Proof for an incomplete graph with forgeable (unsigned) messages
-    1. Proof for an incomplete graph with unforgeable (signed) messages
-    1. The application of the previous proofs to build reliable systems that
-       calculate solutions across multiple processors
-    1. Conclusion
+These two conditions are called the _interactive consistency_ conditions.
 
-* **Identify the approach**
+Solving this specific question will unlock the solution to the more
+complicated scenario with multiple nodes all communicating with each other.
 
-    The approach is a set of logical, inductive proofs.
+#### Determine Outline
+1. Abstract
+1. Introduction
+1. Problem definition with forgeable (unsigned) messages
+1. Proof with forgeable (unsigned) messages
+1. Proof with unforgeable (signed) messages
+1. Proof for an incomplete graph with forgeable (unsigned) messages
+1. Proof for an incomplete graph with unforgeable (signed) messages
+1. The application of the previous proofs to build reliable systems that
+    calculate solutions across multiple processors
+1. Conclusion
 
-* **Explain any diagrams/charts**
+#### Identify the approach
 
-    <img src="/images/generalsfig1fig2.png"></img>
+The approach is a set of logical, inductive proofs.
 
-    Fig 1 and Fig 2 illustrate how it is impossible for one commander and two
-    lieutenants to come to consensus with unsigned messages when one of the
-    three is a traitor. 
-    
+#### Explain any diagrams/charts
 
-    <img src="/images/generalsfig3fig4.png"></img>
+<img src="/images/generalsfig1fig2.png"></img>
 
-    Fig 3 and Fig 4 show the oral (unsigned) communication paths of one
-    commander and three lieutenants, represented by OM(1). Fig 3 shows the paths
-    of a traitorous lieutenant, and how the other lieutenants can simply do
-    whatever the majority of inputs recommend. Fig 4 shows the traitorous
-    commander, and how all three lieutenants need to fall back to their default
-    behavior, as there is no clear winning majority.
+Fig 1 and Fig 2 illustrate how it is impossible for one commander and two
+lieutenants to come to consensus with unsigned messages when one of the
+three is a traitor. 
 
-    <img src="/images/generalsfig5.png"></img>
 
-    Fig 5 illustrates passing signed messages with one commander and two
-    lieutenants, represented by SM(1). Each message gets appended to the end, so
-    a traitorous commander is revealed by sending different messages to each
-    lieutenant.
+<img src="/images/generalsfig3fig4.png"></img>
 
-    <img src="/images/generalsfig6fig7.png"></img>
-    
-    Fig 7 is not 3-regular because the central node has more than 3 connecting
-    paths.
+Fig 3 and Fig 4 show the oral (unsigned) communication paths of one
+commander and three lieutenants, represented by OM(1). Fig 3 shows the paths
+of a traitorous lieutenant, and how the other lieutenants can simply do
+whatever the majority of inputs recommend. Fig 4 shows the traitorous
+commander, and how all three lieutenants need to fall back to their default
+behavior, as there is no clear winning majority.
 
-* **Explain the recommended solution/algorithm/theory/proofs**
-    * The original problem, stated as two interactivity conditions:
-      - **IC1: All loyal lieutenants obey the same order**
-      - **IC2: All lieutenant nodes follow the order if the general is loyal**
+<img src="/images/generalsfig5.png"></img>
 
-    * They refer the reader to a previous proof that 3 nodes cannot be solved.
-      They claim a proof by contradiction that therefore no solution exists for
-      fewer than 3m+1 nodes.
-    
-    * Inductive proof with forgeable (unsigned) messages - requires 3m+1 nodes
-      where *m* is the traitor node count. 
-          * Assumptions:
-            - A1. Every message is sent correctly
-            - A2. The receiver of a message knows who sent it
-            - A3. The absence of a message can be detected
+Fig 5 illustrates passing signed messages with one commander and two
+lieutenants, represented by SM(1). Each message gets appended to the end, so
+a traitorous commander is revealed by sending different messages to each
+lieutenant.
 
-    *  Inductive proof with unforgeable (signed) messages - requires only m+2
-       generals where *m* is the traitor general count
-          * Assumptions:
-            - A4(a). No message can be forged by another node
-            - A4(b). Any node can verify the signature chain
+<img src="/images/generalsfig6fig7.png"></img>
 
-    *  Proof for an incomplete graph with forgeable (unsigned) messages -
-       requires at least 3m+1 generals where *m* is the count of traitors and
-       each node on the graph has 3m connections. (aka
-       [3m-regular](https://en.wikipedia.org/wiki/Regular_graph)). Therefore a
-       3m+1 network must be completely connected.
+Fig 7 is not 3-regular because the central node has more than 3 connecting
+paths.
 
-    *  Proof for an incomplete graph with unforgeable (signed) messages -
-       requires at least m+d-1 generals where *m* is the count of traitors and
-       *d* is the
-       [graph diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
-       (longest shortest distance between two generals)
+#### Explain the recommended solution/algorithm/theory/proofs
+* The original problem, stated as two interactivity conditions:
+  - **IC1: All loyal lieutenants obey the same order**
+  - **IC2: All lieutenant nodes follow the order if the general is loyal**
 
-* **Read the conclusion/discussion/interpretation section.**
+* They refer the reader to a previous proof that 3 nodes cannot be solved.
+  They claim a proof by contradiction that therefore no solution exists for
+  fewer than 3m+1 nodes.
 
-* **Now, go back to the beginning and read the abstract.**
+* Inductive proof with forgeable (unsigned) messages - requires 3m+1 nodes
+  where *m* is the traitor node count. 
+      * Assumptions:
+        - A1. Every message is sent correctly
+        - A2. The receiver of a message knows who sent it
+        - A3. The absence of a message can be detected
 
-* **FINAL STEP: (Don’t neglect doing this) What do other researchers say about this paper?**
+*  Inductive proof with unforgeable (signed) messages - requires only m+2
+    generals where *m* is the traitor general count
+      * Assumptions:
+        - A4(a). No message can be forged by another node
+        - A4(b). Any node can verify the signature chain
 
-* **My Notes**
+*  Proof for an incomplete graph with forgeable (unsigned) messages -
+    requires at least 3m+1 generals where *m* is the count of traitors and
+    each node on the graph has 3m connections. (aka
+    [3m-regular](https://en.wikipedia.org/wiki/Regular_graph)). Therefore a
+    3m+1 network must be completely connected.
 
-Blockchain technologies appear to be based off the research in this paper. They
-operate with signed messages being semi-unforgeable because of the difficulty to
+*  Proof for an incomplete graph with unforgeable (signed) messages -
+    requires at least m+d-1 generals where *m* is the count of traitors and
+    *d* is the
+    [graph diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
+    (longest shortest distance between two generals)
+
+#### Read the conclusion/discussion/interpretation section
+
+#### Now, go back to the beginning and read the abstract
+
+#### FINAL STEP: (Don’t neglect doing this) What do other researchers say about this paper?
+
+#### My Notes
+
+While originally written for radar defense installations, blockchain
+technologies appear to be based off the research in this paper. They operate
+with signed messages being semi-unforgeable because of the difficulty to
 recreate the history, so it is a combination of the signed and unsigned.
 Messages _are_ forgeable, but it is computationally expensive to do so.
 
