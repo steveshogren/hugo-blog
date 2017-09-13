@@ -13,10 +13,10 @@ steps outlined in the guide:
 If your reaction to this post is 'eh, just read the paper', then this post isn't
 for you ;)*
 
-### Why Should I Read This?
+### Why Should I Read The Byzantine Generals Problem?
 
-The research in this paper is actively applied to design blockchains, ensure
-military radar installation reliability, and build distributed, fault-tolerant
+The research in this paper allows blockchains, ensures military radar
+installation reliability, and enables the design of distributed, fault-tolerant
 CPU processors. Not only is the research widely used in many interesting ways,
 but the paper uses the amusing military analogy of a group of separated generals
 trying to agree on a battle plan. I think this paper is a fun intro into
@@ -78,7 +78,6 @@ Fig 1 and Fig 2 illustrate how it is impossible for one commander and two
 lieutenants to come to consensus with unsigned messages when one of the
 three is a traitor. 
 
-
 <img src="/images/generalsfig3fig4.png"></img>
 
 Fig 3 and Fig 4 show the oral (unsigned) communication paths of one
@@ -107,38 +106,49 @@ paths.
 
 * They refer the reader to a previous proof that 3 nodes cannot be solved.
   They claim a proof by contradiction that therefore no solution exists for
-  fewer than 3m+1 nodes.
+  fewer than *3m+1* nodes where *m* is the traitor node count.
 
-* Inductive proof with forgeable (unsigned) messages - requires 3m+1 nodes
+* Inductive proof with forgeable (unsigned) messages - requires *3m+1* nodes
   where *m* is the traitor node count. 
       * Assumptions:
         - A1. Every message is sent correctly
         - A2. The receiver of a message knows who sent it
         - A3. The absence of a message can be detected
 
-*  Inductive proof with unforgeable (signed) messages - requires only m+2
+*  Inductive proof with unforgeable (signed) messages - requires only *m+2*
     generals where *m* is the traitor general count
       * Assumptions:
         - A4(a). No message can be forged by another node
         - A4(b). Any node can verify the signature chain
 
 *  Proof for an incomplete graph with forgeable (unsigned) messages -
-    requires at least 3m+1 generals where *m* is the count of traitors and
-    each node on the graph has 3m connections. (aka
+    requires at least *3m+1* generals where *m* is the count of traitors and
+    each node on the graph has *3m* connections. (aka
     [3m-regular](https://en.wikipedia.org/wiki/Regular_graph)). Therefore a
-    3m+1 network must be completely connected.
+    *3m+1* network must be completely connected.
 
 *  Proof for an incomplete graph with unforgeable (signed) messages -
-    requires at least m+d-1 generals where *m* is the count of traitors and
+    requires at least *m+d-1* generals where *m* is the count of traitors and
     *d* is the
     [graph diameter](https://en.wikipedia.org/wiki/Distance_(graph_theory))
     (longest shortest distance between two generals)
 
 #### Read the conclusion/discussion/interpretation section
 
+The authors conclude that all known solutions to the Byzantine Generals problem
+are inherently expensive in time and number of messages sent between nodes. They
+do suspect that nodes could combine messages for reduced total message transfer,
+but they leave that as an unanswered question.
+
 #### Now, go back to the beginning and read the abstract
 
+The abstract summarizes the results: with unsigned messages, fewer than
+one-third of the nodes can be traitors. For signed messages, any number of nodes
+can be traitorous.
+
 #### FINAL STEP: (Don’t neglect doing this) What do other researchers say about this paper?
+
+
 
 #### My Notes
 
