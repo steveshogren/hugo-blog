@@ -15,12 +15,11 @@ for you ;)*
 
 ### Why Should I Read The Byzantine Generals Problem?
 
-The research in this paper allows blockchains, ensures military radar
+The research in this paper allows blockchain technology, ensures military radar
 installation reliability, and enables the design of distributed, fault-tolerant
 CPU processors. Not only is the research widely used in many interesting ways,
 but the paper uses the amusing military analogy of a group of separated generals
-trying to agree on a battle plan. I think this paper is a fun intro into
-academic papers.
+trying to agree on a battle plan. The paper is a fun intro into academic papers.
 
 [The Byzantine Generals Problem pdf](http://www.andrew.cmu.edu/course/15-749/READINGS/required/resilience/lamport82.pdf)
 
@@ -146,9 +145,9 @@ The abstract summarizes the results: with unsigned messages, fewer than
 one-third of the nodes can be traitors. For signed messages, any number of nodes
 can be traitorous.
 
-#### FINAL STEP: (Don’t neglect doing this) What do other researchers say about this paper?
+#### What do other researchers say about this paper?
 
-
+This paper seems to have become a canonical source of proofs for the problem.
 
 #### My Notes
 
@@ -156,5 +155,12 @@ While originally written for radar defense installations, blockchain
 technologies appear to be based off the research in this paper. They operate
 with signed messages being semi-unforgeable because of the difficulty to
 recreate the history, so it is a combination of the signed and unsigned.
-Messages _are_ forgeable, but it is computationally expensive to do so.
+Messages _are_ forgeable, but it is so computationally expensive to do so that
+it is effectively impossible.
 
+The proofs in this paper are fun for me because they are an applied version of
+what I have been studying in
+[Software Foundations](https://www.cis.upenn.edu/~bcpierce/sf/current/index.html).
+Before I read this paper, the exercises in Software Foundations seemed dry and
+isolated from reality. Now, the proofs come alive as the fundamental
+underpinning for world-changing technologies like blockchain! Very fun stuff.
