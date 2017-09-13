@@ -162,5 +162,6 @@ The proofs in this paper are fun for me because they are an applied version of
 what I have been studying in
 [Software Foundations](https://www.cis.upenn.edu/~bcpierce/sf/current/index.html).
 Before I read this paper, the exercises in Software Foundations seemed dry and
-isolated from reality. Now, the proofs come alive as the fundamental
-underpinning for world-changing technologies like blockchain! Very fun stuff.
+isolated from reality. The skill of proof writing has come alive as the
+fundamental underpinning for world-changing technologies like blockchain! Very
+fun stuff.
