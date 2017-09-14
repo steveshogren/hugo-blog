@@ -1,10 +1,9 @@
 +++
 title = "Papers We Love: The Byzantine Generals Problem"
-date = "2017-08-11"
+date = "2017-08-04"
 banner=""
 Categories = ["technical skills", "academic papers", "proofs"]
 Description = ""
-draft=true
 +++
 
 *In this series I practice reading computer science papers by following a modified set of
@@ -158,8 +157,8 @@ recreate the history, so it is a combination of the signed and unsigned.
 Messages _are_ forgeable, but it is so computationally expensive to do so that
 it is effectively impossible.
 
-The proofs in this paper are fun for me because they are an applied version of
-what I have been studying in
+The proofs in this paper are fun because they are an applied version of what I
+have been studying in
 [Software Foundations](https://www.cis.upenn.edu/~bcpierce/sf/current/index.html).
 Before I read this paper, the exercises in Software Foundations seemed dry and
 isolated from reality. The skill of proof writing has come alive as the
