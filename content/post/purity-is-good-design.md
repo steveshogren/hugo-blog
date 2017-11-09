@@ -7,25 +7,26 @@ draft=true
 
 Part 3 of the series [OO-Design](/categories/oo-design/)
 
-As we covered in the previous post [Anemic Domain Models Are Healthy](/anemic-domain-model/), encapsulation makes
+As we covered in the previous post
+[Anemic Domain Models Are Healthy](/anemic-domain-model/), encapsulation makes
 code harder to test. Code that is harder to test, often gets tested less.
 
 Many books and blogs teach encapsulation as an important part of a good
 object-oriented design. Encapsulation and domain modeling have been incorrectly
 tangled together. A good domain model is possible with or without encapsulation.
 
-Encapsulation is ultimately about boundaries and trust. Encapsulation shines
-when applied to API or module boundaries. It is a good design to ensure that
-your users cannot put your library in an invalid state. A fluent,
-builder-pattern API can be helpful and self-documenting.
+Encapsulation is ultimately about designing boundaries and trust. Encapsulation
+shines when applied to API or module boundaries. A well-encapsulated boundary
+ensures that your users cannot put your library in an invalid state. For
+example, a builder-pattern API can be helpful, self-documenting, and prevent
+invalid states.
 
 > Encapsulation makes sense between teams
 
 A good place for a library or module API would be between code ownership
 boundaries. Builder-pattern boundaries makes good sense if one team owns
-"publishing" and another owns "workflow". Each team can work against the module
-API rather than always having to read the internals of the other team's
-codebase.
+"publishing" and another owns "workflow". Each team can work against the
+module's API without having to read the internals of a whole second codebase.
 
 Fluent APIs using encapsulation are often a lot of extra work when a single team
 shares ownership of a single codebase. Separation of concerns is an excellent
