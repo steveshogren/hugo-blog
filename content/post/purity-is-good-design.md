@@ -23,15 +23,18 @@ invalid states.
 
 > Encapsulation makes sense between teams
 
-A good place for a library or module API would be between code ownership
-boundaries. Builder-pattern boundaries makes good sense if one team owns
-"publishing" and another owns "workflow". Each team can work against the
-module's API without having to read the internals of a whole second codebase.
+Code ownership boundaries are a good place to apply the rules of encapsulation.
+Each team can work against the module's API without having to read the internals
+of a whole second codebase.
 
-Fluent APIs using encapsulation are often a lot of extra work when a single team
-shares ownership of a single codebase. Separation of concerns is an excellent
-tool for organization, but it can be separated from the overhead of
-encapsulation.
+Fluent API's using encapsulation are often a lot of extra work when a single
+team shares ownership of a single codebase. Many boundaries devolve into a
+[leaky abstraction](https://en.wikipedia.org/wiki/Leaky_abstraction) and so
+extra time and thought must go into their design. That extra time and thought
+should only come for a great reason.
+
+Separation of concerns is an excellent tool for organization inside a codebase,
+but should be separated from the overhead of encapsulation.
 
 While appropriate for libraries and API boundaries, encapsulation is often
 misapplied to _internal code_ with _shared ownership_. We pretend that we cannot
