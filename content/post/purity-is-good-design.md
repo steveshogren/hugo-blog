@@ -21,7 +21,7 @@ ensures that your users cannot put your library in an invalid state. For
 example, a builder-pattern API can be helpful, self-documenting, and prevent
 invalid states.
 
-> Encapsulation makes sense between teams
+> Encapsulation makes good sense between teams
 
 Code ownership boundaries are a good place to apply the rules of encapsulation.
 Each team can work against the module's API without having to read the internals
@@ -33,15 +33,20 @@ team shares ownership of a single codebase. Many boundaries devolve into a
 extra time and thought must go into their design. That extra time and thought
 should only come for a great reason.
 
-Separation of concerns is an excellent tool for organization inside a codebase,
-but should be separated from the overhead of encapsulation.
+> Separation of concerns and encapsulation are different goals
+
+Separation of concerns is an excellent tool for improving organization. It
+reduces complexity by allowing the developer to design each function to have a
+single goal. Encapsulation is not the same thing as SOP. 
 
 While appropriate for libraries and API boundaries, encapsulation is often
 misapplied to _internal code_ with _shared ownership_. We pretend that we cannot
 trust ourselves and our coworkers to know how to correctly use our models. This
 is silly. You and your coworkers all have access to the code, they can do
-_anything they want_. That getter that "protects" the field from write access
-could easily be changed to set it to ```null``` every time. 
+_anything they want_. 
+
+For example, that getter that "protects" the field from write access could
+easily be changed to set it to ```null``` every time.
 
 ## An brief rant about getters and setters
 
