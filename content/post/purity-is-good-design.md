@@ -45,10 +45,10 @@ trust ourselves and our coworkers to know how to correctly use our models. This
 is silly. You and your coworkers all have access to the code, they can do
 _anything they want_. 
 
-For example, that getter that "protects" the field from write access could
-easily be changed to set it to ```null``` every time.
+For example, a getter that "protects" a field from write access could easily be
+changed to set it to ```null``` every time. 
 
-## An brief rant about getters and setters
+## A brief rant about getters and setters
 
 If anything should serve as an example of misapplied encapsulation, let me
 present the following "best practice".
@@ -62,15 +62,14 @@ public void SetIsLate(bool isLate) { IsLate = islate; }
 The goal with this pattern is to achieve the dual purposes of "encapsulation"
 and "I need access to the data". This is beyond silly. A get/set around a field
 is mathematically equivalent to just accessing the field directly. If
-encapsulation is the goal, this pattern completely fails to even provide that.
+encapsulation is the goal, this is just "encapsulation theater."
 
 Note: the caveat to this is _interfaces_. If you desire to make an interface on
 several data structures in a language like Java or C# (e.g.
-[noun interfaces](/better-oo-design/)), you are required to make a getter and
-setter around each field you desire to expose through the interface. Consider
-this a language tax.
+[noun interfaces](/better-oo-design/)), only functions (or properties) can be
+added to interfaces. Consider this a language tax.
 
-## Encapsulation Makes 
+## Good Design
 
 Encapsulation is orthogonal to a good design. While good design does prevent
 building an object in an incorrect state, it can be done without encapsulation.
