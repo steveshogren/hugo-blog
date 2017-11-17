@@ -5,13 +5,11 @@ Categories = ["technical skills","clojure", "clojurescript"]
 draft=true
 +++
 
-(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))
-
 An IDE is a "T-shaped" editor. The IDE provides an amazing experience for one or
 two languages, and an average or poor experience in everything else. By default
 Visual Studio and Intellij IDEA offer phenomenal support for C# and Java. They
 both have plugins that decently support other languages like SQL, JavaScript,
-HTML, etc. But neither have decent C, Scheme, Rust, or Go support.
+HTML, etc. Support falls off for C, Scheme, Rust, etc.
 
 My Preferences:
 * Great cross-language support
@@ -26,15 +24,15 @@ What I don't need:
 When choosing an editor or IDE, the most value comes from learning it well. A
 master never blames their tools.
 
+
+
 --- 
 A few years ago, I decided to learn one editor really well. My work was in Perl,
-PHP, and Java. I was also tinkering with Ruby. I wanted something that could
-handle Perl, PHP, and Ruby well.
+PHP, and Java. I was also tinkering with Ruby. 
 
 I decided to try Emacs entirely on the recommendation of my mentor. He could
 make everything fly in Emacs. His fingers would dance over the keyboard while
-text flashed about the screen. It was a sight to behold, and I wanted that
-magic.
+text flashed about the screen. It was an arcane magic, and I wanted that magic.
 
 After a few years of heavy Emacs usage, I started to get pinky finger numbness
 and tingling. I picked up Vimpulse, the Vim editing system inside Emacs. Pinky
@@ -67,5 +65,3 @@ learn, simple to combine, and provide for endless combinations. A suite of
 I regularly work on the train, where it is difficult to use a mouse. I also
 cannot always easily move my arms around for reaching the trackpad or arrow
 keys. 
-
-(Want to become a Vim expert? Check out my new book: [10 Minute Vim](https://leanpub.com/deliberatevim))
