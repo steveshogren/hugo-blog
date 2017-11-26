@@ -49,15 +49,16 @@ data Card = Card
 makeLenses ''Card
 ```
 
-The equation to maximize DPS combines power, speed, crit chance, armor pen, enemy
-armor, and crit bonus. I also wanted to allow the person running the
-optimization to select if they wanted extras like a blink card (teleport), a
-percentage of lifesteal, and if they wanted to buy a reusable ward card or not.
+The equation to maximize DPS combines the stats: power, speed, crit chance,
+armor pen, crit bonus, and the enemy's armor. Each character can have six cards
+at once, with three upgrades each. Many fully upgraded cards give extra bonuses.
+Cards only give two stats each. Card upgrades are limited to the two stat types
+given by the card.
 
 To speed up the optimization problem, I broke it down into two calculations.
 First I run the DPS algorithm against all the possible combinations of values
-with a max total cost of 60 and 6 total cards. Since each card gets a bonus when
-completed with 3 upgrades, those counted for extra:
+with a max total cost of sixty points and six total cards. Since each card gets
+a bonus when completed with 3 upgrades, those counted for extra:
 
 ```haskell
 maxDps :: Bool -> Bool -> Bool -> Integer -> String -> Integer -> Double -> Build
@@ -80,8 +81,9 @@ maxDps w b cheapCrit lifeSteal hero_name reduce_by en_armor =
 The function ```calcIfUnder``` returns a completed ```Build``` if the total
 card point equaled 60, otherwise an empty ```Build```.
 
-From this, I am able to almost instantly calculate the highest possible DPS for
-any given character, as a ratio of the power, speed, crit chance, armor pen,
-enemy armor, and crit bonus points needed. 
+From this, we can quickly calculate the highest possible DPS for any given
+character, as a ```Build``` of the power, speed, crit chance, armor pen, enemy armor,
+and crit bonus points needed.
 
-The hard part is 
+Now that we know the best possible ```Build```, the hard part is figuring out
+what cards and upgrades to buy.
