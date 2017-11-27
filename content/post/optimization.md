@@ -58,7 +58,7 @@ given by the card.
 To speed up the optimization problem, I broke it down into two calculations.
 First I run the DPS algorithm against all the possible combinations of values
 with a max total cost of sixty points and six total cards. Since each card gets
-a bonus when completed with 3 upgrades, those counted for extra:
+a bonus when completed with all three upgrades, those counted for extra:
 
 ```haskell
 maxDps :: Bool -> Bool -> Bool -> Integer -> String -> Integer -> Double -> Build
@@ -86,4 +86,28 @@ character, as a ```Build``` of the power, speed, crit chance, armor pen, enemy a
 and crit bonus points needed.
 
 Now that we know the best possible ```Build```, the hard part is figuring out
-what cards and upgrades to buy.
+what cards and upgrades to buy. Using
+[glpk-hs](https://hackage.haskell.org/package/glpk-hs), I make a tuple of each card with
+the possible upgrades. Since I want it to solve for an exact set of values, I
+can use the ```equalTo``` function to force the solver to ensure we get exactly
+that total amount of each stat.
+
+``` haskell
+lpCards :: Build -> LP String Integer
+lpCards build = execLPM $ do
+  let hero = heroFromName $ build^.bhero
+  let useCheapCrit = (build^.bcheapCrit)
+  equalTo (linCombination (collectCostAndNameTuples hero _cost useCheapCrit)) totalCXP
+  equalTo (linCombination (collectCostAndNameTuples hero _power useCheapCrit)) (build^.bpower)
+  equalTo (linCombination (collectCostAndNameTuples hero _speed useCheapCrit)) (build^.bspeed)
+  equalTo (linCombination (collectCostAndNameTuples hero _crit useCheapCrit)) (build^.bcrit)
+  equalTo (linCombination (collectCostAndNameTuples hero _pen useCheapCrit)) (build^.bpen)
+  equalTo (linCombination (collectCostAndNameTuples hero _lifesteal useCheapCrit)) (build^.blifesteal)
+  equalTo (linCombination (collectCostAndNameTuples hero _crit_bonus useCheapCrit)) (build^.bcrit_bonus)
+  equalTo (linCombination (collectCostAndNameTuples hero _ward useCheapCrit)) (build^.bward)
+  equalTo (linCombination (collectCostAndNameTuples hero _blink useCheapCrit)) (build^.bblink)
+  equalTo (linCombination (map (\(_,name) -> (1, name)) $ collectCostAndNameTuples hero _power useCheapCrit)) totalCards
+  mapM (\(_,name) -> varBds name 0 1) $ collectCostAndNameTuples hero _power useCheapCrit
+  mapM (\(_,name) -> setVarKind name IntVar) $ collectCostAndNameTuples hero _power useCheapCrit
+```
+
