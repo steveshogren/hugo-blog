@@ -109,5 +109,20 @@ lpCards build = execLPM $ do
   equalTo (linCombination (map (\(_,name) -> (1, name)) $ collectCostAndNameTuples hero _power useCheapCrit)) totalCards
   mapM (\(_,name) -> varBds name 0 1) $ collectCostAndNameTuples hero _power useCheapCrit
   mapM (\(_,name) -> setVarKind name IntVar) $ collectCostAndNameTuples hero _power useCheapCrit
+
+solverFailed :: IO [HandCard]
+solverFailed = return [toHandCard("Combination impossible", 0)]
+
+optimize :: Build -> IO [HandCard]
+optimize b = do
+  x <- glpSolveVars mipDefaults (lpCards b)
+  putStrLn $ "Build" ++ (show b)
+  case x of (Success, Just (obj, vars)) ->
+              let cards = (map toHandCard) $ filter (\(name, count) -> count /= 0) $ Map.toList vars
+              in if null cards then solverFailed
+                 else return cards
+            (failure, result) -> solverFailed
 ```
 
+This gathers a solution for the six card+upgrade tuples that match the desired
+ratio, and it is fast enough to run in a second or two!
