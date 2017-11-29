@@ -90,7 +90,12 @@ what cards and upgrades to buy. Using
 [glpk-hs](https://hackage.haskell.org/package/glpk-hs), I make a tuple of each card with
 the possible upgrades. Since I want it to solve for an exact set of values, I
 can use the ```equalTo``` function to force the solver to ensure we get exactly
-that total amount of each stat.
+that total amount of each stat. 
+
+```collectCostAndNameTuples``` the cards with the requested stat, and include a
+copy of each with every possible upgrade. This turns out to be roughly a few
+thousand cards+upgrades per stat. I only care about matching a stat exactly, so
+I use ```equalTo``` from the library. 
 
 ``` haskell
 lpCards :: Build -> LP String Integer
@@ -126,3 +131,11 @@ optimize b = do
 
 This gathers a solution for the six card+upgrade tuples that match the desired
 ratio, and it is fast enough to run in a second or two!
+
+I put together a quick site to allow a user to select their desired hero, and
+preferences on wards, crit, lifesteal, and blink. The first brute force solver
+shows the top 3 DPS ratios. Then they select one of those ratios to run through
+the optimizer and suggest a card layout.
+
+For whatever reason, sometimes the solver fails to come up with a solution,
+regardless if one actually exists. 
