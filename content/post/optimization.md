@@ -93,7 +93,20 @@ can use the ```equalTo``` function to force the solver to ensure we get exactly
 that total amount of each stat. 
 
 ```collectCostAndNameTuples``` the cards with the requested stat, and include a
-copy of each with every possible upgrade. This turns out to be roughly a few
+copy of each with every possible upgrade. The output is like:
+
+```
+-- For speed
+[["Whirling Wand - speed:1,power:5",1],
+ ["Whirling Wand - speed:2,power:4",2],
+ ["Whirling Wand - speed:3,power:3",3], ...]
+-- For power
+[["Whirling Wand - speed:1,power:5",5],
+ ["Whirling Wand - speed:2,power:4",4],
+ ["Whirling Wand - speed:3,power:3",3], ...]
+```
+
+This turns out to be roughly a few
 thousand cards+upgrades per stat. I only care about matching a stat exactly, so
 I use ```equalTo``` from the library. 
 
