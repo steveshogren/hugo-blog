@@ -62,7 +62,7 @@ a bonus when completed with all three upgrades, those counted for extra:
 
 ```haskell
 maxDps :: Bool -> Bool -> Bool -> Integer -> String -> Integer -> Double -> Build
-maxDps w b cheapCrit lifeSteal hero_name reduce_by en_armor =
+maxDps     w       b     cheapCrit lifeSteal hero_name reduce_by en_armor =
   let totalPoints = 66 -- counts the bonus +1 of the 6 cards when completed
       ward = if w then 1 else 0
       blink = if b then 1 else 0
@@ -82,8 +82,8 @@ The function ```calcIfUnder``` returns a completed ```Build``` if the total
 card point equaled 60, otherwise an empty ```Build```.
 
 From this, we can quickly calculate the highest possible DPS for any given
-character, as a ```Build``` of the power, speed, crit chance, armor pen, enemy armor,
-and crit bonus points needed.
+character, as a ```Build``` of the power, speed, crit chance, armor pen, enemy
+armor, and crit bonus points needed.
 
 Now that we know the best possible ```Build```, the hard part is figuring out
 what cards and upgrades to buy. Using
@@ -92,23 +92,25 @@ the possible upgrades. Since I want it to solve for an exact set of values, I
 can use the ```equalTo``` function to force the solver to ensure we get exactly
 that total amount of each stat. 
 
-```collectCostAndNameTuples``` the cards with the requested stat, and include a
-copy of each with every possible upgrade. The output is like:
+```collectCostAndNameTuples``` gathers cards with the requested stat:
 
 ```
--- For speed
-[["Whirling Wand - speed:1,power:5",1],
- ["Whirling Wand - speed:2,power:4",2],
- ["Whirling Wand - speed:3,power:3",3], ...]
+-- For cost
+[["Whirling Wand - speed:1,power:5",6],
+ ["Whirling Wand - speed:2,power:4",6],
+ ["Whirling Wand - speed:3,power:3",6], ...]
 -- For power
 [["Whirling Wand - speed:1,power:5",5],
  ["Whirling Wand - speed:2,power:4",4],
  ["Whirling Wand - speed:3,power:3",3], ...]
+-- For speed
+[["Whirling Wand - speed:1,power:5",1],
+ ["Whirling Wand - speed:2,power:4",2],
+ ["Whirling Wand - speed:3,power:3",3], ...]
 ```
 
-This turns out to be roughly a few
-thousand cards+upgrades per stat. I only care about matching a stat exactly, so
-I use ```equalTo``` from the library. 
+This turns out to be roughly a few thousand cards+upgrades per stat. Since we
+only care about matching a stat exactly, we can use ```equalTo``` from glpk-hs:
 
 ``` haskell
 lpCards :: Build -> LP String Integer
@@ -142,13 +144,18 @@ optimize b = do
             (failure, result) -> solverFailed
 ```
 
-This gathers a solution for the six card+upgrade tuples that match the desired
-ratio, and it is fast enough to run in a second or two!
+Running ```optimize``` gathers a solution for six card+upgrade tuples that match
+the desired ratio, and it is fast enough to run in under a second! Sometimes the
+solver fails to come up with a solution (even for the same parameters),
+regardless if one actually exists.
+
+And there you have it, a solver for the best DPS cards to build for Paragon for
+any hero!
+
+
+
 
 I put together a quick site to allow a user to select their desired hero, and
 preferences on wards, crit, lifesteal, and blink. The first brute force solver
 shows the top 3 DPS ratios. Then they select one of those ratios to run through
 the optimizer and suggest a card layout.
-
-For whatever reason, sometimes the solver fails to come up with a solution,
-regardless if one actually exists. 
