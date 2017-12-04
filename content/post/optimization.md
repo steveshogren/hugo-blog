@@ -5,20 +5,9 @@ Categories = ["technical skills"]
 draft=true
 +++
 
-/*
-My friends and I used to play DOTA 1, back when it was just a Warcraft 3 mod.
-We'd play for hours, trying all the different characters and items. Fast forward
-to my current game: Paragon.
-
-Unlike most MOBA's, you build a deck of cards before the match starts. Instead
-of an item shop, you pick a deck at the beginning of a match to play. When you
-go back to base you can only buy cards from your deck. Like a Collectible Card
-Game, all cards have a color, and you can only build a deck from two colors.
-*/
-
 I love MOBA's (Dota, LoL, Paragon), and I love Haskell. Since Paragon is my
-current go-to game, I wanted to optimize exactly what cards should I buy to
-maximize my Damage Per Second (DPS).
+current go-to game, I want to determine the cards to buy to maximize my Damage
+Per Second (DPS).
 
 First things first, I found a spreadsheet of all the cards, colors, costs, and
 stats. Using some Vim magic, I made them into a list of tuples:
@@ -28,7 +17,7 @@ stats. Using some Vim magic, I made them into a list of tuples:
 ("Whirling Wand",3,Universal,"6 Power|5.5 Attack Speed|Fully Upgraded Bonus:11 Attack Speed"),
 ```
 
-Which I could parse into a data structure: 
+Which I parse into a data structure: 
 
 ``` haskell
 data Card = Card
@@ -54,6 +43,21 @@ armor pen, crit bonus, and the enemy's armor. Each character can have six cards
 at once, with three upgrades each. Many fully upgraded cards give extra bonuses.
 Cards only give two stats each. Card upgrades are limited to the two stat types
 given by the card.
+
+```
+dmgReduction enemy_armor penetration_points =
+  let effectiveArmor = enemy_armor - (penetration_points * 4.0)
+      realArmor = if (effectiveArmor < 0) then 0 else effectiveArmor
+      reduction = (100/(100 + effectiveArmor))
+  in if reduction > 1 then 1 else reduction
+
+dps hero power_points attack_speed_points crit_points penetration_points crit_damage enemy_armor = do
+  let reduction = dmgReduction enemy_armor penetration_points
+      base_dmg = ((hero^.base_damage)+(6*power_points*(hero^.scaling)))
+      hits_second = 1/((hero^.base_attack_time)/(((5.5*attack_speed_points) + (hero^.attack_speed))/100))
+      crit_bonus = (1+((0.04*crit_points)*(crit_damage-1)))
+  base_dmg * hits_second * crit_bonus  * reduction
+```
 
 To speed up the optimization problem, I broke it down into two calculations.
 First I run the DPS algorithm against all the possible combinations of values
