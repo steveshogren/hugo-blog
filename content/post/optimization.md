@@ -4,8 +4,8 @@ date = "2017-12-05"
 Categories = ["technical skills"]
 +++
 
-TL;DR: Made a website for optimizing Paragon cards for DPS, 
-[code available here.](https://github.com/steveshogren/haskell-optimization/tree/a298b264e0d84ded3883b0948a12768a490d57eb)
+TL;DR: Made a website for optimizing Paragon cards using the [GNU Linear Programming Kit](https://www.gnu.org/software/glpk/) and Haskell. 
+[Code available here.](https://github.com/steveshogren/haskell-optimization/tree/a298b264e0d84ded3883b0948a12768a490d57eb)
 
 I love MOBA's (Dota, LoL, Paragon), and I love Haskell. Since Paragon is my
 current go-to game, I wanted to determine the cards to buy to maximize my Damage
