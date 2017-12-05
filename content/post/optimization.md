@@ -6,7 +6,7 @@ draft=true
 +++
 
 I love MOBA's (Dota, LoL, Paragon), and I love Haskell. Since Paragon is my
-current go-to game, I want to determine the cards to buy to maximize my Damage
+current go-to game, I wanted to determine the cards to buy to maximize my Damage
 Per Second (DPS).
 
 First things first, I found a spreadsheet of all the cards, colors, costs, and
@@ -38,11 +38,8 @@ data Card = Card
 makeLenses ''Card
 ```
 
-The equation to maximize DPS combines the stats: power, speed, crit chance,
-armor pen, crit bonus, and the enemy's armor. Each character can have six cards
-at once, with three upgrades each. Many fully upgraded cards give extra bonuses.
-Cards only give two stats each. Card upgrades are limited to the two stat types
-given by the card.
+The equation to maximize DPS combines the stats of: power, speed, crit chance,
+armor pen, crit bonus, and the enemy's armor.
 
 ```
 dmgReduction enemy_armor penetration_points =
@@ -86,31 +83,27 @@ The function ```calcIfUnder``` returns a completed ```Build``` if the total
 card point equaled 60, otherwise an empty ```Build```.
 
 From this, we can quickly calculate the highest possible DPS for any given
-character, as a ```Build``` of the power, speed, crit chance, armor pen, enemy
-armor, and crit bonus points needed.
+character, as a ```Build``` of the exact power, speed, crit chance, armor pen,
+enemy armor, and crit bonus points needed.
 
 Now that we know the best possible ```Build```, the hard part is figuring out
 what cards and upgrades to buy. Using
 [glpk-hs](https://hackage.haskell.org/package/glpk-hs), I make a tuple of each card with
-the possible upgrades. Since I want it to solve for an exact set of values, I
-can use the ```equalTo``` function to force the solver to ensure we get exactly
-that total amount of each stat. 
-
-```collectCostAndNameTuples``` gathers cards with the requested stat:
+the possible upgrades for a given stat:
 
 ```
--- For cost
-[["Whirling Wand - speed:1,power:5",6],
- ["Whirling Wand - speed:2,power:4",6],
- ["Whirling Wand - speed:3,power:3",6], ...]
--- For power
-[["Whirling Wand - speed:1,power:5",5],
- ["Whirling Wand - speed:2,power:4",4],
- ["Whirling Wand - speed:3,power:3",3], ...]
--- For speed
-[["Whirling Wand - speed:1,power:5",1],
- ["Whirling Wand - speed:2,power:4",2],
- ["Whirling Wand - speed:3,power:3",3], ...]
+-- For cost (e.g. base cost is 3)
+[("Whirling Wand - speed:1,power:5",9),
+ ("Whirling Wand - speed:2,power:4",9),
+ ("Whirling Wand - speed:3,power:3",9), ...]
+-- For power (e.g. base power is 1)
+[("Whirling Wand - speed:1,power:5",6),
+ ("Whirling Wand - speed:2,power:4",5),
+ ("Whirling Wand - speed:3,power:3",4), ...]
+-- For speed (e.g. base speed is 3)
+[("Whirling Wand - speed:1,power:5",4),
+ ("Whirling Wand - speed:2,power:4",5),
+ ("Whirling Wand - speed:3,power:3",6), ...]
 ```
 
 This turns out to be roughly a few thousand cards+upgrades per stat. Since we
@@ -134,9 +127,6 @@ lpCards build = execLPM $ do
   mapM (\(_,name) -> varBds name 0 1) $ collectCostAndNameTuples hero _power useCheapCrit
   mapM (\(_,name) -> setVarKind name IntVar) $ collectCostAndNameTuples hero _power useCheapCrit
 
-solverFailed :: IO [HandCard]
-solverFailed = return [toHandCard("Combination impossible", 0)]
-
 optimize :: Build -> IO [HandCard]
 optimize b = do
   x <- glpSolveVars mipDefaults (lpCards b)
@@ -149,17 +139,9 @@ optimize b = do
 ```
 
 Running ```optimize``` gathers a solution for six card+upgrade tuples that match
-the desired ratio, and it is fast enough to run in under a second! Sometimes the
-solver fails to come up with a solution (even for the same parameters),
-regardless if one actually exists.
+the desired ratio, and it is fast enough to run in under a second! 
 
 And there you have it, a solver for the best DPS cards to build for Paragon for
-any hero!
+any hero.
 
 
-
-
-I put together a quick site to allow a user to select their desired hero, and
-preferences on wards, crit, lifesteal, and blink. The first brute force solver
-shows the top 3 DPS ratios. Then they select one of those ratios to run through
-the optimizer and suggest a card layout.
