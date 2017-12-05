@@ -1,9 +1,12 @@
 +++
-title = "MOBA DPS Optimization In Haskell"
+title = "MOBA Item Optimization In Haskell"
 date = "2017-11-27"
 Categories = ["technical skills"]
 draft=true
 +++
+
+TL;DR: Made a website for optimizing Paragon cards for DPS, 
+[code available here.](https://github.com/steveshogren/haskell-optimization/tree/a298b264e0d84ded3883b0948a12768a490d57eb)
 
 I love MOBA's (Dota, LoL, Paragon), and I love Haskell. Since Paragon is my
 current go-to game, I wanted to determine the cards to buy to maximize my Damage
@@ -42,18 +45,20 @@ The equation to maximize DPS combines the stats of: power, speed, crit chance,
 armor pen, crit bonus, and the enemy's armor.
 
 ```
-dmgReduction enemy_armor penetration_points =
-  let effectiveArmor = enemy_armor - (penetration_points * 4.0)
+dmgReduction :: Double -> Double -> Double
+dmgReduction enemyArmor penetrationPoints =
+  let effectiveArmor = enemyArmor - (penetrationPoints * 4.0)
       realArmor = if (effectiveArmor < 0) then 0 else effectiveArmor
       reduction = (100/(100 + effectiveArmor))
   in if reduction > 1 then 1 else reduction
 
-dps hero power_points attack_speed_points crit_points penetration_points crit_damage enemy_armor = do
-  let reduction = dmgReduction enemy_armor penetration_points
-      base_dmg = ((hero^.base_damage)+(6*power_points*(hero^.scaling)))
-      hits_second = 1/((hero^.base_attack_time)/(((5.5*attack_speed_points) + (hero^.attack_speed))/100))
-      crit_bonus = (1+((0.04*crit_points)*(crit_damage-1)))
-  base_dmg * hits_second * crit_bonus  * reduction
+dps :: Hero -> Double -> Double -> Double -> Double -> Double -> Double -> Double
+dps hero powerPoints attackSpeedPoints critPoints penetrationPoints critDamage enemyArmor = do
+  let reduction = dmgReduction enemyArmor penetrationPoints
+      baseDmg = ((hero^.base_damage)+(6*powerPoints*(hero^.scaling)))
+      hitsSecond = 1/((hero^.base_attack_time)/(((5.5*attackSpeedPoints) + (hero^.attack_speed))/100))
+      critBonus = (1+((0.04*critPoints)*(critDamage-1)))
+  baseDmg * hitsSecond * critBonus  * reduction
 ```
 
 To speed up the optimization problem, I broke it down into two calculations.
@@ -138,10 +143,29 @@ optimize b = do
             (failure, result) -> solverFailed
 ```
 
-Running ```optimize``` gathers a solution for six card+upgrade tuples that match
-the desired ratio, and it is fast enough to run in under a second! 
+Running ```optimize``` from a ```scotty``` site gathers a solution for six
+card+upgrade tuples that match the desired ratio, and it is fast enough to run
+in under a second!
+
+```haskell
+main :: IO ()
+main = do
+  scotty 3000 $ do
+    middleware $ staticPolicy (noDots >-> addBase "static/html")
+    middleware $ staticPolicy (noDots >-> addBase "static/dist")
+
+    post "/dps" $ do
+      s <- jsonData :: ActionM UISetting
+      json $ DP.maxDps (has_ward s) (has_blink s) (cheap_crit s) (desired_lifesteal s) (hero_name s) 0 (enemy_armor s) 
+    post "/optimize" $ do
+      build <- jsonData :: ActionM OP.Build
+      r <- liftIO $ OP.optimize build
+      json r
+```
+
+Sample output:
+
+<img src="/images/optimizer.png"></img>
 
 And there you have it, a solver for the best DPS cards to build for Paragon for
-any hero.
-
-
+any hero! [Code available here.](https://github.com/steveshogren/haskell-optimization/tree/a298b264e0d84ded3883b0948a12768a490d57eb)
