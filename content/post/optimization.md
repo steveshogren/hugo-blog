@@ -1,8 +1,7 @@
 +++
 title = "MOBA Item Optimization In Haskell"
-date = "2017-11-27"
+date = "2017-12-05"
 Categories = ["technical skills"]
-draft=true
 +++
 
 TL;DR: Made a website for optimizing Paragon cards for DPS, 
