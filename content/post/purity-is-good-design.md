@@ -78,13 +78,13 @@ functions. Which better models the domain?
 
 
 ``` java
-void approveChange()  // sets an approved field to true
-Approval approveChange(Approval a)  // sets an approved field to true
-Approved approveChange(ToBeApproved c) // makes a new object
+void approveChange()  // (encapsulated design) sets an approved field to true
+Approval approveChange(Approval a)  // (pure design) sets an approved field to true
+Approved approveChange(ToBeApproved c) // (pure, type-safe design) makes a new object
 ```
 
 The first two functions introduce a run-time error if the ```Approval``` was
-already approved! The run-time error is a failure state allowed because of poor
+already approved. The run-time error is a failure state allowed because of poor
 modeling. Neither purity nor encapsulation alone solved a problem caused by bad
 modeling.
 
