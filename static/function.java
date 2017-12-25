@@ -7,6 +7,7 @@ void approveChange(){
     this.Approver = CURRENT_USER;
     this.ApprovalTime = DateTime.Now;
 }
+
 // (pure design)
 Approval approveChange(Approval a) {
     if (a.Approved == true) {
