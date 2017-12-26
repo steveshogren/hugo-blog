@@ -1,5 +1,5 @@
 +++
-title = "OO-Design Part 3: Encapsulation Myths"
+title = "OO-Design Part 3: When to Apply Encapsulation"
 date = "2016-11-30"
 Categories = ["technical skills", "csharp", "java", "oo-design"]
 draft=true
@@ -34,15 +34,10 @@ time and thought must go into building a design that offers full utility without
 allowing invalid states. That extra time and thought should only be spent when
 absolutely necessary.
 
-> Separation of concerns and encapsulation are different goals
-
-Separation of concerns (often referred to as Single Responsibility Principle) is
-an excellent tool for improving internal organization. Single Responsibility
-Principle reduces complexity by focusing each function to a single goal.
-Encapsulation is not the same thing as SRP.
-
 While appropriate for libraries and API boundaries, encapsulation is often
 misapplied to _internal code_ with _shared ownership_. We pretend that we cannot
-trust ourselves and our coworkers to know how to correctly use our models. This
-is silly. You and your coworkers all have access to the code, they can do
-_anything they want_. 
+trust ourselves to correctly use our own domain models and that putting our
+logic inside a class will somehow protect it. This is silly. You and your
+coworkers all have access to the code, they can do _anything they want_.
+"Hiding" logic inside a class instead of putting in a pure function only makes
+it harder to test!
