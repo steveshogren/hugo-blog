@@ -7,11 +7,6 @@ draft=true
 
 Part 4 of the series [OO-Design](/categories/oo-design/)
 
-As discussed in the previous post
-[Anemic Domain Models Are Healthy](/anemic-domain-model/), encapsulation makes
-code harder to test. We should make important actions easy to do, and testing is
-important.
-
 ## Good Design
 
 Encapsulation is orthogonal to a good design. While good design does prevent
@@ -28,8 +23,8 @@ Approved approveChange(ToBeApproved c) // (pure, type-safe design) makes a new o
 
 The first two functions introduce a run-time error if the ```Approval``` was
 already approved. The run-time error is a failure state allowed because of poor
-modeling. Neither purity nor encapsulation alone solved a problem caused by bad
-modeling.
+modeling. Neither purity nor encapsulation alone can solve a problem caused by
+bad modeling.
 
 The third function is a better domain model: it cannot even accept an unapproved
 object. The type system prevents this sort of error from even happening. We have

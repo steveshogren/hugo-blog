@@ -1,6 +1,6 @@
 +++
 title = "OO-Design Part 3: When to Apply Encapsulation"
-date = "2016-11-30"
+date = "2017-11-30"
 Categories = ["technical skills", "csharp", "java", "oo-design"]
 draft=true
 +++
@@ -30,10 +30,9 @@ read the internals of someone else's codebase.
 
 Good encapsulation is often a lot of extra work for a single team in a single
 codebase. APIs easily devolve into
-[leaky abstractions,](https://en.wikipedia.org/wiki/Leaky_abstraction) so extra
-time and thought must be spent to offer full utility without allowing invalid
-states. That extra time and thought should only be spent when absolutely
-necessary.
+[leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction), so extra
+care and thought must be spent to offer full utility without allowing invalid
+states. That extra time and thought should only be spent when necessary.
 
 While appropriate for libraries and API boundaries, encapsulation is often
 misapplied to _internal code_ with _shared ownership_. We pretend that we cannot
