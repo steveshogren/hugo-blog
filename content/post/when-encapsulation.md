@@ -1,8 +1,7 @@
 +++
 title = "OO-Design Part 3: When to Apply Encapsulation"
-date = "2017-11-30"
+date = "2018-01-03"
 Categories = ["technical skills", "csharp", "java", "oo-design"]
-draft=true
 +++
 
 Part 3 of the series [OO-Design](/categories/oo-design/)
