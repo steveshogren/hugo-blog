@@ -10,15 +10,14 @@ Good software design should be scientific, universal, and measurable. Saying
 "this code is good", or "this code is crap" is useless if we cannot even agree
 on what is good design.
 
-Design philosophies like "Single Responsibility Principle" can't be objectively measured.
-The programmer must interpret if the code they are reading actually adheres to
-the pattern. Such an interpretation is subject to biases and confusion.
+Design philosophies like "Single Responsibility Principle" can't be objectively
+measured. The programmer must interpret if the code they are reading actually
+adheres to the pattern. Such an interpretation is subject to biases and
+confusion.
 
-A good design philosophy should be measurable, not require subjective
-interpretation, and should be universal to all code. As much as we may joke to
-the contrary, modern programming languages are designed to allow humans to
-express our ideas to other humans. We should adopt design philosophies that best
-supplement human cognition.
+As much as we may joke to the contrary, modern programming languages are
+designed to allow humans to express our ideas to other humans. We should adopt
+design philosophies that best supplement human cognition.
 
 ### Example: Human Working Memory
 
