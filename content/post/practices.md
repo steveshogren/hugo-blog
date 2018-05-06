@@ -20,7 +20,7 @@ https://en.wikipedia.org/wiki/Robert_Kegan
 https://medium.com/@NataliMorad/how-to-be-an-adult-kegans-theory-of-adult-development-d63f4311b553
 https://modelsofmaturityblog.wordpress.com/2016/11/30/robert-kegans-social-maturity/
 
-The five stages are as follows:
+The six stages are as follows:
 
 * Incorporative 
 ** (learning basics of tools)
@@ -57,3 +57,15 @@ The five stages are as follows:
 ** limited identity
 ** "I have authorship, identities, ideologies"
 ** multiple value systems
+
+A person can follow an action without understanding why they do it.
+Understanding is not required for compliance. However, humans learn almost
+everything by mimicking modeled behaviors until they understand why.
+
+Self-authoring is no exception. 
+
+Following an action doesn't mean you understand why you do it.
+
+Any process that causes a reflection and changes to process inherently is going
+to stretch a person into more Self-Authoring mindsets.
+
