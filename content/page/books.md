@@ -1,8 +1,8 @@
 +++
-title = "Books That Shape My Thinking"
+title = "Writings That Shape My Thinking"
 +++
 
-<h1 class="centereded">Books That Shape My Thinking</h1>
+<h1 class="centereded">Writings That Shape My Thinking</h1>
 
 For how I pick what books to prioritize, check out my post <a class="homelink"
                                                               href="/next-book">"What Book Should I Read Next?"</a>.
