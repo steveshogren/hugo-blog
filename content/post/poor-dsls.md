@@ -2,7 +2,7 @@
 title = "DSLs Are Terrible"
 date = "2018-08-02"
 banner="/images/altar_of_sunlight.gif"
-Categories = ["hugo", "dsl",  "Technical Skills"]
+Categories = ["hugo", "dsl",  "Technical Skills", "silly"]
 +++
 
 **Trigger warning:** this is a silly rant I wrote a few years ago after raging at
