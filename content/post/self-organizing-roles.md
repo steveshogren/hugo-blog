@@ -2,7 +2,7 @@
 title = "Why Have Job Titles on a Self-Organizing Team?"
 date = "2017-02-20"
 Categories = ["management", "meta game", "self-organization"]
-draft = true
+draft=true
 +++
 
 My team has a decade of experience applying
