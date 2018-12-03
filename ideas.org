@@ -127,7 +127,7 @@ remains.
 
 The other day, I went back to add a feature to a personal Clojure project. I had
 written it to be the paragon of beauty. High unit test coverage, carefully
-designed WebDriver tests, bi-directional migration scripts, and a makefile to
+designed WebDriver tests, clean database migration scripts, and a makefile to
 automate every task.
 
 I estimated the feature would take an hour. Nine hours later, I finally finished
@@ -415,6 +415,7 @@ step to working around them. The developer who doesn't trust their own
 abilites to build "good software" will take even greater care. The
 humble developer keeps up with good practices, keeps refining their
 understanding of what makes code "good" and keeps 
+
 * Proposal: Efficiency & Excellence Team
 
 Since v5 is getting larger and larger, I have felt a decrease in energy. Each

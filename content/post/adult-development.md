@@ -10,8 +10,8 @@ software development.
 
 Thesis ideas:
 
-- the model explains the genius of XP
-- the model is a goal to strive for personally
+- the model explains the best parts of XP
+- the model is a goal to strive for as an individual
 - the model is just interesting
 - it recommends how to best design a process
 
@@ -37,7 +37,7 @@ The six stages are as follows:
  - follow rules to not get punished
  - "I am my needs/goals"
 
-* Intrapersonal | Communal | Socialized 
+* Intra-personal | Communal | Socialized 
  - symmetrical relationships
  - external beliefs followed because external pressure
  - external validation
@@ -53,7 +53,7 @@ The six stages are as follows:
  - "I have relationships"
  - Commitment to ideas/beliefs
 
-* Interindividual | Interconnected | Fluid
+* Inter-individual | Interconnected | Fluid
  - "I question authority and myself"
  - limited identity
  - "I have authorship, identities, ideologies"
