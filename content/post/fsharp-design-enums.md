@@ -3,7 +3,6 @@ title = "F# Domain Design: Interdependent Enums and Booleans"
 date = "2018-12-02"
 Categories = ["Technical Skills", "fsharp", "csharp"]
 Description = ""
-draft=true
 +++
 
 F# provides a clear way to simplify invalid states with discriminated unions.
