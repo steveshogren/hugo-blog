@@ -4,6 +4,7 @@ date = "2015-12-14"
 banner="/images/meditation.jpg"
 Categories = ["Meta Game", "management"]
 manager="yes"
+top="yes"
 +++
 
 

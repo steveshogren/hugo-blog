@@ -27,7 +27,6 @@
       <h3 class="">top</h3>
       <ul class="sidebar_ul">
         <li class="sidebar_li"><a href="/page/books">Books That Shape My Thinking</a></li>
-        <li class="sidebar_li"><a href="/page/training">Learn To Program For Free</a></li>
         {{ range where .Site.Pages "Params.top" "yes" }}
         <li class="sidebar_li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
