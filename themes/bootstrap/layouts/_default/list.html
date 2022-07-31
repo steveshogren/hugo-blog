@@ -11,7 +11,7 @@
       {{ partial "bloc/content/h1-title" . }}
     </header>
     <ul class="sidebar_ul">
-      {{ range $index, .Paginator.Pages }}
+      {{ range .Paginator.Pages }}
       {{ .Render "list.li" }}
       {{ end }}
     </ul>

@@ -6,6 +6,11 @@ theme = "bootstrap"
 [permalinks]
   post = "/:filename/"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 disqusShortname = "spf13"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "UA-46040901-1"
