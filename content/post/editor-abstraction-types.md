@@ -1,8 +1,7 @@
 +++
-title = "Analysis of Editor Abstractions"
-date = "2022-07-31"
-Categories = ["technical skills","emacs"]
-draft=true
+title = "Powerful Editor Abstractions"
+date = "2022-08-02"
+Categories = ["technical skills","vim"]
 +++
 
 Not all editing tools are created equal.
@@ -12,10 +11,10 @@ Not all editing tools are created equal.
 
 While many words have been spent on the Holy Editor Flame Wars, I've read very
 little that attempts to categorize _what they actually do_. Likewise, everyone
-pays homage to the concept of using the "best tool for the job", but most have
-no idea what tools are provided or when each tool would be best.
+pays homage to the concept of using the "best tool for the job", but few talk
+about when each tool would be best.
 
-Our editors provide abstractions classified into two main categories:
+Our editors provide abstractions classified into three main categories:
 
 1. Semantic Tools
 2. Run-time Inspection Tools
@@ -26,8 +25,8 @@ Our editors provide abstractions classified into two main categories:
 ## Semantic Tools
 
 Five abstractions are the core of Semantic Tools. If we had nothing else but
-these, we would have quite a bit indeed! The Big Five make a huge program much
-more manageable.
+these, we would have quite a bit indeed! These make a huge program much more
+manageable.
 
 * **Language Errors** - Indicate code that violates the rules of the language
 * **Find All References** - See a list of all usages of a field, function, or class
@@ -36,11 +35,11 @@ more manageable.
   ideally with documentation
 * **Go To Definition** - Move editor to the symbol's defined location
 
-The Big Five are just different ways of interacting with the [Abstract Syntax
+These actions allow us to interact with the [Abstract Syntax
 Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) (AST) of the codebase.
-Unfortunately, building a correct AST before run-time is not always
-possible. Building an always-accurate AST is impossible in any language with
-reflection, has weak type, dynamic types, or those with syntactic macros.
+Unfortunately, building a correct AST before run-time is not always possible.
+Building an always-accurate AST is impossible in any language with reflection,
+or weak types, or dynamic types, or those with syntactic macros.
 
 > My first encounter with the AST problem came when a manager asked me to rename
 > all uses of ```Contact.Id``` to ```Contact.ContactId``` in a big PHP project.
@@ -55,8 +54,8 @@ Even flagship IDE languages like Java and C# still have a version of this
 problem. Sharing dlls or jars to another project breaks semantic AST tools. A
 **Rename Symbol** will only detect and modify usages in the current open
 project, not every consumer of the produced binary. Reflection and explicit
-casting also breaks semantic tools. Depending on your environment, this ranges
-from a minor nuisance to a major inconvenience.
+casting also breaks semantic tools. Depending on your environment and what you
+do with binaries, this ranges from a minor nuisance to a major inconvenience.
 
 In the last decade, several IDE's have added plugins that can build an AST from
 PHP, Python, Ruby, JavaScript, Clojure, etc by using raw text parsing or through
@@ -71,13 +70,13 @@ happening. They are typically integrated with the language itself, either
 provided directly or through a library.
 
 * **Stop at Breakpoint** - Run code to a point and stop execution there
-* **Inspect Call Stack** See the function calls that led to a breakpoint
-* **Inspect scope** See all variables in scope at a breakpoint
-* **Execute statement at point** Run any arbitrary code in the scope of the current breakpoint
-* **Modify the executing code** Modify variables and functions dynamically in the running code
+* **Inspect Call Stack** - See the function calls that led to a breakpoint
+* **Inspect scope** - See all variables in scope at a breakpoint
+* **Execute statement at point** - Run any arbitrary code in the scope of the current breakpoint
+* **Modify the executing code** - Modify variables and functions dynamically in the running code
 
-Run-time inspection tools are incredible for seeing how a program is executing.
-They allow the programmer total insight into a running program. There have been
+Run-time inspection tools are excellent for seeing how a program is executing.
+They allow the programmer direct insight into a running program. There have been
 many times when I've been completed stumped with a program, only to run it with
 a debugger and suddenly realize what was happening. If you have access to these
 tools, they are worth learning well.
@@ -87,12 +86,12 @@ Debuggers will not help for debugging an issue unless you cannot completely
 recreate the exact scenario you need. For this reason, unit tests combined with
 a debugger are a powerful combo.
 
-Many REPLs (Read Eval Print Loop) allow you modify the code live while
-debugging. Languages like Common Lisp, Smalltalk, and Clojure are famous for
-allowing the programmer to replace blocks of code on a running server: sometimes
-even in production! REPLs are an extremely powerful tool, and powerful tools can
-be quite dangerous. Knowing how to use a tool well is the first step in knowing
-how to use it wisely.
+Many REPLs (Read Eval Print Loop) allow you to modify the code live while
+connected to the running process. Languages like Common Lisp, Smalltalk, and
+Clojure are famous for allowing the programmer to replace blocks of code on a
+running server: sometimes even in production! Integrated REPLs are an extremely
+powerful tool, and powerful tools can be quite dangerous. Knowing how to use a
+tool well is the first step in knowing how to use it wisely.
 
 ## Text-Based Tools
 
@@ -104,11 +103,15 @@ only operate on raw text.
 * **Regular Expressions** - Transform text based on pattern matching rules
 * **Record/Playback Macro** - Record and playback a series of operations
 * **Balance parenthesis/brackets/quotes** - Transform balanced sections
+* **Linting/Style enforcement** - Show places code doesn't match a preferred
+  style, optionally fix style warnings
 
 Consider the common Semantic transformation **Extract Interface**. It takes a
 class and generates an interface next to the class containing all the public
 functions from the class. The refactoring does not require an AST to work, it
-can be easily achieved by combining several text commands.
+can be easily achieved by combining several text commands. See example in my
+post [Vim Refactoring
+Patterns](/vim-refactoring-patterns)
 
 Any refactoring can be replaced with a text macro or regular expression. Here is
 where we see the power of good abstractions. Where an IDE refactoring suite may
@@ -119,11 +122,49 @@ A skilled user of these basic abstractions can solve any text-based refactoring
 in only a few steps. They can invent new refactorings, solving any text
 manipulation they need.
 
-## Conclusion
+{{<rawhtml>}}
+  <p class=" bookAdBanner col-xs-12 col-sm-12 col-md-12">
+    <span class="col-xs-10 col-sm-10 col-md-10">
+      Become a master of <strong>Regular Expressions</strong> or
+  <strong>Macros</strong> with practice exercises to teach you how to <i>think</i> using these tools, and identify places
+      where they are best used: 
+      <a href="https://leanpub.com/deliberatevim">
+        10 Minute Vim
+      </a>
+    </span>
+    <a class=" col-xs-2 col-sm-2 col-md-2" href="https://leanpub.com/deliberatevim">
+      <img style="padding:1rem" src="/images/vim.jpg"></img>
+    </a>
+  </p>
+{{</rawhtml>}}
+
+
+### Balance Parenthesis
+
+This set of tools is not very well known, despite being very useful in the right
+context. The best example of it is:
+[ParEdit](http://danmidwood.com/content/2014/11/21/animated-paredit.html)
+
+The tool by default prevents the programmer from entering unbalanced characters,
+but then offers a suite of commands for transforming them. 
+
+ParEdit is less useful in languages with relatively fewer balanced characters,
+and most useful in languages where balanced characters contain an entire
+expression:
+
+| Balanced Characters             | Languages                       |
+|---------------------------------|---------------------------------|
+| **Fewer**                       | Python, Ruby, OCaml/F#, Haskell |
+| **More**                        | C#, Java, Javascript, C++       |
+| **Surround Entire Expressions** | Clojure, Scheme, Racket         |
+
+If you regularly use a language in the bottom two rows, you might want to check
+out if your editor has an implementation of ParEdit!
+
+## Conclusion - Have all tools at your disposal
 
 The real power comes when you can combine Semantic, run-time, and text-based
-tools. If you have an accurate **Go To Definition** AND the ability to
-**playback** a macro, your options are limitless!
+tools to solve different problems.
 
 For this reason, if you have the ability, you should learn one from each
 category of tools available to you. 
@@ -134,10 +175,10 @@ category of tools available to you.
    - Debuggers in Intelij IDEA, PyCharm, VS Code, Visual Studio, Eclipse 
    - REPL (Python, Ruby, Clojure, Haskell, Javascript, Smalltalk)
 3. Text-based Tools
-   - Vim / Emacs
-   - Paredit
+   - Vim / Emacs (even available an IDE plugin!)
+   - ParEdit
    - Grep
    - AWK
 
-Mastering one of each tools will go a long way to increasing your ability to
-write and transform code quickly.
+Mastering each category of tools will go a long way to increasing your ability
+to write and transform code efficiently.
