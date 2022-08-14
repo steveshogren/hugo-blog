@@ -22,7 +22,6 @@ let nextStage = {
 ```
 
 
-
 Pros:
 - Extremely cheap to modify rules
 - Modifiable by non-technical analysts
